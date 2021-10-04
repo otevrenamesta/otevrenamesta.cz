@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+.container {
+  @apply mx-auto;
+  max-width: 1920px;
+  width: 90%;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.fade-enter-active {
+  transition: all 400ms;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+.__nuxt-error-page {
+  .error {
+    svg {
+      margin: 0 auto;
+    }
+  }
+}
