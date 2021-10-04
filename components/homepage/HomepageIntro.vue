@@ -20,9 +20,9 @@
               class="mb-1"
               v-html="offer.icon"
             />
-            <storng class="block text-sm text-secondary mb-2 font-bold">
+            <strong class="block text-sm text-secondary mb-2">
               {{ offer.title }}
-            </storng>
+            </strong>
             <p class="text-sm text-dark">
               {{ offer.descirption }}
             </p>
