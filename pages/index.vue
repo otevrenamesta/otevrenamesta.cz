@@ -1,8 +1,16 @@
 <template>
   <main>
-    <HomepageHero />
+    <HomepageHero
+      class="mb-block-2"
+    />
 
-    <HomepageIntro />
+    <HomepageIntro
+      class="mb-block-1"
+    />
+
+    <HomepageProjects
+      class="mb-block-2"
+    />
   </main>
 </template>
 
