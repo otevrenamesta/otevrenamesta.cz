@@ -1,7 +1,9 @@
 <template>
   <header class="absolute top-0 left-0 w-full z-10">
     <div class="container pt-12 flex justify-between">
-      <LogoOm />
+      <nuxt-link to="/">
+        <LogoOm />
+      </nuxt-link>
 
       <nav class="flex items-center">
         <nuxt-link
@@ -27,27 +29,27 @@ export default {
     return {
       menuItems: [
         {
-          link: '/',
+          link: '/about',
           text: 'O nás',
         },
         {
-          link: '/',
+          link: '/colaboration',
           text: 'Spolupráce',
         },
         {
-          link: '/',
+          link: '/projects',
           text: 'Projekty',
         },
         {
-          link: '/',
+          link: '/members',
           text: 'Členové',
         },
         {
-          link: '/',
+          link: '/news',
           text: 'Aktuality',
         },
         {
-          link: '/',
+          link: '/contact',
           text: 'Kontakt',
         },
       ],
