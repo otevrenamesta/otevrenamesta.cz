@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="absolute top-0 left-0 w-full">
     <div class="container pt-12 flex justify-between">
       <LogoOm />
 

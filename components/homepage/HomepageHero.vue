@@ -1,0 +1,72 @@
+<template>
+  <div class="Hero flex items-end h-screen min-h-[700px] mb-block-2">
+    <div class="container flex items-end justify-end relative h-full">
+      <div class="HeroBox bg-primary pt-20 pb-14 px-16">
+        <h2 class="text-6xl text-white font-bold mb-9 tracking-tighter">
+          Partner <br>
+          pro digitalizaci <br>
+          samospráv
+        </h2>
+        <p class="text-lg text-white max-w-sm">
+          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv.
+        </p>
+      </div>
+      <div class="HeroBg" />
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.HeroBox {
+  position: absolute;
+  left: 0;
+  z-index: 12;
+
+  &::before,
+  &::after {
+    background: $color-primary;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: $block-size * 2;
+  }
+  &::before {
+    right: -$block-size * 2;
+    height: calc(100% - #{$block-size * 2});
+  }
+  &::after {
+    right: -$block-size * 4;
+    height: calc(100% - #{$block-size * 4});
+  }
+}
+
+.HeroBg {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  background: url(~assets/img/homepage-hero-bg.jpg);
+  background-size: cover;
+  margin-right: 5%;
+
+  &:before {
+    content: '';
+    background: $color-additional;
+    width: $block-size;
+    height: $block-size * 4;
+    position: absolute;
+    left: -$block-size;
+    top: 25%;
+  }
+
+  &:after {
+    content: '';
+    background: $color-secondary;
+    width: $block-size * 4;
+    height: $block-size * 4;
+    position: absolute;
+    right: -$block-size * 2;
+    top: 5%;
+    border-top-left-radius: 97%;
+  }
+}
+</style>

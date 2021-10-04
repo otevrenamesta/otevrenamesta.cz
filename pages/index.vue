@@ -1,7 +1,9 @@
 <template>
-  <div>
-    homepage
-  </div>
+  <main>
+    <HomepageHero />
+
+    <HomepageIntro />
+  </main>
 </template>
 
 <script>
