@@ -15,6 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
+      { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
   },
@@ -44,6 +45,7 @@ export default {
     '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
     '@nuxt/content', // https://go.nuxtjs.dev/content
     '@nuxtjs/svg',
+    'vue-screen/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
