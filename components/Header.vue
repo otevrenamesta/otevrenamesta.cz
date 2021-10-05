@@ -9,10 +9,17 @@
         <nuxt-link
           v-for="(item, index) in menuItems"
           :key="index"
-          :to="item.link"
+          :to="localePath(item.link)"
           class="NavItem uppercase text-sm text-primary font-semibold ml-10"
           v-text="item.text"
         />
+
+        <!-- <nuxt-link
+          :to="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
+          class="uppercase text-sm font-semibold ml-10 text-secondary"
+        >
+          {{ $i18n.locale === 'cs' ? 'en' : 'cz' }}
+        </nuxt-link> -->
       </nav>
     </div>
   </header>
@@ -25,35 +32,11 @@ export default {
   components: {
     LogoOm,
   },
-  data() {
-    return {
-      menuItems: [
-        {
-          link: '/about',
-          text: 'O nás',
-        },
-        {
-          link: '/colaboration',
-          text: 'Spolupráce',
-        },
-        {
-          link: '/projects',
-          text: 'Projekty',
-        },
-        {
-          link: '/members',
-          text: 'Členové',
-        },
-        {
-          link: '/news',
-          text: 'Aktuality',
-        },
-        {
-          link: '/contact',
-          text: 'Kontakt',
-        },
-      ],
-    };
+  props: {
+    menuItems: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>

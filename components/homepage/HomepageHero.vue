@@ -2,19 +2,29 @@
   <section class="Hero flex items-end h-screen min-h-[700px]">
     <div class="container flex items-end justify-end relative h-full">
       <div class="HeroBox bg-primary pt-20 pb-14 px-16">
-        <h2 class="text-6xl text-white font-bold mb-9 tracking-tighter">
-          Partner <br>
-          pro digitalizaci <br>
-          samospráv
-        </h2>
+        <h2
+          class="text-6xl text-white font-bold mb-9 tracking-tighter"
+          v-html="page.hero.title"
+        />
         <p class="text-lg text-white max-w-sm">
-          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv.
+          {{ page.hero.description }}
         </p>
       </div>
       <div class="HeroBg" />
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    page: {
+      type: Object,
+      required: true,
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .HeroBox {

@@ -2,6 +2,7 @@
   <main>
     <HomepageHero
       class="mb-block-2"
+      :page="page"
     />
 
     <HomepageIntro
@@ -22,8 +23,12 @@
 
 <script>
 export default {
-  // async mounted() {
-  //   console.log(await this.$content('hello').fetch());
-  // },
+  async asyncData({ $content, app }) {
+    const page = await $content(`${app.i18n.locale}/homepage`).fetch();
+
+    return {
+      page,
+    };
+  },
 };
 </script>

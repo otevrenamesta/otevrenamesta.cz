@@ -1,0 +1,11 @@
+menuItems:
+  - link: /about
+    text: O nás
+  - link: /colaboration
+    text: Spolupráce
+  - link: /projects
+    text: Projekty
+  - link: /members
+    text: Členové
+  - link: /news
+    text: Aktuality

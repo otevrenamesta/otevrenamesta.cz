@@ -3,11 +3,11 @@ export default {
   target: 'static',
 
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  // ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'otevrenamesta',
+    title: 'Otevřená města',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -47,6 +47,7 @@ export default {
     '@nuxt/content', // https://go.nuxtjs.dev/content
     '@nuxtjs/svg',
     'vue-screen/nuxt',
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -69,6 +70,28 @@ export default {
 
   router: {
     linkActiveClass: 'is-active',
+  },
+
+  i18n: {
+    // lazy: true,
+    // langDir: 'langs/',
+    defaultLocale: 'cs',
+    vueI18nLoader: true,
+    noPrefixDefaultLocale: true,
+    locales: [
+      {
+        code: 'cs',
+        iso: 'cs',
+        name: 'Česky',
+        // file: 'cs.js',
+      },
+      // {
+      //   code: 'en',
+      //   iso: 'en',
+      //   name: 'English',
+      //   // file: 'en.js',
+      // },
+    ],
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
