@@ -18,6 +18,9 @@ export default {
       { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
+    script: [
+      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
