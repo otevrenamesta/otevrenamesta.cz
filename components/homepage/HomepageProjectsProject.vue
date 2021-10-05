@@ -89,8 +89,6 @@ export default {
   width: 20px;
   height: 20px;
   position: absolute;
-  // background: red;
-  // display: none;
 
   &::before,
   &::after {
