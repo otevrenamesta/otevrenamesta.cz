@@ -15,6 +15,8 @@
     <HomepageValues
       class="mb-block-2"
     />
+
+    <HomepageNews />
   </main>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative -mt-px w-auto flex flex-col justify-start items-start">
+  <article class="relative -mt-px w-auto flex flex-col justify-start items-start">
     <div
       v-for="column in 8"
       :key="column"
@@ -60,7 +60,7 @@
       :class="align === 'left' ? 'right-block-2' : 'left-block-2'"
       v-html="project.illustration"
     />
-  </div>
+  </article>
 </template>
 
 <script>

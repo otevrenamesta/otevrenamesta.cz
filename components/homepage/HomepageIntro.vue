@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-primary-light flex justify-between px-28 py-20">
+  <section class="container bg-primary-light flex justify-between px-28 py-20">
     <div class="max-w-3xl mr-6">
       <h3 class="text-2xl text-primary-dark mb-28 font-semibold">
         Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
@@ -44,7 +44,7 @@
         />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

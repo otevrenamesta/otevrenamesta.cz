@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <section class="container">
     <div class="flex mb-block-2">
       <div class="w-1/2">
         <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
@@ -70,7 +70,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

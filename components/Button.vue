@@ -1,6 +1,6 @@
 <template>
   <button
-    class="transition bg-primary text-white uppercase text-sm font-semibold px-5 py-3 flex items-center justify-center"
+    class="transition group bg-primary text-white uppercase text-sm font-semibold px-5 py-3 flex items-center justify-center"
     :class="[
       type === 'primary' ? 'bg-primary hover:bg-primary-dark' : '',
       type === 'transparent' ? 'bg-transparent' : '',
@@ -15,7 +15,11 @@
     <compontent
       :is="icon"
       v-if="icon"
-      class="ml-5 mt-px"
+      class="ml-5 mt-px transform transition"
+      :class="[
+        icon === 'icon-arrow-open' ? 'group-hover:translate-x-0.5 group-hover:-translate-y-0.5' : '',
+        icon === 'icon-arrow-right' ? 'group-hover:translate-x-0.5' : '',
+      ]"
     />
   </button>
 </template>

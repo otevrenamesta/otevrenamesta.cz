@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <section class="container">
     <h2 class="text-primary font-bold text-4xl mb-2">
       Naše projekty
     </h2>
@@ -21,7 +21,7 @@
         :align="index % 2 === 0 ? 'left' : 'right'"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

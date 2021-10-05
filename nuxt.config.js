@@ -37,6 +37,7 @@ export default {
     '@nuxtjs/style-resources', // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/eslint-module', // https://go.nuxtjs.dev/eslint
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
+    ['@nuxtjs/moment', { locales: ['cs'], defaultLocale: 'cs' }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -49,7 +50,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'https://new.otevrenamesta.cz/api/uni',
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
