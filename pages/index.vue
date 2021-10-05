@@ -11,6 +11,10 @@
     <HomepageProjects
       class="mb-block-2"
     />
+
+    <HomepageValues
+      class="mb-block-2"
+    />
   </main>
 </template>
 

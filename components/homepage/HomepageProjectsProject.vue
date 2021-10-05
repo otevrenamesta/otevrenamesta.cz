@@ -31,7 +31,10 @@
           class="text-primary text-base font-medium mb-7"
           v-html="project.description"
         />
-        <Button class="mb-block-1">
+        <Button
+          class="mb-block-1"
+          icon="icon-arrow-open"
+        >
           Zjistit více
         </Button>
 
@@ -76,7 +79,7 @@ export default {
   },
   computed: {
     rows() {
-      const BLOCK_SIZE = 52.5;
+      const BLOCK_SIZE = 60;
       const CONTAINER = 0.9;
       return _clamp(Math.floor((this.$screen.width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 14);
     },
