@@ -10,7 +10,7 @@
           v-for="(item, index) in menuItems"
           :key="index"
           :to="item.link"
-          class="NavItem uppercase text-sm text-primary font-semibold ml-10 hover:underline"
+          class="NavItem uppercase text-sm text-primary font-semibold ml-10"
           v-text="item.text"
         />
       </nav>
