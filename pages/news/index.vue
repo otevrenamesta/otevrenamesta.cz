@@ -21,10 +21,11 @@
       </button>
     </div>
     <div class="flex flex-wrap -mx-block-0.5">
-      <article
+      <nuxt-link
         v-for="(article, index) in articlesFiltered"
         :key="index"
-        class="w-1/3 mb-block-2"
+        :to="localePath(`/news/${article.id}`)"
+        class="block w-1/3 mb-block-2"
       >
         <div class="px-block-0.5">
           <nuxt-img
@@ -44,14 +45,14 @@
               {{ tag }}
             </div>
           </div>
-          <h3 class="text-primary font-bold text-2xl tracking-tight mb-2">
+          <h3 class="text-primary font-bold text-2xl tracking-tight mb-2 hover:underline">
             {{ article.title }}
           </h3>
           <p class="text-primary font-medium">
             {{ article.perex }}
           </p>
         </div>
-      </article>
+      </nuxt-link>
     </div>
   </main>
 </template>
