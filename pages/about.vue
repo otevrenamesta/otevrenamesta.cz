@@ -7,6 +7,8 @@
     <MilestonesSection
       class="mb-block-3"
     />
+
+    <AboutStructure />
   </main>
 </template>
 
