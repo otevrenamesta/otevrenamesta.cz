@@ -51,6 +51,7 @@ export default {
     '@nuxtjs/svg',
     'vue-screen/nuxt',
     '@nuxtjs/i18n',
+    '@nuxt/image',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -95,6 +96,13 @@ export default {
       //   // file: 'en.js',
       // },
     ],
+  },
+
+  image: {
+    provider: 'imagekit',
+    imagekit: {
+      baseURL: 'https://ik.imagekit.io/davidvesely',
+    },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
