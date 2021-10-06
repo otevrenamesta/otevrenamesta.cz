@@ -73,6 +73,12 @@ export default {
     };
   },
 
+  head() {
+    return {
+      title: `Články ${this.$config.appendTitle}`,
+    };
+  },
+
   computed: {
     tags() {
       return _uniq(this.articles.map(({ tags }) => tags.split(',')).flat());

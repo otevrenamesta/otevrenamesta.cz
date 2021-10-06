@@ -23,6 +23,10 @@ export default {
     ],
   },
 
+  publicRuntimeConfig: {
+    appendTitle: '| Otevřená města',
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/scss/global.scss',

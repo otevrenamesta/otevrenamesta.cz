@@ -8,3 +8,13 @@
     <Projects />
   </main>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: `Naše projekty ${this.$config.appendTitle}`,
+    };
+  },
+};
+</script>

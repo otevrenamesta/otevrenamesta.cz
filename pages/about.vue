@@ -20,6 +20,10 @@
 
 <script>
 export default {
-
+  head() {
+    return {
+      title: `O nás ${this.$config.appendTitle}`,
+    };
+  },
 };
 </script>

@@ -38,6 +38,12 @@ export default {
     };
   },
 
+  head() {
+    return {
+      title: this.article ? `${this.article.title} ${this.$config.appendTitle}` : this.$config.appendTitle,
+    };
+  },
+
   computed: {
     article() {
       return this.articles.find(({ id }) => id === Number(this.$route.params.id));
