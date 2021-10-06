@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
-    <div class="flex mb-block-2">
+  <section>
+    <div class="container flex mb-block-2">
       <div class="w-1/2">
         <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
           <p class="py-20 flex items-center font-bold text-lg w-9/12 mx-auto text-black text-opacity-70">
@@ -53,23 +53,7 @@
       </div>
     </div>
 
-    <div class="flex justify-center">
-      <div
-        v-for="(milestone, index) in milestones"
-        :key="index"
-        class="mx-block-1"
-      >
-        <h2 class="text-primary text-3xl font-bold mb-6">
-          {{ milestone.number }}
-        </h2>
-        <strong class="text-secondary text-sm mb-1.5">
-          {{ milestone.title }}
-        </strong>
-        <p class="text-primary-dark text-sm">
-          {{ milestone.description }}
-        </p>
-      </div>
-    </div>
+    <MilestonesSection />
   </section>
 </template>
 
@@ -92,28 +76,6 @@ export default {
           icon: '<svg id="Component_57_2" data-name="Component 57 – 2" xmlns="http://www.w3.org/2000/svg" width="101" height="92" viewBox="0 0 101 92"><g id="icon-innovation" transform="translate(1444.216 -301.408)" fill="#00563c"><path id="Rectangle_139" data-name="Rectangle 139" transform="translate(-1425.892 301.785)" d="M0 0h9.163v9.162H0z"/><path id="Rectangle_140" data-name="Rectangle 140" transform="translate(-1425.892 310.947)" d="M0 0h9.163v9.163H0z"/><path id="Rectangle_141" data-name="Rectangle 141" transform="translate(-1435.054 320.11)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_142" data-name="Rectangle 142" transform="translate(-1444.216 320.11)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_143" data-name="Rectangle 143" transform="translate(-1407.567 320.11)" d="M0 0h9.162v9.163H0z"/><path id="Rectangle_144" data-name="Rectangle 144" transform="translate(-1416.729 320.11)" d="M0 0h9.163v9.163H0z"/><path id="Rectangle_145" data-name="Rectangle 145" transform="translate(-1425.891 329.272)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_146" data-name="Rectangle 146" transform="translate(-1425.891 338.435)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_147" data-name="Rectangle 147" transform="translate(-1398.404 356.759)" d="M0 0h9.162v9.163H0z"/><path id="Rectangle_148" data-name="Rectangle 148" transform="translate(-1407.567 356.759)" d="M0 0h9.163v9.163H0z"/><path id="Rectangle_149" data-name="Rectangle 149" transform="translate(-1380.079 384.246)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_150" data-name="Rectangle 150" transform="translate(-1380.079 375.084)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_151" data-name="Rectangle 151" transform="translate(-1380.079 329.272)" d="M0 0h9.163v9.162H0z"/><path id="Rectangle_152" data-name="Rectangle 152" transform="translate(-1380.079 338.434)" d="M0 0h9.163v9.163H0z"/><path id="Rectangle_153" data-name="Rectangle 153" transform="translate(-1352.592 356.759)" d="M0 0h9.162v9.162H0z"/><path id="Rectangle_154" data-name="Rectangle 154" transform="translate(-1361.754 356.759)" d="M0 0h9.162v9.162H0z"/></g><path id="Rectangle_654" data-name="Rectangle 654" fill="none" d="M0 0h101v92H0z"/></svg>',
           title: '03&nbsp;&nbsp; Flexiblita',
           description: 'Flexibilita nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících.',
-        },
-      ],
-      milestones: [
-        {
-          number: 20,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-        {
-          number: 136,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-        {
-          number: 3547,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-        {
-          number: 136,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
         },
       ],
     };

@@ -1,17 +1,8 @@
 <template>
   <article class="relative -mt-px w-auto flex flex-col justify-start items-start">
-    <div
-      v-for="column in 8"
-      :key="column"
-      class="flex w-auto"
-    >
-      <div
-        v-for="row in rows"
-        :key="row"
-        class="w-block-2 h-block-2 border border-primary-light border-r-0 last:border-r"
-        :class="column === 1 ? 'border-t' : 'border-t-0'"
-      />
-    </div>
+    <Grid
+      :rows="8"
+    />
 
     <div
       class="box- absolute z-20 top-block-2 bg-white border border-secondary border-t-0 border-r-0 w-block-10 h-block-12"
@@ -64,8 +55,6 @@
 </template>
 
 <script>
-import _clamp from 'lodash/clamp';
-
 export default {
   props: {
     project: {
@@ -75,13 +64,6 @@ export default {
     align: {
       type: String,
       default: 'left',
-    },
-  },
-  computed: {
-    rows() {
-      const BLOCK_SIZE = 60;
-      const CONTAINER = 0.9;
-      return _clamp(Math.floor((this.$screen.width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 14);
     },
   },
 };
