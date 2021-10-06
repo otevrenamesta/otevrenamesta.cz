@@ -8,7 +8,13 @@
       class="mb-block-3"
     />
 
-    <AboutStructure />
+    <AboutStructure
+      class="mb-block-3"
+    />
+
+    <AboutTeam
+      class="mb-block-1"
+    />
   </main>
 </template>
 

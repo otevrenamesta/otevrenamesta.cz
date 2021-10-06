@@ -21,6 +21,7 @@ module.exports = {
         additional: '#FFCC00',
       },
       spacing: {
+        'block-0.5': '1.875rem',
         'block-1': '3.75rem',
         'block-1.5': '5.625rem',
         'block-2': '7.5rem',
