@@ -1,20 +1,7 @@
 <template>
   <section class="container">
-    <h2 class="text-primary font-bold text-4xl mb-2">
-      Naše projekty
-    </h2>
-    <nuxt-link
-      to="/"
-      class="uppercase text-secondary text-sm font-bold flex items-center group mb-block-1"
-    >
-      <span>Vašechny projekty</span>
-      <IconArrowRight
-        class="ml-2 transform transition group-hover:translate-x-0.5"
-      />
-    </nuxt-link>
-
     <div class="flex flex-col justify-start items-start">
-      <HomepageProjectsProject
+      <ProjectsProject
         v-for="(project, index) in projects"
         :key="index"
         :project="project"
@@ -25,12 +12,7 @@
 </template>
 
 <script>
-import IconArrowRight from '~/assets/img/icon-arrow-right.svg?inline';
-
 export default {
-  components: {
-    IconArrowRight,
-  },
   data() {
     return {
       projects: [

@@ -15,7 +15,7 @@
           </p>
           <p class="text-primary text-sm">
             <strong class="block">
-              <a href="mailto:info@otevrenamesta.cz">
+              <a href="mailto:info@otevrenamesta.cz" class="hover:underline">
                 info@otevrenamesta.cz
               </a>
             </strong>
@@ -34,13 +34,13 @@
         <div class="flex">
           <nuxt-link
             to="/"
-            class="block text-sm text-primary uppercase font-semibold"
+            class="block text-sm text-primary uppercase font-semibold hover:underline"
           >
             Stanovy
           </nuxt-link>
           <nuxt-link
             to="/"
-            class="block ml-5 text-sm text-primary uppercase font-semibold"
+            class="block ml-5 text-sm text-primary uppercase font-semibold hover:underline"
           >
             Obchodní podmínky
           </nuxt-link>

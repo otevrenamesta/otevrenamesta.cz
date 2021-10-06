@@ -3,15 +3,19 @@
     <div class="container flex items-end justify-end relative h-full">
       <div class="HeroBox bg-primary pt-20 pb-14 px-16">
         <h2
-          class="text-6xl text-white font-bold mb-9 tracking-tighter"
+          class="text-6xl text-white font-bold mb-9 tracking-tight"
           v-html="page.hero.title"
         />
         <p class="text-lg text-white max-w-sm">
           {{ page.hero.description }}
         </p>
       </div>
+
       <div class="HeroBg" />
     </div>
+    <Socials
+      class="absolute bottom-2 right-2 z-10"
+    />
   </section>
 </template>
 

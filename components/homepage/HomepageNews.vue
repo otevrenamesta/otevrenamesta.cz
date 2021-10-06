@@ -2,7 +2,7 @@
   <section class="container">
     <div class="bg-primary px-block-2 py-block-2">
       <div class="flex justify-between items-center mb-block-1">
-        <h2 class="text-white text-4xl font-bold">
+        <h2 class="text-white text-4xl font-bold tracking-tight">
           Aktuálně
         </h2>
         <Button

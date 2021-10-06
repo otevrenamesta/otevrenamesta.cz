@@ -12,10 +12,10 @@
       <div class="BoxDecorations BoxDecorations--top-right" />
 
       <div class="box-border px-block-1 pt-block-1.5 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6">
-        <h2 class="text-6xl text-primary font-bold mb-10">
+        <h2 class="text-6xl text-primary font-bold mb-10 tracking-tight">
           {{ project.title }}
         </h2>
-        <strong class="block text-2xl text-secondary mb-8">
+        <strong class="block text-2xl text-secondary mb-8 tracking-tight">
           {{ project.slogan }}
         </strong>
         <p
