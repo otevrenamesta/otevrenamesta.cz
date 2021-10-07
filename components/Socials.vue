@@ -1,9 +1,11 @@
 <template>
-  <div class="flex items-center">
+  <div
+    class="flex items-center"
+    :class="isWhite ? 'IsWhite' : ''"
+  >
     <a
       href="#"
       target="_blank"
-      class="ml-2.5 text-primary hover:text-primary-dark"
     >
       <!-- TODO: add link -->
       <IconFacebook />
@@ -11,7 +13,6 @@
     <a
       href="#"
       target="_blank"
-      class="ml-2.5 text-primary hover:text-primary-dark"
     >
       <!-- TODO: add link -->
       <IconGithub />
@@ -19,7 +20,6 @@
     <a
       href="#"
       target="_blank"
-      class="ml-2.5 text-primary hover:text-primary-dark"
     >
       <!-- TODO: add link -->
       <IconGitlab />
@@ -38,5 +38,21 @@ export default {
     IconGithub,
     IconGitlab,
   },
+  props: {
+    isWhite: {
+      type: Boolean,
+      default: false,
+    },
+  },
 };
 </script>
+
+<style langs="scss" scoped>
+a {
+  @apply ml-2.5 text-primary hover:text-primary-dark;
+}
+
+.IsWhite a {
+  @apply text-white hover:text-white;
+}
+</style>

@@ -9,3 +9,5 @@ menuItems:
     text: Členové
   - link: /news
     text: Aktuality
+  - link: /contact
+    text: Kontakt
