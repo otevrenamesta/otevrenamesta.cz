@@ -18,14 +18,14 @@
       <a
         v-if="person.email"
         :href="`mailto:${person.email}`"
-        class="block text-sm font-bold"
+        class="block text-sm font-bold hover:underline"
       >
         {{ person.email }}
       </a>
       <a
         v-if="person.phone"
         :href="`tel:${person.phone}`"
-        class="block text-sm font-bold"
+        class="block text-sm font-bold hover:underline"
       >
         {{ person.phone }}
       </a>
