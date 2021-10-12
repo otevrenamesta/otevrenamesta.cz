@@ -154,6 +154,7 @@
 
     <CollaborationSection
       illustration="illustration-collaboration-3"
+      class="mb-block-2"
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
@@ -209,6 +210,10 @@
         </div>
       </div>
     </CollaborationSection>
+
+    <CollaborationJoinUs
+      class="mb-block-2"
+    />
   </main>
 </template>
 
