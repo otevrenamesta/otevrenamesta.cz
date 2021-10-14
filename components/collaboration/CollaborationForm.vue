@@ -1,14 +1,19 @@
 <template>
-  <form class="Form">
+  <form
+    class="Form"
+    @submit.prevent.stop="submitForm"
+  >
     <div class="flex items-center gap-5">
       <label class="FormGroup">
         <span class="FormLabel">
           Jméno a příjmení
         </span>
         <input
+          v-model="form.fullname"
           type="text"
           class="FormInput"
           placeholder="Zadejte jméno..."
+          required
         >
       </label>
 
@@ -17,9 +22,11 @@
           Město
         </span>
         <input
+          v-model="form.city"
           type="text"
           class="FormInput"
           placeholder="Zadejte město..."
+          required
         >
       </label>
     </div>
@@ -30,9 +37,11 @@
           Email
         </span>
         <input
+          v-model="form.email"
           type="email"
           class="FormInput"
           placeholder="Zadejte email..."
+          required
         >
       </label>
 
@@ -41,9 +50,11 @@
           Telefon
         </span>
         <input
+          v-model="form.phone"
           type="tel"
           class="FormInput"
           placeholder="Zadejte telefon..."
+          required
         >
       </label>
     </div>
@@ -53,11 +64,11 @@
         <span class="FormLabel">
           Zpráva
         </span>
-        <input
-          type="email"
+        <textarea
+          v-model="form.message"
           class="FormInput"
           placeholder="Zadejte zprávu..."
-        >
+        />
       </label>
     </div>
 
@@ -70,8 +81,9 @@
           <label class="FormRadioGroup">
             <div class="FormRadio">
               <input
+                v-model="form.interestedIn"
                 type="radio"
-                name="interestedIn"
+                value="membership"
                 class="FormRadioInput"
               >
             </div>
@@ -82,9 +94,11 @@
           <label class="FormRadioGroup">
             <div class="FormRadio">
               <input
+                v-model="form.interestedIn"
                 type="radio"
-                name="interestedIn"
+                value="services"
                 class="FormRadioInput"
+                required
               >
             </div>
             <span class="text-lg text-white font-bold">
@@ -102,12 +116,38 @@
       </p>
       <Button
         icon="icon-arrow-open"
+        native-type="submit"
       >
         Odeslat
       </Button>
     </div>
   </form>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isSubmitting: false,
+      isSubmitted: false,
+      form: {
+        fullname: '',
+        city: '',
+        email: '',
+        phone: '',
+        message: '',
+        interestedIn: 'membership',
+      },
+    };
+  },
+
+  methods: {
+    submitForm() {
+      console.log(this.form);
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .Form {
@@ -141,7 +181,7 @@
     @apply border border-black border-opacity-60 w-6 h-6 flex items-center justify-center mr-5;
 
     &Input {
-      @apply block appearance-none w-5 h-5 bg-black bg-opacity-0;
+      @apply block appearance-none w-[85%] h-[85%] bg-black bg-opacity-0;
 
       &:checked {
         @apply bg-opacity-60;
