@@ -1,6 +1,10 @@
 <template>
   <div>
     <div
+      ref="BlockTemplate"
+      class="w-block-1 h-0"
+    />
+    <div
       v-for="row in rows"
       :key="row"
       class="flex w-auto"
@@ -30,16 +34,26 @@ export default {
     },
   },
 
+  data() {
+    return {
+      isRendered: false,
+    };
+  },
+
   computed: {
     columnsComputed() {
       if (this.columns) {
         return this.columns;
       }
 
-      const BLOCK_SIZE = 60;
+      const BLOCK_SIZE = this.isRendered ? this.$refs.BlockTemplate?.offsetWidth : 60;
       const CONTAINER = 0.9;
       return _clamp(Math.floor((this.$screen.width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 14);
     },
+  },
+
+  mounted() {
+    this.isRendered = true;
   },
 };
 </script>

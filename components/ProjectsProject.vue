@@ -48,7 +48,9 @@
 
     <div
       class="absolute z-10 top-block-2 w-block-12"
-      :class="align === 'left' ? 'right-block-2' : 'left-block-2'"
+      :class="[
+        align === 'left' ? 'right-block-2' : 'left-block-2',
+      ]"
       v-html="project.illustration"
     />
   </article>
