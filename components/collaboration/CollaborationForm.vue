@@ -1,7 +1,7 @@
 <template>
   <form
     class="Form"
-    @submit.prevent.stop="submitForm"
+    @submit.prevent.stop="presubmitForm"
   >
     <div class="flex items-center gap-5">
       <label class="FormGroup">
@@ -109,6 +109,13 @@
       </div>
     </div>
 
+    <VueHcaptcha
+      ref="invisibleHcaptcha"
+      sitekey="ed5fa3e0-72f9-4dcd-b7ad-058202fb8223"
+      size="invisible"
+      @verify="verifiedSubmit"
+    />
+
     <div class="flex items-start justify-between">
       <p class="text-sm max-w-xs">
         Vyplněním a odesláním formuláře souhlasíte
@@ -125,7 +132,13 @@
 </template>
 
 <script>
+import VueHcaptcha from '@hcaptcha/vue-hcaptcha';
+
 export default {
+  components: {
+    VueHcaptcha,
+  },
+
   data() {
     return {
       isSubmitting: false,
@@ -142,7 +155,11 @@ export default {
   },
 
   methods: {
-    submitForm() {
+    presubmitForm() {
+      this.$refs.invisibleHcaptcha.execute();
+    },
+    verifiedSubmit(token) {
+      console.log('token', token);
       console.log(this.form);
     },
   },
