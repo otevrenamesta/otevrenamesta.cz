@@ -1,11 +1,11 @@
 <template>
   <header class="absolute top-0 left-0 w-full z-10">
-    <div class="container pt-12 flex justify-between">
+    <div class="container pt-12 flex justify-between flex-wrap">
       <nuxt-link to="/">
         <LogoOm />
       </nuxt-link>
 
-      <nav class="flex items-center">
+      <nav class="flex items-center flex-wrap">
         <nuxt-link
           v-for="(item, index) in menuItems"
           :key="index"
