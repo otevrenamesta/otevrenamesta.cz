@@ -5,13 +5,15 @@
         <h2 class="text-white text-4xl font-bold tracking-tight">
           Aktuálně
         </h2>
-        <Button
-          type="transparent"
-          icon="icon-arrow-right"
-          class="text-secondary"
-        >
-          Přejít na všechny články
-        </Button>
+        <nuxt-link :to="localePath('/news')">
+          <Button
+            type="transparent"
+            icon="icon-arrow-right"
+            class="text-secondary"
+          >
+            Přejít na všechny články
+          </Button>
+        </nuxt-link>
       </div>
       <div class="flex items-start justify-between -mx-4">
         <article
@@ -32,13 +34,17 @@
             <p class="text-white text-opacity-90 text-sm mb-2">
               {{ article.perex }}
             </p>
-            <Button
-              type="transparent"
-              icon="icon-arrow-right"
-              class="text-secondary px-0"
+            <nuxt-link
+              :to="localePath(`/news/${article.id}`)"
             >
-              Číst více
-            </Button>
+              <Button
+                type="transparent"
+                icon="icon-arrow-right"
+                class="text-secondary px-0"
+              >
+                Číst více
+              </Button>
+            </nuxt-link>
           </div>
         </article>
       </div>
