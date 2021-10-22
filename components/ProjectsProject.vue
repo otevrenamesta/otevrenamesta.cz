@@ -22,12 +22,16 @@
           class="text-primary text-base font-medium mb-7"
           v-html="project.description"
         />
-        <Button
-          class="mb-block-1"
-          icon="icon-arrow-open"
+        <nuxt-link
+          :to="localePath(`/project/${project.id}`)"
         >
-          Zjistit více
-        </Button>
+          <Button
+            class="mb-block-1"
+            icon="icon-arrow-open"
+          >
+            Zjistit více
+          </Button>
+        </nuxt-link>
 
         <div class="flex justify-between items-start">
           <div
