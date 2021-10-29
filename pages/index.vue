@@ -23,7 +23,7 @@
             icon="icon-arrow-right"
             class="text-secondary px-0"
           >
-            Vašechny projekty
+            Všechny projekty
           </Button>
         </nuxt-link>
       </div>

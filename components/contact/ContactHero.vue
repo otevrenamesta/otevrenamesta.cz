@@ -2,7 +2,7 @@
   <section class="flex items-end relative pt-block-3">
     <div class="container relative flex flex-col justify-start items-start">
       <div class="flex flex-col justify-start items-start relative w-auto">
-        <h2 class="text-primary text-5xl leading-tight font-bold tracking-tighter absolute z-10 bottom-block-2 left-block-4 -mb-2">
+        <h2 class="text-primary text-6xl leading-tight font-bold tracking-tighter absolute z-10 bottom-block-2 left-block-4 -mb-2">
           Kontaktujte<br>
           nás
         </h2>

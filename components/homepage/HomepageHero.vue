@@ -11,10 +11,10 @@
         </p>
       </div>
 
-      <div class="HeroBg" />
+      <div class="HeroBg mb-block-1" />
     </div>
     <Socials
-      class="absolute bottom-2 right-2 z-10"
+      class="absolute bottom-3 right-8 z-10"
     />
   </section>
 </template>
@@ -45,12 +45,12 @@ export default {
     width: $block-size * 2;
   }
   &::before {
-    right: -$block-size * 2;
-    height: calc(100% - #{$block-size * 2});
+    right: -$block-size * 1.95;
+    height: calc(100% - #{$block-size * 1.95});
   }
   &::after {
-    right: -$block-size * 4;
-    height: calc(100% - #{$block-size * 4});
+    right: -$block-size * 3.9;
+    height: calc(100% - #{$block-size * 3.9});
   }
 }
 

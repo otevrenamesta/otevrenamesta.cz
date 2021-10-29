@@ -4,7 +4,7 @@
       :project="project"
     />
 
-    <div class="flex -mt-px border-b border-primary-light">
+    <div class="flex -mt-px border-t border-b border-primary-light">
       <div class="w-8/12 border-r border-primary-light">
         <ProjectDetailIntro
           :project="project"
@@ -25,7 +25,7 @@
           class="w-block-12 max-w-full mx-auto pt-block-1"
         />
       </div>
-      <div class="w-4/12 border-t border-primary-light">
+      <div class="w-4/12">
         <ProjectDetailFunctions
           :project="project"
           class="w-block-6 max-w-full mx-auto"

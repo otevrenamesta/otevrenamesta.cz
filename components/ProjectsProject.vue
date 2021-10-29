@@ -95,7 +95,7 @@ export default {
   }
 
   &::after {
-    transform: translateX(8px) translateY(-2px);
+    transform: translateX(8px) translateY(-3px);
     width: 3px;
     height: 100%;
   }

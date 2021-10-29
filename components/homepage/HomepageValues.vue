@@ -3,7 +3,7 @@
     <div class="container flex mb-block-2">
       <div class="w-1/2">
         <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
-          <p class="py-20 flex items-center font-bold text-lg w-9/12 mx-auto text-black text-opacity-70">
+          <p class="py-20 flex items-center font-bold text-xl w-8/12 mx-auto text-black text-opacity-70">
             Jsme nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících. Na členské schůzi spolku se nabidka jeho uvolnění i pro další obce z úst Štěpána Štrébla setkala s příznivým ohlasem.
             <br><br>
             Městká část tedy zahájila potřebné kroky, které v rovině politicko-organizační vyvrcholily 2019-10,11 schválením radou MČ a vedením SZM. Vedlejším zobecňujícím efektem bylo jednám zastupitelstva, které zavázalo Prahu 3 napříště zadávat vývoj softwaru pod svobodnu licencí.
@@ -12,12 +12,12 @@
       </div>
       <div class="w-1/2 bg-secondary px-block-2 py-block-1.5">
         <div class="flex items-center justify-between">
-          <h2 class="text-white text-2xl font-semibold">
+          <h2 class="text-white text-3xl font-semibold">
             Naše hodnoty
           </h2>
           <nuxt-link
             to="/"
-            class="mt-2"
+            class="mt-2 -mr-4"
           >
             <Button
               type="transparent"
@@ -40,10 +40,10 @@
               />
               <div>
                 <strong
-                  class="block text-black text-opacity-70 text-lg uppercase font-bold mb-1"
+                  class="block text-black text-opacity-80 text-lg uppercase font-bold leading-tight mb-2"
                   v-html="value.title"
                 />
-                <p class="text-white text-sm">
+                <p class="text-white text-sm w-10/12 max-w-full">
                   {{ value.description }}
                 </p>
               </div>

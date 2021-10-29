@@ -1,5 +1,5 @@
 <template>
-  <section class="container flex">
+  <section class="container container--md flex">
     <div class="w-1/2 border-r border-primary-light">
       <div class="w-block-6">
         <IconLogoOm
@@ -27,14 +27,17 @@
         />
         <div>
           <span
-            class="inline-block text-black text-opacity-60 text-sm font-bold px-1.5 py-1.5 leading-none mb-2.5"
-            :class="`bg-${structure.color}`"
+            class="inline-block text-sm font-bold px-1.5 py-1.5 leading-none mb-2.5"
+            :class="[
+              structure.bg,
+              structure.bg === 'bg-primary-dark' ? 'text-white text-opacity-90' : 'text-black text-opacity-60',
+            ]"
           >
             {{ structure.number }}
           </span>
           <h3
             class="text-lg font-bold uppercase mb-2"
-            :class="`text-${structure.color}`"
+            :class="structure.color"
           >
             {{ structure.title }}
           </h3>
@@ -58,21 +61,24 @@ export default {
     return {
       structures: [
         {
-          color: 'additional',
+          color: 'text-additional',
+          bg: 'bg-additional',
           number: '01',
           title: 'Kontrolor',
           description: 'Flexibilita nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících.',
           icon: '<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>',
         },
         {
-          color: 'secondary',
+          color: 'text-secondary',
+          bg: 'bg-secondary',
           number: '02',
           title: 'Projektová rada',
           description: 'Flexibilita nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících.',
           icon: '<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>',
         },
         {
-          color: 'primary-dark',
+          color: 'text-primary-dark',
+          bg: 'bg-primary-dark',
           number: '03',
           title: 'Výbor',
           description: 'Flexibilita nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících.',

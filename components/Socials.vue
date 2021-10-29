@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center"
+    class="flex items-center gap-2.5"
     :class="isWhite ? 'IsWhite' : ''"
   >
     <a
@@ -49,7 +49,7 @@ export default {
 
 <style langs="scss" scoped>
 a {
-  @apply ml-2.5 text-primary hover:text-primary-dark;
+  @apply text-primary hover:text-primary-dark;
 }
 
 .IsWhite a {

@@ -18,6 +18,7 @@ module.exports = {
         'primary-light': '#D4E2FF',
         'primary-dark': '#0F0787',
         secondary: '#00D48F',
+        'secondary-dark': '#00563C',
         additional: '#FFCC00',
       },
       spacing: {

@@ -4,6 +4,7 @@
       O projektu
     </h3>
     <div
+      class="text-xl"
       v-html="project.content"
     />
   </section>

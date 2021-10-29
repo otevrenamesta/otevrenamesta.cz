@@ -1,37 +1,42 @@
 <template>
   <div class="flex items-center">
     <nuxt-img
+      v-if="member.image"
       :src="member.image"
+      :alt="member.fullname"
       class="w-1/2"
     />
+    <img
+      v-else
+      src="~/assets/img/member-default-img.svg"
+      :alt="member.fullname"
+      class="w-1/2"
+    >
     <div class="px-block-0.5 w-1/2">
-      <h2 class="text-xl font-bold text-primary mb-5">
+      <h2 class="text-2xl font-bold text-primary mb-5">
         {{ member.fullname }}
       </h2>
       <p class="mb-4">
-        <span class="text-secondary text-[12px] uppercase">
+        <span class="text-secondary text-[12px] uppercase font-medium block">
           Zástupce
         </span>
-        <br>
-        <strong class="text-sm font-bold">
+        <strong class="text-sm font-bold text-primary">
           {{ member.agent }}
         </strong>
       </p>
       <p class="mb-4">
-        <span class="text-secondary text-[12px] uppercase">
+        <span class="text-secondary text-[12px] uppercase font-medium block">
           Počet obyvatel
         </span>
-        <br>
-        <strong class="text-sm font-bold">
+        <strong class="text-sm font-bold text-primary">
           {{ member.population }}
         </strong>
       </p>
       <p class="mb-4">
-        <span class="text-secondary text-[12px] uppercase">
+        <span class="text-secondary text-[12px] uppercase font-medium block">
           Členský poplatek
         </span>
-        <br>
-        <strong class="text-sm font-bold">
+        <strong class="text-sm font-bold text-primary">
           {{ member.memberFee }}
         </strong>
       </p>

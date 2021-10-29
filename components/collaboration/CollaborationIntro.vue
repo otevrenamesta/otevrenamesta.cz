@@ -13,11 +13,11 @@
     />
 
     <div class="container flex items-center">
-      <div class="w-1/2 pr-10">
+      <div class="w-1/2 max-w-3xl pr-10">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-0.5">
           Jak získat produkt
         </strong>
-        <h3 class="text-primary text-2xl leading-tight font-bold tracking-tighter">
+        <h3 class="text-primary text-3xl font-semibold leading-snug tracking-tighter">
           Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s&nbsp;budováním aplikací na míru pro samosprávní celky
         </h3>
       </div>

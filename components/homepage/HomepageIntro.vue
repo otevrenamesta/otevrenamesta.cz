@@ -1,7 +1,7 @@
 <template>
   <section class="container bg-primary-light flex justify-between px-28 py-20">
-    <div class="max-w-3xl mr-6">
-      <h3 class="text-2xl text-primary-dark mb-28 font-semibold">
+    <div class="max-w-4xl mr-6">
+      <h3 class="text-2xl text-primary-dark mb-28 font-semibold max-w-xl">
         Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
       </h3>
 
@@ -10,11 +10,11 @@
           Nabízíme
         </strong>
 
-        <div class="flex justify-between">
+        <div class="flex justify-between gap-block-1">
           <div
             v-for="(offer, index) in offers"
             :key="index"
-            class="mr-block-1 last:mr-0"
+            class="w-1/3"
           >
             <div
               class="mb-1"

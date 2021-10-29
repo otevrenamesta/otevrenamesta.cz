@@ -7,13 +7,16 @@
     <div
       v-for="row in rows"
       :key="row"
-      class="flex w-auto"
+      class="flex w-auto "
     >
       <div
         v-for="column in columnsComputed"
         :key="column"
         class="w-block-2 h-block-2 border border-primary-light border-r-0 last:border-r"
-        :class="row === 1 ? 'border-t' : 'border-t-0'"
+        :class="[
+          row === 1 ? 'border-t' : 'border-t-0',
+          inverse ? 'bg-primary border-opacity-20' : '',
+        ]"
       />
     </div>
   </div>
@@ -32,6 +35,10 @@ export default {
       type: Number,
       default: null,
     },
+    inverse: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   data() {
@@ -47,8 +54,8 @@ export default {
       }
 
       const BLOCK_SIZE = this.isRendered ? this.$refs.BlockTemplate?.offsetWidth : 60;
-      const CONTAINER = 0.9;
-      return _clamp(Math.floor((this.$screen.width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 14);
+      const CONTAINER = 0.91;
+      return _clamp(Math.floor((this.$screen.width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 16);
     },
   },
 

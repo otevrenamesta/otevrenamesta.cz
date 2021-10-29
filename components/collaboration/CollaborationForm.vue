@@ -3,131 +3,140 @@
     class="Form"
     @submit.prevent.stop="presubmitForm"
   >
-    <div class="flex items-center gap-5">
-      <label class="FormGroup">
-        <span class="FormLabel">
-          Jméno a příjmení
-        </span>
-        <input
-          v-model="form.fullname"
-          type="text"
-          class="FormInput"
-          placeholder="Zadejte jméno..."
-          required
-        >
-      </label>
-
-      <label class="FormGroup">
-        <span class="FormLabel">
-          Město
-        </span>
-        <input
-          v-model="form.city"
-          type="text"
-          class="FormInput"
-          placeholder="Zadejte město..."
-          required
-        >
-      </label>
+    <div v-if="isSubmitted">
+      <h2 class="text-center text-white text-4xl font-semibold">
+        Děkujeme za Váš zájem.
+      </h2>
     </div>
 
-    <div class="flex items-center gap-5">
-      <label class="FormGroup">
-        <span class="FormLabel">
-          Email
-        </span>
-        <input
-          v-model="form.email"
-          type="email"
-          class="FormInput"
-          placeholder="Zadejte email..."
-          required
-        >
-      </label>
+    <template v-else>
+      <div class="flex items-center gap-5">
+        <label class="FormGroup">
+          <span class="FormLabel">
+            Jméno a příjmení
+          </span>
+          <input
+            v-model="form.fullname"
+            type="text"
+            class="FormInput"
+            placeholder="Zadejte jméno..."
+            required
+          >
+        </label>
 
-      <label class="FormGroup">
-        <span class="FormLabel">
-          Telefon
-        </span>
-        <input
-          v-model="form.phone"
-          type="tel"
-          class="FormInput"
-          placeholder="Zadejte telefon..."
-          required
-        >
-      </label>
-    </div>
+        <label class="FormGroup">
+          <span class="FormLabel">
+            Město
+          </span>
+          <input
+            v-model="form.city"
+            type="text"
+            class="FormInput"
+            placeholder="Zadejte město..."
+            required
+          >
+        </label>
+      </div>
 
-    <div class="flex items-center gap-5">
-      <label class="FormGroup">
-        <span class="FormLabel">
-          Zpráva
-        </span>
-        <textarea
-          v-model="form.message"
-          class="FormInput"
-          placeholder="Zadejte zprávu..."
-        />
-      </label>
-    </div>
+      <div class="flex items-center gap-5">
+        <label class="FormGroup">
+          <span class="FormLabel">
+            Email
+          </span>
+          <input
+            v-model="form.email"
+            type="email"
+            class="FormInput"
+            placeholder="Zadejte email..."
+            required
+          >
+        </label>
 
-    <div class="flex items-center gap-5 mb-10">
-      <div class="FormGroup">
-        <span class="FormLabel mb-5">
-          Mám zájem o
-        </span>
-        <div class="flex items-center mt-5">
-          <label class="FormRadioGroup">
-            <div class="FormRadio">
-              <input
-                v-model="form.interestedIn"
-                type="radio"
-                value="membership"
-                class="FormRadioInput"
-              >
-            </div>
-            <span class="text-lg text-white font-bold">
-              Členství
-            </span>
-          </label>
-          <label class="FormRadioGroup">
-            <div class="FormRadio">
-              <input
-                v-model="form.interestedIn"
-                type="radio"
-                value="services"
-                class="FormRadioInput"
-                required
-              >
-            </div>
-            <span class="text-lg text-white font-bold">
-              Nákup služeb
-            </span>
-          </label>
+        <label class="FormGroup">
+          <span class="FormLabel">
+            Telefon
+          </span>
+          <input
+            v-model="form.phone"
+            type="tel"
+            class="FormInput"
+            placeholder="Zadejte telefon..."
+            required
+          >
+        </label>
+      </div>
+
+      <div class="flex items-center gap-5">
+        <label class="FormGroup">
+          <span class="FormLabel">
+            Zpráva
+          </span>
+          <textarea
+            v-model="form.message"
+            class="FormInput"
+            placeholder="Zadejte zprávu..."
+          />
+        </label>
+      </div>
+
+      <div class="flex items-center gap-5 mb-10">
+        <div class="FormGroup">
+          <span class="FormLabel mb-5">
+            Mám zájem o
+          </span>
+          <div class="flex items-center mt-5">
+            <label class="FormRadioGroup">
+              <div class="FormRadio">
+                <input
+                  v-model="form.interestedIn"
+                  type="radio"
+                  value="membership"
+                  class="FormRadioInput"
+                >
+              </div>
+              <span class="text-lg text-white font-bold">
+                Členství
+              </span>
+            </label>
+            <label class="FormRadioGroup">
+              <div class="FormRadio">
+                <input
+                  v-model="form.interestedIn"
+                  type="radio"
+                  value="services"
+                  class="FormRadioInput"
+                  required
+                >
+              </div>
+              <span class="text-lg text-white font-bold">
+                Nákup služeb
+              </span>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <VueHcaptcha
-      ref="invisibleHcaptcha"
-      sitekey="ed5fa3e0-72f9-4dcd-b7ad-058202fb8223"
-      size="invisible"
-      @verify="verifiedSubmit"
-    />
+      <VueHcaptcha
+        ref="invisibleHcaptcha"
+        sitekey="ed5fa3e0-72f9-4dcd-b7ad-058202fb8223"
+        size="invisible"
+        @verify="verifiedSubmit"
+      />
 
-    <div class="flex items-start justify-between">
-      <p class="text-sm max-w-xs">
-        Vyplněním a odesláním formuláře souhlasíte
-        se zpracováním Vašich osobních údajů.
-      </p>
-      <Button
-        icon="icon-arrow-open"
-        native-type="submit"
-      >
-        Odeslat
-      </Button>
-    </div>
+      <div class="flex items-start justify-between">
+        <p class="text-sm max-w-xs">
+          Vyplněním a odesláním formuláře souhlasíte
+          se zpracováním Vašich osobních údajů.
+        </p>
+        <Button
+          type="dark"
+          icon="icon-arrow-open"
+          native-type="submit"
+        >
+          Odeslat
+        </Button>
+      </div>
+    </template>
   </form>
 </template>
 
@@ -161,6 +170,8 @@ export default {
     verifiedSubmit(token) {
       console.log('token', token);
       console.log(this.form);
+
+      this.isSubmitted = true;
     },
   },
 };
@@ -178,7 +189,7 @@ export default {
     @apply border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
 
     &::placeholder {
-      @apply text-white text-opacity-60;
+      color: #B4FAC8;
     }
 
     &:focus {
@@ -195,10 +206,10 @@ export default {
   }
 
   &Radio {
-    @apply border border-black border-opacity-60 w-6 h-6 flex items-center justify-center mr-5;
+    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5;
 
     &Input {
-      @apply block appearance-none w-[85%] h-[85%] bg-black bg-opacity-0;
+      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0;
 
       &:checked {
         @apply bg-opacity-60;

@@ -8,7 +8,7 @@
       <h2 class="text-primary-dark font-bold text-4xl mb-8">
         Členové
       </h2>
-      <div class="flex flex-wrap -mx-block-1">
+      <div class="flex flex-wrap">
         <div
           v-for="(member, index) in members"
           :key="index"
@@ -16,7 +16,7 @@
         >
           <MembersMember
             :member="member"
-            class="px-block-1 mb-block-1"
+            class="mb-block-1"
           />
         </div>
       </div>
@@ -30,7 +30,6 @@ export default {
     return {
       members: [
         {
-          image: 'https://picsum.photos/seed/picsum/480/480',
           fullname: 'Název člena',
           agent: 'Jaroslav Pokorný',
           population: '182 000',

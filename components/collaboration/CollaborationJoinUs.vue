@@ -3,17 +3,17 @@
     <div class="container flex mb-block-2">
       <div class="w-1/2">
         <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
-          <p class="py-20 flex flex-col justify-center font-bold text-lg w-9/12 mx-auto text-black text-opacity-70">
+          <p class="py-20 flex flex-col justify-center font-bold text-lg w-8/12 mx-auto text-black text-opacity-80">
             <strong class="uppercase font-bold text-lg mb-7 text-white">
               Spolupracujte s námi
             </strong>
-            <span class="font-semibold text-xl text-black text-opacity-60">
+            <span class="font-semibold text-3xl text-black text-opacity-60">
               Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
             </span>
           </p>
         </div>
       </div>
-      <div class="w-1/2 bg-secondary px-block-2 py-block-1.5">
+      <div class="w-1/2 bg-secondary px-block-2 py-block-1.5 flex flex-col justify-center">
         <CollaborationForm />
       </div>
     </div>

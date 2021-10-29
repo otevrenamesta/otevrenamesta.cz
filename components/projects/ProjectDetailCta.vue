@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="bg-primary relative">
+    <div class="relative">
       <div class="absolute z-10 left-block-2 top-block-2">
         <div class="w-block-6 max-w-full">
           <div
@@ -51,7 +51,7 @@
       </div>
       <Grid
         :rows="6"
-        class="opacity-20"
+        inverse
       />
     </div>
   </section>
