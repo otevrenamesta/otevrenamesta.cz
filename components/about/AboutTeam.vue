@@ -3,11 +3,11 @@
     <h2 class="text-primary-dark font-bold text-4xl mb-8">
       Členové výboru
     </h2>
-    <div class="flex flex-wrap -mx-block-0.5">
+    <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
       <div
         v-for="(perosn, index) in leaderships"
         :key="index"
-        class="px-block-0.5 w-1/5"
+        class="px-6 md:px-block-0.5 w-1/2 xs:w-full md:w-1/3 lg:w-1/4 xl:w-1/5"
       >
         <Person
           :person="perosn"
@@ -19,11 +19,11 @@
     <h2 class="text-secondary font-bold text-4xl mb-8 mt-block-1.5">
       Projektová rada
     </h2>
-    <div class="flex flex-wrap -mx-block-0.5">
+    <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
       <div
         v-for="(perosn, index) in employees"
         :key="index"
-        class="px-block-0.5 w-1/5"
+        class="px-6 md:px-block-0.5 w-1/2 xs:w-full md:w-1/3 lg:w-1/4 xl:w-1/5"
       >
         <Person
           :person="perosn"

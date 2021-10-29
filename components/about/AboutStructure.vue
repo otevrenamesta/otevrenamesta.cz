@@ -1,7 +1,7 @@
 <template>
-  <section class="container container--md flex">
-    <div class="w-1/2 border-r border-primary-light">
-      <div class="w-block-6">
+  <section class="container container--md flex flex-col md:flex-row items-center md:items-start">
+    <div class="w-full md:w-1/2 border-none md:border-r border-primary-light flex flex-col md:block items-center">
+      <div class="w-block-6 flex flex-col md:block items-center mb-block-2 md:mb-0">
         <IconLogoOm
           class="mb-block-1.5"
         />

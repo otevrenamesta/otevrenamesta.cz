@@ -1,47 +1,50 @@
 <template>
-  <section class="container bg-primary-light flex justify-between px-28 py-20">
-    <div class="max-w-4xl mr-6">
-      <h3 class="text-2xl text-primary-dark mb-28 font-semibold max-w-xl">
-        Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
-      </h3>
+  <section class="container bg-primary-light px-14 md:px-28 xs:px-8 py-14 md:py-20 xs:py-8">
+    <div class="flex justify-between flex-col md:flex-row">
+      <div class="max-w-4xl mr-6 md:mb-24">
+        <h3 class="text-2xl text-primary-dark mb-14 md:mb-28 font-semibold max-w-xl">
+          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
+        </h3>
+      </div>
 
-      <div>
-        <strong class="block text-secondary uppercase text-base mb-4">
-          Nabízíme
+      <div class="mb-block-1 md:mb-0">
+        <strong class="block text-secondary uppercase text-base mb-10">
+          Naši partneři
         </strong>
-
-        <div class="flex justify-between gap-block-1">
+        <div
+          v-for="(partner, index) in partners"
+          :key="index"
+        >
           <div
-            v-for="(offer, index) in offers"
-            :key="index"
-            class="w-1/3"
-          >
-            <div
-              class="mb-1"
-              v-html="offer.icon"
-            />
-            <strong class="block text-sm text-secondary mb-2">
-              {{ offer.title }}
-            </strong>
-            <p class="text-sm text-primary-dark">
-              {{ offer.descirption }}
-            </p>
-          </div>
+            class="mb-10"
+            v-html="partner.img"
+          />
         </div>
       </div>
     </div>
-    <div>
-      <strong class="block text-secondary uppercase text-base mb-10">
-        Naši partneři
+
+    <div class="max-w-md md:max-w-4xl">
+      <strong class="block text-secondary uppercase text-base mb-4">
+        Nabízíme
       </strong>
-      <div
-        v-for="(partner, index) in partners"
-        :key="index"
-      >
+
+      <div class="flex justify-between gap-block-1 flex-col md:flex-row">
         <div
-          class="mb-10"
-          v-html="partner.img"
-        />
+          v-for="(offer, index) in offers"
+          :key="index"
+          class="w-full md:w-1/3"
+        >
+          <div
+            class="mb-1"
+            v-html="offer.icon"
+          />
+          <strong class="block text-sm text-secondary mb-2">
+            {{ offer.title }}
+          </strong>
+          <p class="text-sm text-primary-dark">
+            {{ offer.descirption }}
+          </p>
+        </div>
       </div>
     </div>
   </section>

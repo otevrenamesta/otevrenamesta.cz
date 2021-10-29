@@ -10,7 +10,7 @@
     </div>
 
     <template v-else>
-      <div class="flex items-center gap-5">
+      <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
             Jméno a příjmení
@@ -38,7 +38,7 @@
         </label>
       </div>
 
-      <div class="flex items-center gap-5">
+      <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
             Email
@@ -66,7 +66,7 @@
         </label>
       </div>
 
-      <div class="flex items-center gap-5">
+      <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
             Zpráva
@@ -84,8 +84,8 @@
           <span class="FormLabel mb-5">
             Mám zájem o
           </span>
-          <div class="flex items-center mt-5">
-            <label class="FormRadioGroup">
+          <div class="flex mt-5 flex-col sm:items-center sm:flex-row">
+            <label class="FormRadioGroup mb-4 sm:mb-0">
               <div class="FormRadio">
                 <input
                   v-model="form.interestedIn"
@@ -123,8 +123,8 @@
         @verify="verifiedSubmit"
       />
 
-      <div class="flex items-start justify-between">
-        <p class="text-sm max-w-xs">
+      <div class="flex items-start justify-between flex-col sm:flex-row">
+        <p class="text-sm max-w-xs mb-4 sm:mb-0">
           Vyplněním a odesláním formuláře souhlasíte
           se zpracováním Vašich osobních údajů.
         </p>

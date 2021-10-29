@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="container flex mb-block-2">
-      <div class="w-1/2">
+    <div class="container flex mb-block-2 flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2">
         <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
           <p class="py-20 flex items-center font-bold text-xl w-8/12 mx-auto text-black text-opacity-70">
             Jsme nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících. Na členské schůzi spolku se nabidka jeho uvolnění i pro další obce z úst Štěpána Štrébla setkala s příznivým ohlasem.
@@ -10,7 +10,7 @@
           </p>
         </div>
       </div>
-      <div class="w-1/2 bg-secondary px-block-2 py-block-1.5">
+      <div class="w-full lg:w-1/2 bg-secondary px-block-1 py-block-0.5 md:px-block-2 md:py-block-1.5">
         <div class="flex items-center justify-between">
           <h2 class="text-white text-3xl font-semibold">
             Naše hodnoty
@@ -32,10 +32,10 @@
             <div
               v-for="(value, index) in values"
               :key="index"
-              class="flex mt-block-1 border-b border-black border-opacity-20 pb-block-1 last:pb-0 last:border-b-0"
+              class="flex mt-block-1 border-b border-black border-opacity-20 pb-block-1 last:pb-0 last:border-b-0 flex-col md:flex-row"
             >
               <div
-                class="mr-block-1"
+                class="mr-block-1 mb-block-0.5 md:mb-0"
                 v-html="value.icon"
               />
               <div>

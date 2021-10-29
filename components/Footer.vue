@@ -1,10 +1,12 @@
 <template>
   <footer class="mt-block-2 mb-block-1">
-    <div class="container flex justify-between items-center">
-      <div class="flex items-center">
-        <LogoOm />
-        <div class="border-l border-secondary flex ml-block-1 pl-block-1 pt-5 pb-4">
-          <p class="mr-12 text-primary text-sm">
+    <div class="container flex justify-between items-center flex-col lg:flex-row">
+      <div class="flex items-center flex-col md:flex-row mb-8 lg:mb-0">
+        <LogoOm
+          class="mb-8 md:mb-0"
+        />
+        <div class="border-none md:border-l border-secondary flex ml-block-1 pl-0 md:pl-block-1 pt-5 pb-4 flex-col sm:flex-row">
+          <p class="mr-12 text-primary text-sm mb-8 sm:mb-0">
             <strong class="block">
               Otevřená města, z. s.
             </strong>
@@ -27,7 +29,7 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col items-end">
+      <div class="flex flex-col items-center lg:items-end">
         <Socials
           class="mb-5"
         />

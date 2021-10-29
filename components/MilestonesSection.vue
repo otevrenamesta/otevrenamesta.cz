@@ -1,9 +1,9 @@
 <template>
-  <div class="container flex justify-center">
+  <div class="container flex justify-center flex-wrap gap-block-1">
     <div
       v-for="(milestone, index) in milestones"
       :key="index"
-      class="mx-block-1"
+      class="w-full sm:w-1/3 lg:w-1/6 max-w-md"
     >
       <h2 class="text-primary text-3xl font-bold mb-6">
         {{ milestone.number }}

@@ -14,11 +14,11 @@
       <a href="mailto:vybor@otevrenamesta.cz" class="text-primary text-sm block mb-block-0.5 hover:underline">
         vybor@otevrenamesta.cz
       </a>
-      <div class="flex flex-wrap -mx-block-0.5">
+      <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
         <div
           v-for="(perosn, index) in leaderships"
           :key="index"
-          class="px-block-0.5 w-1/5"
+          class="px-6 md:px-block-0.5 w-1/2 xs:w-full md:w-1/3 lg:w-1/4 xl:w-1/5"
         >
           <Person
             :person="perosn"

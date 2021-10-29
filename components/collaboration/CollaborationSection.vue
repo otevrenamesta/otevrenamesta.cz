@@ -1,16 +1,17 @@
 <template>
-  <div class="container flex">
+  <div class="container flex flex-col lg:flex-row">
     <div class="relative">
       <Grid
-        :columns="6"
-        :rows="7"
+        :columns="$screen.xl ? 6 : ($screen.lg ? 5 : false)"
+        :rows="$screen.xl ? 7 : ($screen.lg ? 8 : 5)"
       />
       <component
         :is="illustration"
-        class="absolute top-block-2 left-block-2"
+        class="absolute top-block-2 left-block-2 h-auto"
+        :class="$screen.xl ? 'w-block-8' : 'w-block-6'"
       />
     </div>
-    <div class="p-block-1.5 pt-block-1 pb-0">
+    <div class="p-block-0.5 xl:p-block-1.5 pt-block-1 pb-0">
       <slot />
     </div>
   </div>

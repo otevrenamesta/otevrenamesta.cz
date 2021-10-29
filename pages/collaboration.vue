@@ -29,7 +29,7 @@
         Benefity
       </h3>
       <div class="flex flex-wrap -mx-block-0.5">
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-0.5">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Rozhodování o činnosti spolku
@@ -39,7 +39,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-0.5">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Sdílené know-how
@@ -49,7 +49,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-0.5">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Slevy na produktech
@@ -59,7 +59,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Vulnerability scan
@@ -109,7 +109,7 @@
         Benefity
       </h3>
       <div class="flex flex-wrap -mx-block-0.5">
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Rozhodování o činnosti spolku
@@ -119,7 +119,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Sdílené know-how
@@ -129,7 +129,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Slevy na produktech
@@ -139,7 +139,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Vulnerability scan
@@ -168,7 +168,7 @@
         Benefity
       </h3>
       <div class="flex flex-wrap -mx-block-0.5">
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Rozhodování o činnosti spolku
@@ -178,7 +178,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Sdílené know-how
@@ -188,7 +188,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Slevy na produktech
@@ -198,7 +198,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 max-w-sm">
           <div class="px-block-0.5 mb-block-1">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
               Vulnerability scan

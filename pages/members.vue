@@ -12,7 +12,7 @@
         <div
           v-for="(member, index) in members"
           :key="index"
-          class="w-1/3"
+          class="w-full md:w-1/2 xl:w-1/3"
         >
           <MembersMember
             :member="member"
