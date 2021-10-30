@@ -2,8 +2,8 @@
   <section>
     <div class="container flex mb-block-2 flex-col lg:flex-row">
       <div class="w-full lg:w-1/2">
-        <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
-          <p class="py-20 flex items-center font-bold text-xl w-8/12 mx-auto text-black text-opacity-70">
+        <div class="sm:aspect-w-1 sm:aspect-h-1 bg-additional sm:rounded-full flex items-center justify-center">
+          <p class="px-14 sm:px-0 xs:px-10 py-14 sm:py-20 xs:py-10 flex items-center font-bold text-xl sm:w-8/12 mx-auto text-black text-opacity-70">
             Jsme nezisková organiazce, která pomáhá vyvinout Praha 3 pro svou potřebu a využila jej již ve třech dotačních ročnících. Na členské schůzi spolku se nabidka jeho uvolnění i pro další obce z úst Štěpána Štrébla setkala s příznivým ohlasem.
             <br><br>
             Městká část tedy zahájila potřebné kroky, které v rovině politicko-organizační vyvrcholily 2019-10,11 schválením radou MČ a vedením SZM. Vedlejším zobecňujícím efektem bylo jednám zastupitelstva, které zavázalo Prahu 3 napříště zadávat vývoj softwaru pod svobodnu licencí.
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="w-full lg:w-1/2 bg-secondary px-block-1 py-block-0.5 md:px-block-2 md:py-block-1.5">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-wrap">
           <h2 class="text-white text-3xl font-semibold">
             Naše hodnoty
           </h2>

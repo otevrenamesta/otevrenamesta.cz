@@ -14,8 +14,8 @@
     <div
       class="w-block-4 h-block-4 bg-additional absolute bottom-0 left-0 rounded-full"
     />
-    <div class="container flex items-center relative z-10">
-      <div class="w-1/2 pr-6 pl-block-2">
+    <div class="container flex items-center relative z-10 flex-col lg:flex-row">
+      <div class="max-w-lg lg:max-w-full lg:w-1/2 lg:pr-6 lg:pl-block-2 mb-block-1 lg:mb-0">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-0.5">
           Otestování produktu
         </strong>
@@ -23,7 +23,7 @@
           Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s&nbsp;budováním aplikací na míru pro samosprávní celky
         </h3>
       </div>
-      <div class="w-1/2 flex flex-col items-center">
+      <div class="max-w-lg lg:w-1/2 flex flex-col items-center">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-0.5 max-w-xs">
           Jak postupovat
         </strong>

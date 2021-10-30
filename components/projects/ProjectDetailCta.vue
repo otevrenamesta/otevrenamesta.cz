@@ -1,7 +1,7 @@
 <template>
   <section class="container">
-    <div class="relative">
-      <div class="absolute z-10 left-block-2 top-block-2">
+    <div class="relative bg-primary sm:bg-transparent">
+      <div class="sm:absolute z-10 sm:left-block-2 sm:top-block-2 p-block-0.5 sm:p-0">
         <div class="w-block-6 max-w-full">
           <div
             class="mb-block-1"
@@ -25,7 +25,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="absolute z-10 right-block-4 top-block-2">
+      <div class="sm:absolute z-10 sm:left-block-2 md:left-auto md:right-block-2 lg:right-block-4 sm:bottom-block-2 md:bottom-auto md:top-block-2 p-block-0.5 sm:p-0">
         <div class="w-block-6 max-w-full">
           <div
             class="mb-block-1"
@@ -50,8 +50,9 @@
         </div>
       </div>
       <Grid
-        :rows="6"
+        :rows="$screen.md ? 6 : 11"
         inverse
+        :hidden="!$screen.sm"
       />
     </div>
   </section>

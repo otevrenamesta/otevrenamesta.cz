@@ -4,8 +4,8 @@
       :project="project"
     />
 
-    <div class="flex -mt-px border-t border-b border-primary-light">
-      <div class="w-8/12 border-r border-primary-light">
+    <div class="flex -mt-px border-t border-b border-primary-light flex-col lg:flex-row">
+      <div class="w-full lg:w-8/12 lg:border-r border-primary-light">
         <ProjectDetailIntro
           :project="project"
           class="w-block-12 max-w-full mx-auto pt-block-2"
@@ -25,7 +25,7 @@
           class="w-block-12 max-w-full mx-auto pt-block-1"
         />
       </div>
-      <div class="w-4/12">
+      <div class="border-t border-primary-light lg:w-4/12 lg:border-none">
         <ProjectDetailFunctions
           :project="project"
           class="w-block-6 max-w-full mx-auto"

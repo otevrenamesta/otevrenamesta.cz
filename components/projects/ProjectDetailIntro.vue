@@ -10,16 +10,15 @@
       v-html="project.description"
     />
 
-    <div class="flex justify-between">
-      <div class="flex">
+    <div class="flex justify-between flex-col sm:flex-row gap-4 sm:gap-0">
+      <div class="flex flex-col sm:flex-row gap-4">
         <nuxt-link
           to="/"
-          class="mr-4"
         >
           <Button
             icon="icon-arrow-open"
           >
-            Navštívit web
+            Otevřít web
           </Button>
         </nuxt-link>
         <nuxt-link

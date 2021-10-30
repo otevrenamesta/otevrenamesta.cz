@@ -2,8 +2,8 @@
   <section>
     <div class="container flex mb-block-2 flex-col lg:flex-row">
       <div class="lg:w-1/2">
-        <div class="aspect-w-1 aspect-h-1 bg-additional rounded-full flex items-center justify-center">
-          <p class="py-20 flex flex-col justify-center font-bold text-lg w-8/12 mx-auto text-black text-opacity-80">
+        <div class="sm:aspect-w-1 sm:aspect-h-1 bg-additional sm:rounded-full flex items-center justify-center">
+          <p class="px-14 sm:px-0 xs:px-10 py-14 sm:py-20 xs:py-10 flex flex-col justify-center font-bold text-lg sm:w-8/12 mx-auto text-black text-opacity-80">
             <strong class="uppercase font-bold text-lg mb-7 text-white">
               Spolupracujte s námi
             </strong>
@@ -13,7 +13,7 @@
           </p>
         </div>
       </div>
-      <div class="lg:w-1/2 bg-secondary px-block-1 md:px-block-2 py-block-1 mb:py-block-1.5 flex flex-col justify-center">
+      <div class="lg:w-1/2 bg-secondary px-block-1 md:px-block-2 xs:px-block-0.5 py-block-1 mb:py-block-1.5 flex flex-col justify-center">
         <CollaborationForm />
       </div>
     </div>

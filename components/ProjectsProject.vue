@@ -1,12 +1,13 @@
 <template>
-  <article class="relative -mt-px w-auto flex flex-col justify-start items-start">
+  <article class="relative -mt-px w-auto flex flex-col justify-start items-start mb-block-2 sm:mb-0">
     <Grid
       :rows="8"
+      class="hidden sm:block"
     />
 
     <div
-      class="box- absolute z-20 top-block-2 bg-white border border-secondary border-t-0 border-r-0 w-block-10 h-block-12"
-      :class="align === 'left' ? 'left-block-2' : 'right-block-2'"
+      class="relative sm:absolute z-20 sm:top-block-2 bg-white border border-secondary border-t-0 border-r-0 sm:w-block-10 sm:h-block-12"
+      :class="align === 'left' ? 'sm:left-block-2' : 'sm:right-block-2'"
     >
       <div class="BoxDecorations BoxDecorations--top-left" />
       <div class="BoxDecorations BoxDecorations--top-right" />
@@ -33,13 +34,13 @@
           </Button>
         </nuxt-link>
 
-        <div class="flex justify-between items-start">
+        <div class="flex justify-between flex-wrap items-start">
           <div
             v-html="project.logo"
           />
           <div
             v-if="project.badge"
-            class="py-2 px-4 bg-additional rounded-3xl leading-none text-sm uppercase text-black text-opacity-75 font-bold"
+            class="py-2 px-4 bg-additional rounded-3xl leading-none text-sm uppercase text-black text-opacity-75 font-bold mt-4"
           >
             {{ project.badge }}
           </div>
@@ -51,7 +52,7 @@
     </div>
 
     <div
-      class="absolute z-10 top-block-2 w-block-12"
+      class="absolute z-10 top-block-2 w-block-12 hidden sm:block"
       :class="[
         align === 'left' ? 'right-block-2' : 'left-block-2',
       ]"
