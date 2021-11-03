@@ -1,58 +1,32 @@
 <template>
   <div
+    v-if="socials"
     class="flex items-center gap-2.5"
     :class="isWhite ? 'IsWhite' : ''"
   >
     <a
-      href="#"
+      v-for="(social, index) in socials"
+      :key="index"
+      :href="social.url"
       target="_blank"
-    >
-      <!-- TODO: add link -->
-      <IconFacebook />
-    </a>
-    <a
-      href="#"
-      target="_blank"
-    >
-      <!-- TODO: add link -->
-      <IconGithub />
-    </a>
-    <a
-      href="#"
-      target="_blank"
-    >
-      <!-- TODO: add link -->
-      <IconGitlab />
-    </a>
+      :class="isWhite ? 'text-white hover:text-white' : 'text-primary hover:text-primary-dark'"
+      v-html="social.icon"
+    />
   </div>
 </template>
 
 <script>
-import IconFacebook from '~/assets/img/icon-facebook.svg?inline';
-import IconGithub from '~/assets/img/icon-github.svg?inline';
-import IconGitlab from '~/assets/img/icon-gitlab.svg?inline';
-
 export default {
-  components: {
-    IconFacebook,
-    IconGithub,
-    IconGitlab,
-  },
   props: {
     isWhite: {
       type: Boolean,
       default: false,
     },
   },
+  computed: {
+    socials() {
+      return this.$store.state.content.global.socials;
+    },
+  },
 };
 </script>
-
-<style langs="scss" scoped>
-a {
-  @apply text-primary hover:text-primary-dark;
-}
-
-.IsWhite a {
-  @apply text-white hover:text-white;
-}
-</style>

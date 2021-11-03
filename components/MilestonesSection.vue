@@ -11,7 +11,7 @@
       <strong class="text-secondary text-sm mb-1.5">
         {{ milestone.title }}
       </strong>
-      <p class="text-primary-dark text-sm">
+      <p v-preposition-space class="text-primary-dark text-sm">
         {{ milestone.description }}
       </p>
     </div>
@@ -20,31 +20,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      milestones: [
-        {
-          number: 20,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-        {
-          number: 136,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-        {
-          number: 3547,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-        {
-          number: 136,
-          title: 'Lorem ipsum',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-        },
-      ],
-    };
+  computed: {
+    milestones() {
+      return this.$store.state.content.global.milestones;
+    },
   },
 };
 </script>

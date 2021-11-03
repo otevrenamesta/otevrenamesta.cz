@@ -3,7 +3,7 @@
     <div class="bg-primary px-block-1 py-block-1 md:px-block-2 md:py-block-2">
       <div class="flex justify-between items-center mb-block-1 flex-wrap">
         <h2 class="text-white text-4xl font-bold tracking-tight">
-          Aktuálně
+          {{ news.title }}
         </h2>
         <nuxt-link :to="localePath('/news')">
           <Button
@@ -11,7 +11,7 @@
             icon="icon-arrow-right"
             class="text-secondary"
           >
-            Přejít na všechny články
+            {{ news.showMore }}
           </Button>
         </nuxt-link>
       </div>
@@ -56,6 +56,12 @@ export default {
     return {
       articles: [],
     };
+  },
+
+  computed: {
+    news() {
+      return this.$store.state.content.homepage.news;
+    },
   },
 
   async mounted() {

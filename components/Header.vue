@@ -32,10 +32,9 @@ export default {
   components: {
     LogoOm,
   },
-  props: {
-    menuItems: {
-      type: Array,
-      required: true,
+  computed: {
+    menuItems() {
+      return this.$store.state.content.global.menuItems;
     },
   },
 };

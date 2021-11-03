@@ -4,10 +4,10 @@
       <div class="HeroBox bg-primary pt-20 pb-14 px-16">
         <h2
           class="text-6xl text-white font-bold mb-9 tracking-tight"
-          v-html="page.hero.title"
+          v-html="hero.title"
         />
         <p class="text-lg text-white max-w-sm">
-          {{ page.hero.description }}
+          {{ hero.description }}
         </p>
       </div>
 
@@ -21,10 +21,9 @@
 
 <script>
 export default {
-  props: {
-    page: {
-      type: Object,
-      required: true,
+  computed: {
+    hero() {
+      return this.$store.state.content.homepage.hero;
     },
   },
 };

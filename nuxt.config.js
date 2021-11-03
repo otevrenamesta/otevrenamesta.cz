@@ -31,6 +31,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/v-preposition-space',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -55,6 +56,7 @@ export default {
     'vue-screen/nuxt',
     '@nuxtjs/i18n',
     '@nuxt/image',
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -99,6 +101,10 @@ export default {
       //   // file: 'en.js',
       // },
     ],
+  },
+
+  sitemap: {
+    hostname: 'https://otevrenamesta.vercel.app/',
   },
 
   image: {
