@@ -1,6 +1,7 @@
 export const state = () => ({
   global: {},
   homepage: null,
+  about: null,
 });
 
 export const mutations = {

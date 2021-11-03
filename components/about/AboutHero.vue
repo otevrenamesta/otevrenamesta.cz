@@ -3,10 +3,10 @@
     <div class="container relative flex flex-col justify-start items-start">
       <div class="absolute z-10 top-block-2 left-block-4">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-1.5 -mt-0.5">
-          O nás
+          {{ hero.title }}
         </strong>
-        <h2 class="text-primary text-5xl leading-tight font-bold tracking-tighter w-2/3">
-          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
+        <h2 v-preposition-space class="text-primary text-5xl leading-tight font-bold tracking-tighter w-2/3">
+          {{ hero.description }}
         </h2>
       </div>
       <div class="flex flex-col justify-start items-start relative w-auto">
@@ -36,11 +36,11 @@
 </template>
 
 <script>
-// import AboutHeroBg from '~/assets/img/about-hero-bg.svg?inline';
-
 export default {
-  components: {
-    // AboutHeroBg,
+  computed: {
+    hero() {
+      return this.$store.state.content.about.hero;
+    },
   },
 };
 </script>

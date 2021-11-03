@@ -1,0 +1,35 @@
+hero:
+  title: O nás
+  description: Představení týmu, struktury a expertů Otevřených měst
+
+structure:
+  title: Struktura <br>organizace
+  description: Otevřená města tvoří 4 hlavní orgány , kterými jsou výbor, členská schůze, projektová rada a kontrolor. Všechny části spolu vzájemné komunikují a mají rozdělené komptence.
+  items:
+    - color: text-additional
+      bg: bg-additional
+      number: 01
+      title: Výbor
+      description: Výbor Otevřených měst je statutárním a hlavním výkonným orgánem spolku, který zajišťuje jeho strategické směřování a vizi. Výbor je 5-ti členný a jeho členy jsou experti z digitalizace samospráv nebo zástupci vybraných členských obcí. Výbor je volen členskou schůzí na dobu 2 let.
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
+
+    - color: text-secondary
+      bg: bg-secondary
+      number: 02
+      title: Členská schůze
+      description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze všech členů, kteří splní požadavky pro přístup do spolku.
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
+
+    - color: text-primary-dark
+      bg: bg-primary-dark
+      number: 03
+      title: Projektová rada
+      description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období 2 let.
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
+
+    - color: text-primary-dark
+      bg: bg-primary-dark
+      number: 04
+      title: Kontrolor
+      description: Kontrolor je kontrolním orgánem spolku. Kontrolor nesmí být členem jiného orgánu spolku. Může být zvoleno i více kontrolorů, pak jedná každý samostatně. Má přístup ke všem dokumentům spolku a dohlíží na hospodaření spolku,jeho činnost je zejména dohledová.
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>

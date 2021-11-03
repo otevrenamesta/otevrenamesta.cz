@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-if="$store.state.content.about">
     <AboutHero
       class="mb-block-2"
     />
@@ -20,6 +20,9 @@
 
 <script>
 export default {
+  async fetch() {
+    await this.$store.dispatch('content/load', { page: 'about' });
+  },
   head() {
     return {
       title: `O nás ${this.$config.appendTitle}`,
