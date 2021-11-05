@@ -8,7 +8,7 @@
         />
       </div>
 
-      <div class="mb-block-1 md:mb-0">
+      <div class="mb-block-1 w-block-4 max-w-full lg:mr-4 md:mb-0">
         <strong class="block text-secondary uppercase text-base mb-10">
           {{ intro.partners.title }}
         </strong>
@@ -16,9 +16,11 @@
           v-for="(partner, index) in intro.partners.items"
           :key="index"
         >
-          <div
-            class="mb-10"
-            v-html="partner.img"
+          <a
+            :href="partner.url"
+            target="_blank"
+            class="block mb-10"
+            v-html="partner.logo"
           />
         </div>
       </div>

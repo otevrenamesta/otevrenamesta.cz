@@ -12,6 +12,18 @@
       </div>
 
       <div class="HeroBg mb-block-1" />
+      <div
+        class="w-block-2 h-block-2 absolute -bottom-block-2 -left-block-2 flex flex-wrap"
+      >
+        <div class="w-1/2 h-1/2 bg-additional" />
+        <div class="w-1/2 h-1/2 bg-additional" />
+        <div class="w-1/2 h-1/2 bg-transparent" />
+        <div class="w-1/2 h-1/2 bg-additional" />
+      </div>
+
+      <div
+        class="w-block-4 h-block-4 bg-additional absolute bottom-block-2 -right-block-4 rounded-full"
+      />
     </div>
     <Socials
       class="absolute bottom-3 right-8 z-10"

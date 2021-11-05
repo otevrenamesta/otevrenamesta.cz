@@ -1,5 +1,8 @@
 <template>
-  <main v-if="$store.state.content.members">
+  <main
+    v-if="$store.state.content.members"
+    class="overflow-x-hidden"
+  >
     <MembersHero
       class="mb-block-2"
     />

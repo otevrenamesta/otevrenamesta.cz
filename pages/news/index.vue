@@ -29,9 +29,10 @@
       >
         <div class="px-block-0.5">
           <nuxt-img
-            :src="article.obrazek"
+            :src="article.obrazek.replace('?mode=crop&center=0.5,0.5&rnd=132199332150000000&width=575', '')"
             :alt="article.title"
             width="600"
+            height="400"
             class="mb-block-0.5"
           />
           <div

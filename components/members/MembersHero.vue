@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-end relative pt-block-3 overflow-x-hidden w-full">
+  <section class="flex items-end relative pt-block-3 w-full">
     <div class="container relative flex flex-col justify-start items-start">
       <div class="absolute z-10 top-block-2 left-block-4">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-1.5 -mt-0.5">
