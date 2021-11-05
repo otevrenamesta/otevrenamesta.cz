@@ -167,23 +167,28 @@ export default {
     presubmitForm() {
       this.$refs.invisibleHcaptcha.execute();
     },
-    verifiedSubmit(token) {
+    async verifiedSubmit(token) {
       this.isSubmitting = true;
 
-      this.$axios.$post('/contactforms/', {
-        jmeno: this.form.fullname,
-        mesto: this.form.city,
-        email: this.form.email,
-        tel: this.form.phone,
-        subject: this.form.interestedIn,
-        content: this.form.message,
-        token,
-      });
       console.log('token', token);
       console.log(this.form);
 
-      this.isSubmitting = false;
-      this.isSubmitted = true;
+      try {
+        await this.$axios.$post('/contactforms', {
+          jmeno: this.form.fullname,
+          mesto: this.form.city,
+          email: this.form.email,
+          tel: this.form.phone,
+          subject: this.form.interestedIn,
+          content: this.form.message,
+          token,
+        });
+
+        this.isSubmitted = true;
+      } catch (error) {
+        alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+        this.isSubmitting = false;
+      }
     },
   },
 };
