@@ -57,6 +57,7 @@ export default {
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/sitemap',
+    '@nuxtjs/markdownit',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -79,6 +80,10 @@ export default {
 
   router: {
     linkActiveClass: 'is-active',
+  },
+
+  markdownit: {
+    runtime: true,
   },
 
   i18n: {

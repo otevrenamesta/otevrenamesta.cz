@@ -25,7 +25,7 @@
     </div>
     <div
       class="flex flex-wrap prose text-lg"
-      v-html="article.content"
+      v-html="$md.render(article.content)"
     />
   </main>
 </template>
