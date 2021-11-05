@@ -65,7 +65,7 @@ export default {
   },
 
   async mounted() {
-    this.articles = await this.$axios.$get('/posts/?sort=published:desc&currentPage=1&perPage=4')
+    this.articles = await this.$axios.$get('/uni/posts/?sort=published:desc&currentPage=1&perPage=4')
       .then(({ data }) => data)
       .catch(() => []);
   },

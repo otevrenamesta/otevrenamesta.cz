@@ -90,7 +90,7 @@
                 <input
                   v-model="form.interestedIn"
                   type="radio"
-                  value="membership"
+                  value="clenstvi"
                   class="FormRadioInput"
                 >
               </div>
@@ -103,7 +103,7 @@
                 <input
                   v-model="form.interestedIn"
                   type="radio"
-                  value="services"
+                  value="produkty"
                   class="FormRadioInput"
                   required
                 >
@@ -158,7 +158,7 @@ export default {
         email: '',
         phone: '',
         message: '',
-        interestedIn: 'membership',
+        interestedIn: 'clenstvi',
       },
     };
   },
@@ -168,9 +168,21 @@ export default {
       this.$refs.invisibleHcaptcha.execute();
     },
     verifiedSubmit(token) {
+      this.isSubmitting = true;
+
+      this.$axios.$post('/contactforms/', {
+        jmeno: this.form.fullname,
+        mesto: this.form.city,
+        email: this.form.email,
+        tel: this.form.phone,
+        subject: this.form.interestedIn,
+        content: this.form.message,
+        token,
+      });
       console.log('token', token);
       console.log(this.form);
 
+      this.isSubmitting = false;
       this.isSubmitted = true;
     },
   },

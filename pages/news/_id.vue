@@ -51,7 +51,7 @@ export default {
   },
 
   async mounted() {
-    this.articles = await this.$axios.$get('/posts/?sort=published:desc')
+    this.articles = await this.$axios.$get('/uni/posts/?sort=published:desc')
       .catch(() => []);
   },
 };
