@@ -5,11 +5,13 @@
         <div class="sm:aspect-w-1 sm:aspect-h-1 bg-additional sm:rounded-full flex items-center justify-center">
           <p class="px-14 sm:px-0 xs:px-10 py-14 sm:py-20 xs:py-10 flex flex-col justify-center font-bold text-lg sm:w-8/12 mx-auto text-black text-opacity-80">
             <strong class="uppercase font-bold text-lg mb-7 text-white">
-              Spolupracujte s námi
+              {{ joinUs.title }}
             </strong>
-            <span class="font-semibold text-3xl text-black text-opacity-60">
-              Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
-            </span>
+            <span
+              v-preposition-space
+              class="font-semibold text-3xl text-black text-opacity-60"
+              v-html="joinUs.description"
+            />
           </p>
         </div>
       </div>
@@ -42,6 +44,11 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    joinUs() {
+      return this.$store.state.content.collaboration.joinUs;
+    },
   },
 };
 </script>

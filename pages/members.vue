@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-if="$store.state.content.members">
     <MembersHero
       class="mb-block-2"
     />
@@ -72,6 +72,9 @@ export default {
         },
       ],
     };
+  },
+  async fetch() {
+    await this.$store.dispatch('content/load', { page: 'members' });
   },
   head() {
     return {

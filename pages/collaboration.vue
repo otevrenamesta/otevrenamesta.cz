@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-if="$store.state.content.collaboration">
     <CollaborationHero
       class="mb-block-2"
     />
@@ -13,60 +13,40 @@
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
-          Stát se členem
+          {{ sections.member.title }}
         </h2>
-        <p class="text-secondary text-base font-medium mb-block-1">
-          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
-        </p>
+        <p
+          v-preposition-space
+          class="text-secondary text-base font-medium mb-block-1"
+          v-html="sections.member.description"
+        />
         <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-          Členský poplatek
+          {{ sections.member.membership.title }}
         </h3>
-        <p class="text-sm text-primary mb-block-0.5">
-          Členský poplatek se vypočítává jako 1,50 kč na osobu z přepočtu obyvatel v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
-        </p>
+        <p
+          v-preposition-space
+          class="text-sm text-primary mb-block-0.5"
+          v-html="sections.member.membership.description"
+        />
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-        Benefity
+        {{ sections.member.benefits.title }}
       </h3>
       <div class="flex flex-wrap -mx-block-0.5">
-        <div class="w-full sm:w-1/2 max-w-sm">
+        <div
+          v-for="(item, index) in sections.member.benefits.items"
+          :key="index"
+          class="w-full sm:w-1/2 max-w-sm"
+        >
           <div class="px-block-0.5 mb-block-0.5">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Rozhodování o činnosti spolku
+              {{ item.title }}
             </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-0.5">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Sdílené know-how
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-0.5">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Slevy na produktech
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Vulnerability scan
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
+            <p
+              v-preposition-space
+              class="text-black text-opacity-60 text-sm font-medium"
+              v-html="item.description"
+            />
           </div>
         </div>
       </div>
@@ -77,76 +57,62 @@
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
-          Nákup služeb
+          {{ sections.services.title }}
         </h2>
-        <p class="text-secondary text-base font-medium mb-block-1">
-          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
-        </p>
+        <p
+          v-preposition-space
+          class="text-secondary text-base font-medium mb-block-1"
+          v-html="sections.services.description"
+        />
         <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-          Ceník
+          {{ sections.services.pricing.title }}
         </h3>
-        <p class="text-sm text-primary mb-block-0.5">
-          Ceník se dělí na consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-        </p>
+        <p
+          v-preposition-space
+          class="text-sm text-primary mb-block-0.5"
+          v-html="sections.services.pricing.description"
+        />
         <div class="flex items-center mb-block-1">
-          <Button
-            type="transparent"
-            icon="icon-arrow-right"
-            class="text-secondary pl-0"
+          <a
+            href="#"
+            target="_blank"
           >
-            Ceník pro členy
-          </Button>
-          <Button
+            <!-- TODO: add link -->
+            <Button
+              type="transparent"
+              icon="icon-arrow-right"
+              class="text-secondary pl-0"
+            >
+              {{ sections.services.pricing.title }}
+            </Button>
+          </a>
+          <!-- <Button
             type="transparent"
             icon="icon-arrow-right"
             class="text-secondary"
           >
             ceník pro ostatní
-          </Button>
+          </Button> -->
         </div>
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-        Benefity
+        {{ sections.services.benefits.title }}
       </h3>
       <div class="flex flex-wrap -mx-block-0.5">
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
+        <div
+          v-for="(item, index) in sections.services.benefits.items"
+          :key="index"
+          class="w-full sm:w-1/2 max-w-sm"
+        >
+          <div class="px-block-0.5 mb-block-0.5">
             <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Rozhodování o činnosti spolku
+              {{ item.title }}
             </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Sdílené know-how
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Slevy na produktech
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Vulnerability scan
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
+            <p
+              v-preposition-space
+              class="text-black text-opacity-60 text-sm font-medium"
+              v-html="item.description"
+            />
           </div>
         </div>
       </div>
@@ -158,56 +124,13 @@
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
-          Využití zdrojových kódů
+          {{ sections.opensource.title }}
         </h2>
-        <p class="text-secondary text-base font-medium mb-block-1">
-          Lorem ipsum pecializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv. Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
-        </p>
-      </div>
-      <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-        Benefity
-      </h3>
-      <div class="flex flex-wrap -mx-block-0.5">
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Rozhodování o činnosti spolku
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Sdílené know-how
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Slevy na produktech
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 max-w-sm">
-          <div class="px-block-0.5 mb-block-1">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
-              Vulnerability scan
-            </strong>
-            <p class="text-black text-opacity-60 text-sm font-medium">
-              Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan.
-            </p>
-          </div>
-        </div>
+        <p
+          v-preposition-space
+          class="text-secondary text-base font-medium mb-block-1"
+          v-html="sections.opensource.description"
+        />
       </div>
     </CollaborationSection>
 
@@ -219,10 +142,18 @@
 
 <script>
 export default {
+  async fetch() {
+    await this.$store.dispatch('content/load', { page: 'collaboration' });
+  },
   head() {
     return {
-      title: `Spolupráce ${this.$config.appendTitle}`,
+      title: `${this.$store.state.content.collaboration?.hero?.title} ${this.$config.appendTitle}`,
     };
+  },
+  computed: {
+    sections() {
+      return this.$store.state.content.collaboration.sections;
+    },
   },
 };
 </script>

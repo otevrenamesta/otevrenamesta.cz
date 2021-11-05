@@ -2,6 +2,9 @@ export const state = () => ({
   global: {},
   homepage: null,
   about: null,
+  collaboration: null,
+  members: null,
+  contact: null,
 });
 
 export const mutations = {

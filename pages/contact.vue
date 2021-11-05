@@ -99,6 +99,10 @@ export default {
     };
   },
 
+  async fetch() {
+    await this.$store.dispatch('content/load', { page: 'contact' });
+  },
+
   head() {
     return {
       title: `Kontakt ${this.$config.appendTitle}`,

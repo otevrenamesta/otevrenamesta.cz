@@ -25,7 +25,7 @@ export default {
   },
   head() {
     return {
-      title: `O nás ${this.$config.appendTitle}`,
+      title: `${this.$store.state.content.about?.hero?.title} ${this.$config.appendTitle}`,
     };
   },
 };
