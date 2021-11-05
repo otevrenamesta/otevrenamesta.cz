@@ -2,7 +2,7 @@
   <main class="mt-block-4">
     <div class="container">
       <h2 class="text-primary font-bold text-4xl mb-block-1 tracking-tight">
-        Naše projekty
+        Projekty
       </h2>
     </div>
     <Projects />
@@ -13,7 +13,7 @@
 export default {
   head() {
     return {
-      title: `Naše projekty ${this.$config.appendTitle}`,
+      title: `Projekty ${this.$config.appendTitle}`,
     };
   },
 };

@@ -2,34 +2,35 @@
   <section class="flex items-end relative pt-block-3">
     <div class="container relative flex flex-col justify-start items-start">
       <div class="flex flex-col justify-start items-start relative w-auto">
-        <h2 class="text-primary text-6xl leading-tight font-bold tracking-tighter absolute z-10 bottom-block-2 left-block-4 -mb-2">
-          Kontaktujte<br>
-          nás
-        </h2>
+        <h2
+          class="text-primary text-6xl leading-tight font-bold tracking-tighter absolute z-10 bottom-block-2 left-block-4 -mb-2"
+          v-html="hero.title"
+        />
         <div class="w-block-10 h-block-10 bg-primary absolute z-10 bottom-0 right-block-4 px-block-1 py-block-1.5">
-          <a href="mailto:info@otevrenamesta.cz" class="block text-white text-3xl font-bold mb-block-1 hover:underline">
-            info@otevrenamesta.cz
+          <a
+            :href="`mailto:${contact.email}`"
+            class="block text-white text-3xl font-bold mb-block-1 hover:underline"
+          >
+            {{ contact.email }}
           </a>
           <div class="text-white mb-12">
             <strong class="block mb-2 text-base">
-              Otevřená města, z. s.
+              {{ contact.name }}
             </strong>
-            <p class="text-base font-medium">
-              Malinovského náměstí 624/3<br>
-              602 00 Brno<br>
-            </p>
+            <p
+              class="text-base font-medium"
+              v-html="contact.address"
+            />
             <br>
             <p class="text-sm font-medium">
-              datová schránka: f47yb4g<br>
-              IČO: 05129061<br>
-              DIČ: CZ05129061<br>
-              transparentní účet Fio: 2501020615/2010<br>
-              IBAN: CZ3920100000002501020615<br>
+              <span v-html="contact.bank" />
+              <br>
+              <span v-html="contact.iban" />
             </p>
           </div>
-          <p class="text-white text-sm font-medium mb-12">
-            U obecnějších témat zvažte jejich otevření na <a href="#" class="underline">webfóru</a><!-- TODO: link -->
-          </p>
+          <!-- <p class="text-white text-sm font-medium mb-12">
+            U obecnějších témat zvažte jejich otevření na <a href="#" class="underline">webfóru</a>
+          </p> -->
           <Socials is-white />
         </div>
         <div
@@ -58,5 +59,14 @@
 </template>
 
 <script>
-
+export default {
+  computed: {
+    contact() {
+      return this.$store.state.content.global.contact;
+    },
+    hero() {
+      return this.$store.state.content.contact.hero;
+    },
+  },
+};
 </script>

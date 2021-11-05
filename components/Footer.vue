@@ -8,20 +8,20 @@
         <div class="border-none md:border-l border-secondary flex ml-block-1 pl-0 md:pl-block-1 pt-5 pb-4 flex-col sm:flex-row">
           <p class="mr-12 text-primary text-sm mb-8 sm:mb-0">
             <strong class="block">
-              {{ footer.name }}
+              {{ contact.name }}
             </strong>
             <span
-              v-html="footer.address"
+              v-html="contact.address"
             />
           </p>
           <p class="text-primary text-sm">
             <strong class="block">
-              <a :href="`mailto:${footer.email}`" class="hover:underline">
-                {{ footer.email }}
+              <a :href="`mailto:${contact.email}`" class="hover:underline">
+                {{ contact.email }}
               </a>
             </strong>
             <span
-              v-html="footer.bank"
+              v-html="contact.bank"
             />
           </p>
         </div>
@@ -53,6 +53,9 @@ export default {
     LogoOm,
   },
   computed: {
+    contact() {
+      return this.$store.state.content.global.contact;
+    },
     footer() {
       return this.$store.state.content.global.footer;
     },

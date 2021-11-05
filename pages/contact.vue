@@ -1,18 +1,21 @@
 <template>
-  <main>
+  <main v-if="$store.state.content.contact">
     <ContactHero
       class="mb-block-2"
     />
 
     <div class="container">
       <h2 class="text-primary-dark font-bold text-4xl mb-5">
-        Členové výboru
+        {{ leadership.title }}
       </h2>
       <strong class="block text-sm text-secondary">
-        Obecný kontakt na výbor
+        {{ leadership.subtitle }}
       </strong>
-      <a href="mailto:vybor@otevrenamesta.cz" class="text-primary text-sm block mb-block-0.5 hover:underline">
-        vybor@otevrenamesta.cz
+      <a
+        :href="`mailto:${leadership.email}`"
+        class="text-primary text-sm block mb-block-0.5 hover:underline"
+      >
+        {{ leadership.email }}
       </a>
       <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
         <div
@@ -105,8 +108,14 @@ export default {
 
   head() {
     return {
-      title: `Kontakt ${this.$config.appendTitle}`,
+      title: `${this.$store.state.content.contact?.title} ${this.$config.appendTitle}`,
     };
+  },
+
+  computed: {
+    leadership() {
+      return this.$store.state.content.contact.leadership;
+    },
   },
 };
 </script>

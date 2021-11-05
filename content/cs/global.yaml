@@ -29,13 +29,16 @@ milestones:
     title: mil. Kč
     description: Otevřená města nyní hospodaří s přibližně 1 mil. Kč.
 
-footer:
+contact:
   name: Otevřená města, z. s.
   address: Malinovského náměstí 624/3 <br> 602 00 Brno
   email: info@otevrenamesta.cz
   bank: datová schránka f47yb4g<br>
         transparentní účet Fio 2501020615/2010<br>
         IČO 05129061
+  iban: "IBAN: CZ3920100000002501020615"
+
+footer:
   links:
     - text: Stanovy
       url: /

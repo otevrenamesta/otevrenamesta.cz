@@ -78,7 +78,7 @@ export default {
   },
   head() {
     return {
-      title: `Členové ${this.$config.appendTitle}`,
+      title: `${this.$store.state.content.members?.hero?.title} ${this.$config.appendTitle}`,
     };
   },
 };
