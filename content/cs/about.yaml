@@ -4,7 +4,7 @@ hero:
 
 structure:
   title: Struktura <br>organizace
-  description: Otevřená města tvoří 4 hlavní orgány , kterými jsou výbor, členská schůze, projektová rada a kontrolor. Všechny části spolu vzájemné komunikují a mají rozdělené komptence.
+  description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a manažerskou expertízu v této oblasti. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
   items:
     - color: text-additional
       bg: bg-additional
@@ -30,6 +30,6 @@ structure:
     - color: text-primary-dark
       bg: bg-primary-dark
       number: 04
-      title: Kontrolor
-      description: Kontrolor je kontrolním orgánem spolku. Kontrolor nesmí být členem jiného orgánu spolku. Může být zvoleno i více kontrolorů, pak jedná každý samostatně. Má přístup ke všem dokumentům spolku a dohlíží na hospodaření spolku,jeho činnost je zejména dohledová.
+      title: Členská schůze
+      description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze všech členů, kteří splní požadavky pro přístup do spolku.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
