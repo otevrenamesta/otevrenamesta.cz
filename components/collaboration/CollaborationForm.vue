@@ -181,6 +181,7 @@ export default {
           tel: this.form.phone,
           subject: this.form.interestedIn,
           content: this.form.message,
+          url: 'https://new.otevrenamesta.cz/api/uni/messages/',
           token,
         });
 
