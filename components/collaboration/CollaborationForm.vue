@@ -170,11 +170,8 @@ export default {
     async verifiedSubmit(token) {
       this.isSubmitting = true;
 
-      console.log('token', token);
-      console.log(this.form);
-
       try {
-        await this.$axios.$post('/contactforms', {
+        await this.$axios.$post('/contactforms/', {
           jmeno: this.form.fullname,
           mesto: this.form.city,
           email: this.form.email,
