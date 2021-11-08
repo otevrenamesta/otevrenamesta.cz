@@ -3,8 +3,14 @@
     <h3 class="uppercase text-primary text-lg font-bold mb-block-0.5">
       Časová osa
     </h3>
-    <div>
-      Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan. Nam quis nulla. Praesent dapibus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+    <div class="flex flex-wrap">
+      <ProjectDetailTimelineItem
+        v-for="(item, index) in milestones"
+        :key="index"
+        :item="item"
+        class="w-1/2 sm:w-1/4 xs:w-full mb-block-0.5"
+        :is-last="index === milestones.length - 1"
+      />
     </div>
   </section>
 </template>
@@ -16,6 +22,36 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  data() {
+    return {
+      milestones: [
+        {
+          date: '2020',
+          title: 'Rozšíření rodiny kompatibilních ERP',
+        },
+        {
+          date: '2020',
+          title: 'Rozšíření rodiny kompatibilních ERP',
+        },
+        {
+          date: '2020',
+          title: 'Rozšíření rodiny kompatibilních ERP',
+        },
+        {
+          date: '2020',
+          title: 'Rozšíření rodiny kompatibilních ERP',
+        },
+        {
+          date: '2020',
+          title: 'Rozšíření rodiny kompatibilních ERP',
+        },
+        {
+          date: '2020',
+          title: 'Rozšíření rodiny kompatibilních ERP',
+        },
+      ],
+    };
   },
 };
 </script>

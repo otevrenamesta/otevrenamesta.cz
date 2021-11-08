@@ -7,7 +7,7 @@
 
     <div
       class="text-primary font-semibold text-3xl mb-block-1"
-      v-html="project.description"
+      v-html="project.perex"
     />
 
     <div class="flex justify-between flex-col sm:flex-row gap-4 sm:gap-0">

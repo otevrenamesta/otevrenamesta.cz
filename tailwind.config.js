@@ -20,6 +20,9 @@ module.exports = {
         secondary: '#00D48F',
         'secondary-dark': '#00563C',
         additional: '#FFCC00',
+        light: '#6E88FF',
+        gray: '#525252',
+        dark: '#161616',
       },
       spacing: {
         'block-0.5': '1.875rem',

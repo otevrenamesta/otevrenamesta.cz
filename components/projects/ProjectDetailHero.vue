@@ -19,7 +19,7 @@
         <div class="absolute -top-block-2 left-0 w-full">
           <div
             class="w-block-12 mx-auto"
-            v-html="project.illustration"
+            v-html="illustration"
           />
         </div>
         <Grid
@@ -35,6 +35,10 @@ export default {
   props: {
     project: {
       type: Object,
+      required: true,
+    },
+    illustration: {
+      type: String,
       required: true,
     },
   },

@@ -4,7 +4,23 @@
       Partneři projektu
     </h3>
     <div>
-      Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan. Nam quis nulla. Praesent dapibus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+      <div
+        v-for="(partner, index) in project.partneri"
+        :key="index"
+        class="mb-6 last:mb-0"
+      >
+        <a
+          v-if="partner.link"
+          :href="partner.link"
+          target="_blank"
+        >
+          <img
+            :src="partner.image"
+            :alt="partner.link"
+            class="max-w-full"
+          >
+        </a>
+      </div>
     </div>
   </section>
 </template>

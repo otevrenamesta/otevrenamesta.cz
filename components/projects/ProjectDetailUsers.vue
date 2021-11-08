@@ -4,7 +4,31 @@
       Uživatelé projektu
     </h3>
     <div>
-      Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan. Nam quis nulla. Praesent dapibus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+      <div
+        v-for="(uzivatel, index) in project.uzivatele"
+        :key="index"
+        class="mb-6 last:mb-0"
+      >
+        <strong class="text-light text-sm font-semibold block mb-1">
+          {{ uzivatel.nadpis }}
+        </strong>
+        <p
+          class="text-sm font-medium text-gray mb-1"
+          v-html="$md.render(uzivatel.popis)"
+        />
+        <a
+          v-if="uzivatel.link"
+          :href="uzivatel.link"
+        >
+          <Button
+            type="transparent"
+            icon="icon-arrow-right"
+            class="text-secondary px-0"
+          >
+            Přejít na web
+          </Button>
+        </a>
+      </div>
     </div>
   </section>
 </template>

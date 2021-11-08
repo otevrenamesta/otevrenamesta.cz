@@ -4,7 +4,24 @@
       Galerie
     </h3>
     <div>
-      Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan. Nam quis nulla. Praesent dapibus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+      <div
+        v-for="(image, index) in images"
+        :key="index"
+        class="mb-6 last:mb-0"
+      >
+        img
+        <!-- <a
+          v-if="partner.link"
+          :href="partner.link"
+          target="_blank"
+        >
+          <img
+            :src="partner.image"
+            :alt="partner.link"
+            class="max-w-full"
+          >
+        </a> -->
+      </div>
     </div>
   </section>
 </template>
@@ -16,6 +33,22 @@ export default {
       type: Object,
       required: true,
     },
+  },
+
+  data() {
+    return {
+      images: [],
+    };
+  },
+
+  async mounted() {
+    const filter = { tags: { like: `%project${this.project.id}%` } };
+    const images = await this.$axios.$get('/mediaman/', {
+      params: {
+        fitler: JSON.stringify(filter),
+      },
+    });
+    console.log(images);
   },
 };
 </script>
