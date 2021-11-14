@@ -1,11 +1,11 @@
 <template>
   <button
-    class="transition group text-white uppercase text-sm font-semibold px-5 py-3 flex items-center justify-center"
+    class="transition group text-white uppercase text-sm font-semibold py-3 flex items-center justify-center"
     :class="[
       type === 'primary' ? 'border border-primary bg-primary hover:bg-primary-dark' : '',
       type === 'secondary' ? 'border border-secondary bg-secondary' : '',
       type === 'dark' ? 'bg-black bg-opacity-60' : '',
-      type === 'transparent' ? 'bg-transparent' : '',
+      type === 'transparent' ? 'bg-transparent' : 'px-5',
       type === 'outline' ? 'border border-primary text-primary' : '',
     ]"
     :disabled="disabled || loading"

@@ -1,7 +1,7 @@
 <template>
-  <section class="container container--md flex flex-col md:flex-row items-center md:items-start">
-    <div class="w-full md:w-1/2 border-none md:border-r border-primary-light flex flex-col md:block items-center">
-      <div class="w-block-6 flex flex-col md:block items-center mb-block-2 md:mb-0">
+  <section class="container container--md flex flex-col md:flex-row md:items-start">
+    <div class="w-full md:w-1/2 border-none md:border-r border-primary-light">
+      <div class="w-block-6 mb-block-2 md:mb-0">
         <IconLogoOm
           class="mb-block-1.5"
         />
@@ -20,15 +20,15 @@
       <article
         v-for="(item, index) in structure.items"
         :key="index"
-        class="flex mb-block-1 last:mb-0"
+        class="flex mb-block-1 flex-col sm:flex-row last:mb-0"
       >
         <div
-          class="mr-block-1"
+          class="mr-block-1 mb-block-0.5 sm:mb-0"
           v-html="item.icon"
         />
         <div>
           <span
-            class="inline-block text-sm font-bold px-1.5 py-1.5 leading-none mb-2.5"
+            class="inline-flex text-sm font-bold leading-none mb-2.5 w-6 h-6 items-center justify-center"
             :class="[
               item.bg,
               item.bg === 'bg-primary-dark' ? 'text-white text-opacity-90' : 'text-black text-opacity-60',

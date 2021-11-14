@@ -3,7 +3,7 @@
     <div class="container flex justify-between items-center flex-col lg:flex-row">
       <div class="flex items-center flex-col md:flex-row mb-8 lg:mb-0">
         <LogoOm
-          class="mb-8 md:mb-0"
+          class="mb-8 w-44 h-auto md:mb-0"
         />
         <div class="border-none md:border-l border-secondary flex ml-block-1 pl-0 md:pl-block-1 pt-5 pb-4 flex-col sm:flex-row">
           <p class="mr-12 text-primary text-sm mb-8 sm:mb-0">

@@ -8,9 +8,17 @@ module.exports = {
     fontFamily: {
       sans: ['acumin-pro-wide', 'sans-serif'],
     },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       screens: {
         'hover-none': { raw: '(hover: none)' },
+        s: '440px',
         xs: { max: '350px' },
       },
       colors: {

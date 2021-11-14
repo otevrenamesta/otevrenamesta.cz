@@ -1,9 +1,9 @@
 <template>
-  <section class="container bg-primary-light px-14 md:px-28 xs:px-8 py-14 md:py-20 xs:py-8">
+  <section class="container bg-primary-light bg-opacity-60 px-14 md:px-28 xs:px-8 py-14 md:py-20 xs:py-8">
     <div class="flex justify-between flex-col md:flex-row">
-      <div class="max-w-4xl mr-6 md:mb-24">
+      <div class="max-w-4xl mr-6 md:mb-20">
         <h3
-          class="text-2xl text-primary-dark mb-14 md:mb-28 font-semibold max-w-xl"
+          class="text-2xl text-primary-dark mb-14 font-semibold max-w-xl"
           v-html=" intro.title"
         />
       </div>
