@@ -76,6 +76,12 @@ export default {
     };
   },
 
+  head() {
+    return {
+      title: `${this.project?.title} ${this.$config.appendTitle}`,
+    };
+  },
+
   async mounted() {
     const projects = await this.$axios.$get('/uni/projects/?sort=title:asc&currentPage=1&perPage=10');
     this.project = projects.data.find(({ id }) => id === +this.$route.params.id);
