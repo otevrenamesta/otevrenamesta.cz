@@ -10,6 +10,7 @@
 
     <CollaborationSection
       illustration="illustration-collaboration-1"
+      class="mb-block-2"
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
@@ -54,6 +55,7 @@
 
     <CollaborationSection
       illustration="illustration-collaboration-2"
+      class="mb-block-2"
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
@@ -69,7 +71,7 @@
         </h3>
         <p
           v-preposition-space
-          class="text-sm text-primary mb-block-0.5"
+          class="text-sm text-primary mb-2"
           v-html="sections.services.pricing.description"
         />
         <div class="flex items-center mb-block-1">

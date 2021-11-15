@@ -2,16 +2,16 @@
   <div class="container flex flex-col lg:flex-row -mt-px">
     <div class="relative">
       <Grid
-        :columns="$screen.xl ? 6 : ($screen.lg ? 5 : undefined)"
-        :rows="($screen.xl ? 7 : ($screen.lg ? 8 : 5)) + (illustration === 'illustration-collaboration-2' ? +2 : 0)"
+        :columns="$screen.xl ? 6 : 5"
+        :rows="illustration === 'illustration-collaboration-2' ? 7 : ($screen.xl ? 6 : 5)"
       />
       <component
         :is="illustration"
-        class="absolute top-block-2 left-block-2 h-auto"
-        :class="$screen.xl && illustration !== 'illustration-collaboration-2' ? 'w-block-8' : 'w-block-6'"
+        class="absolute top-block-1.5 sm:top-block-2 left-block-1.5 sm:left-block-2 h-auto"
+        :class="$screen.xl && illustration !== 'illustration-collaboration-2' ? 'w-block-8' : 'w-block-4.5 sm:w-block-6'"
       />
     </div>
-    <div class="p-block-0.5 xl:p-block-1.5 pt-block-1 pb-0 xl:pb-0">
+    <div class="p-0 lg:p-block-0.5 xl:p-block-1.5 pt-block-1 pb-0 xl:pb-0">
       <slot />
     </div>
   </div>

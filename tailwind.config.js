@@ -40,6 +40,7 @@ module.exports = {
         'block-2': '7.5rem',
         'block-3': '11.25rem',
         'block-4': '15rem',
+        'block-4.5': '16.875rem',
         'block-5': '18.75rem',
         'block-6': '22.5rem',
         'block-7': '26.25rem',
