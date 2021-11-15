@@ -1,14 +1,14 @@
 <template>
-  <section class="container bg-primary-light bg-opacity-60 px-14 md:px-28 xs:px-8 py-14 md:py-20 xs:py-8">
+  <section class="container bg-primary-light bg-opacity-60 px-14 md:px-28 xs:px-8 py-14 md:py-20 xs:py-10">
     <div class="flex justify-between flex-col md:flex-row">
-      <div class="max-w-4xl mr-6 md:mb-20">
+      <div class="max-w-4xl md:mr-6 md:mb-20">
         <h3
-          class="text-2xl text-primary-dark mb-14 font-semibold max-w-xl"
+          class="text-2xl xs:text-xl text-primary-dark mb-14 font-semibold max-w-xl"
           v-html=" intro.title"
         />
       </div>
 
-      <div class="mb-block-1 w-block-4 max-w-full lg:mr-4 md:mb-0">
+      <div class="mb-block-1 w-block-4 xs:w-block-3 max-w-full lg:mr-4 md:mb-0">
         <strong class="block text-secondary uppercase text-base mb-10">
           {{ intro.partners.title }}
         </strong>
@@ -31,7 +31,7 @@
         {{ intro.offers.title }}
       </strong>
 
-      <div class="flex justify-between gap-block-1 flex-col md:flex-row">
+      <div class="flex justify-between gap-block-1 xs:gap-block-0.5 flex-col md:flex-row">
         <div
           v-for="(offer, index) in intro.offers.items"
           :key="index"

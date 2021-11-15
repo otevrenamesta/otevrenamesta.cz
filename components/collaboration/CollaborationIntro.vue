@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="w-block-2 h-block-2 absolute bottom-0 left-0 flex flex-wrap"
+      class="w-block-2 h-block-2 absolute bottom-0 left-0 hidden sm:flex flex-wrap"
     >
       <div class="w-1/2 h-1/2 bg-primary" />
       <div class="w-1/2 h-1/2 bg-primary" />
@@ -9,10 +9,10 @@
       <div class="w-1/2 h-1/2 bg-primary" />
     </div>
     <div
-      class="w-block-2 h-block-2 bg-secondary absolute -bottom-block-1 right-0 rounded-br-full"
+      class="w-block-2 h-block-2 bg-secondary absolute -bottom-block-1 right-0 rounded-br-full xs:hidden"
     />
 
-    <div class="container flex items-center flex-col md:flex-row">
+    <div class="container flex md:items-center flex-col md:flex-row">
       <div class="max-w-xl md:w-1/2 md:max-w-3xl md:pr-10 mb-block-1 md:mb-0">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-0.5">
           {{ intro.title }}
@@ -23,7 +23,7 @@
           v-html="intro.description"
         />
       </div>
-      <div class="md:w-1/2 flex flex-col items-center">
+      <div class="md:w-1/2 flex flex-col md:items-center">
         <div
           v-for="(offer, index) in intro.offers"
           :key="index"

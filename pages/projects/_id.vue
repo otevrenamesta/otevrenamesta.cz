@@ -9,48 +9,48 @@
       <div class="w-full lg:w-8/12 lg:border-r border-primary-light">
         <ProjectDetailIntro
           :project="project"
-          class="w-11/12 sm:w-block-12 max-w-full mx-auto pt-block-2"
+          class="w-11/12 lg:w-block-12 max-w-full mx-auto pt-block-2"
         />
         <div
           class="w-full border-b border-primary-light"
         />
         <ProjectDetailContent
           :project="project"
-          class="w-11/12 sm:w-block-12 max-w-full mx-auto pt-block-1"
+          class="w-11/12 lg:w-block-12 max-w-full mx-auto pt-block-1"
         />
         <div
           class="w-full border-b border-primary-light"
         />
         <ProjectDetailTimeline
           :project="project"
-          class="w-11/12 sm:w-block-12 max-w-full mx-auto pt-block-1"
+          class="w-11/12 lg:w-block-12 max-w-full mx-auto pt-block-1"
         />
       </div>
       <div class="border-t border-primary-light lg:w-4/12 lg:border-none">
         <ProjectDetailFunctions
           :project="project"
-          class="w-11/12 sm:w-block-6 max-w-full mx-auto"
+          class="w-11/12 lg:w-block-6 max-w-full mx-auto"
         />
         <div
           class="w-full border-b border-primary-light"
         />
         <ProjectDetailUsers
           :project="project"
-          class="w-11/12 sm:w-block-6 max-w-full mx-auto"
+          class="w-11/12 lg:w-block-6 max-w-full mx-auto"
         />
         <div
           class="w-full border-b border-primary-light"
         />
         <ProjectDetailPartners
           :project="project"
-          class="w-11/12 sm:w-block-6 max-w-full mx-auto"
+          class="w-11/12 lg:w-block-6 max-w-full mx-auto"
         />
         <div
           class="w-full border-b border-primary-light"
         />
         <ProjectDetailGallery
           :project="project"
-          class="w-11/12 sm:w-block-6 max-w-full mx-auto"
+          class="w-11/12 lg:w-block-6 max-w-full mx-auto"
         />
       </div>
     </div>

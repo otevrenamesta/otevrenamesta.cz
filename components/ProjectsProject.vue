@@ -12,7 +12,7 @@
       <div class="BoxDecorations BoxDecorations--top-left" />
       <div class="BoxDecorations BoxDecorations--top-right" />
 
-      <div class="box-border px-block-1 pt-block-1.5 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6">
+      <div class="box-border px-block-1 xs:px-block-0.75 pt-block-1.5 xs:pt-block-1 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6">
         <h2 class="text-6xl text-primary font-bold mb-10 tracking-tight">
           {{ project.title }}
         </h2>
@@ -24,7 +24,7 @@
           v-html="project.description"
         />
         <nuxt-link
-          :to="localePath(`/project/${project.id}`)"
+          :to="localePath(`/projects/${project.id}`)"
         >
           <Button
             class="mb-block-1"

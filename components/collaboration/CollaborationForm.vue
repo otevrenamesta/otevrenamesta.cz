@@ -221,10 +221,10 @@ export default {
   }
 
   &Radio {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5;
+    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5 rounded-full;
 
     &Input {
-      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0;
+      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0 rounded-full;
 
       &:checked {
         @apply bg-opacity-60;

@@ -6,7 +6,7 @@
       </h2>
       <nuxt-link
         :to="localePath('/projects')"
-        class="block mb-block-1"
+        class="block mb-block-1 xs:mb-block-0.5"
       >
         <Button
           type="transparent"

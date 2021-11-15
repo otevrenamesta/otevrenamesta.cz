@@ -9,7 +9,7 @@
     />
 
     <HomepageProjects
-      class="mb-block-2"
+      class="sm:mb-block-2"
     />
 
     <HomepageValues

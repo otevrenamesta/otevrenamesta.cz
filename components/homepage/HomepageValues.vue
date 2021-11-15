@@ -5,12 +5,12 @@
         <div class="sm:aspect-w-1 sm:aspect-h-1 sm:bg-additional sm:rounded-full flex items-center justify-center">
           <p
             v-preposition-space
-            class="px-0 xs:px-10 py-14 sm:py-20 xs:py-10 flex items-center font-bold text-xl sm:w-8/12 mx-auto text-secondary sm:text-black text-opacity-70"
+            class="px-0 py-14 sm:py-20 xs:py-10 flex items-center font-bold text-xl xs:text-lg sm:w-8/12 mx-auto text-secondary sm:text-black sm:text-opacity-70"
             v-html="values.claim"
           />
         </div>
       </div>
-      <div class="w-full xl:w-1/2 bg-secondary px-block-1 py-block-0.5 md:px-block-2 md:py-block-1.5">
+      <div class="w-full xl:w-1/2 bg-secondary px-block-1 py-block-0.5 md:px-block-2 xs:px-block-1 md:py-block-1.5">
         <div class="flex items-center justify-between flex-wrap">
           <h2 class="text-white text-3xl font-semibold">
             {{ values.title }}

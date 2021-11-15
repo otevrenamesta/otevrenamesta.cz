@@ -20,14 +20,14 @@
         </nuxt-link>
       </div>
       <div class="flex flex-col justify-start items-start relative w-auto">
-        <div
+        <!-- <div
           class="w-block-1.5 sm:w-block-2 h-block-1.5 sm:h-block-2  absolute top-0 left-0 flex flex-wrap"
         >
           <div class="w-1/2 h-1/2 bg-primary" />
           <div class="w-1/2 h-1/2 bg-primary" />
           <div class="w-1/2 h-1/2 bg-transparent" />
           <div class="w-1/2 h-1/2 bg-primary" />
-        </div>
+        </div> -->
         <div
           class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-secondary absolute top-0 right-0 sm:-right-block-2 rounded-br-full"
         />
