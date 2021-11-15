@@ -3,13 +3,13 @@
     <div class="container relative flex flex-col justify-start items-start">
       <div class="flex flex-col justify-start items-start relative w-auto">
         <h2
-          class="text-primary text-6xl leading-tight font-bold tracking-tighter absolute z-10 bottom-block-2 left-block-4 -mb-2"
+          class="text-primary text-5xl 2xl:text-6xl xs:text-4xl leading-tight font-bold tracking-tighter absolute z-10 bottom-auto lg:bottom-block-4 left-0 sm:left-block-2 -mb-2 mt-8"
           v-html="hero.title"
         />
-        <div class="w-block-10 h-block-10 bg-primary absolute z-10 bottom-0 right-block-4 px-block-1 py-block-1.5">
+        <div class="w-full s:w-auto sm:w-block-10 h-auto sm:h-block-10 bg-primary absolute z-10 bottom-0 right-0 s:right-block-1.5 xl:right-block-4 px-block-0.75 sm:px-block-1 xs:px-block-0.5 py-block-1 sm:py-block-1.5">
           <a
             :href="`mailto:${contact.email}`"
-            class="block text-white text-3xl font-bold mb-block-1 hover:underline"
+            class="block text-white text-2xl sm:text-3xl font-bold mb-block-1 hover:underline"
           >
             {{ contact.email }}
           </a>
@@ -34,7 +34,7 @@
           <Socials is-white />
         </div>
         <div
-          class="w-block-2 h-block-2 absolute bottom-0 left-0 flex flex-wrap"
+          class="w-block-2 h-block-2 absolute bottom-0 left-0 flex-wrap hidden md:flex"
         >
           <div class="w-1/2 h-1/2 bg-primary" />
           <div class="w-1/2 h-1/2 bg-primary" />
@@ -42,16 +42,16 @@
           <div class="w-1/2 h-1/2 bg-primary" />
         </div>
         <div
-          class="w-block-4 h-block-4 bg-secondary absolute top-0 right-0 rounded-br-full"
+          class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-secondary absolute bottom-0 sm:bottom-auto sm:top-0 right-0 sm:-right-block-2 rounded-br-full"
         />
         <div
-          class="w-block-4 h-block-4 bg-additional absolute left-block-4 top-block-2 rounded-full"
+          class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-additional absolute right-0 sm:right-auto left-auto sm:left-block-4 top-0 sm:top-block-2 rounded-full"
         />
         <div
-          class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0"
+          class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0 hidden xl:block"
         />
         <Grid
-          :rows="7"
+          :rows="$screen.sm ? 7 : 8"
         />
       </div>
     </div>

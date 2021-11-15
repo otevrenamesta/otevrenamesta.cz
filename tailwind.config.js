@@ -9,6 +9,7 @@ module.exports = {
       sans: ['acumin-pro-wide', 'sans-serif'],
     },
     screens: {
+      s: '440px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -18,7 +19,6 @@ module.exports = {
     extend: {
       screens: {
         'hover-none': { raw: '(hover: none)' },
-        s: '440px',
         xs: { max: '350px' },
       },
       colors: {
@@ -34,6 +34,7 @@ module.exports = {
       },
       spacing: {
         'block-0.5': '1.875rem',
+        'block-0.75': '2.8125rem',
         'block-1': '3.75rem',
         'block-1.5': '5.625rem',
         'block-2': '7.5rem',

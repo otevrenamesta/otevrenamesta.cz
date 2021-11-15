@@ -2,7 +2,7 @@
   <div class="container flex flex-col lg:flex-row -mt-px">
     <div class="relative">
       <Grid
-        :columns="$screen.xl ? 6 : ($screen.lg ? 5 : false)"
+        :columns="$screen.xl ? 6 : ($screen.lg ? 5 : undefined)"
         :rows="($screen.xl ? 7 : ($screen.lg ? 8 : 5)) + (illustration === 'illustration-collaboration-2' ? +2 : 0)"
       />
       <component

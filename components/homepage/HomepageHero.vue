@@ -1,7 +1,7 @@
 <template>
   <section class="Hero flex items-end h-screen min-h-[700px]">
     <div class="container flex items-end justify-end relative h-full">
-      <div class="HeroBox bg-primary pt-10 s:pt-12 sm:pt-20 pb-10 sm:pb-14 pl-10 s:pl-12 sm:pl-16 w-10/12 sm:w-auto">
+      <div class="HeroBox bg-primary pt-10 s:pt-12 sm:pt-20 pb-10 sm:pb-14 pl-10 s:pl-12 sm:pl-16 w-10/12 sm:w-auto md:pr-14">
         <h2
           class="text-4xl s:text-5xl sm:text-6xl text-white font-bold mb-9 xs:mb-0 tracking-tight"
           v-html="hero.title"

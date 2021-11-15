@@ -2,7 +2,7 @@
   <div>
     <div
       ref="BlockTemplate"
-      class="w-block-1 h-0"
+      class="w-block-0.75 sm:w-block-1 h-0"
     />
     <div
       v-for="row in rows"
@@ -12,7 +12,7 @@
       <div
         v-for="column in columnsComputed"
         :key="column"
-        class="w-block-2 h-block-2 border border-primary-light border-r-0 last:border-r"
+        class="w-block-1.5 sm:w-block-2 h-block-1.5 sm:h-block-2 border border-primary-light border-r-0 last:border-r"
         :class="[
           row === 1 ? 'border-t' : 'border-t-0',
           inverse ? 'bg-primary border-opacity-20' : '',
