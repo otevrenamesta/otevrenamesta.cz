@@ -1,11 +1,13 @@
 <template>
   <header class="absolute top-0 left-0 w-full z-10">
-    <div class="container pt-12 flex justify-between flex-wrap">
+    <div class="container pt-block-0.5 lg:pt-12 flex justify-between flex-wrap">
       <nuxt-link to="/">
-        <LogoOm />
+        <LogoOm
+          class="w-44 lg:w-auto h-auto"
+        />
       </nuxt-link>
 
-      <nav class="flex items-center flex-wrap">
+      <nav class="items-center flex-wrap hidden lg:flex">
         <nuxt-link
           v-for="(item, index) in menuItems"
           :key="index"
@@ -21,6 +23,19 @@
           {{ $i18n.locale === 'cs' ? 'en' : 'cz' }}
         </nuxt-link> -->
       </nav>
+
+      <button
+        class="w-10 sm:w-14 h-10 sm:h-14 bg-primary-light bg-opacity-60 text-primary flex items-center justify-center absolute top-block-0.75 right-block-0.5 lg:hidden"
+        @click="() => $store.commit('ui/setIsBurgerMenuOpen', true)"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
+          <g transform="translate(-701 -52)">
+            <rect width="14" height="2" transform="translate(701 62)" fill="currentColor" />
+            <rect width="14" height="2" transform="translate(701 57)" fill="currentColor" />
+            <rect width="14" height="2" transform="translate(701 52)" fill="currentColor" />
+          </g>
+        </svg>
+      </button>
     </div>
   </header>
 </template>
