@@ -15,7 +15,10 @@
           </p>
         </div>
       </div>
-      <div class="w-full xl:w-1/2 bg-secondary px-block-1 md:px-block-2 xs:px-block-0.5 py-block-1 mb:py-block-1.5 flex flex-col justify-center">
+      <div
+        id="form"
+        class="w-full xl:w-1/2 bg-secondary px-block-1 md:px-block-2 xs:px-block-0.5 py-block-1 mb:py-block-1.5 flex flex-col justify-center"
+      >
         <CollaborationForm />
       </div>
     </div>

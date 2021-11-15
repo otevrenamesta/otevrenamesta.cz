@@ -14,7 +14,7 @@
             Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
           </p>
           <nuxt-link
-            to="/"
+            :to="localePath('/collaboration#form')"
           >
             <Button
               type="secondary"
@@ -38,7 +38,7 @@
             Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
           </p>
           <nuxt-link
-            to="/"
+            :to="localePath('/collaboration#form')"
           >
             <Button
               type="secondary"
