@@ -4,30 +4,41 @@
       Galerie
     </h3>
     <div>
-      <div
-        v-for="(image, index) in images"
-        :key="index"
-        class="mb-6 last:mb-0"
-      >
-        img
-        <!-- <a
-          v-if="partner.link"
-          :href="partner.link"
-          target="_blank"
+      <CoolLightBox
+        :items="images"
+        :slideshow="false"
+        :gallery="false"
+        :index="currentImageIndex"
+        @close="currentImageIndex = null"
+      />
+
+      <div class="flex flex-wrap -mx-2">
+        <button
+          v-for="(image, index) in images.slice(0, 4)"
+          :key="index"
+          class="w-1/2 px-2"
+          @click="currentImageIndex = index"
         >
           <img
-            :src="partner.image"
-            :alt="partner.link"
-            class="max-w-full"
+            :src="image"
+            :alt="project.title"
+            class="w-full"
           >
-        </a> -->
+        </button>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import CoolLightBox from 'vue-cool-lightbox';
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css';
+
 export default {
+  components: {
+    CoolLightBox,
+  },
+
   props: {
     project: {
       type: Object,
@@ -37,7 +48,11 @@ export default {
 
   data() {
     return {
-      images: [],
+      currentImageIndex: null,
+      images: [
+        'https://pix10.agoda.net/hotelImages/1199068/-1/09cb9a2780bf41ad1e8f8a3d2e074754.jpg',
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg',
+      ],
     };
   },
 
