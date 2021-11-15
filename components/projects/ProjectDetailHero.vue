@@ -8,7 +8,7 @@
         >
           {{ project.badge }}
         </div>
-        <h2 class="text-primary text-8xl leading-tight font-bold tracking-tighter w-2/3">
+        <h2 class="text-primary text-5xl md:text-8xl leading-tight font-bold tracking-tighter w-2/3">
           {{ project.title }}
         </h2>
       </div>
@@ -16,14 +16,14 @@
         <p class="absolute right-block-1 bottom-block-1 text-secondary text-3xl font-bold max-w-xs">
           {{ project.slogan }}
         </p>
-        <div class="absolute -top-block-2 left-0 w-full">
+        <div class="absolute -top-block-0.5 sm:-top-block-2 left-0 w-full">
           <div
-            class="w-block-12 mx-auto"
+            class="w-block-6 md:w-block-12 mx-auto"
             v-html="illustration"
           />
         </div>
         <Grid
-          :rows="5"
+          :rows="$screen.sm ? 5 : 7"
         />
       </div>
     </div>
