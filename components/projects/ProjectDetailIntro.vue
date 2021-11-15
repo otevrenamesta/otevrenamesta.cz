@@ -12,17 +12,21 @@
 
     <div class="flex justify-between flex-col sm:flex-row gap-4 sm:gap-0">
       <div class="flex flex-col sm:flex-row gap-4">
-        <nuxt-link
-          to="/"
+        <a
+          v-if="project.web"
+          :href="project.web"
+          target="_blank"
         >
           <Button
             icon="icon-arrow-open"
           >
             Otevřít web
           </Button>
-        </nuxt-link>
-        <nuxt-link
-          to="/"
+        </a>
+        <a
+          v-if="project.demo"
+          :href="project.demo"
+          target="_blank"
         >
           <Button
             type="outline"
@@ -30,11 +34,13 @@
           >
             Vyzkoušet demo
           </Button>
-        </nuxt-link>
+        </a>
       </div>
       <div>
-        <nuxt-link
-          to="/"
+        <a
+          v-if="project.code"
+          :href="project.code"
+          target="_blank"
         >
           <Button
             type="transparent"
@@ -43,7 +49,7 @@
           >
             Zobrazit zdrojový kód
           </Button>
-        </nuxt-link>
+        </a>
       </div>
     </div>
   </section>

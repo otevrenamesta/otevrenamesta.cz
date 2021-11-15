@@ -15,16 +15,16 @@
       class="w-block-4 h-block-4 bg-additional absolute bottom-0 left-0 rounded-full hidden lg:block"
     />
     <div class="container flex lg:items-center relative z-10 flex-col lg:flex-row">
-      <div class="max-w-lg lg:max-w-full lg:w-1/2 lg:pr-6 lg:pl-block-2 mb-block-1 lg:mb-0">
+      <div class="max-w-lg lg:max-w-full lg:w-7/12 lg:pr-6 lg:pl-block-2 mb-block-1 lg:mb-0">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-0.5">
           Otestování produktu
         </strong>
         <h3
           class="text-primary text-3xl font-semibold tracking-tighter"
-          v-html="$md.render(project.testovani)"
+          v-html="project.testovani ? $md.render(project.testovani) : ''"
         />
       </div>
-      <div class="max-w-lg lg:w-1/2 flex flex-col lg:items-center">
+      <div class="max-w-lg lg:w-5/12 flex flex-col">
         <strong class="block text-secondary uppercase font-bold text-base leading-none mb-block-0.5 max-w-xs">
           Jak postupovat
         </strong>

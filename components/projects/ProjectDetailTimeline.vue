@@ -5,11 +5,11 @@
     </h3>
     <div class="flex flex-wrap">
       <ProjectDetailTimelineItem
-        v-for="(item, index) in milestones"
+        v-for="(item, index) in project.milestones"
         :key="index"
         :item="item"
         class="w-1/2 sm:w-1/4 xs:w-full mb-block-0.5"
-        :is-last="index === milestones.length - 1"
+        :is-last="index === project.milestones.length - 1"
       />
     </div>
   </section>
@@ -22,36 +22,6 @@ export default {
       type: Object,
       required: true,
     },
-  },
-  data() {
-    return {
-      milestones: [
-        {
-          date: '2020',
-          title: 'Rozšíření rodiny kompatibilních ERP',
-        },
-        {
-          date: '2020',
-          title: 'Rozšíření rodiny kompatibilních ERP',
-        },
-        {
-          date: '2020',
-          title: 'Rozšíření rodiny kompatibilních ERP',
-        },
-        {
-          date: '2020',
-          title: 'Rozšíření rodiny kompatibilních ERP',
-        },
-        {
-          date: '2020',
-          title: 'Rozšíření rodiny kompatibilních ERP',
-        },
-        {
-          date: '2020',
-          title: 'Rozšíření rodiny kompatibilních ERP',
-        },
-      ],
-    };
   },
 };
 </script>

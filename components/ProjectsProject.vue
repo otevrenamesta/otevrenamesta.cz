@@ -17,11 +17,11 @@
           {{ project.title }}
         </h2>
         <strong class="block text-2xl text-secondary mb-8 tracking-tight">
-          {{ project.slogan }}
+          {{ project.subtitle }}
         </strong>
         <p
           class="text-primary text-base font-medium mb-7"
-          v-html="project.description"
+          v-html="project.perex"
         />
         <nuxt-link
           :to="localePath(`/projects/${project.id}`)"
@@ -36,6 +36,7 @@
 
         <div class="flex justify-between flex-wrap items-start">
           <div
+            v-if="project.logo"
             v-html="project.logo"
           />
           <div
@@ -56,7 +57,7 @@
       :class="[
         align === 'left' ? 'right-block-2' : 'left-block-2',
       ]"
-      v-html="project.illustration"
+      v-html="illustration"
     />
   </article>
 </template>
@@ -66,6 +67,10 @@ export default {
   props: {
     project: {
       type: Object,
+      required: true,
+    },
+    illustration: {
+      type: String,
       required: true,
     },
     align: {
