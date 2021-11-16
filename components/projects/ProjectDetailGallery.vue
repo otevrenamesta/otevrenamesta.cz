@@ -22,6 +22,7 @@
           <img
             :src="image.url"
             :alt="project.title"
+            loading="lazy"
             class="w-full"
           >
         </button>
