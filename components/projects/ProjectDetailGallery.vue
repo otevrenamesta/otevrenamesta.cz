@@ -5,7 +5,7 @@
     </h3>
     <div>
       <CoolLightBox
-        :items="images"
+        :items="images.map(image => image.url)"
         :slideshow="false"
         :gallery="false"
         :index="currentImageIndex"
@@ -20,7 +20,7 @@
           @click="currentImageIndex = index"
         >
           <img
-            :src="image"
+            :src="image.url"
             :alt="project.title"
             class="w-full"
           >
@@ -63,7 +63,10 @@ export default {
         fitler: JSON.stringify(filter),
       },
     });
-    console.log(images);
+    this.images = images.map((image) => {
+      image.url = `https://new.otevrenamesta.cz/cdn/${image.filename}`;
+      return image;
+    });
   },
 };
 </script>
