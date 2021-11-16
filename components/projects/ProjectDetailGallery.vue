@@ -59,13 +59,13 @@ export default {
 
   async mounted() {
     const filter = { tags: { like: `%project${this.project.id}%` } };
-    const images = await this.$axios.$get('/mediaman/', {
+    const images = await this.$axios.$get('https://modurad.otevrenamesta.cz/mediaman/otevrenamesta.cz/', {
       params: {
         fitler: JSON.stringify(filter),
       },
     });
     this.images = images.map((image) => {
-      image.url = `https://new.otevrenamesta.cz/cdn/${image.filename}`;
+      image.url = `https://modurad.otevrenamesta.cz/media/otevrenamesta.cz/${image.filename}`;
       return image;
     });
   },

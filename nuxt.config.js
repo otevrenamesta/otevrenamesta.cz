@@ -62,7 +62,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://new.otevrenamesta.cz/api',
+    baseURL: 'https://modurad.otevrenamesta.cz/uni/otevrenamesta.cz',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

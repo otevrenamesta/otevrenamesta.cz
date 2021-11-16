@@ -171,14 +171,14 @@ export default {
       this.isSubmitting = true;
 
       try {
-        await this.$axios.$post('/contactforms/', {
+        await this.$axios.$post('https://modurad.otevrenamesta.cz/contactforms/otevrenamesta.cz/', {
           jmeno: this.form.fullname,
           mesto: this.form.city,
           email: this.form.email,
           tel: this.form.phone,
           subject: this.form.interestedIn,
           content: this.form.message,
-          url: 'https://new.otevrenamesta.cz/api/uni/messages/',
+          url: 'https://modurad.otevrenamesta.cz/uni/otevrenamesta.cz/messages/',
           token,
         });
 
