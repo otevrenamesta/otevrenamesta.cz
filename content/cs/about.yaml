@@ -26,10 +26,3 @@ structure:
       title: Projektová rada
       description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období 2 let.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
-
-    - color: text-primary-dark
-      bg: bg-primary-dark
-      number: 04
-      title: Členská schůze
-      description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze všech členů, kteří splní požadavky pro přístup do spolku.
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
