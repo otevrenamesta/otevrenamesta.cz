@@ -14,7 +14,7 @@
       </div>
       <div class="flex flex-col justify-start items-start relative w-auto">
         <p class="absolute right-block-1 bottom-block-1 text-secondary text-3xl font-bold max-w-xs">
-          {{ project.slogan }}
+          {{ project.subtitle }}
         </p>
         <div class="absolute -top-block-0.5 sm:-top-block-2 left-0 w-full">
           <div
