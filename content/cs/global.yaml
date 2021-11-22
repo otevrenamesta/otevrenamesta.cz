@@ -66,9 +66,25 @@ socials:
       url: /
 
 leaderships:
+  - img: https://new.otevrenamesta.cz/admin/#/mediaman?_detail=7_lucie_smolka_fix.jpg
+    fullname: Lucie Smolka
+    subtitle: předsedkyně výboru
+    description: Lucie je IT právnička zaměřená na moderní a digitální technologie, právo duševního vlastnictví a licence Creative Commons.
+    email: lucie.smolka@otevrenamesta.cz
+    phone: "+420 731 123 644"
+    linkedin: https://www.linkedin.com/in/luciesmolka/
+    twitter: https://twitter.com/lucie_couz
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
+    fullname: Jiří Marek
+    subtitle: zástupce předsedkyně
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    email: jiri.marek@otevrenamesta.cz
+    phone: "+420 602 570 184"
+    linkedin: https://www.linkedin.com/in/marekjiri/
+    twitter: https://twitter.com/JM_microblog
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Štěpán Štrébl
+    subtitle: člen výboru
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
       v grafickém designu.
     email: pokorny@otevrenamesta.cz
@@ -78,9 +94,10 @@ leaderships:
     linkedin: http://linkedin.com/
     twitter: http://twitter.com/
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    fullname: Jiří Hlavenka
+    subtitle: člen výboru
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
+      v grafickém designu.
     email: pokorny@otevrenamesta.cz
     phone: "+420 773 747 784"
     facebook: http://facebook.com/
@@ -88,29 +105,10 @@ leaderships:
     linkedin: http://linkedin.com/
     twitter: http://twitter.com/
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
+    fullname: Neobsazená funkce
     subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
+      v grafickém designu.
     email: pokorny@otevrenamesta.cz
     phone: "+420 773 747 784"
     facebook: http://facebook.com/
