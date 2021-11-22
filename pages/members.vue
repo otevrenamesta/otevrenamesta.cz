@@ -13,7 +13,7 @@
       </h2>
       <div class="flex flex-wrap">
         <div
-          v-for="(member, index) in members"
+          v-for="(member, index) in $store.state.content.members.members"
           :key="index"
           class="w-full md:w-1/2 xl:w-1/3"
         >
@@ -29,53 +29,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      members: [
-        {
-          fullname: 'Název člena',
-          agent: 'Jaroslav Pokorný',
-          population: '182 000',
-          memberFee: '1 234 Kč / měsíc',
-        },
-        {
-          image: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Název člena',
-          agent: 'Jaroslav Pokorný',
-          population: '182 000',
-          memberFee: '1 234 Kč / měsíc',
-        },
-        {
-          image: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Název člena',
-          agent: 'Jaroslav Pokorný',
-          population: '182 000',
-          memberFee: '1 234 Kč / měsíc',
-        },
-        {
-          image: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Název člena',
-          agent: 'Jaroslav Pokorný',
-          population: '182 000',
-          memberFee: '1 234 Kč / měsíc',
-        },
-        {
-          image: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Název člena',
-          agent: 'Jaroslav Pokorný',
-          population: '182 000',
-          memberFee: '1 234 Kč / měsíc',
-        },
-        {
-          image: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Název člena',
-          agent: 'Jaroslav Pokorný',
-          population: '182 000',
-          memberFee: '1 234 Kč / měsíc',
-        },
-      ],
-    };
-  },
   async fetch() {
     await this.$store.dispatch('content/load', { page: 'members' });
   },

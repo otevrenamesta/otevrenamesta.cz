@@ -2,3 +2,34 @@ hero:
   title: Členové
   description: Otevřená města jsou neziskovou organizací založenou s cílem rozvoje využití otevřených řešení v rámci místních samospráv a obecně prosazování otevřenějšího, efektivnějšího a transparentnějšího chodu obcí, měst a regionů v České republice.
   cta: Stát se členem
+
+members:
+  - fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - image: https://picsum.photos/seed/picsum/480/480
+    fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - image: https://picsum.photos/seed/picsum/480/480
+    fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - image: https://picsum.photos/seed/picsum/480/480
+    fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - image: https://picsum.photos/seed/picsum/480/480
+    fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - image: https://picsum.photos/seed/picsum/480/480
+    fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc

@@ -64,3 +64,56 @@ socials:
     - name: gitlab
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.193" viewBox="0 0 24 22.193"><g id="logo_art" transform="translate(-123.55 -122.776)"><path id="Path_44" data-name="Path 44" d="m147.479 135.208-1.278-3.936v.005-.006l-2.537-7.81a1 1 0 0 0-.958-.684.986.986 0 0 0-.946.69l-2.408 7.413h-7.6l-2.413-7.414a.986.986 0 0 0-.946-.69h-.005a1.006 1.006 0 0 0-.955.69l-2.53 7.8v.006-.005l-1.283 3.936a1.434 1.434 0 0 0 .521 1.607l11.075 8.047h.005l.014.01-.013-.009a.569.569 0 0 0 .053.033H135.294l.03.012.028.012h.014l.041.01h.042a.558.558 0 0 0 .08.006.561.561 0 0 0 .08-.006H135.65l.04-.01h.014l.029-.012.027-.011h.015a.569.569 0 0 0 .053-.033h.005l11.077-8.047a1.434 1.434 0 0 0 .569-1.604Zm-4.766-11.016 2.172 6.688h-4.345Zm1.792 7.819-.886 1.136-6.538 8.377 3.092-9.512h4.327Zm-9.493 12.568v.005Zm-.992-3.055-7.42-9.513h4.332Zm-5.632-17.332 2.176 6.688h-4.344Zm-3.581 11.708a.306.306 0 0 1-.111-.343l.953-2.926 6.986 8.957Zm10.39 8.946-.006-.006-.013-.011-.024-.022a.575.575 0 0 0 .051.044Zm.352-2.273-1.817-5.6-1.612-4.966h6.863Zm.372 2.255-.013.011-.006.005-.015.011a.548.548 0 0 0 .051-.043Zm10.372-8.929-7.828 5.687 6.989-8.954.95 2.925a.306.306 0 0 1-.111.343Z" fill="currentColor"/></g></svg>
       url: /
+
+leaderships:
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Jaroslav Pokorný
+    subtitle: Datový analytik
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
+      v grafickém designu.
+    email: pokorny@otevrenamesta.cz
+    phone: "+420 773 747 784"
+    facebook: http://facebook.com/
+    instagram: http://instagram.com/
+    linkedin: http://linkedin.com/
+    twitter: http://twitter.com/
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Jaroslav Pokorný
+    subtitle: Datový analytik
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    email: pokorny@otevrenamesta.cz
+    phone: "+420 773 747 784"
+    facebook: http://facebook.com/
+    instagram: http://instagram.com/
+    linkedin: http://linkedin.com/
+    twitter: http://twitter.com/
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Jaroslav Pokorný
+    subtitle: Datový analytik
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    email: pokorny@otevrenamesta.cz
+    phone: "+420 773 747 784"
+    facebook: http://facebook.com/
+    instagram: http://instagram.com/
+    linkedin: http://linkedin.com/
+    twitter: http://twitter.com/
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Jaroslav Pokorný
+    subtitle: Datový analytik
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    email: pokorny@otevrenamesta.cz
+    phone: "+420 773 747 784"
+    facebook: http://facebook.com/
+    instagram: http://instagram.com/
+    linkedin: http://linkedin.com/
+    twitter: http://twitter.com/
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Jaroslav Pokorný
+    subtitle: Datový analytik
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
+    email: pokorny@otevrenamesta.cz
+    phone: "+420 773 747 784"
+    facebook: http://facebook.com/
+    instagram: http://instagram.com/
+    linkedin: http://linkedin.com/
+    twitter: http://twitter.com/

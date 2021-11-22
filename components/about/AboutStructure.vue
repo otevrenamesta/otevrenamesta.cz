@@ -16,7 +16,7 @@
         />
       </div>
     </div>
-    <div class="w-1/2 flex flex-col items-end">
+    <div class="w-1/2 flex flex-col items-end border-l border-primary-light border-opacity-50">
       <article
         v-for="(item, index) in structure.items"
         :key="index"

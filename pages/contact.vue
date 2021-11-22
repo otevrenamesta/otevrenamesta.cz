@@ -19,7 +19,7 @@
       </a>
       <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
         <div
-          v-for="(perosn, index) in leaderships"
+          v-for="(perosn, index) in $store.state.content.global.leaderships"
           :key="index"
           class="px-6 md:px-block-0.5 w-1/2 xs:w-full md:w-1/3 lg:w-1/4 xl:w-1/5"
         >
@@ -35,73 +35,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      leaderships: [
-        {
-          img: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Jaroslav Pokorný',
-          subtitle: 'Datový analytik',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-          email: 'pokorny@otevrenamesta.cz',
-          phone: '+420 773 747 784',
-          facebook: 'http://facebook.com/',
-          instagram: 'http://instagram.com/',
-          linkedin: 'http://linkedin.com/',
-          twitter: 'http://twitter.com/',
-        },
-        {
-          img: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Jaroslav Pokorný',
-          subtitle: 'Datový analytik',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-          email: 'pokorny@otevrenamesta.cz',
-          phone: '+420 773 747 784',
-          facebook: 'http://facebook.com/',
-          instagram: 'http://instagram.com/',
-          linkedin: 'http://linkedin.com/',
-          twitter: 'http://twitter.com/',
-        },
-        {
-          img: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Jaroslav Pokorný',
-          subtitle: 'Datový analytik',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-          email: 'pokorny@otevrenamesta.cz',
-          phone: '+420 773 747 784',
-          facebook: 'http://facebook.com/',
-          instagram: 'http://instagram.com/',
-          linkedin: 'http://linkedin.com/',
-          twitter: 'http://twitter.com/',
-        },
-        {
-          img: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Jaroslav Pokorný',
-          subtitle: 'Datový analytik',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-          email: 'pokorny@otevrenamesta.cz',
-          phone: '+420 773 747 784',
-          facebook: 'http://facebook.com/',
-          instagram: 'http://instagram.com/',
-          linkedin: 'http://linkedin.com/',
-          twitter: 'http://twitter.com/',
-        },
-        {
-          img: 'https://picsum.photos/seed/picsum/480/480',
-          fullname: 'Jaroslav Pokorný',
-          subtitle: 'Datový analytik',
-          description: 'Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.',
-          email: 'pokorny@otevrenamesta.cz',
-          phone: '+420 773 747 784',
-          facebook: 'http://facebook.com/',
-          instagram: 'http://instagram.com/',
-          linkedin: 'http://linkedin.com/',
-          twitter: 'http://twitter.com/',
-        },
-      ],
-    };
-  },
-
   async fetch() {
     await this.$store.dispatch('content/load', { page: 'contact' });
   },
@@ -114,7 +47,7 @@ export default {
 
   computed: {
     leadership() {
-      return this.$store.state.content.contact.leadership;
+      return this.$store.state.content.contact?.leadership;
     },
   },
 };
