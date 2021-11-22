@@ -1,6 +1,6 @@
 hero:
   title: Členové
-  description: Otevřená města jsou neziskovou organizací založenou s cílem rozvoje využití otevřených řešení v rámci místních samospráv a obecně prosazování otevřenějšího, efektivnějšího a transparentnějšího chodu obcí, měst a regionů v České republice.
+  description: Otevřená města jsou neziskovou organizací, která pomáhá samosprávám s digitalizací a  využitím moderních otevřených řešení.  Prosazujeme otevřenější, efektivnější a transparentnější chodu obcí, měst a regionů v České republice. K naplnění těchto cílů vyvíjíme a spravujeme vlastní open source aplikace a poskytují profesionální technickou, právní a metodickou podporu. Věnujeme se sdílení dobré praxe, prostřednictvím pořádaných odborných setkánízvyšujeme povědomí o možnostech moderních řešení pro samosprávy,  nástrojích digitalizace a obraně proti negativním jevům, jako je vendor lock-in. 
   cta: Stát se členem
 
 members:
