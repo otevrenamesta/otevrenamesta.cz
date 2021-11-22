@@ -65,7 +65,7 @@ socials:
       url: /
 
 leaderships:
-  - img: https://www.praha3.cz/getFile/id:947214/z%C3%A1kladn%C3%AD%20varianta%20JPG.jpeg
+  - img: https://picsum.photos/seed/picsum/480/480
     fullname: Lucie Smolka
     subtitle: předsedkyně výboru
     description: Lucie je IT právnička zaměřená na moderní a digitální technologie, právo duševního vlastnictví a licence Creative Commons.
@@ -73,7 +73,7 @@ leaderships:
     phone: "+420 731 123 644"
     linkedin: https://www.linkedin.com/in/luciesmolka/
     twitter: https://twitter.com/lucie_couz
-  - img: https://github.com/otevrenamesta/otevrenamesta.cz/blob/main/assets/img/jiri_marek.jpeg
+  - img: https://picsum.photos/seed/picsum/480/480
     fullname: Jiří Marek
     subtitle: zástupce předsedkyně
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
