@@ -8,8 +8,19 @@ members:
     agent: Jaroslav Pokorný
     population: 182 000
     memberFee: 1 234 Kč / měsíc
-  - image: https://picsum.photos/seed/picsum/480/480
-    fullname: Název člena
+  - fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - fullname: Název člena
     agent: Jaroslav Pokorný
     population: 182 000
     memberFee: 1 234 Kč / měsíc
@@ -18,18 +29,23 @@ members:
     agent: Jaroslav Pokorný
     population: 182 000
     memberFee: 1 234 Kč / měsíc
-  - image: https://picsum.photos/seed/picsum/480/480
-    fullname: Název člena
+  - fullname: Název člena
     agent: Jaroslav Pokorný
     population: 182 000
     memberFee: 1 234 Kč / měsíc
-  - image: https://picsum.photos/seed/picsum/480/480
-    fullname: Název člena
+  - fullname: Název člena
     agent: Jaroslav Pokorný
     population: 182 000
     memberFee: 1 234 Kč / měsíc
-  - image: https://picsum.photos/seed/picsum/480/480
-    fullname: Název člena
+  - fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - fullname: Název člena
+    agent: Jaroslav Pokorný
+    population: 182 000
+    memberFee: 1 234 Kč / měsíc
+  - fullname: Název člena
     agent: Jaroslav Pokorný
     population: 182 000
     memberFee: 1 234 Kč / měsíc
