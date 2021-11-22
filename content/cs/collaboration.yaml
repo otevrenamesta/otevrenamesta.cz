@@ -1,10 +1,10 @@
 hero:
   title: Možnosti spolupráce
-  description: "Spolupráce je možná třemi způsoby: stát se členem spolku, koupit si produkt jako SaaS nebo si ho sám rozchodit jako open source."
+  description: "Spolupráce je možná třemi způsoby: stát se členem spolku, koupit si produkt jako poskytovaný servis nebo si produkt sám nainstalovat a podílet se společně s námi na jeho vývoji."
 
 intro:
   title: Jak získat produkt
-  description: "Spolupráce je možná třemi způsoby: stát se členem spolku, koupit si produkt jako SaaS nebo si ho sám rozchodit jako open source."
+  description: "Spolupráce je možná třemi způsoby: stát se členem spolku, koupit si produkt jako poskytovaný servis nebo si produkt sám nainstalovat a podílet se společně s námi na jeho vývoji."
   offers:
     - title: Konzultace
       descirption: Specializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv.
@@ -20,7 +20,7 @@ intro:
 sections:
   member:
     title: Stát se členem
-    description: Pokud je pro Vás téma digitalizace Vaší samosprávy důležitým témat, rádi Vás přivítáme jako člena našeho spolku. Díky tomu získáte řadu výhod a budete mít přímo možnost ovlivňovat směřování našich aktivit.
+    description: Pokud je pro Vás téma digitalizace Vaší samosprávy důležitým tématem, rádi Vás přivítáme jako člena našeho spolku. Díky tomu získáte řadu výhod a budete mít přímo možnost ovlivňovat směřování našich aktivit.
     membership:
       title: Členský poplatek
       description: "Členský poplatek se vypočítává dle počtu obyvatel a je určen vždy na kalendářní rok:<br>
@@ -41,14 +41,15 @@ sections:
           description: Členové jsou zváni na speciální akce a školení a mohou sdílet mezi sebou know-how, co funguje a co naopak nefunguje v oblasti digitalizace samospráv.
         - title: Slevy na produktech
           description:  Služby, které si v rámci členství objednáte jsou zvýhodněny oproti cenám pro nečleny.
-        - title: Průběžné scanování
-          description: V rámci členství získáte zdarma službu průběžné scanování jako základní obranu proti nejčastějším kybernetickým hrozbám Vaší samosprávy.
+        - title: Průběžné skenování zranitelnosti
+          description: V rámci členství získáte zdarma službu průběžné skenování zranitelností jako základní obranu proti nejčastějším kybernetickým hrozbám Vaší samosprávy.
   services:
     title: Nákup služeb
-    description: Pokud byste chtěli využít jen některý z našich produktů a zatím si spolupráci jen vyzkoušet, než se stanete případně členy spolku, neváhejte poptat některou ze služeb, kterou nabízíme samostatně.
+    description: Pokud byste chtěli využít jen některý z našich produktů a zatím si spolupráci jen vyzkoušet, než se stanete členem spolku, neváhejte poptat samostatně některou ze služeb, které nabízíme.
     pricing:
       title: Ceník
-      description: "Ceníky našich služeb jsou dostupný zde:"
+      description: "Ceníky našich služeb jsou dostupné zde:"
+      url: "https://dsw2.otevrenamesta.cz/"
     benefits:
         title: Benefity
         items:
@@ -63,7 +64,7 @@ sections:
     description: Abychom efektivně bojovali s tématikou vendor-lock in v rámci samospráv v ČR, tak každý produkt je open source. Pokud máte kapacity na to, produkt si sami implementovat a nastavit, můžete využít kódu aplikace a produkt si nasadit u sebe bez jakýchkoliv závazků. Otevřené kódy Otevřených měst naleznete na GitHubu a GitLabu.
 joinUs:
   title: Spolupracujte s námi
-  description: Věříme, že Vás spolupráce s zaujala, nevahejte se nám pomocí konktatního formuláře ozvat, abychom se pobavili, jak nejlépe vyhovět Vašim požadavkům
+  description: Věříme, že Vás možnosti spolupráce s námi zaujaly. Neváhejte se nám pomocí kontaktního formuláře ozvat, abychom společně vymysleli, jak nejlépe vyhovět Vašim požadavkům.
 
 
 
