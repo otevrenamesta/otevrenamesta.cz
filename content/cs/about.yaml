@@ -88,8 +88,7 @@ employees:
     instagram: http://instagram.com/
     linkedin: http://linkedin.com/
     twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
+  - fullname: Jaroslav Pokorný
     subtitle: Datový analytik
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
       v grafickém designu.
