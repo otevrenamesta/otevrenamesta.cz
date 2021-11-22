@@ -39,12 +39,11 @@ employees:
   - img: https://picsum.photos/seed/picsum/480/480
     fullname: Jiří Marek
     subtitle: zástupce předsedkyně
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
     email: jiri.marek@otevrenamesta.cz
     phone: "+420 602 570 184"
     linkedin: https://www.linkedin.com/in/marekjiri/
-    twitter:https://twitter.com/JM_microblog
+    twitter: https://twitter.com/JM_microblog
   - img: https://picsum.photos/seed/picsum/480/480
     fullname: Štěpán Štrébl
     subtitle: člen výboru
