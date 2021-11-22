@@ -1,10 +1,10 @@
 hero:
   title: O nás
-  description: Představení týmu, struktury a expertů Otevřených měst
+  description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a manažerskou podporu. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
 
 structure:
   title: Struktura <br>organizace
-  description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a manažerskou expertízu v této oblasti. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
+  description: Otevřená města tvoří 3 hlavní orgány, kterými je výbor, projektová rada a členská schůze. Všechny části spolu vzájemné komunikují a mají rozdělené komptence.
   items:
     - color: text-additional
       bg: bg-additional
@@ -16,21 +16,38 @@ structure:
     - color: text-secondary
       bg: bg-secondary
       number: 02
-      title: Členská schůze
-      description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze všech členů, kteří splní požadavky pro přístup do spolku.
+      title: Projektová rada
+      description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období 2 let.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
 
     - color: text-primary-dark
       bg: bg-primary-dark
       number: 03
-      title: Projektová rada
-      description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období 2 let.
+      title: Členská schůze
+      description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze zástupců všech členů, kteří splní požadavky pro  vstup do spolku.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
 
 employees:
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
+    fullname: Lucie Smolka
+    subtitle: předsedkyně výboru
+    description: Lucie je IT právnička zaměřená na moderní a digitální technologie, právo duševního vlastnictví a licence Creative Commons.
+    email: lucie.smolka@otevrenamesta.cz
+    phone: "+420 731 123 644"
+    linkedin: https://www.linkedin.com/in/luciesmolka/
+    twitter: https://twitter.com/lucie_couz
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Jiří Marek
+    subtitle: zástupce předsedkyně
+    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
+      v grafickém designu.
+    email: jiri.marek@otevrenamesta.cz
+    phone: "+420 602 570 184"
+    linkedin: https://www.linkedin.com/in/marekjiri/
+    twitter:https://twitter.com/JM_microblog
+  - img: https://picsum.photos/seed/picsum/480/480
+    fullname: Štěpán Štrébl
+    subtitle: člen výboru
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
       v grafickém designu.
     email: pokorny@otevrenamesta.cz
@@ -40,8 +57,8 @@ employees:
     linkedin: http://linkedin.com/
     twitter: http://twitter.com/
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
+    fullname: Jiří Hlavenka
+    subtitle: člen výboru
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
       v grafickém designu.
     email: pokorny@otevrenamesta.cz
@@ -51,29 +68,7 @@ employees:
     linkedin: http://linkedin.com/
     twitter: http://twitter.com/
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
+    fullname: Neobsazená funkce
     subtitle: Datový analytik
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
       v grafickém designu.
