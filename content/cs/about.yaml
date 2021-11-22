@@ -88,7 +88,8 @@ employees:
     instagram: http://instagram.com/
     linkedin: http://linkedin.com/
     twitter: http://twitter.com/
-  - fullname: Jaroslav Pokorný
+  - img: https://github.com/otevrenamesta/otevrenamesta.cz/blob/main/assets/img/member-default-img.svg
+    fullname: Jaroslav Pokorný
     subtitle: Datový analytik
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
       v grafickém designu.
