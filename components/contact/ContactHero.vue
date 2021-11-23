@@ -23,7 +23,10 @@
             />
             <br>
             <p class="text-sm font-medium">
-              <span v-html="contact.bank" />
+              <span
+                class="underline-links"
+                v-html="contact.bank"
+              />
               <br>
               <span v-html="contact.iban" />
             </p>

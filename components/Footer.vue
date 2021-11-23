@@ -21,6 +21,7 @@
               </a>
             </strong>
             <span
+              class="underline-links"
               v-html="contact.bank"
             />
           </p>

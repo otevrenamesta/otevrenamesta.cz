@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -80,6 +82,18 @@ export default {
 
   router: {
     linkActiveClass: 'is-active',
+  },
+
+  generate: {
+    async routes() {
+      const projects = await axios.get('https://modurad.otevrenamesta.cz/uni/otevrenamesta.cz/projects/?sort=title:asc&currentPage=1&perPage=100');
+      const news = await axios.get('https://modurad.otevrenamesta.cz/uni/otevrenamesta.cz/posts/?sort=published:desc');
+
+      return [
+        ...projects.data.data.map(project => `/projects/${project.id}`),
+        ...news.data.map(item => `/news/${item.id}`),
+      ];
+    },
   },
 
   markdownit: {

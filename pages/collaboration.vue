@@ -76,10 +76,9 @@
         />
         <div class="flex items-center mb-block-1">
           <a
-            href="#"
+            :href="sections.services.pricing.url"
             target="_blank"
           >
-            <!-- TODO: add link -->
             <Button
               type="transparent"
               icon="icon-arrow-right"
@@ -130,7 +129,7 @@
         </h2>
         <p
           v-preposition-space
-          class="text-secondary text-base font-medium mb-block-1"
+          class="text-secondary text-base font-medium mb-block-1 underline-links"
           v-html="sections.opensource.description"
         />
       </div>

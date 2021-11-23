@@ -49,7 +49,7 @@ sections:
     pricing:
       title: Ceník
       description: "Ceníky našich služeb jsou dostupné zde:"
-      url: "https://dsw2.otevrenamesta.cz/"
+      url: "https://drive.google.com/file/d/1Yr_93j-QcMmsFt9pjD5uAapcYDoSI2ll/view"
     benefits:
         title: Benefity
         items:
@@ -61,7 +61,7 @@ sections:
             description: Služby si můžete vyzkoušet bez závazků, prostě uvidíte, zda Vám to vyhovuje nebo ne.
   opensource:
     title: Využití zdrojových kódů
-    description: Abychom efektivně bojovali s tématikou vendor-lock in v rámci samospráv v ČR, tak každý produkt je open source. Pokud máte kapacity na to, produkt si sami implementovat a nastavit, můžete využít kódu aplikace a produkt si nasadit u sebe bez jakýchkoliv závazků. Otevřené kódy Otevřených měst naleznete na GitHubu a GitLabu.
+    description: Abychom efektivně bojovali s tématikou vendor-lock in v rámci samospráv v ČR, tak každý produkt je open source. Pokud máte kapacity na to, produkt si sami implementovat a nastavit, můžete využít kódu aplikace a produkt si nasadit u sebe bez jakýchkoliv závazků. Otevřené kódy Otevřených měst naleznete na <a href="https://github.com/otevrenamesta" target="_blank">GitHubu</a> a <a href="https://gitlab.com/otevrenamesta" target="_blank">GitLabu</a>.
 joinUs:
   title: Spolupracujte s námi
   description: Věříme, že Vás možnosti spolupráce s námi zaujaly. Neváhejte se nám pomocí kontaktního formuláře ozvat, abychom společně vymysleli, jak nejlépe vyhovět Vašim požadavkům.
