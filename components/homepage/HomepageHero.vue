@@ -27,6 +27,7 @@
     </div>
     <Socials
       class="absolute bottom-3 right-8 z-10"
+      :hidden="!$screen.lg"
     />
   </section>
 </template>
