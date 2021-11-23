@@ -22,7 +22,7 @@
       </div>
 
       <div
-        class="w-block-2 md:w-block-4 h-block-2 md:h-block-4 bg-additional absolute bottm-block-4 sm:bottom-block-2 -right-block-1 sm:-right-block-4 rounded-full"
+        class="w-block-2 md:w-block-4 h-block-2 md:h-block-4 bg-additional absolute bottom-block-4 sm:bottom-block-2 -right-block-1 sm:-right-block-4 rounded-full"
       />
     </div>
     <Socials
