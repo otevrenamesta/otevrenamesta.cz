@@ -8,24 +8,24 @@ structure:
   items:
     - color: text-additional
       bg: bg-additional
-      number: 01
+      number: "01"
       title: Výbor
       description: Výbor Otevřených měst je statutárním a hlavním výkonným orgánem spolku, který zajišťuje jeho strategické směřování a vizi. Výbor je 5-ti členný a jeho členy jsou experti z digitalizace samospráv nebo zástupci vybraných členských obcí. Výbor je volen členskou schůzí na dobu 2 let.
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 330" stroke="#fc0"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 897" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-secondary
       bg: bg-secondary
-      number: 02
+      number: "02"
       title: Projektová rada
       description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období 2 let.
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 331" stroke="#00d48f"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 896" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-primary-dark
       bg: bg-primary-dark
-      number: 03
+      number: "03"
       title: Členská schůze
       description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze zástupců všech členů, kteří splní požadavky pro  vstup do spolku.
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g id="Group_58" data-name="Group 58" transform="translate(.5 .5)" fill="none" stroke="#fc0" stroke-width="1"><path id="Rectangle_223" data-name="Rectangle 223" transform="rotate(90 15 15)" d="M0 0h30v30H0z"/><path id="Rectangle_224" data-name="Rectangle 224" transform="rotate(90 14.5 44.5)" d="M0 0h29v29H0z"/><path id="Rectangle_225" data-name="Rectangle 225" transform="rotate(90 29.5 29.5)" d="M0 0h30v29H0z"/></g></svg>
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 332" stroke="#1e1796"><path data-name="Rectangle 226" d="M90 31H60V1h30z"/><path data-name="Rectangle 227" d="M31 1v30H1V1z"/><path data-name="Rectangle 228" d="M60 31h60a59 59 0 0 1-59 59h-1V31Z"/><path data-name="Rectangle 229" d="M1 31h59v59A59 59 0 0 1 1 31Z"/></g><path data-name="Rectangle 895" d="M0 0h121v91H0z"/></g></svg>
 
 employees:
   - img: https://picsum.photos/seed/picsum/480/480
