@@ -6,77 +6,77 @@ hero:
 members:
   - fullname: Brno
     agent: Ondřej Kotas
-    population: 390 489
-    memberFee: 581 598 Kč / rok
+    population: 390 687
+    memberFee: 581 904,75 Kč / rok
   - fullname: Brno - Medlánky
     agent: Kateřina Žůrková
-    population: 5 514
-    memberFee: 4 135,50 Kč / rok
+    population: 5 501
+    memberFee: 4 125,75 Kč / rok
   - fullname: Bystřice (u Benešova)
     agent: Michal Hodík
-    population: 4 460
+    population: 4 442
     memberFee: 6 690 Kč / rok
   - fullname: Černošice
     agent: Tomáš Kratochvíl
-    population: 7 350
-    memberFee: 11 025 Kč / rok
+    population: 7 407
+    memberFee: 11 110,50 Kč / rok
   - fullname: Choceň
     agent: Jiří Pírko
-    population: 8 550
-    memberFee: 12 825 Kč / rok
+    population: 8 488
+    memberFee: 12 732 Kč / rok
   - fullname: Kroměříž
     agent: Vratislav Krejčíř
-    population: 28 937
+    population: 28 715
     memberFee: 43 405,50 Kč / rok
   - fullname: Kutná Hora
     agent: Lukáš Jelínek
-    population: 20 189
-    memberFee: 30 283,50 Kč / rok
+    population: 20 091
+    memberFee: 30 136,50 Kč / rok
   - fullname: Loket
     agent: Petr Adamec
-    population: 3 152
-    memberFee: 4 728 Kč / rok
+    population: 3 160
+    memberFee: 4 740 Kč / rok
   - fullname: Moravská Třebová
     agent: Martin Sedlák
-    population: 10 058
+    population: 9 911
     memberFee: 15 087 Kč / rok
   - fullname: Nové Město na Moravě
     agent: Michal Šmarda
-    population: 10 023
-    memberFee: 15 034,50 Kč / rok
+    population: 9 990
+    memberFee: 14 985 Kč / rok
   - fullname: Praha 1
     agent: Petr Rachunek
-    population: 26 416
-    memberFee: 39 624 Kč / rok
+    population: 26 512
+    memberFee: 39 781,50 Kč / rok
   - fullname: Praha 3
     agent: Štěpán Štrébl
-    population: 68 587
-    memberFee: 103 008 Kč / rok
+    population: 68 758
+    memberFee: 103 137 Kč / rok
   - fullname: Praha 7
     agent: Jiří Knitl
-    population: 42 055
-    memberFee: 63 082 Kč / rok
+    population: 42 195
+    memberFee: 63 292,50 Kč / rok
   - fullname: Praha 12
     agent: Jan Adamec
-    population: 56 019
-    memberFee: 84 028,50 Kč / rok
+    population: 51 937
+    memberFee: 83 997 Kč / rok
   - fullname: Praha 22
-    agent: Ivo Krátký
-    population: 11 828
-    memberFee: 17 742 Kč / rok
+    agent: Tomáš Kaněra
+    population: 10 961
+    memberFee: 18 345 Kč / rok
   - fullname: Praha - Ďáblice
     agent: Jan Hrdlička
-    population: 3 509
-    memberFee: 5 263,50 Kč / rok
+    population: 3 513
+    memberFee: 5 269,50 Kč / rok
   - fullname: Psáry
-    agent: Jan Hrdlička
-    population: 4 016
-    memberFee: 6 024 Kč / rok
+    agent: Vít Olmr
+    population: 4 015
+    memberFee: 6 157,5é Kč / rok
   - fullname: Tábor
     agent: Václav Klecanda
-    population: 34 127
-    memberFee: 51 190,50 Kč / rok
+    population: 33 854
+    memberFee: 50 781 Kč / rok
   - fullname: Úvaly
     agent: Petr Borecký
-    population: 6 820
-    memberFee: 10 230 Kč / rok
+    population: 6 945
+    memberFee: 10 417,50 Kč / rok
