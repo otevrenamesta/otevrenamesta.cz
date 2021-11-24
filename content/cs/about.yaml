@@ -64,7 +64,7 @@ employees:
     fullname: Martin Dvořák
     subtitle: člen Projektové rady
     description: datový specialist
-- img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Benedikt Kotmel
     subtitle: člen Projektové rady
     description: datový specialista
