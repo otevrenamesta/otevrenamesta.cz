@@ -62,15 +62,15 @@ socials:
       url: https://gitlab.com/otevrenamesta
 
 leaderships:
-  - img: https://picsum.photos/seed/picsum/480/480
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2F7_lucie_smolka_fix.jpg&w=480
     fullname: Lucie Smolka
     subtitle: předsedkyně výboru
-    description: Lucie je IT právnička zaměřená na moderní a digitální technologie, právo duševního vlastnictví a licence Creative Commons.
+    description: Lucie je právničkou, zabývající se moderními technologiemi a duševním vlastnictvím. Založila spolek Open Content, vede českou pobočku Creative Commons a působí v advokacii. Na přechodnou dobu působí v čele Otevřených měst, zabývá se externími vztahy s partnery, péčí o členy, prezentací a stabilizací organizace a vytvořením udržitelné vize.
     email: lucie.smolka@otevrenamesta.cz
     phone: "+420 731 123 644"
     linkedin: https://www.linkedin.com/in/luciesmolka/
     twitter: https://twitter.com/lucie_couz
-  - img: https://picsum.photos/seed/picsum/480/480
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2Fjiri_marek.jpeg
     fullname: Jiří Marek
     subtitle: zástupce předsedkyně
     description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
@@ -78,36 +78,16 @@ leaderships:
     phone: "+420 602 570 184"
     linkedin: https://www.linkedin.com/in/marekjiri/
     twitter: https://twitter.com/JM_microblog
-  - img: https://picsum.photos/seed/picsum/480/480
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2F6_stepan_strebl_fix.jpg&w=480
     fullname: Štěpán Štrébl
     subtitle: člen výboru
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
+    description: Štěpán má zkušenosti z funkce místostarosty, mezinárodních poradenských společností nebo velkých marketingových kampaní. Jeho doménou je schopnost odhadnout a úspěšně zrealizovat velké projekty. Zabývá se strategickým plánováním, marketingem a plánováním odborných akcí. 
+    email: stepan.strebl@otevrenamesta.cz
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2F4_jiri_hlavenka_fix.jpg&w=480
     fullname: Jiří Hlavenka
     subtitle: člen výboru
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
+    description: Jiří je mentorem a poradcem ve věcech směřování spolku. Stará se o plánování rozvoje členské základny a zaměření spolku. Z oblasti jaderné energetiky se přes založení vydavatelství a internetového obchodu dostal k spoluvlastnictví mnoha společností a investicím do inovativních start-upů. Průběžně přispívá k budování moderně fungující a digitalizované veřejné správy. 
+    email: jiri.hlavenka@otevrenamesta.cz
+    twitter: https://twitter.com/hlavenkajiri
   - img: https://picsum.photos/seed/picsum/480/480
     fullname: Neobsazená funkce
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
