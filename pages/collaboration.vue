@@ -136,6 +136,7 @@
     </CollaborationSection>
 
     <CollaborationJoinUs
+      ref="JoinUs"
       class="mb-block-2"
     />
   </main>
@@ -154,6 +155,16 @@ export default {
   computed: {
     sections() {
       return this.$store.state.content.collaboration.sections;
+    },
+  },
+  watch: {
+    '$store.state.content.collaboration'() {
+      this.$nextTick(() => {
+        if (this.$route.hash === '#form') {
+          const top = this.$refs.JoinUs?.$el?.getBoundingClientRect().top || 0;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
     },
   },
 };
