@@ -78,7 +78,7 @@ export default {
 
   head() {
     return {
-      title: `${this.project?.title} ${this.$config.appendTitle}`,
+      title: this.project ? `${this.project.title} ${this.$config.appendTitle}` : this.$config.appendTitle,
     };
   },
 
