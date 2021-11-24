@@ -28,14 +28,12 @@ structure:
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 332" stroke="#1e1796"><path data-name="Rectangle 226" d="M90 31H60V1h30z"/><path data-name="Rectangle 227" d="M31 1v30H1V1z"/><path data-name="Rectangle 228" d="M60 31h60a59 59 0 0 1-59 59h-1V31Z"/><path data-name="Rectangle 229" d="M1 31h59v59A59 59 0 0 1 1 31Z"/></g><path data-name="Rectangle 895" d="M0 0h121v91H0z"/></g></svg>
 
 employees:
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Lucie Smolka
-    subtitle: předsedkyně výboru
-    description: Lucie je IT právnička zaměřená na moderní a digitální technologie, právo duševního vlastnictví a licence Creative Commons.
-    email: lucie.smolka@otevrenamesta.cz
-    phone: "+420 731 123 644"
-    linkedin: https://www.linkedin.com/in/luciesmolka/
-    twitter: https://twitter.com/lucie_couz
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Vaclav Klecanda
+    subtitle: vedoucí Projektové rady
+    description: Vašek je vedoucím projektové rady. Je...
+    linkedin: https://www.linkedin.com/in/vaclav-klecanda-9796869/
+    twitter: https://twitter.com/vencax77
   - img: https://picsum.photos/seed/picsum/480/480
     fullname: Jiří Marek
     subtitle: zástupce předsedkyně
