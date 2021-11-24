@@ -1,51 +1,82 @@
 hero:
   title: Členové
-  description: Otevřená města jsou neziskovou organizací, která pomáhá samosprávám s digitalizací a  využitím moderních otevřených řešení.  Prosazujeme otevřenější, efektivnější a transparentnější chodu obcí, měst a regionů v České republice. K naplnění těchto cílů vyvíjíme a spravujeme vlastní open source aplikace a poskytují profesionální technickou, právní a metodickou podporu. Věnujeme se sdílení dobré praxe, prostřednictvím pořádaných odborných setkánízvyšujeme povědomí o možnostech moderních řešení pro samosprávy,  nástrojích digitalizace a obraně proti negativním jevům, jako je vendor lock-in. 
+  description: Otevřená města sdružují obce a kraje, které se zajímají o digitalizaci svých samospráv a zavádění otevřených řešení do chodu úřadů. Členy spolku mohou být samosprávy, které se aktivně podílejí na  podpoře myšlenky moderní digitální veřejné správy, rozhodování na základě dat a s podporou občanů. 
   cta: Stát se členem
 
 members:
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - image: https://picsum.photos/seed/picsum/480/480
-    fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
-  - fullname: Název člena
-    agent: Jaroslav Pokorný
-    population: 182 000
-    memberFee: 1 234 Kč / měsíc
+  - fullname: Brno
+    agent: Ondřej Kotas
+    population: 390 489
+    memberFee: 581 598 Kč / rok
+  - fullname: Brno - Medlánky
+    agent: Kateřina Žůrková
+    population: 5 514
+    memberFee: 4 135,50 Kč / rok
+  - fullname: Bystřice (u Benešova)
+    agent: Michal Hodík
+    population: 4 460
+    memberFee: 6 690 Kč / rok
+  - fullname: Černošice
+    agent: Tomáš Kratochvíl
+    population: 7 350
+    memberFee: 11 025 Kč / rok
+  - fullname: Choceň
+    agent: Jiří Pírko
+    population: 8 550
+    memberFee: 12 825 Kč / rok
+  - fullname: Kroměříž
+    agent: Vratislav Krejčíř
+    population: 28 937
+    memberFee: 43 405,50 Kč / rok
+  - fullname: Kutná Hora
+    agent: Lukáš Jelínek
+    population: 20 189
+    memberFee: 30 283,50 Kč / rok
+  - fullname: Loket
+    agent: Petr Adamec
+    population: 3 152
+    memberFee: 4 728 Kč / rok
+  - fullname: Moravská Třebová
+    agent: Martin Sedlák
+    population: 10 058
+    memberFee: 15 087 Kč / rok
+  - fullname: Nové Město na Moravě
+    agent: Michal Šmarda
+    population: 10 023
+    memberFee: 15 034,50 Kč / rok
+  - fullname: Praha 1
+    agent: Petr Rachunek
+    population: 26 416
+    memberFee: 39 624 Kč / rok
+  - fullname: Praha 3
+    agent: Štěpán Štrébl
+    population: 68 587
+    memberFee: 103 008 Kč / rok
+  - fullname: Praha 7
+    agent: Jiří Knitl
+    population: 42 055
+    memberFee: 63 082 Kč / rok
+  - fullname: Praha 12
+    agent: Jan Adamec
+    population: 56 019
+    memberFee: 84 028,50 Kč / rok
+  - fullname: Praha 22
+    agent: ?
+    population: 11 828
+    memberFee: 17 742 Kč / rok
+  - fullname: Praha - Ďáblice
+    agent: Jan Hrdlička
+    population: 3 509
+    memberFee: 5 263,50 Kč / rok
+  - fullname: Psáry
+    agent: Jan Hrdlička
+    population: 4 016
+    memberFee: 6 024 Kč / rok
+  - fullname: Tábor
+    agent: Václav Klecanda
+    population: 34 127
+    memberFee: 51 190,50 Kč / rok
+  - fullname: Úvaly
+    agent: Petr Borecký
+    population: 6 820
+    memberFee: 10 230 Kč / rok
