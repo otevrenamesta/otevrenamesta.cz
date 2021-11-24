@@ -31,69 +31,33 @@ employees:
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Vaclav Klecanda
     subtitle: vedoucí Projektové rady
-    description: Vašek je vedoucím projektové rady. Je...
-    linkedin: https://www.linkedin.com/in/vaclav-klecanda-9796869/
-    twitter: https://twitter.com/vencax77
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Lukáš Jelínek
+    subtitle: člen Projektové rady
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jiří Marek
-    subtitle: zástupce předsedkyně
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
-    email: jiri.marek@otevrenamesta.cz
-    phone: "+420 602 570 184"
-    linkedin: https://www.linkedin.com/in/marekjiri/
-    twitter: https://twitter.com/JM_microblog
+    fullname: Lenka Kováčová
+    subtitle: člen Projektové rady
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Jan Mareš
+    subtitle: člen Projektové rady
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Ivor Kollár
+    subtitle: člen Projektové rady
   - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Štěpán Štrébl
-    subtitle: člen výboru
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jiří Hlavenka
-    subtitle: člen výboru
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Neobsazená funkce
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://picsum.photos/seed/picsum/480/480
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
-  - img: https://github.com/otevrenamesta/otevrenamesta.cz/blob/main/assets/img/member-default-img.svg
-    fullname: Jaroslav Pokorný
-    subtitle: Datový analytik
-    description: Lorem ipsum je označení pro standardní pseudolatinský text užívaný
-      v grafickém designu.
-    email: pokorny@otevrenamesta.cz
-    phone: "+420 773 747 784"
-    facebook: http://facebook.com/
-    instagram: http://instagram.com/
-    linkedin: http://linkedin.com/
-    twitter: http://twitter.com/
+    fullname: Ladislav Nešněra
+    subtitle: člen Projektové rady
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Ondřej Profant
+    subtitle: člen Projektové rady
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Martin Dvořák
+    subtitle: člen Projektové rady
+- img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Benedikt Kotmel
+    subtitle: člen Projektové rady
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Ondřej Caletka
+    subtitle: člen Projektové rady
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+    fullname: Jáchym Čepický
+    subtitle: člen Projektové rady
