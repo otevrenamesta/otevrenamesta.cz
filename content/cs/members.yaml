@@ -76,7 +76,8 @@ members:
     agent: Václav Klecanda
     population: 34 127
     memberFee: 51 190,50 Kč / rok
-  - fullname: Úvaly
+  - image: https://raw.githubusercontent.com/otevrenamesta/otevrenamesta.cz/356030a388b18a9bcc1993dc43a73bc130b44f61/assets/img/member-default-img.svg
+    fullname: Úvaly
     agent: Petr Borecký
     population: 6 820
     memberFee: 10 230 Kč / rok
