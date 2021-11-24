@@ -31,33 +31,44 @@ employees:
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Vaclav Klecanda
     subtitle: vedoucí Projektové rady
+    description: IT specialista
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Lukáš Jelínek
     subtitle: člen Projektové rady
-  - img: https://picsum.photos/seed/picsum/480/480
+    description: IT specialista
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Lenka Kováčová
-    subtitle: člen Projektové rady
+    subtitle: členka Projektové rady
+    description: expertka na otevřená data
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Jan Mareš
     subtitle: člen Projektové rady
+    description: IT specialista
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Ivor Kollár
     subtitle: člen Projektové rady
-  - img: https://picsum.photos/seed/picsum/480/480
+    descpription: kyberbezpečnostní expert
+  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Ladislav Nešněra
     subtitle: člen Projektové rady
+    description: IT specialista
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Ondřej Profant
     subtitle: člen Projektové rady
+    description: e-government specialista
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Martin Dvořák
     subtitle: člen Projektové rady
+    description: datový specialista
 - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Benedikt Kotmel
     subtitle: člen Projektové rady
+    description: datový specialista
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Ondřej Caletka
     subtitle: člen Projektové rady
+    description: IT specialista
   - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
     fullname: Jáchym Čepický
     subtitle: člen Projektové rady
+    description: GIS specialista
