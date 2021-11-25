@@ -1,26 +1,26 @@
 hero:
   title: Možnosti spolupráce
-  description: "Spolupráce je možná třemi způsoby: stát se členem spolku, koupit si produkt jako poskytovaný servis nebo si produkt sám nainstalovat a podílet se společně s námi na jeho vývoji."
+  description: "Spolupracujte s námi! Staňte se členem spolku, objednejte si u nás provoz produktu nebo se podílejte na vývoji software."
 
 intro:
   title: Jak získat produkt
-  description: "Spolupráce je možná třemi způsoby: stát se členem spolku, koupit si produkt jako poskytovaný servis nebo si produkt sám nainstalovat a podílet se společně s námi na jeho vývoji."
+  description: "Spolupracujte s námi! Staňte se členem spolku, objednejte si u nás provoz produktu nebo se podílejte na vývoji software."
   offers:
     - title: Konzultace
-      descirption: Specializujeme se na Technickou, právní a manažerskou expertízu v oblasti digitalizace samospráv.
+      descirption: Poskytujeme technickou, právní a metodickou podporu v oblasti digitalizace samospráv.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="none" d="M0 0h60v60H0z"/><g fill="#0f0087"><path data-name="Rectangle 250" d="M27.436 18.195a4.708 4.708 0 014.708-4.708h14.122a4.708 4.708 0 014.708 4.708H27.436z"/><path data-name="Rectangle 251" d="M27.436 22.902h23.538v4.708h-18.83a4.708 4.708 0 01-4.708-4.708z"/><path data-name="Rectangle 252" d="M46.266 22.902v-4.708h4.708v4.708z"/><path data-name="Rectangle 253" d="M46.266 27.61h4.708v4.708a4.708 4.708 0 01-4.708-4.708z"/><path data-name="Rectangle 254" d="M9.027 46.44v-4.708h4.708a4.708 4.708 0 01-4.708 4.708z"/><path data-name="Rectangle 255" d="M27.436 22.902v-4.708h4.708v4.708z"/><path data-name="Rectangle 256" d="M9.027 22.902a4.708 4.708 0 014.708-4.708h9.415v4.708H9.027z"/><path data-name="Rectangle 257" d="M9.027 37.025V22.902h4.708v14.123z"/><path data-name="Rectangle 258" d="M37.273 37.025v-4.707h4.708v4.707z"/><path data-name="Rectangle 259" d="M9.027 41.733v-4.708H41.98a4.708 4.708 0 01-4.707 4.708H9.027z"/></g></svg>
 
     - title: Vývoj software
-      descirption: Máme bohaté zkušenosti s budováním aplikací na míru pro samosprávní celky
+      descirption: Nabízíme open source aplikace a nástroje pro samosprávy.
       icon: <svg data-name="Component 15 – 2" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path data-name="Rectangle 119" fill="none" d="M0 0h60v60H0z"/><g data-name="Group 169" fill="#0f0087"><path data-name="Rectangle 76" d="M17.15 36.45l3.075-3.075 3.075 3.074-3.075 3.076z"/><path data-name="Rectangle 77" d="M20.225 39.525L23.3 36.45l3.075 3.074L23.3 42.6z"/><path data-name="Rectangle 78" d="M14.075 33.375L17.15 30.3l3.075 3.075-3.075 3.075z"/><path data-name="Rectangle 79" d="M11 30.3l3.075-3.075 3.075 3.074-3.075 3.076z"/><path data-name="Rectangle 80" d="M14.075 27.225l3.075-3.075 3.074 3.075L17.15 30.3z"/><path data-name="Rectangle 81" d="M17.15 24.15l3.075-3.075 3.074 3.075-3.074 3.075z"/><path data-name="Rectangle 82" d="M20.225 21.075L23.3 18l3.074 3.075L23.3 24.15z"/><path data-name="Rectangle 83" d="M36.892 24.15l3.075-3.075 3.075 3.074-3.075 3.076z"/><path data-name="Rectangle 84" d="M33.817 21.075L36.892 18l3.075 3.074-3.075 3.076z"/><path data-name="Rectangle 85" d="M39.967 27.225l3.075-3.075 3.075 3.075-3.075 3.075z"/><path data-name="Rectangle 86" d="M43.042 30.3l3.075-3.075 3.075 3.074-3.075 3.076z"/><path data-name="Rectangle 87" d="M39.967 33.375l3.075-3.075 3.074 3.075-3.074 3.075z"/><path data-name="Rectangle 88" d="M36.892 36.45l3.075-3.075 3.074 3.075-3.074 3.075z"/><path data-name="Rectangle 89" d="M33.817 39.525l3.075-3.075 3.074 3.075-3.074 3.075z"/></g></svg>
 
     - title: Znalostní databáze
-      descirption: Dělíme se o know-how existujících projektů, postupů a podnětů k opakovanému využití
+      descirption: Znalosti, příklady dobré praxe a know-how k opětovnému využití pro samosprávné celky.
       icon: <svg data-name="Component 15 – 2" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path data-name="Rectangle 119" fill="none" d="M0 0h60v60H0z"/><g data-name="Group 170" fill="#0f0087"><path data-name="Rectangle 60" d="M21.697 19h4.348v4.349h-4.348z"/><path data-name="Rectangle 61" d="M13 19h4.348v21.745H13z"/><path data-name="Rectangle 62" d="M26.045 19h4.348v4.349h-4.348z"/><path data-name="Rectangle 63" d="M30.394 19h4.349v4.349h-4.349z"/><path data-name="Rectangle 64" d="M34.743 19h4.348v4.349h-4.348z"/><path data-name="Rectangle 65" d="M39.091 19h4.348v4.349h-4.348z"/><path data-name="Rectangle 66" d="M21.697 27.698h4.348v4.349h-4.348z"/><path data-name="Rectangle 67" d="M26.045 27.698h4.348v4.349h-4.348z"/><path data-name="Rectangle 68" d="M30.394 27.698h4.349v4.349h-4.349z"/><path data-name="Rectangle 69" d="M34.743 27.698h4.348v4.349h-4.348z"/><path data-name="Rectangle 70" d="M39.091 27.698h4.348v4.349h-4.348z"/><path data-name="Rectangle 71" d="M43.44 27.698h4.348v4.349H43.44z"/><path data-name="Rectangle 72" d="M21.697 36.396h4.348v4.349h-4.348z"/><path data-name="Rectangle 73" d="M26.045 36.396h4.348v4.349h-4.348z"/><path data-name="Rectangle 74" d="M30.394 36.396h4.349v4.349h-4.349z"/><path data-name="Rectangle 75" d="M34.743 36.396h4.348v4.349h-4.348z"/></g></svg>
 sections:
   member:
     title: Stát se členem
-    description: Pokud je pro Vás téma digitalizace Vaší samosprávy důležitým tématem, rádi Vás přivítáme jako člena našeho spolku. Díky tomu získáte řadu výhod a budete mít přímo možnost ovlivňovat směřování našich aktivit.
+    description: Pokud je téma digitalizace pro vaši samosprávu důležité, rádi vás přivítáme jako člena spolku. Díky tomu získáte řadu výhod a budete mít přímo možnost ovlivňovat směřování našich aktivit.
     membership:
       title: Členský poplatek
       description: "Členský poplatek se vypočítává dle počtu obyvatel a je určen vždy na kalendářní rok:<br>
@@ -38,14 +38,14 @@ sections:
         - title: Rozhodování o činnosti spolku
           description: Člen spolku může přímo rozhodovat o směřování spolku a jasně tak vyjádřit svoje preference a názory na digitalizaci místních samospráv.
         - title: Sdílení know-how
-          description: Členové jsou zváni na speciální akce a školení a mohou sdílet mezi sebou know-how, co funguje a co naopak nefunguje v oblasti digitalizace samospráv.
+          description: Členové jsou zváni na speciální akce a školení a mohou sdílet mezi sebou know-how, co funguje a co naopak nefunguje v oblasti digitalizace a otevřenosti.
         - title: Slevy na produktech
           description:  Služby, které si v rámci členství objednáte, jsou zvýhodněny oproti cenám pro nečleny.
         - title: Průběžné skenování zranitelnosti
-          description: V rámci členství získáte zdarma službu průběžné skenování zranitelností jako základní obranu proti nejčastějším kybernetickým hrozbám Vaší samosprávy.
+          description: V rámci členství získáte zdarma službu průběžné skenování zranitelností jako základní obranu proti nejčastějším kybernetickým hrozbám samospráv.
   services:
     title: Nákup služeb
-    description: Pokud byste chtěli využít jen některý z našich produktů a zatím si spolupráci jen vyzkoušet, než se stanete členem spolku, neváhejte poptat samostatně některou ze služeb, které nabízíme.
+    description: Pokud máte zájem o některý z našich produktů a zatím si chcete spolupráci jen vyzkoušet, než se stanete členem spolku, neváhejte poptat samostatně některou ze služeb, které nabízíme.
     pricing:
       title: Ceník
       description: "Ceníky našich služeb jsou dostupné zde:"
@@ -54,17 +54,17 @@ sections:
         title: Benefity
         items:
           - title: Unikátnost projektů
-            description: Naše služby jsou speciálně tvořeny pro samosprávy. Často tvoříme produkty přímo se samosprávami, věříme proto, že budou velmi zajímavé i pro další obce a města.
+            description: Naše služby jsou speciálně tvořeny pro samosprávy. Často tvoříme produkty přímo s úředníky. Věříme, že proto jsou produkty užitečné i pro další obce a kraje.
           - title: Pomoc IT expertů
-            description: Budete mít přístup k našim specialistům na IT produkty pro samosprávy a budete se s nimi moci pobavit o konkrétních problémem digitalizace Vaší obce.
+            description: Budete mít přístup k našim specialistům na IT produkty pro samosprávy a budete se s nimi moci pobavit o problémech a výzvách, které se vás týkají.
           - title: Bez závazků
-            description: Služby si můžete vyzkoušet bez závazků, prostě uvidíte, zda Vám to vyhovuje nebo ne.
+            description: Služby si můžete vyzkoušet bez závazků. Uvidíte, jak budete spokojeni.
   opensource:
     title: Využití zdrojových kódů
-    description: Abychom efektivně bojovali s tématikou vendor-lock in v rámci samospráv v ČR, tak každý produkt je open source. Pokud máte kapacity na to, produkt si sami implementovat a nastavit, můžete využít kódu aplikace a produkt si nasadit u sebe bez jakýchkoliv závazků. Otevřené kódy Otevřených měst naleznete na <a href="https://github.com/otevrenamesta" target="_blank">GitHubu</a> a <a href="https://gitlab.com/otevrenamesta" target="_blank">GitLabu</a>.
+    description: Abychom efektivně bojovali s problémem vendor lock-in v rámci samospráv v ČR, je každý z našich produktů poskytován jako open source. Pokud máte kapacity na samostatnou implementaci a nastavení software, můžete využít kódu aplikace a produkt si nasadit u sebe bez jakýchkoliv závazků. Otevřené kódy Otevřených měst naleznete na <a href="https://github.com/otevrenamesta" target="_blank">GitHubu</a> a <a href="https://gitlab.com/otevrenamesta" target="_blank">GitLabu</a>.
 joinUs:
   title: Spolupracujte s námi
-  description: Věříme, že Vás možnosti spolupráce s námi zaujaly. Neváhejte se nám pomocí kontaktního formuláře ozvat, abychom společně vymysleli, jak nejlépe vyhovět Vašim požadavkům.
+  description: Věříme, že vás některá z možností spolupráce zaujala. Ozvěte se nám prostřednictvím kontaktního formuláře a společně vymyslíme, jak nejlépe vyhovět vašim požadavkům.
 
 
 
