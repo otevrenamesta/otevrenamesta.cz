@@ -1,6 +1,6 @@
 hero:
   title: O nás
-  description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a manažerskou podporu. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
+  description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a metodickou podporu. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
 
 structure:
   title: Struktura <br>organizace
@@ -10,14 +10,14 @@ structure:
       bg: bg-additional
       number: "01"
       title: Výbor
-      description: Výbor Otevřených měst je statutárním a hlavním výkonným orgánem spolku, který zajišťuje jeho strategické směřování a vizi. Výbor je 5-ti členný a jeho členy jsou experti z digitalizace samospráv nebo zástupci vybraných členských obcí. Výbor je volen členskou schůzí na dobu 2 let.
+      description: Výbor Otevřených měst je statutárním a hlavním výkonným orgánem spolku, který zajišťuje jeho strategické směřování a vizi. Výbor je pětičlenný a je volen členskou schůzí na dobu dvou let.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 330" stroke="#fc0"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 897" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-secondary
       bg: bg-secondary
       number: "02"
       title: Projektová rada
-      description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období 2 let.
+      description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období dvou let.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 331" stroke="#00d48f"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 896" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-primary-dark
