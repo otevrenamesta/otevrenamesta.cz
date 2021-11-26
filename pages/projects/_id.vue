@@ -76,6 +76,10 @@ export default {
     };
   },
 
+  async fetch() {
+    await this.$store.dispatch('content/load', { page: 'project' });
+  },
+
   head() {
     return {
       title: this.project ? `${this.project.title} ${this.$config.appendTitle}` : this.$config.appendTitle,

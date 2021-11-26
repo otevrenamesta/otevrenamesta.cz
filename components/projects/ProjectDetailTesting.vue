@@ -36,9 +36,11 @@
           <strong class="block text-sm text-secondary mb-2">
             0{{ index + 1 }}
           </strong>
-          <p class="text-sm text-primary-dark">
-            {{ offer.content }}
-          </p>
+          <p
+            v-preposition-space
+            class="text-sm text-primary-dark"
+            v-html="offer.content"
+          />
         </div>
       </div>
     </div>

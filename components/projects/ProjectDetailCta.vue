@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section v-if="$store.state.content.project" class="container">
     <div class="relative bg-primary sm:bg-transparent">
       <div class="sm:absolute z-10 sm:left-block-2 sm:top-block-2 p-block-0.5 sm:p-0">
         <div class="w-block-6 max-w-full">
@@ -8,11 +8,13 @@
             v-html="illustration1"
           />
           <h3 class="text-white text-6xl font-bold tracking-tight mb-4">
-            Chci řešení na míru
+            {{ $store.state.content.project.cta.left.title }}
           </h3>
-          <p class="text-white mb-block-1">
-            Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
-          </p>
+          <p
+            v-preposition-space
+            class="text-white mb-block-1"
+            v-html="$store.state.content.project.cta.left.description"
+          />
           <nuxt-link
             :to="localePath('/collaboration#form')"
           >
@@ -20,7 +22,7 @@
               type="secondary"
               icon="icon-arrow-open"
             >
-              Zjistit více
+              {{ $store.state.content.project.cta.left.button }}
             </Button>
           </nuxt-link>
         </div>
@@ -32,11 +34,13 @@
             v-html="illustration2"
           />
           <h3 class="text-white text-6xl font-bold tracking-tight mb-4">
-            Chci se stát členem
+            {{ $store.state.content.project.cta.right.title }}
           </h3>
-          <p class="text-white mb-block-1">
-            Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém designu.
-          </p>
+          <p
+            v-preposition-space
+            class="text-white mb-block-1"
+            v-html="$store.state.content.project.cta.right.description"
+          />
           <nuxt-link
             :to="localePath('/collaboration#form')"
           >
@@ -44,7 +48,7 @@
               type="secondary"
               icon="icon-arrow-open"
             >
-              Zjistit více
+              {{ $store.state.content.project.cta.right.button }}
             </Button>
           </nuxt-link>
         </div>

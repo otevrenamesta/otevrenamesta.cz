@@ -5,6 +5,7 @@ export const state = () => ({
   collaboration: null,
   members: null,
   contact: null,
+  project: null,
 });
 
 export const mutations = {

@@ -3,9 +3,10 @@
     <h3 class="uppercase text-primary text-lg font-bold mb-block-0.5">
       Funkce software
     </h3>
-    <div>
-      Consectetuer adipiscing elit. Nulla quis diam. Praesent in mauris eu tortor porttitor accumsan. Nam quis nulla. Praesent dapibus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
-    </div>
+    <div
+      v-preposition-space
+      v-html="project.funkce"
+    />
   </section>
 </template>
 
