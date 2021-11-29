@@ -12,6 +12,7 @@
         <a
           v-if="partner.link"
           :href="partner.link"
+          class="block max-w-[180px]"
           target="_blank"
         >
           <img

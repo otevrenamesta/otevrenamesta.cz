@@ -7,7 +7,7 @@
         </strong>
         <h2
           v-preposition-space
-          class="text-primary text-2xl lg:text-5xl leading-tight font-bold tracking-tighter w-10/12"
+          class="text-primary text-2xl lg:text-5xl lg:leading-tight font-bold tracking-tighter w-10/12"
           v-html="hero.description"
         />
         <nuxt-link

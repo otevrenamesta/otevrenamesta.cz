@@ -201,7 +201,7 @@ export default {
     @apply block uppercase font-semibold text-sm text-black text-opacity-60 mb-2;
   }
   &Input {
-    @apply border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
+    @apply rounded-none border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
 
     &::placeholder {
       color: #B4FAC8;

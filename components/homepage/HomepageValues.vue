@@ -35,7 +35,7 @@
               class="flex mt-block-1 border-b border-black border-opacity-20 pb-block-1 last:pb-0 last:border-b-0 flex-col md:flex-row"
             >
               <div
-                class="mr-block-1 mb-block-0.5 md:mb-0"
+                class="mr-block-1 mb-block-0.5 w-block-2 flex-shrink-0 md:mb-0"
                 v-html="value.icon"
               />
               <div>

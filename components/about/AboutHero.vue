@@ -7,7 +7,7 @@
         </strong>
         <h2
           v-preposition-space
-          class="text-primary text-2xl md:text-5xl leading-tight font-bold tracking-tighter w-9/12"
+          class="text-primary text-2xl md:text-5xl md:leading-tight font-bold tracking-tighter w-9/12"
         >
           {{ hero.description }}
         </h2>

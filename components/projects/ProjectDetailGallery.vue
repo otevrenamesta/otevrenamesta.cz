@@ -16,7 +16,7 @@
         <button
           v-for="(image, index) in images.slice(0, 4)"
           :key="index"
-          class="w-1/2 px-2"
+          class="w-1/2 px-2 mb-2"
           @click="currentImageIndex = index"
         >
           <img

@@ -12,8 +12,13 @@
       <div class="BoxDecorations BoxDecorations--top-left" />
       <div class="BoxDecorations BoxDecorations--top-right" />
 
-      <div class="box-border px-block-1 xs:px-block-0.75 pt-block-1.5 xs:pt-block-1 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6">
-        <h2 class="text-6xl text-primary font-bold mb-10 tracking-tight">
+      <div class="box-border sm:px-block-1 px-block-0.75 pt-block-1 sm:pt-block-1.5 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6 sm:flex sm:flex-col sm:justify-center">
+        <div
+          v-if="!$screen.sm"
+          class="w-block-4 max-w-full h-auto mb-block-0.5"
+          v-html="illustration"
+        />
+        <h2 class="text-5xl sm:text-6xl text-primary font-bold mb-10 tracking-tight">
           {{ project.title }}
         </h2>
         <strong class="block text-2xl text-secondary mb-8 tracking-tight">
@@ -53,6 +58,7 @@
     </div>
 
     <div
+      v-if="$screen.md"
       class="absolute z-10 top-block-2 w-block-12 hidden sm:block"
       :class="[
         align === 'left' ? 'right-block-2' : 'left-block-2',

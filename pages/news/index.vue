@@ -1,11 +1,11 @@
 <template>
-  <main class="mt-block-4 container">
+  <main class="mt-block-3 md:mt-block-4 container">
     <div>
-      <h2 class="text-primary font-bold text-4xl mb-block-1 tracking-tight">
+      <h2 class="text-primary font-bold text-4xl mb-block-0.5 md:mb-block-1 tracking-tight">
         Články
       </h2>
     </div>
-    <div class="flex items-center flex-wrap mb-block-2">
+    <div class="flex items-center flex-wrap mb-block-1 sm:mb-block-2">
       <button
         v-for="(tag, index) in tags"
         :key="index"
@@ -25,7 +25,7 @@
         v-for="(article, index) in articlesFiltered"
         :key="index"
         :to="localePath(`/news/${article.id}`)"
-        class="block w-1/3 mb-block-2"
+        class="block w-full sm:w-1/2 md:w-1/3 max-w-md sm:max-w-auto mb-block-2"
       >
         <div class="px-block-0.5">
           <nuxt-img

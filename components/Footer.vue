@@ -1,11 +1,11 @@
 <template>
   <footer v-if="footer" class="mt-block-2 mb-block-1">
-    <div class="container flex justify-between items-center flex-col lg:flex-row">
-      <div class="flex items-center flex-col md:flex-row mb-8 lg:mb-0">
+    <div class="container flex justify-between lg:items-center flex-col lg:flex-row">
+      <div class="flex flex-col md:flex-row mb-8 lg:mb-0">
         <LogoOm
           class="mb-8 w-44 h-auto md:mb-0"
         />
-        <div class="border-none md:border-l border-secondary flex ml-block-1 pl-0 md:pl-block-1 pt-5 pb-4 flex-col sm:flex-row">
+        <div class="border-none md:border-l border-secondary flex md:ml-block-1 pl-0 md:pl-block-1 pt-5 pb-4 flex-col sm:flex-row">
           <p class="mr-12 text-primary text-sm mb-8 sm:mb-0">
             <strong class="block">
               {{ contact.name }}
@@ -27,7 +27,7 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col items-center lg:items-end">
+      <div class="flex flex-col lg:items-end">
         <Socials
           class="mb-5"
         />
@@ -36,7 +36,7 @@
             v-for="(link, index) in footer.links"
             :key="index"
             :href="link.url"
-            class="block text-sm text-primary uppercase font-semibold hover:underline"
+            class="block text-sm text-primary uppercase font-semibold hover:underline whitespace-nowrap"
           >
             {{ link.text }}
           </a>
