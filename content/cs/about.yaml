@@ -32,11 +32,11 @@ employees:
     fullname: Vaclav Klecanda
     subtitle: vedoucí Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2Flukas_jelinek.jpg
     fullname: Lukáš Jelínek
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2Flenka_kovacova.jpg
     fullname: Lenka Kováčová
     subtitle: členka Projektové rady
     description: expertka na otevřená data
@@ -52,7 +52,7 @@ employees:
     fullname: Ladislav Nešněra
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2Fondrej_profant.jpg
     fullname: Ondřej Profant
     subtitle: člen Projektové rady
     description: e-government specialista
@@ -60,7 +60,7 @@ employees:
     fullname: Martin Dvořák
     subtitle: člen Projektové rady
     description: datový specialist
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fotevrenamesta.cz%2F%2Fbenedikt_kotmel.jpg
     fullname: Benedikt Kotmel
     subtitle: člen Projektové rady
     description: datový specialista
