@@ -178,7 +178,7 @@ export default {
           tel: this.form.phone,
           subject: this.form.interestedIn,
           content: this.form.message,
-          url: 'https://modurad.otevrenamesta.cz/uni/otevrenamesta.cz/messages/',
+          url: 'https://modurad.otevrenamesta.cz/omesta/uni/messages/',
           token,
         });
 
