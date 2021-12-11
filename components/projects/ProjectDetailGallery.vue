@@ -59,7 +59,7 @@ export default {
 
   async mounted() {
     const filter = { tags: { like: `%project${this.project.id}%` } };
-    const images = await this.$axios.$get('https://modurad.otevrenamesta.cz/mediaman/otevrenamesta.cz/', {
+    const images = await this.$axios.$get('https://modurad.otevrenamesta.cz/omesta/mediaman/', {
       params: {
         filter: JSON.stringify(filter),
       },

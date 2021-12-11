@@ -123,7 +123,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://otevrenamesta.vercel.app/',
+    hostname: 'https://otevrenamesta.cz/',
   },
 
   image: {

@@ -171,7 +171,7 @@ export default {
       this.isSubmitting = true;
 
       try {
-        await this.$axios.$post('https://modurad.otevrenamesta.cz/contactforms/otevrenamesta.cz/', {
+        await this.$axios.$post('https://modurad.otevrenamesta.cz/omesta/contactforms/', {
           jmeno: this.form.fullname,
           mesto: this.form.city,
           email: this.form.email,
