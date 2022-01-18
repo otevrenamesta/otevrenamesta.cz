@@ -4,10 +4,6 @@ hero:
   cta: Stát se členem
 
 members:
-  - fullname: Brno
-    agent: Ondřej Kotas
-    population: 390 687
-    memberFee: 581 904,75 Kč / rok
   - fullname: Brno - Medlánky
     agent: Kateřina Žůrková
     population: 5 501
@@ -28,10 +24,6 @@ members:
     agent: Vratislav Krejčíř
     population: 28 715
     memberFee: 43 405,50 Kč / rok
-  - fullname: Kutná Hora
-    agent: Lukáš Jelínek
-    population: 20 091
-    memberFee: 30 136,50 Kč / rok
   - fullname: Loket
     agent: Petr Adamec
     population: 3 160
@@ -60,10 +52,6 @@ members:
     agent: Jan Adamec
     population: 51 937
     memberFee: 83 997 Kč / rok
-  - fullname: Praha 22
-    agent: Tomáš Kaněra
-    population: 10 961
-    memberFee: 18 345 Kč / rok
   - fullname: Praha - Ďáblice
     agent: Jan Hrdlička
     population: 3 513
