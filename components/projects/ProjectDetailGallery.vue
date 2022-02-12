@@ -65,7 +65,7 @@ export default {
       },
     });
     this.images = images.map((image) => {
-      image.url = `https://modurad.otevrenamesta.cz/media/otevrenamesta.cz/${image.filename}`;
+      image.url = `https://modurad.otevrenamesta.cz/media/omesta/${image.filename}`;
       return image;
     });
   },

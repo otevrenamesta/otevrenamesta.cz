@@ -28,7 +28,7 @@ structure:
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 332" stroke="#1e1796"><path data-name="Rectangle 226" d="M90 31H60V1h30z"/><path data-name="Rectangle 227" d="M31 1v30H1V1z"/><path data-name="Rectangle 228" d="M60 31h60a59 59 0 0 1-59 59h-1V31Z"/><path data-name="Rectangle 229" d="M1 31h59v59A59 59 0 0 1 1 31Z"/></g><path data-name="Rectangle 895" d="M0 0h121v91H0z"/></g></svg>
 
 employees:
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Vaclav Klecanda
     subtitle: vedoucí Projektové rady
     description: IT specialista
@@ -40,15 +40,15 @@ employees:
     fullname: Lenka Kováčová
     subtitle: členka Projektové rady
     description: expertka na otevřená data
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Jan Mareš
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Ivor Kollár
     subtitle: člen Projektové rady
     descpription: kyberbezpečnostní expert
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Ladislav Nešněra
     subtitle: člen Projektové rady
     description: IT specialista
@@ -56,7 +56,7 @@ employees:
     fullname: Ondřej Profant
     subtitle: člen Projektové rady
     description: e-government specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Martin Dvořák
     subtitle: člen Projektové rady
     description: datový specialist
@@ -64,11 +64,11 @@ employees:
     fullname: Benedikt Kotmel
     subtitle: člen Projektové rady
     description: datový specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Ondřej Caletka
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/otevrenamesta.cz//member-default-img.svg
+  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Jáchym Čepický
     subtitle: člen Projektové rady
     description: GIS specialista
