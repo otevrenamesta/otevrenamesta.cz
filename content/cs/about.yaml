@@ -37,10 +37,6 @@ employees:
     subtitle: člen Projektové rady
     description: IT specialista
   - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Flenka_kovacova.jpg
-    fullname: Lenka Kováčová
-    subtitle: členka Projektové rady
-    description: expertka na otevřená data
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Jan Mareš
     subtitle: člen Projektové rady
     description: IT specialista
@@ -53,10 +49,6 @@ employees:
     subtitle: člen Projektové rady
     description: IT specialista
   - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Fondrej_profant.jpg
-    fullname: Ondřej Profant
-    subtitle: člen Projektové rady
-    description: e-government specialista
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
     fullname: Martin Dvořák
     subtitle: člen Projektové rady
     description: datový specialist
