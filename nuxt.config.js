@@ -47,17 +47,17 @@ export default {
     '@nuxtjs/eslint-module', // https://go.nuxtjs.dev/eslint
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     ['@nuxtjs/moment', { locales: ['cs'], defaultLocale: 'cs' }],
+    '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
+    '@nuxt/image',
+    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
-    '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
     '@nuxt/content', // https://go.nuxtjs.dev/content
-    '@nuxtjs/svg',
     'vue-screen/nuxt',
     '@nuxtjs/i18n',
-    '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/markdownit',
   ],
