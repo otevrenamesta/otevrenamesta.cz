@@ -24,6 +24,18 @@
           </Button>
         </a>
         <a
+          v-if="project.pricelist"
+          :href="project.pricelist"
+          target="_blank"
+        >
+          <Button
+            type="outline"
+            icon="icon-arrow-open"
+          >
+            Ceník
+          </Button>
+        </a>
+        <a
           v-if="project.demo"
           :href="project.demo"
           target="_blank"
