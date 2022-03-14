@@ -31,7 +31,7 @@
         <Socials
           class="mb-5"
         />
-        <div class="flex gap-4">
+        <div class="flex gap-x-4 gap-y-2 lg:ml-5 flex-wrap lg:justify-end">
           <a
             v-for="(link, index) in footer.links"
             :key="index"
