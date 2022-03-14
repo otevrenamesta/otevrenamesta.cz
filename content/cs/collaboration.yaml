@@ -21,7 +21,7 @@ sections:
   member:
     title: Stát se členem
     description: Pokud je téma digitalizace pro vaši samosprávu důležité, rádi vás přivítáme jako člena spolku. Díky tomu získáte řadu výhod a budete mít přímo možnost ovlivňovat směřování našich aktivit.
-    membership:
+    pricing:
       title: Členský poplatek
       description: "Členský poplatek se vypočítává dle počtu obyvatel a je určen vždy na kalendářní rok:<br>
                   <br>
@@ -32,6 +32,11 @@ sections:
                   Kraje: 49 tis. Kč<br>
                   <br>
                   Startovací členství: 5 tis. Kč"
+    membership:
+      title: Přihláška
+      description: "Přihláška do spolku je dostupná zde:"
+      button: Přihláška
+      url: "https://drive.google.com/file/d/1nDbsHOJen0QfVC-sAyt6jOhG-51tDMQj/view?usp=sharing"
     benefits:
       title: Benefity
       items:
