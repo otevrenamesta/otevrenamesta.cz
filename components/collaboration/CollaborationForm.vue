@@ -85,7 +85,7 @@
             Mám zájem o
           </span>
           <div class="flex mt-5 flex-col sm:items-center sm:flex-row">
-            <label class="FormRadioGroup mb-4 sm:mb-0">
+            <label class="FormRadioGroup items-center mb-4 sm:mb-0">
               <div class="FormRadio">
                 <input
                   v-model="form.interestedIn"
@@ -94,11 +94,11 @@
                   class="FormRadioInput"
                 >
               </div>
-              <span class="text-lg text-white font-bold">
+              <span class="text-md text-white font-bold whitespace-nowrap">
                 Členství
               </span>
             </label>
-            <label class="FormRadioGroup">
+            <label class="FormRadioGroup items-center mb-4 sm:mb-0">
               <div class="FormRadio">
                 <input
                   v-model="form.interestedIn"
@@ -108,8 +108,22 @@
                   required
                 >
               </div>
-              <span class="text-lg text-white font-bold">
+              <span class="text-md text-white font-bold whitespace-nowrap">
                 Nákup služeb
+              </span>
+            </label>
+            <label class="FormRadioGroup items-center">
+              <div class="FormRadio">
+                <input
+                  v-model="form.interestedIn"
+                  type="radio"
+                  value="information"
+                  class="FormRadioInput"
+                  required
+                >
+              </div>
+              <span class="text-md text-white font-bold whitespace-nowrap">
+                Informace
               </span>
             </label>
           </div>
@@ -213,7 +227,7 @@ export default {
   }
 
   &RadioGroup {
-    @apply flex first:mr-block-1 cursor-pointer;
+    @apply flex mr-block-0.5 last:mr-0 cursor-pointer;
 
     span {
       @apply block leading-tight;
