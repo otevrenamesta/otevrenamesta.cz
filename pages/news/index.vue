@@ -35,16 +35,24 @@
             height="400"
             class="mb-block-0.5"
           />
-          <div
-            class="mb-4 flex"
-          >
+          <div class="flex justify-between items-center mb-4">
             <div
-              v-for="(tag, tagIndex) in article.tags.split(',')"
-              :key="tagIndex"
-              class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black text-opacity-75 font-bold"
+              class="flex"
             >
-              {{ tag }}
+              <div
+                v-for="(tag, tagIndex) in article.tags.split(',')"
+                :key="tagIndex"
+                class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black text-opacity-75 font-bold"
+              >
+                {{ tag }}
+              </div>
             </div>
+            <time
+              :datetime="article.published"
+              class="block text-sm text-gray font-bold"
+            >
+              {{ $moment(article.published).format('D. M. yyyy') }}
+            </time>
           </div>
           <h3 class="text-primary font-bold text-2xl tracking-tight mb-2 hover:underline">
             {{ article.title }}
