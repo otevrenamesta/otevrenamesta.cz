@@ -23,24 +23,24 @@
     "core-js": "^3.21.1",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.7",
-    "sass": "^1.49.9",
     "sass-loader": "10.1.1",
+    "sass": "^1.49.9",
     "vue-cool-lightbox": "^2.7.4",
     "vue-screen": "^1.5.6"
   },
   "devDependencies": {
-    "@nuxtjs/svg": "^0.4.0",
-    "@nuxtjs/style-resources": "^1.2.1",
-    "@nuxt/image": "^0.6.2",
-    "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/moment": "^1.6.1",
     "@babel/eslint-parser": "^7.17.0",
+    "@nuxt/image": "^0.6.2",
     "@nuxtjs/eslint-config": "^9.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/svg": "^0.4.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
-    "eslint": "^8.11.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-vue": "^8.5.0",
+    "eslint": "^8.11.0",
     "postcss": "^8.4.8"
   }
 }
