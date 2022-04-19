@@ -87,7 +87,7 @@ export default {
   generate: {
     async routes() {
       const projects = await axios.get('https://modurad.otevrenamesta.cz/omesta/uni/projects/?sort=title:asc&currentPage=1&perPage=100');
-      const news = await axios.get('https://modurad.otevrenamesta.cz/omesta/uni/posts/?sort=published:desc');
+      const news = await axios.get('https://modurad.otevrenamesta.cz/omesta/posts/?sort=published:desc');
 
       return [
         ...projects.data.data.map(project => `/projects/${project.id}`),
