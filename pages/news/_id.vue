@@ -14,7 +14,7 @@
     </div>
     <div>
       <nuxt-img
-        :src="article.obrazek"
+        :src="article.image"
         :alt="article.title"
         width="1200"
         class="mb-block-0.5"
