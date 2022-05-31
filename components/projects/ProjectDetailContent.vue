@@ -4,8 +4,8 @@
       O projektu
     </h3>
     <div
-      class="text-xl"
-      v-html="project.content"
+      class="text-xl prose"
+      v-html="$md.render(project.content)"
     />
   </section>
 </template>
