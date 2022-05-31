@@ -43,23 +43,23 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/style-resources', // https://github.com/nuxt-community/style-resources-module
+    '@nuxt/image',
     '@nuxtjs/eslint-module', // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/style-resources', // https://github.com/nuxt-community/style-resources-module
+    '@nuxtjs/svg',
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     ['@nuxtjs/moment', { locales: ['cs'], defaultLocale: 'cs' }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
-    '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
     '@nuxt/content', // https://go.nuxtjs.dev/content
-    '@nuxtjs/svg',
-    'vue-screen/nuxt',
+    '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
     '@nuxtjs/i18n',
-    '@nuxt/image',
-    '@nuxtjs/sitemap',
     '@nuxtjs/markdownit',
+    '@nuxtjs/sitemap',
+    'vue-screen/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

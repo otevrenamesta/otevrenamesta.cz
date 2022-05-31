@@ -1,5 +1,8 @@
 <template>
-  <section class="pt-block-1 pb-block-1">
+  <section
+    v-if="images && images.length"
+    class="pt-block-1 pb-block-1"
+  >
     <h3 class="uppercase text-primary text-lg font-bold mb-block-0.5">
       Galerie
     </h3>
@@ -50,10 +53,7 @@ export default {
   data() {
     return {
       currentImageIndex: null,
-      images: [
-        'https://pix10.agoda.net/hotelImages/1199068/-1/09cb9a2780bf41ad1e8f8a3d2e074754.jpg',
-        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg',
-      ],
+      images: [],
     };
   },
 

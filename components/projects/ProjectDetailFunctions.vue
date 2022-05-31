@@ -1,5 +1,8 @@
 <template>
-  <section class="pt-block-1 pb-block-1">
+  <section
+    v-if="project.funkce"
+    class="pt-block-1 pb-block-1"
+  >
     <h3 class="uppercase text-primary text-lg font-bold mb-block-0.5">
       Funkce software
     </h3>

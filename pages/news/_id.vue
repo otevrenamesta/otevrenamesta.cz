@@ -3,14 +3,22 @@
     v-if="article"
     class="mt-block-4 max-w-3xl w-10/12 mx-auto"
   >
-    <div class="flex items-center mb-block-0.5">
-      <div
-        v-for="(tag, tagIndex) in article.tags.split(',')"
-        :key="tagIndex"
-        class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black text-opacity-75 font-bold"
-      >
-        {{ tag }}
+    <div class="flex justify-between items-center mb-block-0.5">
+      <div class="flex items-center">
+        <div
+          v-for="(tag, tagIndex) in article.tags.split(',')"
+          :key="tagIndex"
+          class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black text-opacity-75 font-bold"
+        >
+          {{ tag }}
+        </div>
       </div>
+      <time
+        :datetime="article.published"
+        class="block text-sm text-gray font-bold"
+      >
+        {{ $moment(article.published).format('D. M. yyyy') }}
+      </time>
     </div>
     <div>
       <nuxt-img

@@ -21,14 +21,41 @@
           class="text-secondary text-base font-medium mb-block-1"
           v-html="sections.member.description"
         />
+
         <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-          {{ sections.member.membership.title }}
+          {{ sections.member.pricing.title }}
         </h3>
         <p
           v-preposition-space
           class="text-sm text-primary mb-block-0.5"
+          v-html="sections.member.pricing.description"
+        />
+
+        <h3
+          v-if="sections.member.membership.title"
+          class="text-lg text-priamry uppercase text-primary font-bold mb-5"
+        >
+          {{ sections.member.membership.title }}
+        </h3>
+        <p
+          v-preposition-space
+          class="text-sm text-primary mb-4"
           v-html="sections.member.membership.description"
         />
+        <a
+          v-if="sections.member.membership.url"
+          :href="sections.member.membership.url"
+          target="_blank"
+          class="mb-block-0.5 block"
+        >
+          <Button
+            type="transparent"
+            icon="icon-arrow-right"
+            class="text-secondary pl-0"
+          >
+            {{ sections.member.membership.button }}
+          </Button>
+        </a>
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
         {{ sections.member.benefits.title }}
