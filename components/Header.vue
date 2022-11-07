@@ -3,7 +3,7 @@
     <div class="container pt-block-0.5 lg:pt-12 flex justify-between flex-wrap">
       <nuxt-link to="/">
         <LogoOm
-          class="w-44 lg:w-auto h-auto"
+          class="w-40 xl:w-auto h-auto"
         />
       </nuxt-link>
 
@@ -12,7 +12,8 @@
           v-for="(item, index) in menuItems"
           :key="index"
           :to="localePath(item.link)"
-          class="NavItem uppercase text-sm text-primary font-semibold ml-10 hover:underline"
+          class="NavItem uppercase text-sm text-primary font-semibold ml-6 xl:ml-10 hover:underline"
+          exact
           v-text="item.text"
         />
 

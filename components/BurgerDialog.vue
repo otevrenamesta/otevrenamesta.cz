@@ -29,6 +29,7 @@
             :key="index"
             :to="localePath(item.link)"
             class="NavItem uppercase text-base text-primary font-semibold hover:underline"
+            exact
             v-text="item.text"
           />
 
