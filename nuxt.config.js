@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const description = 'Partner pro digitalizaci samospráv. Specializujeme se na technickou, právní a metodickou podporu v oblasti digitalizace samospráv.';
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -13,7 +15,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: description },
+      { hid: 'og:description', name: 'og:description', content: description },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
