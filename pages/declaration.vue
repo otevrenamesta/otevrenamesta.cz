@@ -25,6 +25,8 @@
         />
       </div>
     </div>
+
+    <DeclarationSignatories />
   </main>
 </template>
 

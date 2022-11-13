@@ -32,3 +32,33 @@ action:
      description: "<strong>To monitor and to promote the activities and case studies of the Czech Republic in the area of open source</strong> towards the public sector and academic institutions. "
    - number: "06"
      description: "<strong>To establish the first virtual and later physical Czech National OSPO office in Brno.</strong> Till that time, the “pre-secretariat” of the Czech National OSPO is managed by the NGO Otevřená města. Further information about the declaration and possibilities of cooperation on this effort can be found at <a href='https://otevrenamesta.cz/declaration'>otevrenamesta.cz/declaration</a> or at <a href='mailto:info@otevrenamesta.cz'>info@otevrenamesta.cz</a>"
+
+signatories:
+  title: "Signatáři DEKLARACE"
+  letters:
+   - letter: A
+     items:
+      - title: Ernest Mendoza
+        description: "CEO at Astrea Materials"
+      - title: Ramon Miquel
+        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+      - title: organizace Ramon Miquel
+        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+        isOrganization: true
+      - title: Ernest Mendoza
+        description: "CEO at Astrea Materials"
+      - title: Ramon Miquel
+        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+   - letter: B
+     items:
+      - title: Ernest Mendoza
+        description: "CEO at Astrea Materials"
+      - title: Ramon Miquel
+        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+      - title: organizace Ramon Miquel
+        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+        isOrganization: true
+      - title: Ernest Mendoza
+        description: "CEO at Astrea Materials"
+      - title: Ramon Miquel
+        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
