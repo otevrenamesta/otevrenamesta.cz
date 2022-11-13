@@ -1,8 +1,6 @@
 <template>
   <main v-if="$store.state.content.declaration">
-    <DeclarationHero
-      class="mb-block-2"
-    />
+    <DeclarationHero />
 
     <div class="flex -mt-px border-t border-b border-primary-light flex-col lg:flex-row relative">
       <div
@@ -26,7 +24,9 @@
       </div>
     </div>
 
-    <DeclarationSignatories />
+    <DeclarationSignatories class="mb-block-3" />
+
+    <DeclarationSupport />
   </main>
 </template>
 
