@@ -1,6 +1,11 @@
 module.exports = {
-  mode: 'jit',
-  purge: [],
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
   corePlugins: {
     container: false,
   },
@@ -48,6 +53,14 @@ module.exports = {
         'block-10': '37.5rem',
         'block-12': '45rem',
       },
+
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-bullets': theme('colors.secondary'),
+          },
+        },
+      }),
     },
   },
   plugins: [

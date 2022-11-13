@@ -1,0 +1,34 @@
+hero:
+  title: Deklarace
+  description: "Brno Open Source Declaration: The story of the Czech National OSPO"
+
+intro:
+  title: "The purpose of this Declaration is to kick-start the process of creation of the Czech National Open Source Programme Office for the public and academic sector to help create and activate the community around use of Open Source mainly in the Czech public and Academic sector effort to develop further collaboration to establish the Czech National OSPO in Brno, Czech Republic."
+  cta:
+    title: Vyjádřit podporu
+  opensource:
+    title: WHAT IS OPEN SOURCE
+    description: "Open source is present everywhere. All around the world, companies and public services are using open-source collaborative methods to innovate and build new solutions. In this perspectice Open source is also close to the essence of public service and academia because: "
+    list:
+      - "It is a public code, which makes it a good use of public money, one that promotes freedom of choice and avoids getting 'locked in'"
+      - "It makes it easy to use and reuse software solutions, so we can pool efforts to create valuable cross-border and cross-domain services that are interoperable and increase efficiency "
+      - "It is easy and efficient to add features to open source software, which can be freely shared with anyone for any purpose. This means that everyone can benefit. "
+    showMore:
+      url: https://davidvesely.cz
+      title: CELÉ znění DEKLARACE
+
+action:
+  title: "Actions steps towards the Czech National OSPO discussed during the Open Source Driving the European Digital Decade conference"
+  steps:
+   - number: "01"
+     description: "To sign a <strong>Memorandum of Cooperation</strong> between the key local and global stakeholders both from public sector and academia willing to work on establishing the Czech National OSPO in Brno. "
+   - number: "02"
+     description: "To sign <strong>Manifesto of the EU public services OSPO network</strong> created by European Commission OSPO and be active in the EU OSPO public sector OSPO regular meetings. "
+   - number: "03"
+     description: "To start <strong>the process of cooperation between Czech and international open source communities</strong> to establish a functional cooperation on particular projects (e.g. with Paris, Baltimore or Swedish OSPO) and <strong>to support the efforts of the Swedish and Spanish Presidency of the Council of the European Union</strong> in this area in 2023. "
+   - number: "04"
+     description: "<strong>To further develop the Czech National Open Source Portal code.gov.cz</strong> as a key element of further Czech National OSPO activities and <strong>to establish functional collaboration between the newly established Digital Information Agency of the Czech Republic (DIA)</strong> in 2023. "
+   - number: "05"
+     description: "<strong>To monitor and to promote the activities and case studies of the Czech Republic in the area of open source</strong> towards the public sector and academic institutions. "
+   - number: "06"
+     description: "<strong>To establish the first virtual and later physical Czech National OSPO office in Brno.</strong> Till that time, the “pre-secretariat” of the Czech National OSPO is managed by the NGO Otevřená města. Further information about the declaration and possibilities of cooperation on this effort can be found at <a href='https://otevrenamesta.cz/declaration'>otevrenamesta.cz/declaration</a> or at <a href='mailto:info@otevrenamesta.cz'>info@otevrenamesta.cz</a>"
