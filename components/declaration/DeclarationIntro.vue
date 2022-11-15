@@ -8,7 +8,6 @@
     <div class="flex justify-between flex-col sm:flex-row gap-4 sm:gap-0 mb-block-2">
       <a
         href="#form"
-        target="_blank"
       >
         <Button
           icon="icon-arrow-open"

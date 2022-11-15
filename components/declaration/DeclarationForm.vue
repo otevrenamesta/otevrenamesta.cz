@@ -41,14 +41,13 @@
 
         <label class="FormGroup">
           <span class="FormLabel">
-            Telefon*
+            Telefon
           </span>
           <input
             v-model="form.phone"
             type="tel"
             class="FormInput"
             placeholder="Zadejte telefon..."
-            required
           >
         </label>
       </div>
