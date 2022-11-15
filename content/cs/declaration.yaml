@@ -5,7 +5,7 @@ hero:
 intro:
   title: "The purpose of this Declaration is to kick-start the process of creation of the Czech National Open Source Programme Office for the public and academic sector to help create and activate the community around use of Open Source mainly in the Czech public and Academic sector effort to develop further collaboration to establish the Czech National OSPO in Brno, Czech Republic."
   cta:
-    title: Vyjádřit podporu
+    title: Show your support
   opensource:
     title: WHAT IS OPEN SOURCE
     description: "Open source is present everywhere. All around the world, companies and public services are using open-source collaborative methods to innovate and build new solutions. In this perspectice Open source is also close to the essence of public service and academia because: "
@@ -14,7 +14,7 @@ intro:
       - "It makes it easy to use and reuse software solutions, so we can pool efforts to create valuable cross-border and cross-domain services that are interoperable and increase efficiency "
       - "It is easy and efficient to add features to open source software, which can be freely shared with anyone for any purpose. This means that everyone can benefit. "
     showMore:
-      url: https://davidvesely.cz
+      url: https://drive.google.com/file/d/1ty621AlKB4-phpI1MGjoej-QQ3f7oLw2/view?usp=sharing
       title: CELÉ znění DEKLARACE
 
 action:
@@ -64,5 +64,5 @@ signatories:
         description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
 
 support:
-  title: Podpořte deklaraci
-  description: Pokud byste chtěli připojit svůj podpis pod tuto deklaraci a vyjádřit jí takto podporu, prosím učiňte tak skrz folmulář
+  title: Support Brno Declaration
+  description: If you would like to add your signature to this declaration and express your support in this way, please do so through the form.
