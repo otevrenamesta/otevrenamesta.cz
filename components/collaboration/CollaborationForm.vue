@@ -13,7 +13,7 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Jméno a příjmení
+            Jméno a příjmení*
           </span>
           <input
             v-model="form.fullname"
@@ -26,7 +26,7 @@
 
         <label class="FormGroup">
           <span class="FormLabel">
-            Město
+            Město/kraj*
           </span>
           <input
             v-model="form.city"
@@ -41,7 +41,7 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Email
+            Email*
           </span>
           <input
             v-model="form.email"
@@ -61,7 +61,6 @@
             type="tel"
             class="FormInput"
             placeholder="Zadejte telefon..."
-            required
           >
         </label>
       </div>
