@@ -13,13 +13,13 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Jméno a příjmení*
+            Name and Surname*
           </span>
           <input
             v-model="form.fullname"
             type="text"
             class="FormInput"
-            placeholder="Zadejte jméno..."
+            placeholder="Insert your name…"
             required
           >
         </label>
@@ -34,20 +34,20 @@
             v-model="form.email"
             type="email"
             class="FormInput"
-            placeholder="Zadejte email..."
+            placeholder="Insert your email…"
             required
           >
         </label>
 
         <label class="FormGroup">
           <span class="FormLabel">
-            Telefon
+            Phone
           </span>
           <input
             v-model="form.phone"
             type="tel"
             class="FormInput"
-            placeholder="Zadejte telefon..."
+            placeholder="Insert your phone number…"
           >
         </label>
       </div>
@@ -55,12 +55,12 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Organizace
+            Organization
           </span>
           <input
             v-model="form.organization"
             class="FormInput"
-            placeholder="Zadejte organizaci..."
+            placeholder="Insert your organization…"
           >
         </label>
       </div>
@@ -68,12 +68,12 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            PRACOVNÍ POZICE
+            Position at the organization
           </span>
           <input
             v-model="form.position"
             class="FormInput"
-            placeholder="Zadejte pracovní pozici..."
+            placeholder="Insert your position…"
           >
         </label>
       </div>
@@ -87,8 +87,7 @@
 
       <div class="flex items-start justify-between flex-col sm:flex-row gap-x-4">
         <p class="text-sm max-w-xs mb-4 sm:mb-0">
-          Vyplněním a odesláním formuláře souhlasíte
-          se zpracováním Vašich osobních údajů.
+          By filling out and sending the form, you agree to the processing of your personal data.
         </p>
         <Button
           type="dark"
@@ -96,7 +95,7 @@
           native-type="submit"
           class="whitespace-nowrap"
         >
-          PODPOŘIT BRNO DECLARATION
+          Support Brno Declaration
         </Button>
       </div>
     </template>
