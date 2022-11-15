@@ -130,21 +130,19 @@ export default {
     presubmitForm() {
       this.$refs.invisibleHcaptcha.execute();
     },
-    verifiedSubmit(token) {
+    async verifiedSubmit(token) {
       this.isSubmitting = true;
 
       try {
-        // await this.$axios.$post('https://modurad.otevrenamesta.cz/omesta/contactforms/', {
-        //   jmeno: this.form.fullname,
-        //   mesto: this.form.city,
-        //   email: this.form.email,
-        //   tel: this.form.phone,
-        //   subject: this.form.interestedIn,
-        //   content: this.form.message,
-        //   url: 'https://modurad.otevrenamesta.cz/omesta/uni/messages/',
-        //   token,
-        // });
-        alert('TODO: submit');
+        await this.$axios.$post('https://modurad.otevrenamesta.cz/omesta/contactforms/', {
+          jmeno: this.form.fullname,
+          email: this.form.email,
+          tel: this.form.phone,
+          organizace: this.form.organization,
+          pozice: this.form.position,
+          url: 'https://modurad.otevrenamesta.cz/omesta/uni/ospo_support/',
+          token,
+        });
 
         this.isSubmitted = true;
       } catch (error) {
