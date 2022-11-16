@@ -36,32 +36,30 @@ action:
 signatories:
   title: "Signatáři DEKLARACE"
   letters:
-   - letter: A
+   - letter: C
      items:
       - title: Ernest Mendoza
         description: "CEO at Astrea Materials"
       - title: Ramon Miquel
         description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
-      - title: organizace Ramon Miquel
-        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+      - title: NGO česko.digital
+        description: "CEO, Eva Pavlíková"
         isOrganization: true
       - title: Ernest Mendoza
         description: "CEO at Astrea Materials"
       - title: Ramon Miquel
         description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
-   - letter: B
+   - letter: O
      items:
-      - title: Ernest Mendoza
-        description: "CEO at Astrea Materials"
-      - title: Ramon Miquel
-        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
-      - title: organizace Ramon Miquel
-        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+      - title: Open Cities (Otevřená města)
+        description: "CEO, Lucie Smolka"
         isOrganization: true
-      - title: Ernest Mendoza
-        description: "CEO at Astrea Materials"
-      - title: Ramon Miquel
-        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
+      - title: Open Content
+        description: "CEO, Lucie Smolka"
+        isOrganization: true
+      - title: OpenForum Europe
+        description: "Executive director, Astor Nummelin Carlberg"
+        isOrganization: true
 
 support:
   title: Support Brno Declaration
