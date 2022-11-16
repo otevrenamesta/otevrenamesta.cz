@@ -5,7 +5,7 @@
   >
     <div v-if="isSubmitted">
       <h2 class="text-center text-white text-4xl font-semibold">
-        Děkujeme za Váš zájem.
+        Thank you for your support.
       </h2>
     </div>
 
