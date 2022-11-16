@@ -38,17 +38,11 @@ signatories:
   letters:
    - letter: C
      items:
-      - title: Ernest Mendoza
-        description: "CEO at Astrea Materials"
-      - title: Ramon Miquel
         description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
       - title: NGO česko.digital
         description: "CEO, Eva Pavlíková"
         isOrganization: true
       - title: Ernest Mendoza
-        description: "CEO at Astrea Materials"
-      - title: Ramon Miquel
-        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
    - letter: O
      items:
       - title: Open Cities (Otevřená města)
