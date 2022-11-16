@@ -7,7 +7,7 @@ menuItems:
     text: Projekty
   - link: /members
     text: Členové
-  - link: /news/72
+  - link: /declaration
     text: Brno Declaration
   - link: /news
     text: Aktuality
