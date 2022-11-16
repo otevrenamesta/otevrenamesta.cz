@@ -38,11 +38,13 @@ signatories:
   letters:
    - letter: C
      items:
-        description: "Director of the Institute for High Energy Physics of Barcelona (IFAE) and ICREA Research Professor"
       - title: NGO česko.digital
         description: "CEO, Eva Pavlíková"
         isOrganization: true
-      - title: Ernest Mendoza
+   - letter: J
+     items:
+      - title: Jiří Marek
+        description: "Open Science manager, Masaryk University"
    - letter: O
      items:
       - title: Open Cities (Otevřená města)
