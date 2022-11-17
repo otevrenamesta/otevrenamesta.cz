@@ -34,7 +34,7 @@ action:
      description: "<strong>To establish the first virtual and later physical Czech National OSPO office in Brno.</strong> Till that time, the “pre-secretariat” of the Czech National OSPO is managed by the NGO Otevřená města. Further information about the declaration and possibilities of cooperation on this effort can be found at <a href='https://otevrenamesta.cz/declaration'>otevrenamesta.cz/declaration</a> or at <a href='mailto:info@otevrenamesta.cz'>info@otevrenamesta.cz</a>"
 
 signatories:
-  title: "Signatories of the DECLARATION"
+ title: "Signatories of the DECLARATION"
   letters:
    - letter: C
      items:
@@ -46,6 +46,7 @@ signatories:
       - title: Dorota Volavková
    - letter: J
      items:
+      - title: Jan Jílek
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
    - letter: M
