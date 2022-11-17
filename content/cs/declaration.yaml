@@ -44,9 +44,11 @@ signatories:
    - letter: D
      items:
       - title: Dorota Volavková
+       - description: "Community manager"
    - letter: J
      items:
       - title: Jan Jílek
+      - description: "Developer"
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
    - letter: M
