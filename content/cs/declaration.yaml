@@ -46,9 +46,14 @@ signatories:
       - title: Dorota Volavková
    - letter: J
      items:
+      - title: Jan Jílek
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
-   - letter: O
+   - letter: M
+     items:
+      - title: Michal Růžička
+        description: "Open Science / FAIR data specialist, Masaryk University"
+  - letter: O
      items:
       - title: Open Cities (Otevřená města)
         description: "CEO, Lucie Smolka"
@@ -59,7 +64,11 @@ signatories:
       - title: OpenForum Europe
         description: "Executive director, Astor Nummelin Carlberg"
         isOrganization: true
-
+  - letter: T
+     items:
+      - title: Technicinsider
+        description: "CEO, Tomáš Svoboda"
+        isOrganization: true
 support:
   title: Support Brno Declaration
   description: If you would like to add your signature to this declaration and express your support in this way, please do so through the form.
