@@ -63,6 +63,9 @@ signatories:
         description: "FAIR data specialist, Masaryk University"
    - letter: O
      items:
+      - title: OpenAlt
+        description: "Chairman of the Board, Michal Stanke"
+        isOrganization: true
       - title: Open Cities (Otevřená města)
         description: "CEO, Lucie Smolka"
         isOrganization: true
@@ -72,6 +75,13 @@ signatories:
       - title: OpenForum Europe
         description: "Executive director, Astor Nummelin Carlberg"
         isOrganization: true
+   - letter: P
+     items:
+      - title: Petr Kovács
+   - letter: R
+     items:
+      - title: Robert Pergl
+        description: "Associate Professor, Czech Technical University in Prague"
    - letter: T
      items:
       - title: Technicinsider
