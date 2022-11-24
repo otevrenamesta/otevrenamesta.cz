@@ -45,18 +45,30 @@ signatories:
       - title: česko.digital
         description: "CEO, Eva Pavlíková"
         isOrganization: true
+      - title: CSGOV
+        description: "Founder, Petr Illek"
+        isOrganization: true       
    - letter: D
      items:
       - title: Dorota Volavková
+   - letter: H
+     items:
+      - title: Hlídač státu
+        description: "CEO, Michal Bláha"
+        isOrganization: true   
    - letter: J
      items:
       - title: Jan Jílek
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
+      - title: Josef Šmída        
    - letter: K
      items:
       - title: Kristýna Zychová
         description: "Open Science Coordinator, LIB ČZU"
+      - title: Wikimedia Česká republika
+        description: "Výkonná ředitelka, Klára Joklová"
+        isOrganization: true
    - letter: M
      items:
       - title: Michal Růžička
@@ -87,6 +99,8 @@ signatories:
       - title: Technicinsider
         description: "CEO, Tomáš Svoboda"
         isOrganization: true
+      - title: Tereza Zrnová
+        description: "koordinátorka, Operátor ICT"        
    - letter: V
      items:
       - title: Valentýna Drtinová
