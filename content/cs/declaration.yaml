@@ -58,19 +58,26 @@ signatories:
         isOrganization: true   
    - letter: J
      items:
+      - title: Jakub Onderka
+        description: "Security analyst, National Cyber and Information Security Authority"   
       - title: Jan Jílek
+      - title: Jiří Doubravský
+        description: "Developer, Magistrát města Olomouce"      
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
       - title: Josef Šmída        
    - letter: K
      items:
+      - title: Karel Kočí
+        description: "Developer, Elkrtoline, a.s."
       - title: Kristýna Zychová
-        description: "Open Science Coordinator, LIB ČZU"
+        description: "Open Science coordinator, LIB ČZU"
       - title: Wikimedia Česká republika
         description: "Výkonná ředitelka, Klára Joklová"
         isOrganization: true
    - letter: M
      items:
+      - title: Michal Konečný
       - title: Michal Růžička
         description: "FAIR data specialist, Masaryk University"
    - letter: O
@@ -100,7 +107,7 @@ signatories:
         description: "CEO, Tomáš Svoboda"
         isOrganization: true
       - title: Tereza Zrnová
-        description: "koordinátorka, Operátor ICT"        
+        description: "Coordinator, Operátor ICT"        
    - letter: V
      items:
       - title: Valentýna Drtinová
