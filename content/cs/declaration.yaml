@@ -51,6 +51,10 @@ signatories:
    - letter: D
      items:
       - title: Dorota Volavková
+   - letter: E
+     items:
+      - title: Elizabieta Godlewska
+        description: "Partner development, Linux Professional Institute"   
    - letter: H
      items:
       - title: Hlídač státu
@@ -80,6 +84,8 @@ signatories:
       - title: Michal Konečný
       - title: Michal Růžička
         description: "FAIR data specialist, Masaryk University"
+      - title: Markus Richter
+        description: "State Secretary, BMI"
    - letter: O
      items:
       - title: OpenAlt
@@ -97,6 +103,8 @@ signatories:
    - letter: P
      items:
       - title: Petr Kovács
+      - title: Petr Kovar
+        description: "Program Manager, Red Hat"
    - letter: R
      items:
       - title: Robert Pergl
@@ -111,6 +119,10 @@ signatories:
    - letter: V
      items:
       - title: Valentýna Drtinová
+   - letter: Z
+     items:
+      - title: Zdenka Dudová
+        description: "Masaryk University, Masaryk Memorial Cancer Institute"
 
 support:
   title: Support Brno Declaration
