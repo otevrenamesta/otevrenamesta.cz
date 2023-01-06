@@ -69,6 +69,8 @@ signatories:
         description: "Developer, Magistrát města Olomouce"      
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
+      - title: Josef Bátrla
+        description: "Advokát"
       - title: Josef Šmída        
    - letter: K
      items:
@@ -79,6 +81,10 @@ signatories:
       - title: Wikimedia Česká republika
         description: "Výkonná ředitelka, Klára Joklová"
         isOrganization: true
+   - letter: L
+     items:
+      - title: Lukáš Růžička
+        description: "Fedora Quality Engineer, Red Hat"
    - letter: M
      items:
       - title: Michal Konečný
