@@ -14,7 +14,7 @@ intro:
       - "It makes it easy to use and reuse software solutions, so we can pool efforts to create valuable cross-border and cross-domain services that are interoperable and increase efficiency "
       - "It is easy and efficient to add features to open source software, which can be freely shared with anyone for any purpose. This means that everyone can benefit. "
     showMore:
-      url: https://drive.google.com/file/d/1y1cZLK-fziBApYSEBF6d2WEr26ACa8wR/view?usp=share_link
+      url: https://drive.google.com/file/d/1EYpyXcub8y6kkMC7iO48NxNhH0k8Xvtw/view?usp=sharing
       title: FULL text of the DECLARATION
 
 action:
@@ -64,7 +64,11 @@ signatories:
      items:
       - title: Jakub Onderka
         description: "Security analyst, National Cyber and Information Security Authority"   
+      - title: Jakub Trojan
+        description: "Univerzita Tomáše Bati ve Zlíně, akademický pracovník"
       - title: Jan Jílek
+      - title: Jan Pacner
+        description: "Program Management Officer"
       - title: Jiří Doubravský
         description: "Developer, Magistrát města Olomouce"      
       - title: Jiří Marek
@@ -94,6 +98,10 @@ signatories:
         description: "State Secretary, BMI"
    - letter: O
      items:
+      - title: Onřej Míchal
+        description: "Junior Linux System Engineer, Inuits"
+      - title: Ondřej Profant
+        description: "Office of Czech Vice Prime Minister of Digitization"
       - title: OpenAlt
         description: "Chairman of the Board, Michal Stanke"
         isOrganization: true
@@ -108,6 +116,9 @@ signatories:
         isOrganization: true
    - letter: P
      items:
+      - title: HARDWARIO, a.s.
+        description: "CTO & Co-founder, Pavel Hübner"
+        isOrganization: true
       - title: Petr Kovács
       - title: Petr Kovar
         description: "Program Manager, Red Hat"
