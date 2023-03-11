@@ -36,6 +36,11 @@ action:
 signatories:
   title: "Signatories of the DECLARATION"
   letters:
+   - letter: A
+     items:
+      - title: ASWA - Asociace softwarových agentur z.s.
+        description: "CEO, Jakub Chalupa"   
+        isOrganization: true   
    - letter: B
      items:
       - title: Benedikt Kotmel
@@ -54,12 +59,22 @@ signatories:
    - letter: E
      items:
       - title: Elizabieta Godlewska
-        description: "Partner development, Linux Professional Institute"   
+        description: "Partner development, Linux Professional Institute"
+   - letter: F
+     items:        
+      - title: FlowerChecker
+        description: "CEO, Ondřej Veselý"
+        isOrganization: true
    - letter: H
      items:
       - title: Hlídač státu
         description: "CEO, Michal Bláha"
         isOrganization: true   
+   - letter: CH
+     items:
+      - title: Chamber of Commerce, South Moravia
+        description: "CEO, Tomáš Psota"
+        isOrganization: true  
    - letter: J
      items:
       - title: Jakub Onderka
@@ -82,20 +97,22 @@ signatories:
         description: "Developer, Elkrtoline, a.s."
       - title: Kristýna Zychová
         description: "Open Science coordinator, LIB ČZU"
-      - title: Wikimedia Česká republika
-        description: "Výkonná ředitelka, Klára Joklová"
-        isOrganization: true
    - letter: L
      items:
       - title: Lukáš Růžička
         description: "Fedora Quality Engineer, Red Hat"
    - letter: M
      items:
+      - title: Michaela Capandová
+        description: "Open Science specialist, Masaryk University"
       - title: Michal Konečný
       - title: Michal Růžička
         description: "FAIR data specialist, Masaryk University"
       - title: Markus Richter
         description: "State Secretary, BMI"
+      - title: Medlánky, Brno Disctrict
+        description: "Deputy mayor, Kateřina Žůrková"
+        isOrganization: true
    - letter: O
      items:
       - title: Onřej Míchal
@@ -132,10 +149,20 @@ signatories:
         description: "CEO, Tomáš Svoboda"
         isOrganization: true
       - title: Tereza Zrnová
-        description: "Coordinator, Operátor ICT"        
+        description: "Coordinator, Operátor ICT" 
+      - title: Tolgee
+        description: "CEO, Jan Cizmar"
+        isOrganization: true
+      - title: Tomáš Kapler
+        description: "Předseda IT komise, Praha 11" 
    - letter: V
      items:
       - title: Valentýna Drtinová
+   - letter: W
+     items:    
+      - title: Wikimedia Česká republika
+        description: "Výkonná ředitelka, Klára Joklová"
+        isOrganization: true
    - letter: Z
      items:
       - title: Zdenka Dudová
