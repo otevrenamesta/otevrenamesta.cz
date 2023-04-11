@@ -5,7 +5,7 @@
     </h3>
     <div
       v-preposition-space
-      v-html="project.funkce"
+      v-html="$md.render(project.funkce)"
     />
   </section>
 </template>

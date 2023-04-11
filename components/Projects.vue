@@ -5,7 +5,7 @@
         v-for="(project, index) in projects"
         :key="index"
         :project="project"
-        :illustration="illustrations[index]"
+        :illustration="illustrations[index % (illustrations.length)]"
         :align="index % 2 === 0 ? 'left' : 'right'"
       />
     </div>
@@ -26,7 +26,7 @@ export default {
   },
 
   async mounted() {
-    const projects = await this.$axios.$get('/uni/projects/?sort=title:asc&currentPage=1&perPage=10');
+    const projects = await this.$axios.$get('/uni/projects/?sort=created:asc&currentPage=1&perPage=10');
     this.projects = projects.data;
   },
 };
