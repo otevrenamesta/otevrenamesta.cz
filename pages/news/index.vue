@@ -90,7 +90,8 @@ export default {
   },
 
   async mounted() {
-    this.articles = await this.$axios.$get('/posts/?sort=published:desc')
+    this.articles = await this.$axios.$get('/items/posts/?sort=-published')
+      .then(res => res.data)
       .catch(() => []);
   },
 };
