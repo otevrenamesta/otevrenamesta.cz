@@ -28,39 +28,39 @@ structure:
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 332" stroke="#1e1796"><path data-name="Rectangle 226" d="M90 31H60V1h30z"/><path data-name="Rectangle 227" d="M31 1v30H1V1z"/><path data-name="Rectangle 228" d="M60 31h60a59 59 0 0 1-59 59h-1V31Z"/><path data-name="Rectangle 229" d="M1 31h59v59A59 59 0 0 1 1 31Z"/></g><path data-name="Rectangle 895" d="M0 0h121v91H0z"/></g></svg>
 
 employees:
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Vaclav Klecanda
     subtitle: vedoucí Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Flukas_jelinek.jpg
+  - img: https://api.www.otevrenamesta.cz/assets/284ce628-88bd-4e36-9dce-a64077b93b9c
     fullname: Lukáš Jelínek
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Jan Mareš
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Ivor Kollár
     subtitle: člen Projektové rady
     descpription: kyberbezpečnostní expert
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Ladislav Nešněra
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Martin Dvořák
     subtitle: člen Projektové rady
     description: datový specialist
-  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Fbenedikt_kotmel.jpg
+  - img: https://api.www.otevrenamesta.cz/assets/73eae340-32c0-424c-b1b8-5ac5990d08d3
     fullname: Benedikt Kotmel
     subtitle: člen Projektové rady
     description: datový specialista
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Ondřej Caletka
     subtitle: člen Projektové rady
     description: IT specialista
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Jáchym Čepický
     subtitle: člen Projektové rady
     description: GIS specialista

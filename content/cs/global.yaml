@@ -69,7 +69,7 @@ socials:
       url: https://gitlab.com/otevrenamesta
 
 leaderships:
-  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Flucie_smolka_480x480.jpg
+  - img: https://api.www.otevrenamesta.cz/assets/2fbb6339-45f8-450a-a1bd-1065ee659f64
     fullname: Lucie Smolka
     subtitle: předsedkyně výboru
     description: Lucie je právničkou, zabývající se moderními technologiemi a duševním vlastnictvím. Založila spolek Open Content, vede českou pobočku Creative Commons a působí v advokacii. Aktuálně stojí v čele Otevřených měst, zabývá se externími vztahy s partnery, péčí o členy, prezentací a vytvořením udržitelné vize.
@@ -77,7 +77,7 @@ leaderships:
     phone: "+420 731 123 644"
     linkedin: https://www.linkedin.com/in/luciesmolka/
     twitter: https://twitter.com/lucie_couz
-  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Fjiri_marek.jpeg
+  - img: https://api.www.otevrenamesta.cz/assets/8343d4d5-e23d-4710-98ea-321ab9ec8040
     fullname: Jiří Marek
     subtitle: zástupce předsedkyně
     description: Jiří se věnuje tématu otevřenosti v různých podobách, od otevřené vědy ( Open Science), přes otevřený kód až po otevřená data. V rámci Otevřených měst působí jako zástupce předsedkyně a podílí se na směřování organizace a rozvoji produktů.
@@ -85,21 +85,21 @@ leaderships:
     phone: "+420 602 570 184"
     linkedin: https://www.linkedin.com/in/marekjiri/
     twitter: https://twitter.com/JM_microblog
-  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Fjiri_hlavenka_480x480.jpg
+  - img: https://api.www.otevrenamesta.cz/assets/07d6b9d4-43d0-48cd-bfc0-902684fa349e
     fullname: Jiří Hlavenka
     subtitle: člen výboru
     description: Jiří je mentorem a poradcem ve věcech směřování spolku. Stará se o plánování rozvoje členské základny a zaměření spolku. Z oblasti jaderné energetiky se přes založení vydavatelství a internetového obchodu dostal k spoluvlastnictví mnoha společností a investicím do inovativních start-upů. Průběžně přispívá k budování moderně fungující a digitalizované veřejné správy.
     email: jiri.hlavenka@otevrenamesta.cz
     linkedin: https://www.linkedin.com/in/jiri-hlavenka-a9887b3/
     twitter: https://twitter.com/hlavenkajiri
-  - img: https://modurad.otevrenamesta.cz/cdn/resize/?url=https%3A%2F%2Fmodurad.otevrenamesta.cz%2Fmedia%2Fomesta%2F%2Flenka_kovacova.jpg
+  - img: https://api.www.otevrenamesta.cz/assets/cc454fc6-08bb-48c1-9a76-9118dee2d2c5
     fullname: Lenka Kováčová
     subtitle: členka výboru
     description: Lenka je naší expertkou na komunikaci a pořádání akcí. Dlouhodobě se zabývá budováním a podporou komunity aktérů, kteří jsou propojeni tématy open source, civic tech a především otevřených dat. Působila v Nadaci OSF, stála u zrodu Česko.Digital a v současnosti se angažuje na Ministerstvu vnitra.
     email: lenka.kovacova@otevrenamesta.cz
     linkedin: https://www.linkedin.com/in/lenka-kov%C3%A1%C4%8Dov%C3%A1-91743062/
     twitter: https://twitter.com/panislovenka
-  - img: https://modurad.otevrenamesta.cz/media/omesta//member-default-img.svg
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Neobsazená pozice
     subtitle: člen výboru
     description: 5. místo člena výboru je zatím neobsazeno.

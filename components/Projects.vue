@@ -26,7 +26,7 @@ export default {
   },
 
   async mounted() {
-    const projects = await this.$axios.$get('/uni/projects/?sort=created:asc&currentPage=1&perPage=10');
+    const projects = await this.$axios.$get('/items/projects?limit=25&fields[]=id&fields[]=title&fields[]=state&fields[]=subtitle&sort[]=id&page=1');
     this.projects = projects.data;
   },
 };

@@ -48,7 +48,7 @@
         <div
           class="w-full border-b border-primary-light"
         />
-        <ProjectDetailGallery
+        <ProjectDetailGallery v-if="false"
           :project="project"
           class="w-11/12 lg:w-block-6 max-w-full mx-auto"
         />
@@ -87,7 +87,7 @@ export default {
   },
 
   async mounted() {
-    const projects = await this.$axios.$get('/uni/projects/?sort=title:asc&currentPage=1&perPage=10');
+    const projects = await this.$axios.$get('/items/projects');
     this.project = projects.data.find(({ id }) => id === +this.$route.params.id);
   },
 };

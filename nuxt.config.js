@@ -67,7 +67,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://modurad.otevrenamesta.cz/omesta',
+    baseURL: 'https://api.www.otevrenamesta.cz',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -89,8 +89,8 @@ export default {
 
   generate: {
     async routes() {
-      const projects = await axios.get('https://modurad.otevrenamesta.cz/omesta/uni/projects/?sort=title:asc&currentPage=1&perPage=100');
-      const news = await axios.get('https://modurad.otevrenamesta.cz/omesta/posts/?sort=published:desc');
+      const projects = await axios.get('/items/projects?limit=25&fields[]=id&fields[]=title&fields[]=state&fields[]=subtitle&sort[]=id&page=1');
+      const news = await axios.get('/items/posts?limit=25&sort[]=published&page=1');
 
       return [
         ...projects.data.data.map(project => `/projects/${project.id}`),
