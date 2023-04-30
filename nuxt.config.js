@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const description = 'Partner pro digitalizaci samospráv. Specializujeme se na technickou, právní a metodickou podporu v oblasti digitalizace samospráv.';
+const baseURL = 'https://api.www.otevrenamesta.cz';
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -67,7 +68,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://api.www.otevrenamesta.cz',
+    baseURL,
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -89,12 +90,12 @@ export default {
 
   generate: {
     async routes() {
-      const projects = await axios.get('/items/projects?limit=25&fields[]=id&fields[]=title&fields[]=state&fields[]=subtitle&sort[]=id&page=1');
-      const news = await axios.get('/items/posts?limit=25&sort[]=published&page=1');
+      const projects = await axios.get(`${baseURL}/items/projects?limit=25&fields[]=id&page=1`);
+      const news = await axios.get(`${baseURL}/items/posts?fields[]=id&limit=25&page=1`);
 
       return [
         ...projects.data.data.map(project => `/projects/${project.id}`),
-        ...news.data.map(item => `/news/${item.id}`),
+        ...news.data.data.map(item => `/news/${item.id}`),
       ];
     },
   },
