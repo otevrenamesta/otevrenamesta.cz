@@ -170,15 +170,19 @@ export default {
       this.isSubmitting = true;
 
       try {
-        await this.$axios.$post('https://modurad.otevrenamesta.cz/omesta/contactforms/', {
+        const tokenURL = `/hcaptcha-validate/1/${token}`
+        const apiTokenRes = await this.$axios.get(tokenURL)
+        await this.$axios.$post('/items/messages/', {
           jmeno: this.form.fullname,
           mesto: this.form.city,
           email: this.form.email,
           tel: this.form.phone,
           subject: this.form.interestedIn,
           content: this.form.message,
-          url: 'https://modurad.otevrenamesta.cz/omesta/uni/messages/',
-          token,
+        }, {
+          headers: {
+            Authorization: `Bearer ${apiTokenRes.data}`,
+          },
         });
 
         this.isSubmitted = true;
