@@ -48,7 +48,7 @@
         <div
           class="w-full border-b border-primary-light"
         />
-        <ProjectDetailGallery v-if="false"
+        <ProjectDetailGallery
           :project="project"
           class="w-11/12 lg:w-block-6 max-w-full mx-auto"
         />

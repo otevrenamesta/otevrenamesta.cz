@@ -5,7 +5,7 @@
     </h3>
     <div>
       <CoolLightBox
-        :items="images.map(image => image.url)"
+        :items="images"
         :slideshow="false"
         :gallery="false"
         :index="currentImageIndex"
@@ -20,7 +20,7 @@
           @click="currentImageIndex = index"
         >
           <img
-            :src="image.url"
+            :src="image"
             :alt="project.title"
             loading="lazy"
             class="w-full"
@@ -57,17 +57,12 @@ export default {
     };
   },
 
-  async mounted() {
-    const filter = { tags: { like: `%project${this.project.id}%` } };
-    const images = await this.$axios.$get('https://modurad.otevrenamesta.cz/omesta/mediaman/', {
-      params: {
-        filter: JSON.stringify(filter),
-      },
-    });
-    this.images = images.map((image) => {
-      image.url = `https://modurad.otevrenamesta.cz/media/omesta/${image.filename}`;
-      return image;
-    });
+  mounted() {
+    this.images = this.project.obrazky
+      ? this.project.obrazky.map((image) => {
+        return `https://api.www.otevrenamesta.cz/assets/${image.file_id}`;
+      })
+      : [];
   },
 };
 </script>
