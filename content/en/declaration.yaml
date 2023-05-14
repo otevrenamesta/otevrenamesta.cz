@@ -1,0 +1,173 @@
+hero:
+  title: Declaration
+  description: "Brno Open Source Declaration: The story of the Czech National OSPO"
+
+intro:
+  title: "The purpose of this Declaration is to kick-start the process of creation of the Czech National Open Source Programme Office (Czech OSPO) for the public and academic sector in Brno, Czech Republic. And to help create and activate the community around use of Open Source in these sectors to develop further collaborations within and beyond public sector and academic OSPOs."
+  cta:
+    title: Show your support
+  opensource:
+    title: WHAT IS OPEN SOURCE
+    description: "Open source is present everywhere. All around the world, companies and public services are using open-source collaborative methods to innovate and build new solutions. In this perspectice Open source is also close to the essence of public service and academia because: "
+    list:
+      - "It is a public code, which makes it a good use of public money, one that promotes freedom of choice and avoids getting 'locked in'"
+      - "It makes it easy to use and reuse software solutions, so we can pool efforts to create valuable cross-border and cross-domain services that are interoperable and increase efficiency "
+      - "It is easy and efficient to add features to open source software, which can be freely shared with anyone for any purpose. This means that everyone can benefit. "
+    showMore:
+      url: https://drive.google.com/file/d/1EYpyXcub8y6kkMC7iO48NxNhH0k8Xvtw/view?usp=sharing
+      title: FULL text of the DECLARATION
+
+action:
+  title: "Actions steps towards the Czech National OSPO discussed during the Open Source Driving the European Digital Decade conference"
+  steps:
+   - number: "01"
+     description: "To sign a <strong>Memorandum of Cooperation</strong> between the key local and global stakeholders both from public sector and academia willing to work on establishing the Czech National OSPO in Brno. "
+   - number: "02"
+     description: "To sign <strong>Manifesto of the EU public services OSPO network</strong> created by the City of Paris and European Commission OSPOs and to be active in the EU OSPO public sector OSPO regular meetings. "
+   - number: "03"
+     description: "To start <strong>the process of cooperation between Czech and international open source communities</strong> to establish a functional cooperation on particular projects (e.g. with Paris, Baltimore or Swedish OSPO) and <strong>to support the efforts of the Swedish and Spanish Presidency of the Council of the European Union</strong> in this area in 2023. "
+   - number: "04"
+     description: "<strong>To further develop the Czech National Open Source Portal code.gov.cz</strong> as a key element of further Czech National OSPO activities and <strong>to establish functional collaboration between the newly established Digital Information Agency of the Czech Republic (DIA)</strong> in 2023. "
+   - number: "05"
+     description: "<strong>To monitor and to promote the activities and case studies of the Czech Republic in the area of open source</strong> towards the public sector and academic institutions. "
+   - number: "06"
+     description: "<strong>To establish the first virtual and later physical Czech National OSPO office in Brno.</strong> Till that time, the “pre-secretariat” of the Czech National OSPO is managed by the NGO Otevřená města. Further information about the declaration and possibilities of cooperation on this effort can be found at <a href='https://otevrenamesta.cz/declaration'>otevrenamesta.cz/declaration</a> or at <a href='mailto:info@otevrenamesta.cz'>info@otevrenamesta.cz</a>"
+
+signatories:
+  title: "Signatories of the DECLARATION"
+  letters:
+   - letter: A
+     items:
+      - title: ASWA - Asociace softwarových agentur z.s.
+        description: "CEO, Jakub Chalupa"   
+        isOrganization: true   
+   - letter: B
+     items:
+      - title: Benedikt Kotmel
+        description: "Head of Data Platform Department, Operátor ICT"
+   - letter: C
+     items:
+      - title: česko.digital
+        description: "CEO, Eva Pavlíková"
+        isOrganization: true
+      - title: CSGOV
+        description: "Founder, Petr Illek"
+        isOrganization: true       
+   - letter: D
+     items:
+      - title: Dorota Volavková
+   - letter: E
+     items:
+      - title: Elizabieta Godlewska
+        description: "Partner development, Linux Professional Institute"
+   - letter: F
+     items:        
+      - title: FlowerChecker
+        description: "CEO, Ondřej Veselý"
+        isOrganization: true
+   - letter: H
+     items:
+      - title: Hlídač státu
+        description: "CEO, Michal Bláha"
+        isOrganization: true   
+   - letter: CH
+     items:
+      - title: Chamber of Commerce, South Moravia
+        description: "CEO, Tomáš Psota"
+        isOrganization: true  
+   - letter: J
+     items:
+      - title: Jakub Onderka
+        description: "Security analyst, National Cyber and Information Security Authority"   
+      - title: Jakub Trojan
+        description: "Univerzita Tomáše Bati ve Zlíně, akademický pracovník"
+      - title: Jan Jílek
+      - title: Jan Pacner
+        description: "Program Management Officer"
+      - title: Jiří Doubravský
+        description: "Developer, Magistrát města Olomouce"      
+      - title: Jiří Marek
+        description: "Open Science manager, Masaryk University"
+      - title: Josef Bátrla
+        description: "Advokát"
+      - title: Josef Šmída        
+   - letter: K
+     items:
+      - title: Karel Kočí
+        description: "Developer, Elkrtoline, a.s."
+      - title: Kristýna Zychová
+        description: "Open Science coordinator, LIB ČZU"
+   - letter: L
+     items:
+      - title: Lukáš Růžička
+        description: "Fedora Quality Engineer, Red Hat"
+   - letter: M
+     items:
+      - title: Michaela Capandová
+        description: "Open Science specialist, Masaryk University"
+      - title: Michal Konečný
+      - title: Michal Růžička
+        description: "FAIR data specialist, Masaryk University"
+      - title: Markus Richter
+        description: "State Secretary, BMI"
+      - title: Medlánky, Brno Disctrict
+        description: "Deputy mayor, Kateřina Žůrková"
+        isOrganization: true
+   - letter: O
+     items:
+      - title: Onřej Míchal
+        description: "Junior Linux System Engineer, Inuits"
+      - title: Ondřej Profant
+        description: "Office of Czech Vice Prime Minister of Digitization"
+      - title: OpenAlt
+        description: "Chairman of the Board, Michal Stanke"
+        isOrganization: true
+      - title: Open Cities (Otevřená města)
+        description: "CEO, Lucie Smolka"
+        isOrganization: true
+      - title: Open Content
+        description: "CEO, Lucie Smolka"
+        isOrganization: true
+      - title: OpenForum Europe
+        description: "Executive director, Astor Nummelin Carlberg"
+        isOrganization: true
+   - letter: P
+     items:
+      - title: HARDWARIO, a.s.
+        description: "CTO & Co-founder, Pavel Hübner"
+        isOrganization: true
+      - title: Petr Kovács
+      - title: Petr Kovar
+        description: "Program Manager, Red Hat"
+   - letter: R
+     items:
+      - title: Robert Pergl
+        description: "Associate Professor, Czech Technical University in Prague"
+   - letter: T
+     items:
+      - title: Technicinsider
+        description: "CEO, Tomáš Svoboda"
+        isOrganization: true
+      - title: Tereza Zrnová
+        description: "Coordinator, Operátor ICT" 
+      - title: Tolgee
+        description: "CEO, Jan Cizmar"
+        isOrganization: true
+      - title: Tomáš Kapler
+        description: "Předseda IT komise, Praha 11" 
+   - letter: V
+     items:
+      - title: Valentýna Drtinová
+   - letter: W
+     items:    
+      - title: Wikimedia Česká republika
+        description: "Výkonná ředitelka, Klára Joklová"
+        isOrganization: true
+   - letter: Z
+     items:
+      - title: Zdenka Dudová
+        description: "Masaryk University, Masaryk Memorial Cancer Institute"
+
+support:
+  title: Support Brno Declaration
+  description: If you would like to add your signature to this declaration and express your support in this way, please do so through the form.

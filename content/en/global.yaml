@@ -1,0 +1,105 @@
+menuItems:
+  - link: /about
+    text: O nás
+  - link: /collaboration
+    text: Spolupráce
+  - link: /projects
+    text: Projekty
+  - link: /members
+    text: Členové
+  - link: /declaration
+    text: Brno Declaration
+  - link: /news
+    text: Aktuality
+  - link: /contact
+    text: Kontakt
+
+milestones:
+  - number:  20
+    title: členů
+    description: Otevřená města jsou nyní složena z 20 členů z různých úrovní samospráv v ČR.
+
+  - number: 2 083 518
+    title: občanů
+    description: Činnost Otevřených měst má dopad na 2 083 518 občanů členů spolku.
+
+  - number: 3
+    title: produkty
+    description: Otevřená města nyní spravují v produkci 3 softwarové produkty jako nástroje digitalizace místních samospráv.
+
+  - number: 1 000 000
+    title: Kč
+    description: Otevřená města nyní hospodaří přibližně s 1 000 000 Kč ročně.
+
+contact:
+  name: Otevřená města, z. s.
+  address: Malinovského náměstí 624/3 <br> 602 00 Brno
+  email: info@otevrenamesta.cz
+  bank: datová schránka f47yb4g<br>
+        transparentní účet <a href="https://ib.fio.cz/ib/transparent?a=2501020615" target="_blank">2501020615/2010</a><br>
+        IČO <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=936432" target="_blank">05129061</a><br>
+
+footer:
+  links:
+    - text: Dokumenty
+      url: https://drive.google.com/drive/folders/1MZyhHoJdtETc4I8bDKtFR7Z-lCAFSShI?usp=sharing
+    - text: Stanovy
+      url: https://drive.google.com/file/d/1kAgJ7N0sGAacilXl9inPi7EZ_SZz1d81/view?usp=sharing
+    - text: Obchodní podmínky
+      url: https://drive.google.com/file/d/1uCYMZHxKMczAZQpOXpYZ9ecOnCthiXXG/view
+
+socials:
+    - name: facebook
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24.042" height="23.897" viewBox="0 0 24.042 23.897"><g id="Group_84" data-name="Group 84" transform="translate(-31 -44.169)"><path id="Path_88" data-name="Path 88" d="M55.042 44.421A12.021 12.021 0 1 0 41.14 56.3v-8.4h-3.056v-3.479h3.056v-2.65c0-3.013 1.8-4.675 4.541-4.675a18.521 18.521 0 0 1 2.693.235v2.954h-1.517a1.739 1.739 0 0 0-1.957 1.876v2.255h3.33l-.53 3.472h-2.8v8.4a12.012 12.012 0 0 0 10.142-11.867Z" transform="translate(0 11.769)" fill="currentColor"/></g></svg>
+      url: https://www.facebook.com/otevrenamesta
+    - name: linkedin
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path_101" data-name="Path 101" d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0Zm-2 16H8v-6h2ZM9 9.109A1.109 1.109 0 1 1 10.1 8 1.1 1.1 0 0 1 9 9.109ZM17 16h-2v-2.861c0-1.881-2-1.722-2 0V16h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548Z" fill="currentColor"/></svg>
+      url: https://www.linkedin.com/company/otevrenamesta/
+    - name: twitter
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path_102" data-name="Path 102" d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0Zm6.066 9.645A8.168 8.168 0 0 1 5.5 16.9a5.778 5.778 0 0 0 4.252-1.189 2.879 2.879 0 0 1-2.684-1.995 2.881 2.881 0 0 0 1.3-.049 2.876 2.876 0 0 1-2.3-2.853 2.865 2.865 0 0 0 1.3.359 2.877 2.877 0 0 1-.889-3.835 8.153 8.153 0 0 0 5.92 3 2.874 2.874 0 0 1 4.9-2.62 5.729 5.729 0 0 0 1.824-.7 2.884 2.884 0 0 1-1.273 1.591 5.73 5.73 0 0 0 1.65-.453 5.765 5.765 0 0 1-1.434 1.489Z" fill="currentColor"/></svg>
+      url: https://twitter.com/otevrenamesta
+    - name: youtube
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" fill="currentColor"/></svg>
+      url: https://www.youtube.com/channel/UCCHWR75g11R1Z-LXHB9YSDg
+    - name: github
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.408" viewBox="0 0 24 23.408"><path id="Path_43" data-name="Path 43" d="M12 0a12 12 0 0 0-3.8 23.385c.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.01.555-3.79-.735-4.03-1.41a4.364 4.364 0 0 0-1.23-1.695c-.42-.225-1.02-.78-.015-.8A2.4 2.4 0 0 1 5.58 17.91a2.565 2.565 0 0 0 3.495.99 2.524 2.524 0 0 1 .765-1.6c-2.67-.3-5.46-1.34-5.46-5.93a4.67 4.67 0 0 1 1.23-3.225 4.312 4.312 0 0 1 .12-3.18s1-.315 3.3 1.23a11.314 11.314 0 0 1 6 0c2.295-1.56 3.3-1.23 3.3-1.23a4.312 4.312 0 0 1 .12 3.18 4.643 4.643 0 0 1 1.23 3.225c0 4.6-2.805 5.625-5.475 5.925a2.842 2.842 0 0 1 .81 2.22c0 1.6-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.006 12.006 0 0 0 12 0Z" fill="currentColor" fill-rule="evenodd"/></svg>
+      url: https://github.com/otevrenamesta
+    - name: gitlab
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.193" viewBox="0 0 24 22.193"><g id="logo_art" transform="translate(-123.55 -122.776)"><path id="Path_44" data-name="Path 44" d="m147.479 135.208-1.278-3.936v.005-.006l-2.537-7.81a1 1 0 0 0-.958-.684.986.986 0 0 0-.946.69l-2.408 7.413h-7.6l-2.413-7.414a.986.986 0 0 0-.946-.69h-.005a1.006 1.006 0 0 0-.955.69l-2.53 7.8v.006-.005l-1.283 3.936a1.434 1.434 0 0 0 .521 1.607l11.075 8.047h.005l.014.01-.013-.009a.569.569 0 0 0 .053.033H135.294l.03.012.028.012h.014l.041.01h.042a.558.558 0 0 0 .08.006.561.561 0 0 0 .08-.006H135.65l.04-.01h.014l.029-.012.027-.011h.015a.569.569 0 0 0 .053-.033h.005l11.077-8.047a1.434 1.434 0 0 0 .569-1.604Zm-4.766-11.016 2.172 6.688h-4.345Zm1.792 7.819-.886 1.136-6.538 8.377 3.092-9.512h4.327Zm-9.493 12.568v.005Zm-.992-3.055-7.42-9.513h4.332Zm-5.632-17.332 2.176 6.688h-4.344Zm-3.581 11.708a.306.306 0 0 1-.111-.343l.953-2.926 6.986 8.957Zm10.39 8.946-.006-.006-.013-.011-.024-.022a.575.575 0 0 0 .051.044Zm.352-2.273-1.817-5.6-1.612-4.966h6.863Zm.372 2.255-.013.011-.006.005-.015.011a.548.548 0 0 0 .051-.043Zm10.372-8.929-7.828 5.687 6.989-8.954.95 2.925a.306.306 0 0 1-.111.343Z" fill="currentColor"/></g></svg>
+      url: https://gitlab.com/otevrenamesta
+
+leaderships:
+  - img: https://api.www.otevrenamesta.cz/assets/2fbb6339-45f8-450a-a1bd-1065ee659f64
+    fullname: Lucie Smolka
+    subtitle: předsedkyně výboru
+    description: Lucie je právničkou, zabývající se moderními technologiemi a duševním vlastnictvím. Založila spolek Open Content, vede českou pobočku Creative Commons a působí v advokacii. Aktuálně stojí v čele Otevřených měst, zabývá se externími vztahy s partnery, péčí o členy, prezentací a vytvořením udržitelné vize.
+    email: lucie.smolka@otevrenamesta.cz
+    phone: "+420 731 123 644"
+    linkedin: https://www.linkedin.com/in/luciesmolka/
+    twitter: https://twitter.com/lucie_couz
+  - img: https://api.www.otevrenamesta.cz/assets/8343d4d5-e23d-4710-98ea-321ab9ec8040
+    fullname: Jiří Marek
+    subtitle: zástupce předsedkyně
+    description: Jiří se věnuje tématu otevřenosti v různých podobách, od otevřené vědy ( Open Science), přes otevřený kód až po otevřená data. V rámci Otevřených měst působí jako zástupce předsedkyně a podílí se na směřování organizace a rozvoji produktů.
+    email: jiri.marek@otevrenamesta.cz
+    phone: "+420 602 570 184"
+    linkedin: https://www.linkedin.com/in/marekjiri/
+    twitter: https://twitter.com/JM_microblog
+  - img: https://api.www.otevrenamesta.cz/assets/07d6b9d4-43d0-48cd-bfc0-902684fa349e
+    fullname: Jiří Hlavenka
+    subtitle: člen výboru
+    description: Jiří je mentorem a poradcem ve věcech směřování spolku. Stará se o plánování rozvoje členské základny a zaměření spolku. Z oblasti jaderné energetiky se přes založení vydavatelství a internetového obchodu dostal k spoluvlastnictví mnoha společností a investicím do inovativních start-upů. Průběžně přispívá k budování moderně fungující a digitalizované veřejné správy.
+    email: jiri.hlavenka@otevrenamesta.cz
+    linkedin: https://www.linkedin.com/in/jiri-hlavenka-a9887b3/
+    twitter: https://twitter.com/hlavenkajiri
+  - img: https://api.www.otevrenamesta.cz/assets/cc454fc6-08bb-48c1-9a76-9118dee2d2c5
+    fullname: Lenka Kováčová
+    subtitle: členka výboru
+    description: Lenka je naší expertkou na komunikaci a pořádání akcí. Dlouhodobě se zabývá budováním a podporou komunity aktérů, kteří jsou propojeni tématy open source, civic tech a především otevřených dat. Působila v Nadaci OSF, stála u zrodu Česko.Digital a v současnosti se angažuje na Ministerstvu vnitra.
+    email: lenka.kovacova@otevrenamesta.cz
+    linkedin: https://www.linkedin.com/in/lenka-kov%C3%A1%C4%8Dov%C3%A1-91743062/
+    twitter: https://twitter.com/panislovenka
+  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
+    fullname: Neobsazená pozice
+    subtitle: člen výboru
+    description: 5. místo člena výboru je zatím neobsazeno.

@@ -1,0 +1,9 @@
+cta:
+  left:
+    title: Chci koupit tuto službu
+    description:  Líbí se vám tento produkt? Kontaktujte nás a probereme možnosti.
+    button: Zjistit více
+  right:
+    title: Chci se stát členem
+    description: Líbí se vám tento produkt a chtěli byste se podílet na jeho směřování?
+    button: Zjistit více
