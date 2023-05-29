@@ -160,7 +160,7 @@ const presubmitForm = () => {
   invisibleHcaptcha.value.execute();
 };
 
-const verifiedSubmit = async (token) => {
+const verifiedSubmit = async(token) => {
   isSubmitting.value = true;
 
   try {

@@ -1,5 +1,8 @@
 <template>
-  <footer v-if="footer" class="mt-block-2 mb-block-1">
+  <footer
+    v-if="footer"
+    class="mt-block-2 mb-block-1"
+  >
     <div class="container flex justify-between lg:items-center flex-col lg:flex-row">
       <div class="flex flex-col md:flex-row mb-8 lg:mb-0">
         <LogoOm
@@ -16,7 +19,10 @@
           </p>
           <p class="text-primary text-sm">
             <strong class="block">
-              <a :href="`mailto:${contact.email}`" class="hover:underline">
+              <a
+                :href="`mailto:${contact.email}`"
+                class="hover:underline"
+              >
                 {{ contact.email }}
               </a>
             </strong>

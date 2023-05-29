@@ -119,10 +119,10 @@ const form = ref({
 
 // Methods
 const presubmitForm = () => {
-  invisibleHcaptcha.value.execute()
+  invisibleHcaptcha.value.execute();
 };
 
-const verifiedSubmit = async (token) => {
+const verifiedSubmit = async(token) => {
   isSubmitting.value = true;
 
   try {

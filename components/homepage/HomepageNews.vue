@@ -58,7 +58,7 @@ const articles = ref([]);
 const news = useContentStore().homepage.news;
 
 // Lifecycle
-onMounted(async () => {
+onMounted(async() => {
   articles.value = await useApi.get('/items/posts/?sort=-published&limit=4')
     .then(({ data }) => data)
     .catch((error) => {

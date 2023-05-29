@@ -14,10 +14,24 @@
             class="w-10 sm:w-14 h-10 sm:h-14 bg-primary text-white flex items-center justify-center absolute top-block-0.75 right-block-0.5"
             @click="() => useUiStore().setBurgerDialogOpen(false)"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="11.314" height="11.314" viewBox="0 0 11.314 11.314">
-              <g transform="translate(-327.344 -51.343)" fill="currentColor">
-                <path transform="rotate(45 102.403 422.518)" d="M0 0h14v2H0z" />
-                <path transform="rotate(135 158.402 96.517)" d="M0 0h14v2H0z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11.314"
+              height="11.314"
+              viewBox="0 0 11.314 11.314"
+            >
+              <g
+                transform="translate(-327.344 -51.343)"
+                fill="currentColor"
+              >
+                <path
+                  transform="rotate(45 102.403 422.518)"
+                  d="M0 0h14v2H0z"
+                />
+                <path
+                  transform="rotate(135 158.402 96.517)"
+                  d="M0 0h14v2H0z"
+                />
               </g>
             </svg>
           </button>
