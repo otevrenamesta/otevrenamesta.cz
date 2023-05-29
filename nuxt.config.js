@@ -71,31 +71,25 @@ export default defineNuxtConfig({
   ],
 
   i18n: {
-    strategy: 'no_prefix',
-    // lazy: true,
-    // langDir: 'locales/',
-    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'cs',
+        file: 'cs.json',
+      },
+      {
+        code: 'en',
+        file: 'en.json',
+      },
+    ],
+    defaultLocale: 'cs',
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
-    locales: [
-      {
-        code: 'cs',
-        iso: 'cs',
-        name: 'Česky',
-        // icon: 'custom/flag-cz',
-        // file: 'cs.json5',
-      },
-      {
-        code: 'en',
-        iso: 'en',
-        name: 'English',
-        // icon: 'custom/flag-en',
-        // file: 'en.json5',
-      },
-    ],
   },
 
   imports: {

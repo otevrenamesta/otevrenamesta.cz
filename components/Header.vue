@@ -18,12 +18,12 @@
           {{ item.text }}
         </nuxt-link>
 
-        <!-- <nuxt-link
-          :to="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
+        <a
+          :href="switchLocalePath(useI18n().locale?.value === 'cs' ? 'en' : 'cs')"
           class="uppercase text-sm font-semibold ml-10 text-secondary"
         >
-          {{ $i18n.locale === 'cs' ? 'en' : 'cz' }}
-        </nuxt-link> -->
+          {{ useI18n().locale?.value === 'cs' ? 'en' : 'cz' }}
+        </a>
       </nav>
 
       <button
