@@ -175,12 +175,13 @@ const verifiedSubmit = async(token) => {
         pozice: form.position,
       },
       headers: {
-        Authorization: `Bearer ${apiTokenRes.data}`,
+        Authorization: `Bearer ${apiTokenRes}`,
       },
     });
 
     isSubmitted.value = true;
   } catch (error) {
+    console.error(error);
     alert('Omlouváme se, došlo k chybě při odesílání formuláře');
     isSubmitting.value = false;
   }
