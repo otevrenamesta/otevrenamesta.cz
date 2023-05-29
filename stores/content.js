@@ -14,10 +14,16 @@ export const useContentStore = defineStore('content', {
 
   actions: {
     async loadGlobal() {
-      this.global = await queryContent(`${useI18n().locale.value}/global`).findOne();
+      if (!process.client) {
+        this.global = await queryContent(`${useI18n().locale.value}/global`).findOne();
+        return this.global;
+      }
     },
     async load({ page }) {
-      this[page] = await queryContent(`${useI18n().locale.value}/${page}`).findOne();
-    }
+      if (!process.client) {
+        this[page] = await queryContent(`${useI18n().locale.value}/${page}`).findOne();
+        return this[page];
+      }
+    },
   },
 });

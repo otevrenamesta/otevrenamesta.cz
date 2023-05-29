@@ -12,5 +12,14 @@
 
 <script setup>
 useCustomHead({ });
-await useContentStore().loadGlobal();
+await Promise.all([
+  useContentStore().loadGlobal(),
+  useContentStore().load({ page: 'homepage' }),
+  useContentStore().load({ page: 'about' }),
+  useContentStore().load({ page: 'collaboration' }),
+  useContentStore().load({ page: 'members' }),
+  useContentStore().load({ page: 'contact' }),
+  useContentStore().load({ page: 'project' }),
+  useContentStore().load({ page: 'declaration' }),
+]);
 </script>

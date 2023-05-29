@@ -4,13 +4,19 @@
       Galerie
     </h3>
     <div>
-      <CoolLightBox
-        :items="images"
-        :slideshow="false"
-        :gallery="false"
+      <vue-easy-lightbox
+        :visible="currentImageIndex !== null"
+        :imgs="images"
+        zoom-disabled
+        rotate-disabled
+        pinch-disabled
+        move-disabled
+        loop
         :index="currentImageIndex"
-        @close="currentImageIndex = null"
-      />
+        @hide="currentImageIndex = null"
+      >
+        <template #toolbar />
+      </vue-easy-lightbox>
 
       <div class="flex flex-wrap -mx-2">
         <button
@@ -21,7 +27,7 @@
         >
           <img
             :src="image"
-            :alt="project.title"
+            :alt="props.project.title"
             loading="lazy"
             class="w-full"
           >
@@ -31,38 +37,34 @@
   </section>
 </template>
 
-<script>
-// import CoolLightBox from 'vue-cool-lightbox';
-// import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css';
+<script setup>
+import VueEasyLightbox from 'vue-easy-lightbox';
 
-export default {
-  components: {
-    // CoolLightBox,
+const props = defineProps({
+  project: {
+    type: Object,
+    required: true,
   },
+});
 
-  props: {
-    project: {
-      type: Object,
-      required: true,
-    },
-  },
+const currentImageIndex = ref(null);
+const images = ref([]);
 
-  data() {
-    return {
-      currentImageIndex: null,
-      images: [
-        'https://pix10.agoda.net/hotelImages/1199068/-1/09cb9a2780bf41ad1e8f8a3d2e074754.jpg',
-        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg',
-      ],
-    };
-  },
-
-  mounted() {
-    this.images = this.project.obrazky
-      ? this.project.obrazky.map((image) => {
-        return `https://api.www.otevrenamesta.cz/assets/${image.file_id}`;
-      })
-      : [];
-  },
-};
+onMounted(() => {
+  images.value = props.project.obrazky
+    ? props.project.obrazky.map((image) => {
+      return `https://api.www.otevrenamesta.cz/assets/${image.file_id}`;
+    })
+    : [];
+});
 </script>
+
+<style>
+.vel-img {
+  box-shadow: none;
+}
+
+.vel-modal {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+</style>

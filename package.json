@@ -24,7 +24,7 @@
     "lodash": "4.17.21",
     "markdown-it": "13.0.1",
     "nuxt": "3.5.2",
-    "vue-cool-lightbox": "2.7.4",
+    "vue-easy-lightbox": "1.16.0",
     "vue-screen": "2.2.0"
   },
   "devDependencies": {
