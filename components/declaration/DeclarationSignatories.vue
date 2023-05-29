@@ -28,7 +28,7 @@
 export default {
   computed: {
     signatories() {
-      return this.$store.state.content.declaration.signatories;
+      return useContentStore().declaration.signatories;
     },
   },
 };

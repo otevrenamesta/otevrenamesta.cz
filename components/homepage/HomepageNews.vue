@@ -25,7 +25,7 @@
             :datetime="article.published"
             class="block text-sm text-additional font-bold mb-2"
           >
-            {{ $moment(article.published).format('D. M. yyyy') }}
+            {{ useDayjs(article.published).format('D. M. yyyy') }}
           </time>
           <h3 class="text-white text-xl font-bold mb-5">
             {{ article.title }}
@@ -50,24 +50,20 @@
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      articles: [],
-    };
-  },
+<script setup>
+// Refs
+const articles = ref([]);
 
-  computed: {
-    news() {
-      return this.$store.state.content.homepage.news;
-    },
-  },
+// Computed
+const news = useContentStore().homepage.news;
 
-  async mounted() {
-    this.articles = await this.$axios.$get('/items/posts/?sort=-published&limit=4')
-      .then(({ data }) => data)
-      .catch(() => []);
-  },
-};
+// Lifecycle
+onMounted(async () => {
+  articles.value = await useApi.get('/items/posts/?sort=-published&limit=4')
+    .then(({ data }) => data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+});
 </script>

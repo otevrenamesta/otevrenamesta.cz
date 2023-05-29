@@ -1,5 +1,5 @@
 <template>
-  <main v-if="$store.state.content.about">
+  <main v-if="useContentStore().about">
     <AboutHero
       class="mb-block-2"
     />
@@ -18,15 +18,10 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'about' });
-  },
-  head() {
-    return {
-      title: `${this.$store.state.content.about?.hero?.title} ${this.$config.appendTitle}`,
-    };
-  },
-};
+<script setup>
+await useContentStore().load({ page: 'about' });
+
+useCustomHead({
+  title: useContentStore().about?.hero?.title,
+});
 </script>

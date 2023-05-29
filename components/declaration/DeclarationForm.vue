@@ -102,61 +102,54 @@
   </form>
 </template>
 
-<script>
-import VueHcaptcha from '@hcaptcha/vue-hcaptcha';
+<script setup>
+import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
 
-export default {
-  components: {
-    VueHcaptcha,
-  },
+// Refs
+const isSubmitting = ref(false);
+const isSubmitted = ref(false);
+const invisibleHcaptcha = ref(null);
+const form = ref({
+  fullname: '',
+  email: '',
+  phone: '',
+  organization: '',
+  position: '',
+});
 
-  data() {
-    return {
-      isSubmitting: false,
-      isSubmitted: false,
-      form: {
-        fullname: '',
-        email: '',
-        phone: '',
-        organization: '',
-        position: '',
+// Methods
+const presubmitForm = () => {
+  invisibleHcaptcha.value.execute()
+};
+
+const verifiedSubmit = async (token) => {
+  isSubmitting.value = true;
+
+  try {
+    const tokenURL = `/hcaptcha-validate/1/${token}`;
+    const apiTokenRes = await useApi.get(tokenURL);
+    await useApi.post('/items/ospo_support/', {
+      body: {
+        jmeno: form.value.fullname,
+        email: form.value.email,
+        tel: form.value.phone,
+        organizace: form.value.organization,
+        pozice: form.value.position,
       },
-    };
-  },
+      headers: {
+        Authorization: `Bearer ${apiTokenRes.data}`,
+      },
+    });
 
-  methods: {
-    presubmitForm() {
-      this.$refs.invisibleHcaptcha.execute();
-    },
-    async verifiedSubmit(token) {
-      this.isSubmitting = true;
-
-      try {
-        const tokenURL = `/hcaptcha-validate/1/${token}`
-        const apiTokenRes = await this.$axios.get(tokenURL)
-        await this.$axios.$post('/items/ospo_support/', {
-          jmeno: this.form.fullname,
-          email: this.form.email,
-          tel: this.form.phone,
-          organizace: this.form.organization,
-          pozice: this.form.position,
-        }, {
-          headers: {
-            Authorization: `Bearer ${apiTokenRes.data}`,
-          },
-        });
-
-        this.isSubmitted = true;
-      } catch (error) {
-        alert('Omlouváme se, došlo k chybě při odesílání formuláře');
-        this.isSubmitting = false;
-      }
-    },
-  },
+    isSubmitted.value = true;
+  } catch (error) {
+    alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+    isSubmitting.value = false;
+  }
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .Form {
   &Group {
     @apply w-full;

@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import LogoOm from '~/assets/img/logo-om.svg?inline';
+import LogoOm from '~/assets/img/logo-om.svg';
 
 export default {
   components: {
@@ -55,10 +55,10 @@ export default {
   },
   computed: {
     contact() {
-      return this.$store.state.content.global.contact;
+      return useContentStore().global.contact;
     },
     footer() {
-      return this.$store.state.content.global.footer;
+      return useContentStore().global.footer;
     },
   },
 };

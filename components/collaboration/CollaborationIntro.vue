@@ -49,7 +49,7 @@
 export default {
   computed: {
     intro() {
-      return this.$store.state.content.collaboration.intro;
+      return useContentStore().collaboration.intro;
     },
   },
 };

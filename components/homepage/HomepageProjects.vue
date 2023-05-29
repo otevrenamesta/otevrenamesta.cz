@@ -25,7 +25,7 @@
 export default {
   computed: {
     projects() {
-      return this.$store.state.content.homepage.projects;
+      return useContentStore().homepage.projects;
     },
   },
 };

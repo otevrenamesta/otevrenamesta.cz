@@ -21,7 +21,7 @@
 export default {
   computed: {
     action() {
-      return this.$store.state.content.declaration.action;
+      return useContentStore().declaration.action;
     },
   },
 };

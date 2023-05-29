@@ -64,10 +64,10 @@
 </template>
 
 <script>
-import IconFacebook from '~/assets/img/icon-facebook.svg?inline';
-import IconInstagram from '~/assets/img/icon-instagram.svg?inline';
-import IconTwitter from '~/assets/img/icon-twitter.svg?inline';
-import IconLinkedin from '~/assets/img/icon-linkedin.svg?inline';
+import IconFacebook from '~/assets/img/icon-facebook.svg';
+import IconInstagram from '~/assets/img/icon-instagram.svg';
+import IconTwitter from '~/assets/img/icon-twitter.svg';
+import IconLinkedin from '~/assets/img/icon-linkedin.svg';
 
 export default {
   components: {

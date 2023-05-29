@@ -1,7 +1,7 @@
 <template>
   <div
     class="fixed z-50 top-0 left-0 w-full h-full bg-white lg:hidden"
-    :hidden="!$store.state.ui.isBurgerMenuOpen"
+    :hidden="!useUiStore().isBurgerDialogOpen"
   >
     <div class="bg-primary-light bg-opacity-60 h-full">
       <div class="container flex flex-col justify-between h-full py-block-0.5 overflow-auto">
@@ -12,7 +12,7 @@
 
           <button
             class="w-10 sm:w-14 h-10 sm:h-14 bg-primary text-white flex items-center justify-center absolute top-block-0.75 right-block-0.5"
-            @click="() => $store.commit('ui/setIsBurgerMenuOpen', false)"
+            @click="() => useUiStore().setBurgerDialogOpen(false)"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="11.314" height="11.314" viewBox="0 0 11.314 11.314">
               <g transform="translate(-327.344 -51.343)" fill="currentColor">
@@ -30,8 +30,9 @@
             :to="localePath(item.link)"
             class="NavItem uppercase text-base text-primary font-semibold hover:underline"
             exact
-            v-text="item.text"
-          />
+          >
+            {{ item.text }}
+          </nuxt-link>
 
           <!-- <nuxt-link
             :to="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
@@ -48,7 +49,7 @@
 </template>
 
 <script>
-import LogoOm from '~/assets/img/logo-om.svg?inline';
+import LogoOm from '~/assets/img/logo-om.svg';
 
 export default {
   components: {
@@ -56,14 +57,14 @@ export default {
   },
   computed: {
     menuItems() {
-      return this.$store.state.content.global.menuItems;
+      return useContentStore().global?.menuItems;
     },
   },
 };
 </script>
 
-<style lang="scss" scoped>
-.NavItem.is-active {
+<style scoped>
+.NavItem.router-link-active {
   @apply text-secondary;
 }
 </style>

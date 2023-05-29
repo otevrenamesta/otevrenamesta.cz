@@ -57,7 +57,7 @@
 export default {
   computed: {
     intro() {
-      return this.$store.state.content.homepage.intro;
+      return useContentStore().homepage.intro;
     },
   },
 };

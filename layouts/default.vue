@@ -4,25 +4,25 @@
 
     <BurgerDialog />
 
-    <nuxt />
+    <slot />
 
     <Footer />
   </div>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/loadGlobal');
-  },
+<script setup>
+// export default {
+//   async fetch() {
+//     await this.$store.dispatch('content/loadGlobal');
+//   },
 
-  watch: {
-    $route: {
-      immediate: true,
-      handler() {
-        this.$store.commit('ui/setIsBurgerMenuOpen', false);
-      },
-    },
-  },
-};
+//   watch: {
+//     $route: {
+//       immediate: true,
+//       handler() {
+//         useUiStore().setBurgerDialogOpen(false)
+//       },
+//     },
+//   },
+// };
 </script>

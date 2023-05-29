@@ -140,7 +140,7 @@
 </template>
 
 <script>
-import VueHcaptcha from '@hcaptcha/vue-hcaptcha';
+import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
 
 export default {
   components: {
@@ -195,7 +195,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .Form {
   &Group {
     @apply w-full;

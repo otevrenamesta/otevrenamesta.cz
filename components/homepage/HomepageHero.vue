@@ -26,8 +26,7 @@
       />
     </div>
     <Socials
-      class="absolute bottom-3 right-8 z-10"
-      :hidden="!$screen.lg"
+      class="absolute bottom-3 right-8 z-10 hidden lg:flex"
     />
   </section>
 </template>
@@ -36,13 +35,13 @@
 export default {
   computed: {
     hero() {
-      return this.$store.state.content.homepage.hero;
+      return useContentStore().homepage.hero;
     },
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .HeroBox {
   position: absolute;
   left: 0;
@@ -50,32 +49,32 @@ export default {
 
   &::before,
   &::after {
-    background: $color-primary;
+    @apply bg-primary;
     position: absolute;
     content: '';
     bottom: 0;
-    width: $block-size;
+    width: var(--block-size);
 
     @screen md {
-      width: $block-size * 2;
+      width: calc(var(--block-size) * 2);
     }
   }
   &::before {
-    right: -$block-size * 0.95;
-    height: calc(100% - #{$block-size * 0.95});
+    right: calc(var(--block-size) * -0.95);
+    height: calc(100% - var(--block-size) * 0.95);
 
     @screen md {
-      right: -$block-size * 1.95;
-      height: calc(100% - #{$block-size * 1.95});
+      right: calc(var(--block-size) * -1.95);
+      height: calc(100% - var(--block-size) * 1.95);
     }
   }
   &::after {
-    right: -$block-size * 1.9;
-    height: calc(100% - #{$block-size * 1.9});
+    right: calc(var(--block-size) * -1.9);
+    height: calc(100% - var(--block-size) * 1.9);
 
     @screen md {
-      right: -$block-size * 3.9;
-      height: calc(100% - #{$block-size * 3.9});
+      right: calc(var(--block-size) * -3.9);
+      height: calc(100% - var(--block-size) * 3.9);
     }
   }
 }
@@ -84,7 +83,7 @@ export default {
   position: relative;
   width: 90%;
   height: 75%;
-  background: url(~assets/img/homepage-hero-bg.jpg);
+  background: url(~/assets/img/homepage-hero-bg.jpg);
   background-size: cover;
   margin-right: 5%;
 
@@ -93,29 +92,29 @@ export default {
   }
 
   &:before {
+    @apply bg-additional;
     content: '';
-    background: $color-additional;
-    width: $block-size;
-    height: $block-size * 4;
+    width: var(--block-size);
+    height: calc(var(--block-size) * 4);
     position: absolute;
-    left: -$block-size;
+    left: calc(var(--block-size) * -1);
     top: 25%;
   }
 
   &:after {
+    @apply bg-secondary;
     content: '';
-    background: $color-secondary;
-    width: $block-size * 2;
-    height: $block-size * 2;
-    right: -$block-size;
+    width: calc(var(--block-size) * 2);
+    height: calc(var(--block-size) * 2);
+    right: calc(var(--block-size) * -1);
     position: absolute;
     top: 5%;
     border-top-left-radius: 97%;
 
     @screen md {
-      width: $block-size * 4;
-      height: $block-size * 4;
-      right: -$block-size * 2;
+      width: calc(var(--block-size) * 4);
+      height: calc(var(--block-size) * 4);
+      right: calc(var(--block-size) * -2);
     }
   }
 }

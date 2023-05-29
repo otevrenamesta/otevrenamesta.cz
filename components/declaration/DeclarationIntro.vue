@@ -56,7 +56,7 @@
 export default {
   computed: {
     intro() {
-      return this.$store.state.content.declaration.intro;
+      return useContentStore().declaration.intro;
     },
   },
 };

@@ -54,7 +54,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0 hidden xl:block"
         />
         <Grid
-          :rows="$screen.sm ? 7 : 8"
+          :rows="$grid.sm ? 7 : 8"
         />
       </div>
     </div>
@@ -65,10 +65,10 @@
 export default {
   computed: {
     contact() {
-      return this.$store.state.content.global.contact;
+      return useContentStore().global.contact;
     },
     hero() {
-      return this.$store.state.content.contact.hero;
+      return useContentStore().contact.hero;
     },
   },
 };

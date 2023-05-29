@@ -26,7 +26,7 @@
           />
         </div>
         <Grid
-          :rows="$screen.sm ? 6 : 7"
+          :rows="$grid.sm ? 6 : 7"
         />
       </div>
     </div>

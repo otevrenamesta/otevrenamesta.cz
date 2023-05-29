@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     joinUs() {
-      return this.$store.state.content.collaboration.joinUs;
+      return useContentStore().collaboration.joinUs;
     },
   },
 };

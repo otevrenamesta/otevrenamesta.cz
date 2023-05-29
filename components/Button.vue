@@ -15,7 +15,7 @@
     <template v-if="$slots.default">
       <slot />
     </template>
-    <compontent
+    <component
       :is="icon"
       v-if="icon"
       class="ml-5 mt-px transform transition"
@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import IconArrowOpen from '~/assets/img/icon-arrow-open.svg?inline';
-import IconArrowRight from '~/assets/img/icon-arrow-right.svg?inline';
+import IconArrowOpen from '~/assets/img/icon-arrow-open.svg';
+import IconArrowRight from '~/assets/img/icon-arrow-right.svg';
 
 export default {
   components: {

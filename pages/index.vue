@@ -1,5 +1,5 @@
 <template>
-  <main v-if="$store.state.content.homepage">
+  <main v-if="useContentStore().homepage">
     <HomepageHero
       class="mb-block-2"
     />
@@ -20,10 +20,6 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'homepage' });
-  },
-};
+<script setup>
+await useContentStore().load({ page: 'homepage' });
 </script>

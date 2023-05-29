@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     support() {
-      return this.$store.state.content.declaration.support;
+      return useContentStore().declaration.support;
     },
   },
 };

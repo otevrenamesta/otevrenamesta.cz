@@ -60,7 +60,7 @@
 
 <script>
 import _uniq from 'lodash/uniq';
-import IconClose from '~/assets/img/icon-close.svg?inline';
+import IconClose from '~/assets/img/icon-close.svg';
 
 export default {
   components: {

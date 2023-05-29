@@ -5,7 +5,7 @@
       class="w-block-0.75 sm:w-block-1 h-0"
     />
     <div
-      v-for="row in rows"
+      v-for="row in props.rows"
       :key="row"
       class="flex w-auto "
     >
@@ -15,52 +15,49 @@
         class="w-block-1.5 sm:w-block-2 h-block-1.5 sm:h-block-2 border border-primary-light border-r-0 last:border-r"
         :class="[
           row === 1 ? 'border-t' : 'border-t-0',
-          inverse ? 'bg-primary border-opacity-20' : '',
+          props.inverse ? 'bg-primary border-opacity-20' : '',
         ]"
       />
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import _clamp from 'lodash/clamp';
+import { useScreen } from 'vue-screen';
 
-export default {
-  props: {
-    columns: {
-      type: Number,
-      default: null,
-    },
-    rows: {
-      type: Number,
-      default: null,
-    },
-    inverse: {
-      type: Boolean,
-      default: false,
-    },
+const props = defineProps({
+  columns: {
+    type: Number,
+    default: null,
   },
-
-  data() {
-    return {
-      isRendered: false,
-    };
+  rows: {
+    type: Number,
+    default: null,
   },
-
-  computed: {
-    columnsComputed() {
-      if (this.columns) {
-        return this.columns;
-      }
-
-      const BLOCK_SIZE = this.isRendered ? this.$refs.BlockTemplate?.offsetWidth : 60;
-      const CONTAINER = 0.91;
-      return _clamp(Math.floor((this.$screen.width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 16);
-    },
+  inverse: {
+    type: Boolean,
+    default: false,
   },
+});
 
-  mounted() {
-    this.isRendered = true;
-  },
-};
+// Refs
+const BlockTemplate = ref(null);
+const isRendered = ref(false);
+
+// Computed
+const columnsComputed = computed(() => {
+  if (props.columns) {
+    return props.columns;
+  }
+
+  const BLOCK_SIZE = isRendered.value ? BlockTemplate.value?.offsetWidth : 60;
+  const CONTAINER = 0.91;
+  return _clamp(Math.floor((useScreen().width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 16);
+});
+
+// Lifecycle
+onMounted(() => {
+  isRendered.value = true;
+});
 </script>
