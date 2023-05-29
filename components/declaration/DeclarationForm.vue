@@ -137,7 +137,7 @@ const verifiedSubmit = async(token) => {
         pozice: form.value.position,
       },
       headers: {
-        Authorization: `Bearer ${apiTokenRes.data}`,
+        Authorization: `Bearer ${apiTokenRes}`,
       },
     });
 
