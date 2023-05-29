@@ -77,13 +77,13 @@ const illustration = '<svg style="transform: translateY(1.7%) scale(1.06);margin
 const project = ref(null);
 
 // Lifecycle
-onMounted(async () => {
+onMounted(async() => {
   const projects = await useApi.get('/items/projects').catch((error) => {
     console.error(error);
 
     return { data: [] };
   });
 
-  project.value = projects.data.find(({ id }) => id === +$route.params.id);
+  project.value = projects.data.find(({ id }) => id === Number(useRoute().params.id));
 });
 </script>

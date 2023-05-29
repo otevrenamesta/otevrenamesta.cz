@@ -54,9 +54,9 @@
         </div>
       </div>
       <Grid
-        :rows="$grid.md ? 6 : 11"
+        :rows="$grid?.md ? 6 : 11"
         inverse
-        :hidden="!$grid.sm"
+        :hidden="!$grid?.sm"
       />
     </div>
   </section>

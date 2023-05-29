@@ -11,18 +11,13 @@
 </template>
 
 <script setup>
-// export default {
-//   async fetch() {
-//     await this.$store.dispatch('content/loadGlobal');
-//   },
+const route = useRoute();
 
-//   watch: {
-//     $route: {
-//       immediate: true,
-//       handler() {
-//         useUiStore().setBurgerDialogOpen(false)
-//       },
-//     },
-//   },
-// };
+watch(
+  () => route,
+  () => {
+    useUiStore().setBurgerDialogOpen(false);
+  },
+  { immediate: true },
+);
 </script>

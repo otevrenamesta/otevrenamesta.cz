@@ -14,7 +14,7 @@
 
       <div class="box-border sm:px-block-1 px-block-0.75 pt-block-1 sm:pt-block-1.5 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6 sm:flex sm:flex-col sm:justify-center">
         <div
-          v-if="!$grid.sm"
+          v-if="!$grid?.sm"
           class="w-block-4 max-w-full h-auto mb-block-0.5"
           v-html="props.illustration"
         />
@@ -58,7 +58,7 @@
     </div>
 
     <div
-      v-if="$grid.md"
+      v-if="$grid?.md"
       class="absolute z-10 top-block-2 w-block-12 hidden sm:block"
       :class="[
         props.align === 'left' ? 'right-block-2' : 'left-block-2',

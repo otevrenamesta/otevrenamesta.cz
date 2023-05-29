@@ -2,13 +2,13 @@
   <div class="container flex flex-col lg:flex-row -mt-px">
     <div class="relative">
       <Grid
-        :columns="$grid.xl ? 6 : 5"
-        :rows="illustration === 'illustration-collaboration-2' ? 7 : ($grid.xl ? 6 : 5)"
+        :columns="$grid?.xl ? 6 : 5"
+        :rows="illustration === 'illustration-collaboration-2' ? 7 : ($grid?.xl ? 6 : 5)"
       />
       <component
         :is="illustration"
         class="absolute top-block-1.5 sm:top-block-2 left-block-1.5 sm:left-block-2 h-auto"
-        :class="$grid.xl && illustration !== 'illustration-collaboration-2' ? 'w-block-8' : 'w-block-4.5 sm:w-block-6'"
+        :class="$grid?.xl && illustration !== 'illustration-collaboration-2' ? 'w-block-8' : 'w-block-4.5 sm:w-block-6'"
       />
     </div>
     <div class="p-0 lg:p-block-0.5 xl:p-block-1.5 pt-block-1 pb-0 xl:pb-0">

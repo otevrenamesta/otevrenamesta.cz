@@ -40,7 +40,7 @@
             class="w-block-2 h-block-2 bg-primary absolute bottom-block-2 right-0 hidden lg:block"
           />
           <Grid
-            :rows="$grid.sm ? 6 : 5"
+            :rows="$grid?.sm ? 6 : 5"
           />
         </div>
       </div>
