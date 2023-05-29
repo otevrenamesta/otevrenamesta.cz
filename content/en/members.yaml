@@ -1,6 +1,6 @@
 hero:
   title: Členové
-  description: Otevřená města sdružují obce a kraje, které se zajímají o digitalizaci a zavádění otevřených řešení do chodu úřadů. Členy spolku mohou být samosprávy, které se aktivně podílejí na  podpoře myšlenky moderní digitální veřejné správy, rozhodování na základě dat a s podporou občanů. 
+  description: Otevřená města sdružují obce a kraje, které se zajímají o digitalizaci a zavádění otevřených řešení do chodu úřadů. Členy spolku mohou být samosprávy, které se aktivně podílejí na  podpoře myšlenky moderní digitální veřejné správy, rozhodování na základě dat a s podporou občanů.
   cta: Stát se členem
 
 members:
@@ -48,13 +48,13 @@ members:
     agent: Petr Rachunek
     population: 26 768 (4,9 % hlasů)
     memberFee: 26 768 Kč / rok
-  - fullname: Praha 3 
+  - fullname: Praha 3
     agent: Jan Bartko
     population: 68 999 (7,9 % hlasů)
     memberFee: 68 999 Kč / rok
   - fullname: Praha 12
     agent: Jan Adamec
-    population: 55 894 (7,1 % hlasů) 
+    population: 55 894 (7,1 % hlasů)
     memberFee: 55 894 Kč / rok
   - fullname: Praha - Ďáblice
     agent: Jan Hrdlička
