@@ -30,11 +30,31 @@
         class="w-10 sm:w-14 h-10 sm:h-14 bg-primary-light bg-opacity-60 text-primary flex items-center justify-center absolute top-block-0.75 right-block-0.5 lg:hidden"
         @click="() => useUiStore().setBurgerDialogOpen(true)"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="12"
+          viewBox="0 0 14 12"
+        >
           <g transform="translate(-701 -52)">
-            <rect width="14" height="2" transform="translate(701 62)" fill="currentColor" />
-            <rect width="14" height="2" transform="translate(701 57)" fill="currentColor" />
-            <rect width="14" height="2" transform="translate(701 52)" fill="currentColor" />
+            <rect
+              width="14"
+              height="2"
+              transform="translate(701 62)"
+              fill="currentColor"
+            />
+            <rect
+              width="14"
+              height="2"
+              transform="translate(701 57)"
+              fill="currentColor"
+            />
+            <rect
+              width="14"
+              height="2"
+              transform="translate(701 52)"
+              fill="currentColor"
+            />
           </g>
         </svg>
       </button>

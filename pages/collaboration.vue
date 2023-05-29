@@ -149,7 +149,6 @@ useCustomHead({
   title: useContentStore().collaboration?.hero?.title,
 });
 
-
 // Refs
 const JoinUs = ref(null);
 

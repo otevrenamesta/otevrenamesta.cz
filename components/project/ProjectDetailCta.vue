@@ -1,5 +1,8 @@
 <template>
-  <section v-if="useContentStore().project" class="container">
+  <section
+    v-if="useContentStore().project"
+    class="container"
+  >
     <div class="relative bg-primary sm:bg-transparent">
       <div class="sm:absolute z-10 sm:left-block-2 sm:top-block-2 p-block-0.5 sm:p-0">
         <div class="w-block-6 max-w-full">
