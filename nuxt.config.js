@@ -15,14 +15,31 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
-        // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
+      script: [
+        {
+          body: true,
+          innerHTML: `var $buoop = { required:{e:-4,f:-6,o:-6,s:-3,c:-9},insecure:true,api:2020.11 };
+            function $buo_f(){
+            var e = document.createElement("script");
+            e.src = "//browser-update.org/update.min.js";
+            e.async = "true";
+            document.body.appendChild(e);
+            };
+            try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+            catch(e){window.attachEvent("onload", $buo_f)}`,
+        },
       ],
     },
   },
 
   runtimeConfig: {
     public: {
-      appendTitle: '| Otevřená města', // TODO: remove
       title,
       description,
       baseApiUrl: baseURL,
@@ -35,13 +52,10 @@ export default defineNuxtConfig({
 
   modules: [
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
-    // '@nuxtjs/pwa',
     '@vueuse/nuxt',
     '@nuxt/content',
-    // 'vue-screen/nuxt',
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
-    // '@nuxtjs/sitemap',
   ],
 
   i18n: {
@@ -74,12 +88,6 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['./stores'],
-  },
-
-  pwa: {
-    manifest: {
-      lang: 'cs',
-    },
   },
 
   // generate: {
@@ -136,7 +144,9 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      svgLoader({ }),
+      svgLoader({
+        svgo: false,
+      }),
     ],
   },
 });
