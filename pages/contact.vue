@@ -19,12 +19,12 @@
       </a>
       <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
         <div
-          v-for="(perosn, index) in useContentStore().global.leaderships"
+          v-for="(person, index) in useContentStore().global.leaderships"
           :key="index"
           class="px-6 md:px-block-0.5 w-1/2 xs:w-full md:w-1/3 lg:w-1/4 xl:w-1/5"
         >
           <Person
-            :person="perosn"
+            :person="person"
             class="text-primary-dark mb-block-1"
           />
         </div>

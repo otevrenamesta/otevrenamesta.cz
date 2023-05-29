@@ -28,7 +28,7 @@
                 v-html="contact.bank"
               />
               <br>
-              <span v-html="contact.iban" />
+              <span v-html="contact.iban || ''" />
             </p>
           </div>
           <!-- <p class="text-white text-sm font-medium mb-12">

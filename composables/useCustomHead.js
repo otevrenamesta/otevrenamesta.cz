@@ -1,6 +1,6 @@
 export default ({ title, description = '' }) => {
   const defaultTitle = useRuntimeConfig().public.title;
-  const seoTitle = title ? `${title.replaceAll('<br>', ' ')} | ${useRuntimeConfig().public.name}` : defaultTitle;
+  const seoTitle = title ? `${title.replaceAll('<br>', ' ')} | ${defaultTitle}` : defaultTitle;
   const seoDescription = description || useRuntimeConfig().public.description;
 
   useHead({
