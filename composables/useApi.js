@@ -3,10 +3,14 @@ const request = (method) => {
     const requestOptions = {
       method,
       baseURL: useRuntimeConfig().public.baseApiUrl,
+      ...options,
       headers: {
         ...(options?.headers || {}),
       },
-      ...options,
+      params: {
+        lang: useI18n().locale?.value || 'cs',
+        ...(options?.params || {}),
+      },
     };
 
     return $fetch(url, requestOptions);
