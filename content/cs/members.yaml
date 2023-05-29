@@ -1,6 +1,6 @@
 hero:
   title: Členové
-  description: Otevřená města sdružují obce a kraje, které se zajímají o digitalizaci a zavádění otevřených řešení do chodu úřadů. Členy spolku mohou být samosprávy, které se aktivně podílejí na  podpoře myšlenky moderní digitální veřejné správy, rozhodování na základě dat a s podporou občanů. 
+  description: Otevřená města sdružují obce a kraje, které se zajímají o digitalizaci a zavádění otevřených řešení do chodu úřadů. Členy spolku mohou být samosprávy, které se aktivně podílejí na  podpoře myšlenky moderní digitální veřejné správy, rozhodování na základě dat a s podporou občanů.
   cta: Stát se členem
 
 members:
@@ -8,6 +8,8 @@ members:
     agent: Jaroslav Hlavnička
     population: 17 435 (3,3 % hlasů)
     memberFee: 34 870 Kč / rok
+    shareOfVotes: 999
+    link: https://www.benesov-city.cz/
   - fullname: Brno - Medlánky
     agent: Kateřina Žůrková
     population: 5 857 (1,9 % hlasů)
@@ -35,7 +37,7 @@ members:
   - fullname: Chýně
     agent: Anna Chvojková
     population: 5 070 (1,8 % hlasů)
-    memberFee: 15 210 Kč / rok  
+    memberFee: 15 210 Kč / rok
   - fullname: Jihomoravský kraj
     agent: Jiří Hlavenka
     population: 1 187 439 (4,6 % hlasů)
@@ -71,12 +73,12 @@ members:
   - fullname: Olomoucký kraj
     agent: Michael Skácel
     population: 622 368 (4,6 % hlasů)
-    memberFee: 49 000 Kč / rok   
+    memberFee: 49 000 Kč / rok
   - fullname: Praha
     agent: Jiří Károly
     population: 1 246 623 (28,3 % hlasů)
     memberFee: 1 246 623 Kč / rok
-  - fullname: Praha 3 
+  - fullname: Praha 3
     agent: Filip Málek
     population: 88 063 (7,5 % hlasů)
     memberFee: 88 063 Kč / rok
@@ -95,7 +97,7 @@ members:
   - fullname: Štěpánov
     agent: Luděk Růžička
     population: 3 607 (1,5 % hlasů)
-    memberFee: 10 821 Kč / rok 
+    memberFee: 10 821 Kč / rok
   - fullname: Tišnov
     agent: Martin Sebera
     population: 9 458 (2,5 % hlasů)
