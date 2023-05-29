@@ -8,7 +8,7 @@ const request = (method) => {
         ...(options?.headers || {}),
       },
       params: {
-        lang: useI18n().locale?.value || 'cs',
+        lang: i18n.locale?.value || 'cs',
         ...(options?.params || {}),
       },
     };
