@@ -49,7 +49,7 @@
 export default {
   computed: {
     hero() {
-      return this.$store.state.content.members.hero;
+      return useContentStore().members.hero;
     },
   },
 };

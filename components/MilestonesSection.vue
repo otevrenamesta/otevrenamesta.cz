@@ -22,7 +22,7 @@
 export default {
   computed: {
     milestones() {
-      return this.$store.state.content.global.milestones;
+      return useContentStore().global.milestones;
     },
   },
 };

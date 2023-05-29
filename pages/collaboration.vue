@@ -1,5 +1,5 @@
 <template>
-  <main v-if="$store.state.content.collaboration">
+  <main v-if="useContentStore().collaboration">
     <CollaborationHero
       class="mb-block-2"
     />
@@ -142,30 +142,27 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'collaboration' });
-  },
-  head() {
-    return {
-      title: `${this.$store.state.content.collaboration?.hero?.title} ${this.$config.appendTitle}`,
-    };
-  },
-  computed: {
-    sections() {
-      return this.$store.state.content.collaboration.sections;
-    },
-  },
-  watch: {
-    '$store.state.content.collaboration'() {
-      this.$nextTick(() => {
-        if (this.$route.hash === '#form') {
-          const top = this.$refs.JoinUs?.$el?.getBoundingClientRect().top || 0;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    },
-  },
-};
+<script setup>
+await useContentStore().load({ page: 'collaboration' });
+
+useCustomHead({
+  title: useContentStore().collaboration?.hero?.title,
+});
+
+
+// Refs
+const JoinUs = ref(null);
+
+// Computed
+const sections = computed(() => useContentStore().collaboration.sections);
+
+// Watch
+watch(() => useContentStore().collaboration, () => {
+  nextTick(() => {
+    if (route.hash === '#form') {
+      const top = JoinUs.value?.$el?.getBoundingClientRect().top || 0;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
 </script>

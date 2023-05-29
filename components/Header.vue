@@ -14,8 +14,9 @@
           :to="localePath(item.link)"
           class="NavItem uppercase text-sm text-primary font-semibold ml-6 xl:ml-10 hover:underline"
           exact
-          v-text="item.text"
-        />
+        >
+          {{ item.text }}
+        </nuxt-link>
 
         <!-- <nuxt-link
           :to="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
@@ -27,7 +28,7 @@
 
       <button
         class="w-10 sm:w-14 h-10 sm:h-14 bg-primary-light bg-opacity-60 text-primary flex items-center justify-center absolute top-block-0.75 right-block-0.5 lg:hidden"
-        @click="() => $store.commit('ui/setIsBurgerMenuOpen', true)"
+        @click="() => useUiStore().setBurgerDialogOpen(true)"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
           <g transform="translate(-701 -52)">
@@ -41,23 +42,15 @@
   </header>
 </template>
 
-<script>
-import LogoOm from '~/assets/img/logo-om.svg?inline';
+<script setup>
+import LogoOm from '~/assets/img/logo-om.svg';
 
-export default {
-  components: {
-    LogoOm,
-  },
-  computed: {
-    menuItems() {
-      return this.$store.state.content.global.menuItems;
-    },
-  },
-};
+// Computed
+const menuItems = useContentStore().global?.menuItems || [];
 </script>
 
-<style lang="scss" scoped>
-.NavItem.is-active {
+<style scoped>
+.NavItem.router-link-active {
   @apply text-secondary;
 }
 </style>

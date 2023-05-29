@@ -40,7 +40,7 @@
             class="w-block-2 h-block-2 bg-primary absolute bottom-block-2 right-0 hidden lg:block"
           />
           <Grid
-            :rows="$screen.sm ? 6 : 5"
+            :rows="$grid.sm ? 6 : 5"
           />
         </div>
       </div>
@@ -59,7 +59,7 @@
 export default {
   computed: {
     hero() {
-      return this.$store.state.content.declaration.hero;
+      return useContentStore().declaration.hero;
     },
   },
 };

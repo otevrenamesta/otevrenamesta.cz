@@ -1,5 +1,5 @@
 <template>
-  <main v-if="$store.state.content.declaration">
+  <main v-if="useContentStore().declaration">
     <DeclarationHero />
 
     <div class="flex -mt-px border-t border-b border-primary-light flex-col lg:flex-row relative">
@@ -30,15 +30,10 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'declaration' });
-  },
-  head() {
-    return {
-      title: `${this.$store.state.content.declaration?.hero?.title} ${this.$config.appendTitle}`,
-    };
-  },
-};
+<script setup>
+await useContentStore().load({ page: 'declaration' });
+
+useCustomHead({
+  title: useContentStore().declaration?.hero?.title,
+});
 </script>

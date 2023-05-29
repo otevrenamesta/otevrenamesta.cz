@@ -7,29 +7,29 @@
 
     <div
       class="relative sm:absolute z-20 sm:top-block-2 bg-white border border-secondary border-t-0 border-r-0 sm:w-block-10 sm:h-block-12"
-      :class="align === 'left' ? 'sm:left-block-2' : 'sm:right-block-2'"
+      :class="props.align === 'left' ? 'sm:left-block-2' : 'sm:right-block-2'"
     >
       <div class="BoxDecorations BoxDecorations--top-left" />
       <div class="BoxDecorations BoxDecorations--top-right" />
 
       <div class="box-border sm:px-block-1 px-block-0.75 pt-block-1 sm:pt-block-1.5 h-full border border-secondary border-b-0 border-l-0 -mt-px -mr-px overflow-auto pb-6 sm:flex sm:flex-col sm:justify-center">
         <div
-          v-if="!$screen.sm"
+          v-if="!$grid.sm"
           class="w-block-4 max-w-full h-auto mb-block-0.5"
-          v-html="illustration"
+          v-html="props.illustration"
         />
         <h2 class="text-5xl sm:text-6xl text-primary font-bold mb-10 tracking-tight">
-          {{ project.title }}
+          {{ props.project.title }}
         </h2>
         <strong class="block text-2xl text-secondary mb-8 tracking-tight">
-          {{ project.subtitle }}
+          {{ props.project.subtitle }}
         </strong>
         <p
           class="text-primary text-base font-medium mb-7"
-          v-html="project.perex"
+          v-html="props.project.perex"
         />
         <nuxt-link
-          :to="localePath(`/projects/${project.id}`)"
+          :to="localePath(`/projects/${props.project.id}`)"
         >
           <Button
             class="mb-block-1"
@@ -41,14 +41,14 @@
 
         <div class="flex justify-between flex-wrap items-start">
           <div
-            v-if="project.logo"
-            v-html="project.logo"
+            v-if="props.project.logo"
+            v-html="props.project.logo"
           />
           <div
-            v-if="project.badge"
+            v-if="props.project.badge"
             class="py-2 px-4 bg-additional rounded-3xl leading-none text-sm uppercase text-black text-opacity-75 font-bold mt-4"
           >
-            {{ project.badge }}
+            {{ props.project.badge }}
           </div>
         </div>
       </div>
@@ -58,36 +58,34 @@
     </div>
 
     <div
-      v-if="$screen.md"
+      v-if="$grid.md"
       class="absolute z-10 top-block-2 w-block-12 hidden sm:block"
       :class="[
-        align === 'left' ? 'right-block-2' : 'left-block-2',
+        props.align === 'left' ? 'right-block-2' : 'left-block-2',
       ]"
-      v-html="illustration"
+      v-html="props.illustration"
     />
   </article>
 </template>
 
-<script>
-export default {
-  props: {
-    project: {
-      type: Object,
-      required: true,
-    },
-    illustration: {
-      type: String,
-      required: true,
-    },
-    align: {
-      type: String,
-      default: 'left',
-    },
+<script setup>
+const props = defineProps({
+  project: {
+    type: Object,
+    required: true,
   },
-};
+  illustration: {
+    type: String,
+    required: true,
+  },
+  align: {
+    type: String,
+    default: 'left',
+  },
+});
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .BoxDecorations {
   width: 20px;
   height: 20px;

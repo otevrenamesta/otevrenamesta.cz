@@ -30,7 +30,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-2 right-0 hidden lg:block"
         />
         <Grid
-          :rows="($screen.height > 800 || !$screen.sm) ? 7 : 6"
+          :rows="($grid.height > 800 || !$grid.sm) ? 7 : 6"
         />
       </div>
     </div>
@@ -41,7 +41,7 @@
 export default {
   computed: {
     hero() {
-      return this.$store.state.content.collaboration.hero;
+      return useContentStore().collaboration.hero;
     },
   },
 };

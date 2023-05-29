@@ -61,7 +61,7 @@
 export default {
   computed: {
     values() {
-      return this.$store.state.content.homepage.values;
+      return useContentStore().homepage.values;
     },
   },
 };
