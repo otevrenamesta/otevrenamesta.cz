@@ -139,59 +139,51 @@
   </form>
 </template>
 
-<script>
+<script setup>
 import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
 
-export default {
-  components: {
-    VueHcaptcha,
-  },
+// Refs
+const isSubmitting = ref(false);
+const isSubmitted = ref(false);
+const invisibleHcaptcha = ref(null);
 
-  data() {
-    return {
-      isSubmitting: false,
-      isSubmitted: false,
-      form: {
-        fullname: '',
-        city: '',
-        email: '',
-        phone: '',
-        message: '',
-        interestedIn: 'clenstvi',
+const form = reactive({
+  fullname: '',
+  email: '',
+  phone: '',
+  organization: '',
+  position: '',
+});
+
+// Methods
+const presubmitForm = () => {
+  invisibleHcaptcha.value.execute();
+};
+
+const verifiedSubmit = async (token) => {
+  isSubmitting.value = true;
+
+  try {
+    const tokenURL = `/hcaptcha-validate/1/${token}`;
+    const apiTokenRes = await useApi.get(tokenURL);
+    await useApi.post('/items/ospo_support/', {
+      body: {
+        jmeno: form.fullname,
+        email: form.email,
+        tel: form.phone,
+        organizace: form.organization,
+        pozice: form.position,
       },
-    };
-  },
+      headers: {
+        Authorization: `Bearer ${apiTokenRes.data}`,
+      },
+    });
 
-  methods: {
-    presubmitForm() {
-      this.$refs.invisibleHcaptcha.execute();
-    },
-    async verifiedSubmit(token) {
-      this.isSubmitting = true;
-
-      try {
-        const tokenURL = `/hcaptcha-validate/1/${token}`
-        const apiTokenRes = await this.$axios.get(tokenURL)
-        await this.$axios.$post('/items/messages/', {
-          jmeno: this.form.fullname,
-          mesto: this.form.city,
-          email: this.form.email,
-          tel: this.form.phone,
-          subject: this.form.interestedIn,
-          content: this.form.message,
-        }, {
-          headers: {
-            Authorization: `Bearer ${apiTokenRes.data}`,
-          },
-        });
-
-        this.isSubmitted = true;
-      } catch (error) {
-        alert('Omlouváme se, došlo k chybě při odesílání formuláře');
-        this.isSubmitting = false;
-      }
-    },
-  },
+    isSubmitted.value = true;
+  } catch (error) {
+    alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+    isSubmitting.value = false;
+  }
 };
 </script>
 

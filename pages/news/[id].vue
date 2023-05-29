@@ -30,30 +30,24 @@
   </main>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      articles: [],
-    };
-  },
+<script setup>
+// Refs
+const articles = ref([]);
 
-  head() {
-    return {
-      title: this.article ? `${this.article.title} ${this.$config.appendTitle}` : this.$config.appendTitle,
-    };
-  },
+// Computed
+const article = computed(() => articles.value.find(({ id }) => id === Number(useRoute().params.id)));
 
-  computed: {
-    article() {
-      return this.articles.find(({ id }) => id === Number(this.$route.params.id));
-    },
-  },
+// Lifecycle
+onMounted(async() => {
+  articles.value = await useApi.get('/items/posts/')
+    .then((res) => res.data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+});
 
-  async mounted() {
-    this.articles = await this.$axios.$get('/items/posts/')
-      .then(res => res.data)
-      .catch(() => []);
-  },
-};
+useCustomHead({
+  title: article.value?.title,
+});
 </script>

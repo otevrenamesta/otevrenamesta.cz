@@ -31,7 +31,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-2 right-block-2 hidden lg:block"
         />
         <Grid
-          :rows="($grid.height > 800 || !$grid.sm) ? 7 : 6"
+          :rows="($grid?.height > 800 || !$grid?.sm) ? 7 : 6"
         />
       </div>
     </div>

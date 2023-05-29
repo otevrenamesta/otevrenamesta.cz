@@ -54,7 +54,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0 hidden xl:block"
         />
         <Grid
-          :rows="$grid.sm ? 7 : 8"
+          :rows="$grid?.sm ? 7 : 8"
         />
       </div>
     </div>
