@@ -48,12 +48,12 @@
             {{ item.text }}
           </nuxt-link>
 
-          <!-- <nuxt-link
-            :to="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
-            class="uppercase text-sm font-semibold ml-10 text-secondary"
+          <a
+            :href="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
+            class="uppercase text-sm font-semibold text-secondary"
           >
             {{ $i18n.locale === 'cs' ? 'en' : 'cz' }}
-          </nuxt-link> -->
+          </a>
         </nav>
 
         <Socials />
