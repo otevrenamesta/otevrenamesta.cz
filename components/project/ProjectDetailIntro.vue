@@ -13,7 +13,7 @@
     <div class="flex justify-between flex-col sm:flex-row gap-4 sm:gap-0">
       <div class="flex flex-col sm:flex-row gap-4">
         <a
-          v-if="project.web"
+          v-if="project.web?.length"
           :href="project.web"
           target="_blank"
         >
@@ -24,7 +24,19 @@
           </Button>
         </a>
         <a
-          v-if="project.demo"
+          v-if="project.pricelist?.length"
+          :href="project.pricelist"
+          target="_blank"
+        >
+          <Button
+            type="outline"
+            icon="icon-arrow-open"
+          >
+            Ceník
+          </Button>
+        </a>
+        <a
+          v-if="project.demo?.length"
           :href="project.demo"
           target="_blank"
         >
