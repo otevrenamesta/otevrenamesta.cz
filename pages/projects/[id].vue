@@ -78,7 +78,7 @@ const project = ref(null);
 
 // Lifecycle
 onMounted(async() => {
-  const projects = await useApi.get('/items/projects').catch((error) => {
+  const projects = await useApi.get(`/items/projects?lang=${useI18n()?.locale?.value}`).catch((error) => {
     console.error(error);
 
     return { data: [] };

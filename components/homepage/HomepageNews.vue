@@ -59,7 +59,7 @@ const news = useContentStore().homepage.news;
 
 // Lifecycle
 onMounted(async() => {
-  articles.value = await useApi.get('/items/posts/?sort=-published&limit=4')
+  articles.value = await useApi.get(`/items/posts/?sort=-published&limit=4&lang=${useI18n()?.locale?.value}`)
     .then(({ data }) => data)
     .catch((error) => {
       console.error(error);

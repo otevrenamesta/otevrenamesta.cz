@@ -69,7 +69,7 @@ const tags = computed(() => _uniq(articles.value.map(({ tags }) => tags.split(',
 const articlesFiltered = computed(() => articles.value.filter(({ tags }) => !selectedTag.value || tags.includes(selectedTag.value)));
 
 onMounted(async() => {
-  articles.value = await useApi.get('/items/posts/?sort=-published')
+  articles.value = await useApi.get(`/items/posts/?sort=-published&lang=${useI18n()?.locale?.value}`)
     .then((res) => res.data)
     .catch(() => []);
 });

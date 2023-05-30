@@ -7,10 +7,6 @@ const request = (method) => {
       headers: {
         ...(options?.headers || {}),
       },
-      params: {
-        lang: i18n.locale?.value || 'cs',
-        ...(options?.params || {}),
-      },
     };
 
     return $fetch(url, requestOptions);
