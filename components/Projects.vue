@@ -22,7 +22,7 @@ const illustrations = [
 const projects = ref([]);
 
 onMounted(async() => {
-  projects.value = await useApi.get('/items/projects?limit=25&fields[]=id&fields[]=title&fields[]=state&fields[]=subtitle&sort[]=id&page=1')
+  projects.value = await useApi.get(`/items/projects?limit=25&fields[]=id&fields[]=title&fields[]=state&fields[]=subtitle&sort[]=id&page=1&lang=${useI18n()?.locale?.value}`)
     .then((response) => response.data)
     .catch((error) => {
       console.error(error);

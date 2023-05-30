@@ -43,7 +43,7 @@ const props = defineProps({
 
 // Refs
 const BlockTemplate = ref(null);
-const isRendered = ref(false);
+const screen = useScreen();
 
 // Computed
 const columnsComputed = computed(() => {
@@ -51,13 +51,9 @@ const columnsComputed = computed(() => {
     return props.columns;
   }
 
-  const BLOCK_SIZE = isRendered.value ? BlockTemplate.value?.offsetWidth : 60;
+  const BLOCK_SIZE = process.client && BlockTemplate.value ? BlockTemplate.value?.offsetWidth : 60;
   const CONTAINER = 0.91;
-  return _clamp(Math.floor((useScreen().width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 16);
-});
-
-// Lifecycle
-onMounted(() => {
-  isRendered.value = true;
+  const width = process.client ? screen.width : 1500;
+  return _clamp(Math.floor((width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 16);
 });
 </script>

@@ -39,7 +39,7 @@ const article = computed(() => articles.value.find(({ id }) => id === Number(use
 
 // Lifecycle
 onMounted(async() => {
-  articles.value = await useApi.get('/items/posts/')
+  articles.value = await useApi.get(`/items/posts/?lang=${useI18n()?.locale?.value}`)
     .then((res) => res.data)
     .catch((error) => {
       console.error(error);
