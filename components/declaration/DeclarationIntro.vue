@@ -5,7 +5,7 @@
       v-html="intro.title"
     />
 
-    <div class="flex justify-between flex-col sm:flex-row gap-4 sm:gap-0 mb-block-2">
+    <div class="flex flex-col sm:flex-row gap-4 mb-block-2">
       <a
         href="#form"
       >
@@ -15,6 +15,14 @@
           {{ intro.cta.title }}
         </Button>
       </a>
+      <Button
+        v-animated-scroll-to="'#signatories'"
+        type="transparent"
+        icon="icon-arrow-right"
+        class="text-secondary"
+      >
+        {{ intro.signatoriesButton.title }}
+      </Button>
     </div>
 
     <div>
