@@ -25,7 +25,7 @@
             :datetime="article.published"
             class="block text-sm text-additional font-bold mb-2"
           >
-            {{ useDayjs(article.published).format('D. M. yyyy') }}
+            {{ useDayjs(article.published).format('D. M. YYYY') }}
           </time>
           <h3 class="text-white text-xl font-bold mb-5">
             {{ article.title }}
