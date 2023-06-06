@@ -24,7 +24,10 @@
       </div>
     </div>
 
-    <DeclarationSignatories class="mb-block-3" />
+    <DeclarationSignatories
+      id="signatories"
+      class="mb-block-3"
+    />
 
     <DeclarationSupport />
   </main>
