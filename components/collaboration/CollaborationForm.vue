@@ -97,7 +97,7 @@
                 Členství
               </span>
             </label>
-            <label class="FormRadioGroup">
+            <label class="FormRadioGroup mb-4 sm:mb-0">
               <div class="FormRadio">
                 <input
                   v-model="form.interestedIn"
@@ -109,6 +109,20 @@
               </div>
               <span class="text-lg text-white font-bold">
                 Nákup služeb
+              </span>
+            </label>
+            <label class="FormRadioGroup">
+              <div class="FormRadio">
+                <input
+                  v-model="form.interestedIn"
+                  type="radio"
+                  value="informace"
+                  class="FormRadioInput"
+                  required
+                >
+              </div>
+              <span class="text-lg text-white font-bold">
+                Informace
               </span>
             </label>
           </div>
@@ -147,12 +161,13 @@ const isSubmitting = ref(false);
 const isSubmitted = ref(false);
 const invisibleHcaptcha = ref(null);
 
-const form = reactive({
+const form = ref({
   fullname: '',
+  city: '',
   email: '',
   phone: '',
-  organization: '',
-  position: '',
+  message: '',
+  interestedIn: 'clenstvi',
 });
 
 // Methods
@@ -166,13 +181,14 @@ const verifiedSubmit = async(token) => {
   try {
     const tokenURL = `/hcaptcha-validate/1/${token}`;
     const apiTokenRes = await useApi.get(tokenURL);
-    await useApi.post('/items/ospo_support/', {
+    await useApi.post('/items/messages/', {
       body: {
-        jmeno: form.fullname,
-        email: form.email,
-        tel: form.phone,
-        organizace: form.organization,
-        pozice: form.position,
+        jmeno: form.value.fullname,
+        mesto: form.value.city,
+        email: form.value.email,
+        tel: form.value.phone,
+        subject: form.value.interestedIn,
+        content: form.value.message,
       },
       headers: {
         Authorization: `Bearer ${apiTokenRes}`,
@@ -209,7 +225,7 @@ const verifiedSubmit = async(token) => {
   }
 
   &RadioGroup {
-    @apply flex first:mr-block-1 cursor-pointer;
+    @apply flex mr-block-0.5 cursor-pointer;
 
     span {
       @apply block leading-tight;
@@ -217,7 +233,7 @@ const verifiedSubmit = async(token) => {
   }
 
   &Radio {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5 rounded-full;
+    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-3 rounded-full;
 
     &Input {
       @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0 rounded-full;
