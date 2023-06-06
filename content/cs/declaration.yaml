@@ -6,6 +6,8 @@ intro:
   title: "The purpose of this Declaration is to kick-start the process of creation of the Czech National Open Source Programme Office (Czech OSPO) for the public and academic sector in Brno, Czech Republic. And to help create and activate the community around use of Open Source in these sectors to develop further collaborations within and beyond public sector and academic OSPOs."
   cta:
     title: Show your support
+  signatoriesButton:
+    title: Who has signed already?
   opensource:
     title: WHAT IS OPEN SOURCE
     description: "Open source is present everywhere. All around the world, companies and public services are using open-source collaborative methods to innovate and build new solutions. In this perspectice Open source is also close to the essence of public service and academia because: "
@@ -39,8 +41,8 @@ signatories:
    - letter: A
      items:
       - title: ASWA - Asociace softwarových agentur z.s.
-        description: "CEO, Jakub Chalupa"   
-        isOrganization: true   
+        description: "CEO, Jakub Chalupa"
+        isOrganization: true
    - letter: B
      items:
       - title: Benedikt Kotmel
@@ -52,7 +54,7 @@ signatories:
         isOrganization: true
       - title: CSGOV
         description: "Founder, Petr Illek"
-        isOrganization: true       
+        isOrganization: true
    - letter: D
      items:
       - title: Dorota Volavková
@@ -61,7 +63,7 @@ signatories:
       - title: Elizabieta Godlewska
         description: "Partner development, Linux Professional Institute"
    - letter: F
-     items:        
+     items:
       - title: FlowerChecker
         description: "CEO, Ondřej Veselý"
         isOrganization: true
@@ -69,28 +71,28 @@ signatories:
      items:
       - title: Hlídač státu
         description: "CEO, Michal Bláha"
-        isOrganization: true   
+        isOrganization: true
    - letter: CH
      items:
       - title: Chamber of Commerce, South Moravia
         description: "CEO, Tomáš Psota"
-        isOrganization: true  
+        isOrganization: true
    - letter: J
      items:
       - title: Jakub Onderka
-        description: "Security analyst, National Cyber and Information Security Authority"   
+        description: "Security analyst, National Cyber and Information Security Authority"
       - title: Jakub Trojan
         description: "Univerzita Tomáše Bati ve Zlíně, akademický pracovník"
       - title: Jan Jílek
       - title: Jan Pacner
         description: "Program Management Officer"
       - title: Jiří Doubravský
-        description: "Developer, Magistrát města Olomouce"      
+        description: "Developer, Magistrát města Olomouce"
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
       - title: Josef Bátrla
         description: "Advokát"
-      - title: Josef Šmída        
+      - title: Josef Šmída
    - letter: K
      items:
       - title: Karel Kočí
@@ -149,17 +151,17 @@ signatories:
         description: "CEO, Tomáš Svoboda"
         isOrganization: true
       - title: Tereza Zrnová
-        description: "Coordinator, Operátor ICT" 
+        description: "Coordinator, Operátor ICT"
       - title: Tolgee
         description: "CEO, Jan Cizmar"
         isOrganization: true
       - title: Tomáš Kapler
-        description: "Předseda IT komise, Praha 11" 
+        description: "Předseda IT komise, Praha 11"
    - letter: V
      items:
       - title: Valentýna Drtinová
    - letter: W
-     items:    
+     items:
       - title: Wikimedia Česká republika
         description: "Výkonná ředitelka, Klára Joklová"
         isOrganization: true

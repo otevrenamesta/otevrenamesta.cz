@@ -12,16 +12,22 @@
         {{ tag }}
       </div>
     </div>
-    <div>
+    <div class="mb-block-0.5">
       <nuxt-img
         :src="article.image"
         :alt="article.title"
         width="1200"
         class="mb-block-0.5"
       />
-      <h2 class="text-primary font-bold text-4xl mb-block-1 tracking-tight">
+      <h2 class="text-primary font-bold text-4xl mb-4 tracking-tight">
         {{ article.title }}
       </h2>
+      <time
+        :datetime="article.published"
+        class="block text-sm text-dark font-bold mb-2"
+      >
+        {{ useDayjs(article.published).format('D. M. YYYY') }}
+      </time>
     </div>
     <div
       class="flex flex-wrap prose text-lg"
@@ -30,30 +36,24 @@
   </main>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      articles: [],
-    };
-  },
+<script setup>
+// Refs
+const articles = ref([]);
 
-  head() {
-    return {
-      title: this.article ? `${this.article.title} ${this.$config.appendTitle}` : this.$config.appendTitle,
-    };
-  },
+// Computed
+const article = computed(() => articles.value.find(({ id }) => id === Number(useRoute().params.id)));
 
-  computed: {
-    article() {
-      return this.articles.find(({ id }) => id === Number(this.$route.params.id));
-    },
-  },
+// Lifecycle
+onMounted(async() => {
+  articles.value = await useApi.get(`/items/posts/?lang=${useI18n()?.locale?.value}`)
+    .then((res) => res.data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+});
 
-  async mounted() {
-    this.articles = await this.$axios.$get('/items/posts/')
-      .then(res => res.data)
-      .catch(() => []);
-  },
-};
+useCustomHead({
+  title: article.value?.title,
+});
 </script>

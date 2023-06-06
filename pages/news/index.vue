@@ -49,6 +49,12 @@
           <h3 class="text-primary font-bold text-2xl tracking-tight mb-2 hover:underline">
             {{ article.title }}
           </h3>
+          <time
+            :datetime="article.published"
+            class="block text-sm text-dark font-bold mb-2"
+          >
+            {{ useDayjs(article.published).format('D. M. YYYY') }}
+          </time>
           <p class="text-primary font-medium">
             {{ article.perex }}
           </p>
@@ -58,41 +64,23 @@
   </main>
 </template>
 
-<script>
+<script setup>
 import _uniq from 'lodash/uniq';
-import IconClose from '~/assets/img/icon-close.svg?inline';
+import IconClose from '~/assets/img/icon-close.svg';
 
-export default {
-  components: {
-    IconClose,
-  },
+const articles = ref([]);
+const selectedTag = ref(null);
 
-  data() {
-    return {
-      articles: [],
-      selectedTag: null,
-    };
-  },
+const tags = computed(() => _uniq(articles.value.map(({ tags }) => tags.split(',')).flat()));
+const articlesFiltered = computed(() => articles.value.filter(({ tags }) => !selectedTag.value || tags.includes(selectedTag.value)));
 
-  head() {
-    return {
-      title: `Články ${this.$config.appendTitle}`,
-    };
-  },
+onMounted(async() => {
+  articles.value = await useApi.get(`/items/posts/?sort=-published&lang=${useI18n()?.locale?.value}`)
+    .then((res) => res.data)
+    .catch(() => []);
+});
 
-  computed: {
-    tags() {
-      return _uniq(this.articles.map(({ tags }) => tags.split(',')).flat());
-    },
-    articlesFiltered() {
-      return this.articles.filter(({ tags }) => !this.selectedTag || tags.includes(this.selectedTag));
-    },
-  },
-
-  async mounted() {
-    this.articles = await this.$axios.$get('/items/posts/?sort=-published')
-      .then(res => res.data)
-      .catch(() => []);
-  },
-};
+useCustomHead({
+  title: 'Články',
+});
 </script>

@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     socials() {
-      return this.$store.state.content.global.socials;
+      return useContentStore().global?.socials;
     },
   },
 };

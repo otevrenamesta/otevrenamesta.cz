@@ -1,6 +1,9 @@
 <template>
-  <footer v-if="footer" class="mt-block-2 mb-block-1">
-    <div class="container flex justify-between lg:items-center flex-col lg:flex-row">
+  <footer
+    v-if="footer"
+    class="mt-block-2 mb-block-1"
+  >
+    <div class="container flex gap-x-6 justify-between lg:items-center flex-col lg:flex-row">
       <div class="flex flex-col md:flex-row mb-8 lg:mb-0">
         <LogoOm
           class="mb-8 w-44 h-auto md:mb-0"
@@ -16,7 +19,10 @@
           </p>
           <p class="text-primary text-sm">
             <strong class="block">
-              <a :href="`mailto:${contact.email}`" class="hover:underline">
+              <a
+                :href="`mailto:${contact.email}`"
+                class="hover:underline"
+              >
                 {{ contact.email }}
               </a>
             </strong>
@@ -31,7 +37,7 @@
         <Socials
           class="mb-5"
         />
-        <div class="flex gap-4">
+        <div class="flex gap-x-4 gap-y-2 flex-wrap justify-end">
           <a
             v-for="(link, index) in footer.links"
             :key="index"
@@ -47,7 +53,7 @@
 </template>
 
 <script>
-import LogoOm from '~/assets/img/logo-om.svg?inline';
+import LogoOm from '~/assets/img/logo-om.svg';
 
 export default {
   components: {
@@ -55,10 +61,10 @@ export default {
   },
   computed: {
     contact() {
-      return this.$store.state.content.global.contact;
+      return useContentStore().global.contact;
     },
     footer() {
-      return this.$store.state.content.global.footer;
+      return useContentStore().global.footer;
     },
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <main v-if="$store.state.content.contact">
+  <main v-if="useContentStore().contact">
     <ContactHero
       class="mb-block-2"
     />
@@ -19,12 +19,12 @@
       </a>
       <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
         <div
-          v-for="(perosn, index) in $store.state.content.global.leaderships"
+          v-for="(person, index) in useContentStore().global.leaderships"
           :key="index"
           class="px-6 md:px-block-0.5 w-1/2 xs:w-full md:w-1/3 lg:w-1/4 xl:w-1/5"
         >
           <Person
-            :person="perosn"
+            :person="person"
             class="text-primary-dark mb-block-1"
           />
         </div>
@@ -33,22 +33,13 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'contact' });
-  },
+<script setup>
+await useContentStore().load({ page: 'contact' });
 
-  head() {
-    return {
-      title: `${this.$store.state.content.contact?.title} ${this.$config.appendTitle}`,
-    };
-  },
+useCustomHead({
+  title: useContentStore().contact?.hero?.title,
+});
 
-  computed: {
-    leadership() {
-      return this.$store.state.content.contact?.leadership;
-    },
-  },
-};
+// Computed
+const leadership = computed(() => useContentStore().contact?.leadership);
 </script>

@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import IconLogoOm from '~/assets/img/icon-logo-om.svg?inline';
+import IconLogoOm from '~/assets/img/icon-logo-om.svg';
 
 export default {
   components: {
@@ -60,7 +60,7 @@ export default {
   },
   computed: {
     structure() {
-      return this.$store.state.content.about.structure;
+      return useContentStore().about.structure;
     },
   },
 };

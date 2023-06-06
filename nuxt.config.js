@@ -1,134 +1,114 @@
-import axios from 'axios';
+import svgLoader from 'vite-svg-loader';
 
+const title = 'Otevřená města';
 const description = 'Partner pro digitalizaci samospráv. Specializujeme se na technickou, právní a metodickou podporu v oblasti digitalizace samospráv.';
 const baseURL = 'https://api.www.otevrenamesta.cz';
 
-export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+export default defineNuxtConfig({
+  ssr: true,
 
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  // ssr: false,
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'Otevřená města',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', name: 'og:description', content: description },
-      { name: 'format-detection', content: 'telephone=no' },
-    ],
-    link: [
-      { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ],
+  app: {
+    head: {
+      title,
+      meta: [
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
+      script: [
+        {
+          body: true,
+          innerHTML: `var $buoop = { required:{e:-4,f:-6,o:-6,s:-3,c:-9},insecure:true,api:2020.11 };
+            function $buo_f(){
+            var e = document.createElement("script");
+            e.src = "//browser-update.org/update.min.js";
+            e.async = "true";
+            document.body.appendChild(e);
+            };
+            try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+            catch(e){window.attachEvent("onload", $buo_f)}`,
+        },
+      ],
+    },
   },
 
-  publicRuntimeConfig: {
-    appendTitle: '| Otevřená města',
+  runtimeConfig: {
+    public: {
+      title,
+      description,
+      baseApiUrl: baseURL,
+    },
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/scss/global.scss',
+    '~/assets/css/global.css',
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/v-preposition-space',
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: [
-    { path: '~/components', pathPrefix: false },
-  ],
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/style-resources', // https://github.com/nuxt-community/style-resources-module
-    '@nuxtjs/eslint-module', // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
-    ['@nuxtjs/moment', { locales: ['cs'], defaultLocale: 'cs' }],
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
-    '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
-    '@nuxt/content', // https://go.nuxtjs.dev/content
-    '@nuxtjs/svg',
-    'vue-screen/nuxt',
+    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    '@vueuse/nuxt',
+    '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxt/image',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/markdownit',
+    '@nuxt/image-edge',
   ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL,
-  },
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'cs',
-    },
-  },
-
-  styleResources: {
-    scss: [
-      './assets/scss/_variables.scss',
-    ],
-  },
-
-  router: {
-    linkActiveClass: 'is-active',
-  },
-
-  generate: {
-    async routes() {
-      const projects = await axios.get(`${baseURL}/items/projects?limit=25&fields[]=id&page=1`);
-      const news = await axios.get(`${baseURL}/items/posts?fields[]=id&limit=25&page=1`);
-
-      return [
-        ...projects.data.data.map(project => `/projects/${project.id}`),
-        ...news.data.data.map(item => `/news/${item.id}`),
-      ];
-    },
-  },
-
-  markdownit: {
-    runtime: true,
-  },
 
   i18n: {
-    // lazy: true,
-    // langDir: 'langs/',
-    defaultLocale: 'cs',
-    vueI18nLoader: true,
-    noPrefixDefaultLocale: true,
     locales: [
       {
         code: 'cs',
-        iso: 'cs',
-        name: 'Česky',
-        // file: 'cs.js',
+        file: 'cs.json',
       },
-      // {
-      //   code: 'en',
-      //   iso: 'en',
-      //   name: 'English',
-      //   // file: 'en.js',
-      // },
+      {
+        code: 'en',
+        file: 'en.json',
+      },
     ],
+    defaultLocale: 'cs',
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
   },
 
-  sitemap: {
-    hostname: 'https://otevrenamesta.cz/',
+  imports: {
+    dirs: ['./stores'],
   },
+
+  // generate: {
+  //   async routes() {
+  //     const projects = await $fetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
+  //     const news = await $fetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+
+  //     return [
+  //       ...projects.data.data.map((project) => `/projects/${project.id}`),
+  //       ...news.data.data.map((item) => `/news/${item.id}`),
+  //     ];
+  //   },
+  // },
+
+  // hooks: {
+  //   async 'nitro:config'(nitroConfig) {
+  //     if (nitroConfig.dev) {
+  //       return;
+  //     }
+
+  //     const projects = await ofetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
+  //     nitroConfig.prerender.routes.push(...projects.data.map((project) => `/projects/${project.id}`));
+
+  //     const news = await ofetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+  //     nitroConfig.prerender.routes.push(...news.data.map((item) => `/news/${item.id}`));
+  //   },
+  // },
 
   image: {
     provider: 'imagekit',
@@ -137,10 +117,30 @@ export default {
     },
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  postcss: {
+    plugins: {
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
-};
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+
+  experimental: {
+    payloadExtraction: false,
+  },
+
+  vite: {
+    plugins: [
+      svgLoader({
+        svgo: false,
+      }),
+    ],
+  },
+});

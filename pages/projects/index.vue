@@ -16,12 +16,8 @@
   </main>
 </template>
 
-<script>
-export default {
-  head() {
-    return {
-      title: `Projekty ${this.$config.appendTitle}`,
-    };
-  },
-};
+<script setup>
+useCustomHead({
+  title: 'Projekty',
+});
 </script>

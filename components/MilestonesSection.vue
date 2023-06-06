@@ -11,7 +11,10 @@
       <strong class="text-secondary text-sm mb-1.5">
         {{ milestone.title }}
       </strong>
-      <p v-preposition-space class="text-primary-dark text-sm">
+      <p
+        v-preposition-space
+        class="text-primary-dark text-sm"
+      >
         {{ milestone.description }}
       </p>
     </div>
@@ -22,7 +25,7 @@
 export default {
   computed: {
     milestones() {
-      return this.$store.state.content.global.milestones;
+      return useContentStore().global.milestones;
     },
   },
 };

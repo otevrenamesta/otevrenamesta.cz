@@ -1,11 +1,11 @@
 <template>
   <button
-    class="transition group text-white uppercase text-sm font-semibold py-3 flex items-center justify-center"
+    class="transition group uppercase text-sm font-semibold py-3 flex items-center justify-center"
     :class="[
       type === 'primary' ? 'border border-primary bg-primary hover:bg-primary-dark' : '',
       type === 'secondary' ? 'border border-secondary bg-secondary' : '',
       type === 'dark' ? 'bg-black bg-opacity-60' : '',
-      type === 'transparent' ? 'bg-transparent' : 'px-5',
+      type === 'transparent' ? 'bg-transparent' : 'text-white px-5',
       type === 'outline' ? 'border border-primary text-primary' : '',
     ]"
     :disabled="disabled || loading"
@@ -15,7 +15,7 @@
     <template v-if="$slots.default">
       <slot />
     </template>
-    <compontent
+    <component
       :is="icon"
       v-if="icon"
       class="ml-5 mt-px transform transition"
@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import IconArrowOpen from '~/assets/img/icon-arrow-open.svg?inline';
-import IconArrowRight from '~/assets/img/icon-arrow-right.svg?inline';
+import IconArrowOpen from '~/assets/img/icon-arrow-open.svg';
+import IconArrowRight from '~/assets/img/icon-arrow-right.svg';
 
 export default {
   components: {

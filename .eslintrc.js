@@ -5,14 +5,16 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false,
+    parser: '@typescript-eslint/parser',
+    extraFileExtensions: ['.vue'],
   },
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
+    'plugin:vue/vue3-recommended',
   ],
   plugins: [
+    '@typescript-eslint',
   ],
   // add your custom rules here
   rules: {
@@ -39,6 +41,17 @@ module.exports = {
       anonymous: 'never',
       named: 'never',
       asyncArrow: 'never',
+    }],
+    'no-undef': 'off',
+    'arrow-parens': ['error', 'always'],
+    'no-return-assign': 'off',
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 1,
+      },
+      multiline: {
+        max: 1,
+      },
     }],
   },
 };

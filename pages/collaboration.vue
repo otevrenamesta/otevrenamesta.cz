@@ -1,5 +1,5 @@
 <template>
-  <main v-if="$store.state.content.collaboration">
+  <main v-if="useContentStore().collaboration">
     <CollaborationHero
       class="mb-block-2"
     />
@@ -63,10 +63,11 @@
         </h2>
         <p
           v-preposition-space
-          class="text-secondary text-base font-medium mb-block-1"
+          class="text-secondary text-base font-medium mb-block-0.5"
           v-html="sections.services.description"
         />
-        <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
+
+        <h3 class="text-lg uppercase text-primary font-bold mb-3">
           {{ sections.services.pricing.title }}
         </h3>
         <p
@@ -74,7 +75,7 @@
           class="text-sm text-primary mb-2"
           v-html="sections.services.pricing.description"
         />
-        <div class="flex items-center mb-block-1">
+        <div class="flex items-center mb-block-0.5">
           <a
             :href="sections.services.pricing.url"
             target="_blank"
@@ -87,13 +88,30 @@
               {{ sections.services.pricing.title }}
             </Button>
           </a>
-          <!-- <Button
-            type="transparent"
-            icon="icon-arrow-right"
-            class="text-secondary"
+        </div>
+
+        <h3 class="text-lg uppercase text-primary font-bold mb-3">
+          {{ sections.services.member.title }}
+        </h3>
+        <p
+          v-if="sections.services.member.description"
+          v-preposition-space
+          class="text-sm text-primary mb-2"
+          v-html="sections.services.member.description"
+        />
+        <div class="flex items-center mb-block-0.5">
+          <a
+            :href="sections.services.member.url"
+            target="_blank"
           >
-            ceník pro ostatní
-          </Button> -->
+            <Button
+              type="transparent"
+              icon="icon-arrow-right"
+              class="text-secondary pl-0"
+            >
+              {{ sections.services.member.button }}
+            </Button>
+          </a>
         </div>
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
@@ -142,30 +160,26 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'collaboration' });
-  },
-  head() {
-    return {
-      title: `${this.$store.state.content.collaboration?.hero?.title} ${this.$config.appendTitle}`,
-    };
-  },
-  computed: {
-    sections() {
-      return this.$store.state.content.collaboration.sections;
-    },
-  },
-  watch: {
-    '$store.state.content.collaboration'() {
-      this.$nextTick(() => {
-        if (this.$route.hash === '#form') {
-          const top = this.$refs.JoinUs?.$el?.getBoundingClientRect().top || 0;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    },
-  },
-};
+<script setup>
+await useContentStore().load({ page: 'collaboration' });
+
+useCustomHead({
+  title: useContentStore().collaboration?.hero?.title,
+});
+
+// Refs
+const JoinUs = ref(null);
+
+// Computed
+const sections = computed(() => useContentStore().collaboration.sections);
+
+// Watch
+watch(() => useContentStore().collaboration, () => {
+  nextTick(() => {
+    if (route.hash === '#form') {
+      const top = JoinUs.value?.$el?.getBoundingClientRect().top || 0;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
 </script>

@@ -5,7 +5,7 @@
     </h3>
     <div
       class="text-xl prose"
-      v-html="$md.render(project.content)"
+      v-html="$md.render(project.content.replaceAll('<br>', '\n'))"
     />
   </section>
 </template>

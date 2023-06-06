@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
-/logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -67,6 +67,7 @@ typings/
 
 # nuxt.js build output
 .nuxt
+.output
 
 # Nuxt generate
 dist
@@ -77,16 +78,9 @@ dist
 # Serverless directories
 .serverless
 
-# IDE / Editor
+# IDE
 .idea
 
-# Service worker
-sw.*
-
-# macOS
 .DS_Store
-
-# Vim swap files
-*.swp
-
 .vercel
+public/sw.js

@@ -43,7 +43,10 @@
                   class="block text-black text-opacity-80 text-lg uppercase font-bold leading-tight mb-2"
                   v-html="value.title"
                 />
-                <p v-preposition-space class="text-white text-sm w-10/12 max-w-full">
+                <p
+                  v-preposition-space
+                  class="text-white text-sm w-10/12 max-w-full"
+                >
                   {{ value.description }}
                 </p>
               </div>
@@ -61,7 +64,7 @@
 export default {
   computed: {
     values() {
-      return this.$store.state.content.homepage.values;
+      return useContentStore().homepage.values;
     },
   },
 };
