@@ -63,10 +63,11 @@
         </h2>
         <p
           v-preposition-space
-          class="text-secondary text-base font-medium mb-block-1"
+          class="text-secondary text-base font-medium mb-block-0.5"
           v-html="sections.services.description"
         />
-        <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
+
+        <h3 class="text-lg uppercase text-primary font-bold mb-3">
           {{ sections.services.pricing.title }}
         </h3>
         <p
@@ -74,7 +75,7 @@
           class="text-sm text-primary mb-2"
           v-html="sections.services.pricing.description"
         />
-        <div class="flex items-center mb-block-1">
+        <div class="flex items-center mb-block-0.5">
           <a
             :href="sections.services.pricing.url"
             target="_blank"
@@ -87,13 +88,30 @@
               {{ sections.services.pricing.title }}
             </Button>
           </a>
-          <!-- <Button
-            type="transparent"
-            icon="icon-arrow-right"
-            class="text-secondary"
+        </div>
+
+        <h3 class="text-lg uppercase text-primary font-bold mb-3">
+          {{ sections.services.member.title }}
+        </h3>
+        <p
+          v-if="sections.services.member.description"
+          v-preposition-space
+          class="text-sm text-primary mb-2"
+          v-html="sections.services.member.description"
+        />
+        <div class="flex items-center mb-block-0.5">
+          <a
+            :href="sections.services.member.url"
+            target="_blank"
           >
-            ceník pro ostatní
-          </Button> -->
+            <Button
+              type="transparent"
+              icon="icon-arrow-right"
+              class="text-secondary pl-0"
+            >
+              {{ sections.services.member.button }}
+            </Button>
+          </a>
         </div>
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
