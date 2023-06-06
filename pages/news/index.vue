@@ -49,6 +49,12 @@
           <h3 class="text-primary font-bold text-2xl tracking-tight mb-2 hover:underline">
             {{ article.title }}
           </h3>
+          <time
+            :datetime="article.published"
+            class="block text-sm text-dark font-bold mb-2"
+          >
+            {{ useDayjs(article.published).format('D. M. YYYY') }}
+          </time>
           <p class="text-primary font-medium">
             {{ article.perex }}
           </p>

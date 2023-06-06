@@ -12,16 +12,22 @@
         {{ tag }}
       </div>
     </div>
-    <div>
+    <div class="mb-block-0.5">
       <nuxt-img
         :src="article.image"
         :alt="article.title"
         width="1200"
         class="mb-block-0.5"
       />
-      <h2 class="text-primary font-bold text-4xl mb-block-1 tracking-tight">
+      <h2 class="text-primary font-bold text-4xl mb-4 tracking-tight">
         {{ article.title }}
       </h2>
+      <time
+        :datetime="article.published"
+        class="block text-sm text-dark font-bold mb-2"
+      >
+        {{ useDayjs(article.published).format('D. M. YYYY') }}
+      </time>
     </div>
     <div
       class="flex flex-wrap prose text-lg"
