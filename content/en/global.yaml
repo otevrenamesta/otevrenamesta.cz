@@ -1,51 +1,51 @@
 menuItems:
   - link: /about
-    text: O nás
+    text: About us
   - link: /collaboration
-    text: Spolupráce
+    text: Collaboration
   - link: /projects
-    text: Projekty
+    text: Projects
   - link: /members
-    text: Členové
+    text: Members
   - link: /declaration
     text: Brno Declaration
   - link: /news
-    text: Aktuality
+    text: News
   - link: /contact
-    text: Kontakt
+    text: Contact
 
 milestones:
   - number:  20
-    title: členů
-    description: Otevřená města jsou nyní složena z 20 členů z různých úrovní samospráv v ČR.
+    title: members
+    description: Open Cities is now composed of 20 members from different levels of government in the country.
 
   - number: 2 083 518
-    title: občanů
-    description: Činnost Otevřených měst má dopad na 2 083 518 občanů členů spolku.
+    title: citizens
+    description: The activities of Open Cities impact 2 083 518 citizens who are association members.
 
-  - number: 3
-    title: produkty
-    description: Otevřená města nyní spravují v produkci 3 softwarové produkty jako nástroje digitalizace místních samospráv.
+  - number: 6
+    title: products
+    description: Open Cities now manages three software products in production as tools for digitalizing local governments.
 
   - number: 1 000 000
-    title: Kč
-    description: Otevřená města nyní hospodaří přibližně s 1 000 000 Kč ročně.
+    title: CZK
+    description: Open Cities now manages approximately 1,000,000 CZK per year.
 
 contact:
   name: Otevřená města, z. s.
-  address: Malinovského náměstí 624/3 <br> 602 00 Brno
+  address: Hudcova 239/7 <br> 621 00 Brno
   email: info@otevrenamesta.cz
-  bank: datová schránka f47yb4g<br>
-        transparentní účet <a href="https://ib.fio.cz/ib/transparent?a=2501020615" target="_blank">2501020615/2010</a><br>
-        IČO <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=936432" target="_blank">05129061</a><br>
+  bank: data box f47yb4g<br>
+        transparent account <a href="https://ib.fio.cz/ib/transparent?a=2501020615" target="_blank">2501020615/2010</a><br>
+        IN <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=936432" target="_blank">05129061</a><br>
 
 footer:
   links:
-    - text: Dokumenty
+    - text: Documents
       url: https://drive.google.com/drive/folders/1MZyhHoJdtETc4I8bDKtFR7Z-lCAFSShI?usp=sharing
-    - text: Stanovy
+    - text: Articles of associations
       url: https://drive.google.com/file/d/1kAgJ7N0sGAacilXl9inPi7EZ_SZz1d81/view?usp=sharing
-    - text: Obchodní podmínky
+    - text: Terms and conditions
       url: https://drive.google.com/file/d/1uCYMZHxKMczAZQpOXpYZ9ecOnCthiXXG/view
 
 socials:
@@ -71,35 +71,35 @@ socials:
 leaderships:
   - img: https://api.www.otevrenamesta.cz/assets/2fbb6339-45f8-450a-a1bd-1065ee659f64
     fullname: Lucie Smolka
-    subtitle: předsedkyně výboru
-    description: Lucie je právničkou, zabývající se moderními technologiemi a duševním vlastnictvím. Založila spolek Open Content, vede českou pobočku Creative Commons a působí v advokacii. Aktuálně stojí v čele Otevřených měst, zabývá se externími vztahy s partnery, péčí o členy, prezentací a vytvořením udržitelné vize.
+    subtitle: chair of the Committee
+    description: Lucie is a lawyer dealing with modern technologies and intellectual property. She founded the Open Content Association, runs the Czech branch of Creative Commons, and works in advocacy. She currently leads Open Cities, dealing with external partner relations, member care, presentation, and creating a sustainable vision.
     email: lucie.smolka@otevrenamesta.cz
     phone: "+420 731 123 644"
     linkedin: https://www.linkedin.com/in/luciesmolka/
     twitter: https://twitter.com/lucie_couz
   - img: https://api.www.otevrenamesta.cz/assets/8343d4d5-e23d-4710-98ea-321ab9ec8040
     fullname: Jiří Marek
-    subtitle: zástupce předsedkyně
-    description: Jiří se věnuje tématu otevřenosti v různých podobách, od otevřené vědy ( Open Science), přes otevřený kód až po otevřená data. V rámci Otevřených měst působí jako zástupce předsedkyně a podílí se na směřování organizace a rozvoji produktů.
+    subtitle: deputy chair of the Committee
+    description: Jiří has been working on openness in various forms, from open science to open code to open data. He serves as deputy chair of Open Cities and is involved in the direction of the organization and product development.
     email: jiri.marek@otevrenamesta.cz
     phone: "+420 602 570 184"
     linkedin: https://www.linkedin.com/in/marekjiri/
     twitter: https://twitter.com/JM_microblog
   - img: https://api.www.otevrenamesta.cz/assets/07d6b9d4-43d0-48cd-bfc0-902684fa349e
     fullname: Jiří Hlavenka
-    subtitle: člen výboru
-    description: Jiří je mentorem a poradcem ve věcech směřování spolku. Stará se o plánování rozvoje členské základny a zaměření spolku. Z oblasti jaderné energetiky se přes založení vydavatelství a internetového obchodu dostal k spoluvlastnictví mnoha společností a investicím do inovativních start-upů. Průběžně přispívá k budování moderně fungující a digitalizované veřejné správy.
+    subtitle: member of the Committee
+    description: Jiří is a mentor and advisor in matters of the direction of the Association. He takes care of planning the development of the membership base and the focus of the Association. He has moved from the nuclear power industry by establishing a publishing house and an online shop to co-owning many companies and investing in innovative start-ups. He continuously contributes to the building of a modern and digitalized public administration.
     email: jiri.hlavenka@otevrenamesta.cz
     linkedin: https://www.linkedin.com/in/jiri-hlavenka-a9887b3/
     twitter: https://twitter.com/hlavenkajiri
   - img: https://api.www.otevrenamesta.cz/assets/cc454fc6-08bb-48c1-9a76-9118dee2d2c5
     fullname: Lenka Kováčová
-    subtitle: členka výboru
-    description: Lenka je naší expertkou na komunikaci a pořádání akcí. Dlouhodobě se zabývá budováním a podporou komunity aktérů, kteří jsou propojeni tématy open source, civic tech a především otevřených dat. Působila v Nadaci OSF, stála u zrodu Česko.Digital a v současnosti se angažuje na Ministerstvu vnitra.
+    subtitle: member of the Committee
+    description: Lenka is our expert in communication and event management. She is a long-time advocate for building and supporting a community of stakeholders connected by open source, civic tech, and especially open data. She has worked at the OSF Foundation and was at the birth of Česko.Digital and is currently working also in the Ministry of the Interior.
     email: lenka.kovacova@otevrenamesta.cz
     linkedin: https://www.linkedin.com/in/lenka-kov%C3%A1%C4%8Dov%C3%A1-91743062/
     twitter: https://twitter.com/panislovenka
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Neobsazená pozice
-    subtitle: člen výboru
-    description: 5. místo člena výboru je zatím neobsazeno.
+    fullname: Vacant position
+    subtitle: member of the Committee
+    description: Position for the 5th member is currently empty.

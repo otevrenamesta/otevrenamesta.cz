@@ -1,66 +1,66 @@
 hero:
-  title: O nás
-  description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a metodickou podporu. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
+  title: About us
+  description: We are a non-profit organization specializing in the digitization of local governments. We provide technical, legal, and methodological support. We are dedicated to sharing good practices and promoting open and modular solutions for municipalities, regions, and counties.
 
 structure:
-  title: Struktura <br>organizace
-  description: Otevřená města tvoří 3 hlavní orgány, kterými je výbor, projektová rada a členská schůze. Všechny části spolu vzájemné komunikují a mají rozdělené komptence.
+  title: Structure <br>of the organization
+  description: Open Cities consists of 3 central bodies: the Committee, the project board, and the membership meeting. All the parts communicate with each other and have divided responsibilities.
   items:
     - color: text-additional
       bg: bg-additional
       number: "01"
-      title: Výbor
-      description: Výbor Otevřených měst je statutárním a hlavním výkonným orgánem spolku, který zajišťuje jeho strategické směřování a vizi. Výbor je pětičlenný a je volen členskou schůzí na dobu dvou let.
+      title: Committee
+      description: The Open Cities Committee is the statutory and chief executive body of the Association, providing its strategic direction and vision. The Committee comprises five members and is elected by the membership for two years.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 330" stroke="#fc0"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 897" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-secondary
       bg: bg-secondary
       number: "02"
-      title: Projektová rada
-      description: Projektová rada Otevřených měst slouží jako expertní poradní orgán pro výbor Otevřených měst. Zaměřuje se na expertní podporu v odborných záležitostech působnosti spolku a v projektovém řízení. Jedná se o orgán složený z vybraných expertů se zkušeností s digitalizací samospráv, open daty, právními a kyberbezpečnostními otázkami. Projektová rada je volena výborem spolku na období dvou let.
+      title: Project board
+      description: a.	The Open Cities Project Board is an expert advisory body to the Open Cities Committee. It focuses on expert support in professional matters within the scope of the Association and in project management. It is a body of selected experts with experience in digitalizing local government, open data, legal, and cyber security issues. The Committee of the Association elects the Project Board for two years.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 331" stroke="#00d48f"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 896" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-primary-dark
       bg: bg-primary-dark
       number: "03"
-      title: Členská schůze
-      description: Členská schůze je nejvyšším orgánem spolku, který zastupuje zájmy členských samospráv. Volí a odvolává výbor. Členská schůze je složena ze zástupců všech členů, kteří splní požadavky pro  vstup do spolku.
+      title: Member meeting
+      description: The Members' Meeting is the supreme body of the Association, which represents the interests of the member governments. It elects and dismisses the Committee. The Membership Meeting shall comprise representatives of all members who meet the requirements to join the Society.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 332" stroke="#1e1796"><path data-name="Rectangle 226" d="M90 31H60V1h30z"/><path data-name="Rectangle 227" d="M31 1v30H1V1z"/><path data-name="Rectangle 228" d="M60 31h60a59 59 0 0 1-59 59h-1V31Z"/><path data-name="Rectangle 229" d="M1 31h59v59A59 59 0 0 1 1 31Z"/></g><path data-name="Rectangle 895" d="M0 0h121v91H0z"/></g></svg>
 
 employees:
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Vaclav Klecanda
-    subtitle: vedoucí Projektové rady
-    description: IT specialista
+    subtitle: -	Head of the Project Board
+    description: IT specialist
   - img: https://api.www.otevrenamesta.cz/assets/284ce628-88bd-4e36-9dce-a64077b93b9c
     fullname: Lukáš Jelínek
-    subtitle: člen Projektové rady
-    description: IT specialista
+    subtitle: Project Board member
+    description: IT specialist
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Jan Mareš
-    subtitle: člen Projektové rady
-    description: IT specialista
+    subtitle: Project Board member
+    description: IT specialist
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Ivor Kollár
-    subtitle: člen Projektové rady
-    descpription: kyberbezpečnostní expert
+    subtitle: Project Board member
+    descpription: Cybersecurity expert
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Ladislav Nešněra
-    subtitle: člen Projektové rady
-    description: IT specialista
+    subtitle: Project Board member
+    description: IT specialist
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Martin Dvořák
-    subtitle: člen Projektové rady
-    description: datový specialist
+    subtitle: Project Board member
+    description: Data specialist
   - img: https://api.www.otevrenamesta.cz/assets/73eae340-32c0-424c-b1b8-5ac5990d08d3
     fullname: Benedikt Kotmel
-    subtitle: člen Projektové rady
-    description: datový specialista
+    subtitle: Project Board member
+    description: Data specialist
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Ondřej Caletka
-    subtitle: člen Projektové rady
-    description: IT specialista
+    subtitle: Project Board member
+    description: IT specialist
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Jáchym Čepický
-    subtitle: člen Projektové rady
-    description: GIS specialista
+    subtitle: Project Board member
+    description: GIS specialist
