@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxt/image-edge',
+    '@nuxt/image',
   ],
 
   i18n: {
