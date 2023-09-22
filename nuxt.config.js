@@ -5,7 +5,9 @@ const description = 'Partner pro digitalizaci samospráv. Specializujeme se na t
 const baseURL = 'https://api.www.otevrenamesta.cz';
 
 export default defineNuxtConfig({
-  ssr: true,
+  // ssr: false,
+
+  // target: 'static',
 
   app: {
     head: {
@@ -126,15 +128,15 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //   },
+  // },
 
-  experimental: {
-    payloadExtraction: false,
-  },
+  // experimental: {
+  //   payloadExtraction: false,
+  // },
 
   vite: {
     plugins: [
