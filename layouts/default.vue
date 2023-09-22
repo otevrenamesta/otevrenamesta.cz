@@ -14,7 +14,7 @@
 const route = useRoute();
 
 watch(
-  () => route,
+  () => route.path,
   () => {
     useUiStore().setBurgerDialogOpen(false);
   },
