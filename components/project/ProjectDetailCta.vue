@@ -7,7 +7,7 @@
       <div class="sm:absolute z-10 sm:left-block-2 sm:top-block-2 p-block-0.5 sm:p-0">
         <div class="w-block-6 max-w-full">
           <div
-            class="mb-block-0.5 sm:mb-block-1 w-block-2 xs:w-block-1.5"
+            class="mb-block-0.5 sm:mb-block-1 w-block-2 xs:w-block-2"
             v-html="illustration1"
           />
           <h3 class="text-white text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-4">
@@ -33,7 +33,7 @@
       <div class="sm:absolute z-10 sm:left-block-2 md:left-auto md:right-block-2 xl:right-block-2 sm:bottom-block-2 md:bottom-auto md:top-block-2 p-block-0.5 sm:p-0">
         <div class="w-block-6 max-w-full">
           <div
-            class="mb-block-0.5 sm:mb-block-1 w-block-2 xs:w-block-1.5"
+            class="mb-block-0.5 sm:mb-block-1 w-block-2 xs:w-block-2"
             v-html="illustration2"
           />
           <h3 class="text-white text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-4">

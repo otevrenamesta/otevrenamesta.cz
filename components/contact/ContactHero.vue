@@ -45,10 +45,10 @@
           <div class="w-1/2 h-1/2 bg-primary" />
         </div>
         <div
-          class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-secondary absolute bottom-0 sm:bottom-auto sm:top-0 right-0 sm:-right-block-2 rounded-br-full"
+          class="w-block-2 sm:w-block-4 h-block-2 sm:h-block-4 bg-secondary absolute bottom-0 sm:bottom-auto sm:top-0 right-0 sm:-right-block-2 rounded-br-full"
         />
         <div
-          class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-additional absolute right-0 sm:right-auto left-auto sm:left-block-4 top-0 sm:top-block-2 rounded-full"
+          class="w-block-2 sm:w-block-4 h-block-2 sm:h-block-4 bg-additional absolute right-0 sm:right-auto left-auto sm:left-block-4 top-0 sm:top-block-2 rounded-full"
         />
         <div
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0 hidden xl:block"
