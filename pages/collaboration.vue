@@ -14,28 +14,28 @@
     >
       <div class="max-w-lg">
         <h2 class="text-5xl text-primary font-bold tracking-tight mb-5">
-          {{ sections.member.title }}
+          {{ sections.member?.title }}
         </h2>
         <p
           v-preposition-space
           class="text-secondary text-base font-medium mb-block-1"
-          v-html="sections.member.description"
+          v-html="sections.member?.description"
         />
         <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-          {{ sections.member.membership.title }}
+          {{ sections.member?.membership?.title }}
         </h3>
         <p
           v-preposition-space
           class="text-sm text-primary mb-block-0.5"
-          v-html="sections.member.membership.description"
+          v-html="sections.member?.membership?.description"
         />
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
-        {{ sections.member.benefits.title }}
+        {{ sections.member?.benefits.title }}
       </h3>
       <div class="flex flex-wrap -mx-block-0.5">
         <div
-          v-for="(item, index) in sections.member.benefits.items"
+          v-for="(item, index) in sections.member?.benefits.items"
           :key="index"
           class="w-full sm:w-1/2 max-w-sm"
         >
@@ -91,17 +91,17 @@
         </div>
 
         <h3 class="text-lg uppercase text-primary font-bold mb-3">
-          {{ sections.services.member.title }}
+          {{ sections.services.member?.title }}
         </h3>
         <p
-          v-if="sections.services.member.description"
+          v-if="sections.services.member?.description"
           v-preposition-space
           class="text-sm text-primary mb-2"
-          v-html="sections.services.member.description"
+          v-html="sections.services.member?.description"
         />
         <div class="flex items-center mb-block-0.5">
           <a
-            :href="sections.services.member.url"
+            :href="sections.services.member?.url"
             target="_blank"
           >
             <Button
@@ -109,7 +109,7 @@
               icon="icon-arrow-right"
               class="text-secondary pl-0"
             >
-              {{ sections.services.member.button }}
+              {{ sections.services.member?.button }}
             </Button>
           </a>
         </div>

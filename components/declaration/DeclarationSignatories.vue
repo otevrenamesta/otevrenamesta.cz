@@ -1,12 +1,12 @@
 <template>
   <section class="container pt-block-2">
     <h3 class="uppercase text-primary text-xl font-bold mb-block-0.5">
-      {{ signatories.title }}
+      {{ signatories?.title }}
     </h3>
 
     <div class="columns-1 sm:columns-2 md:columns-3 gap-x-12">
       <div
-        v-for="{ letter, items } in signatories.letters"
+        v-for="{ letter, items } in signatories?.letters"
         :key="letter.letter"
         class="max-w-md break-inside-avoid-column"
       >

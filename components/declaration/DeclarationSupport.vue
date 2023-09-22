@@ -6,12 +6,12 @@
           <div class="flex">
             <p class="px-0 py-14 sm:py-20 xs:py-10 flex flex-col justify-center font-bold text-lg sm:w-8/12 mx-auto text-black sm:text-opacity-80">
               <strong class="uppercase font-bold text-lg mb-7 text-secondary sm:text-white">
-                {{ support.title }}
+                {{ support?.title }}
               </strong>
               <span
                 v-preposition-space
                 class="font-semibold text-3xl text-secondary sm:text-black sm:text-opacity-60"
-                v-html="support.description"
+                v-html="support?.description"
               />
             </p>
           </div>

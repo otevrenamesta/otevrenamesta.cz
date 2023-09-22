@@ -1,11 +1,11 @@
 <template>
   <div class="pt-block-2 pb-block-3">
     <strong class="block text-secondary uppercase font-bold text-base leading-snug mb-block-1 max-w-sm">
-      {{ action.title }}
+      {{ action?.title }}
     </strong>
 
     <div
-      v-for="step in action.steps"
+      v-for="step in action?.steps"
       :key="step.number"
       class="mb-block-1 max-w-sm"
     >
