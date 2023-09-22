@@ -2,7 +2,7 @@
   <div>
     <div
       ref="BlockTemplate"
-      class="w-block-0.75 sm:w-block-1 h-0"
+      class="w-block-1 h-0"
     />
     <div
       v-for="row in props.rows"
@@ -12,7 +12,7 @@
       <div
         v-for="column in columnsComputed"
         :key="column"
-        class="w-block-1.5 sm:w-block-2 h-block-1.5 sm:h-block-2 border border-primary-light border-r-0 last:border-r"
+        class="w-block-2 h-block-2 border border-primary-light border-r-0 last:border-r transition"
         :class="[
           row === 1 ? 'border-t' : 'border-t-0',
           props.inverse ? 'bg-primary border-opacity-20' : '',
@@ -52,8 +52,9 @@ const columnsComputed = computed(() => {
   }
 
   const BLOCK_SIZE = process.client && BlockTemplate.value ? BlockTemplate.value?.offsetWidth : 60;
-  const CONTAINER = 0.91;
+  const CONTAINER = 0.92;
   const width = process.client ? screen.width : 1500;
-  return _clamp(Math.floor((width * CONTAINER) / (BLOCK_SIZE * 2)), 0, 16);
+  const columns = _clamp(Math.floor((width * CONTAINER) / (BLOCK_SIZE * 2)), 0, width > 1867 ? 14 : 20);
+  return columns;
 });
 </script>

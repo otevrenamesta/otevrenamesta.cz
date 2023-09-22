@@ -8,7 +8,29 @@ body {
 
   -webkit-font-smoothing: antialiased;
 
-  --block-size: 3.75rem;
+  --block-per-page: 28;
+  --container-width: 0.9;
+  --block-size: calc(calc(100 / var(--block-per-page)) * 1vw * var(--container-width));
+
+  @media (min-width: 1867px) {
+    --block-size: 3.75rem;
+  }
+
+  @media (max-width: 1200px) {
+    --block-per-page: 22;
+  }
+
+  @media (max-width: 900px) {
+    --block-per-page: 18;
+  }
+
+  @media (max-width: 600px) {
+    --block-per-page: 12;
+  }
+
+  @media (max-width: 330px) {
+    --block-per-page: 10;
+  }
 }
 
 html,
