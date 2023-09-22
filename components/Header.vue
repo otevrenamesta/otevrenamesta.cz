@@ -27,7 +27,7 @@
       </nav>
 
       <button
-        class="w-10 sm:w-14 h-10 sm:h-14 bg-primary-light bg-opacity-60 text-primary flex items-center justify-center absolute top-block-0.75 right-block-0.5 lg:hidden"
+        class="w-10 sm:w-14 h-10 sm:h-14 bg-primary-light bg-opacity-60 text-primary flex items-center justify-center absolute top-block-0.75 right-block-0.5 lg:hidden mr-2"
         @click="() => useUiStore().setBurgerDialogOpen(true)"
       >
         <svg
