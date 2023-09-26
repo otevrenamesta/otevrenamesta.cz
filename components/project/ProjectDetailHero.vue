@@ -8,7 +8,7 @@
         >
           {{ project.badge }}
         </div>
-        <h2 class="text-primary text-5xl md:text-8xl leading-tight font-bold tracking-tighter w-2/3">
+        <h2 class="text-primary text-5xl md:text-6xl lg:text-8xl leading-tight font-bold tracking-tighter md:w-[60%]">
           {{ project.title }}
         </h2>
       </div>
@@ -19,9 +19,9 @@
         >
           {{ project.subtitle }}
         </p>
-        <div class="absolute -top-block-0.5 sm:top-block-2 left-0 w-full">
+        <div class="absolute top-block-2 left-0 w-full">
           <div
-            class="w-block-6 md:w-block-8 mx-auto"
+            class="w-block-6 lg:w-block-8 mx-auto"
             v-html="illustrations[+project.id - 1]"
           />
         </div>
