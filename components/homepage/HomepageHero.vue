@@ -9,6 +9,18 @@
         <p class="text-md sm:text-lg text-white max-w-sm xs:hidden">
           {{ hero.description }}
         </p>
+        <nuxt-link
+          :to="`${localePath(`/collaboration`)}#form`"
+          class="block mt-block-0.5"
+        >
+          <Button
+            type="transparent"
+            icon="icon-arrow-right"
+            class="text-secondary px-0"
+          >
+            {{ hero.cta }}
+          </Button>
+        </nuxt-link>
       </div>
 
       <div class="HeroBg mb-block-1" />
