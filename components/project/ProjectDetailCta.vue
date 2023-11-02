@@ -19,7 +19,7 @@
             v-html="useContentStore().project.cta.left.description"
           />
           <nuxt-link
-            :to="localePath('/collaboration#form')"
+            :to="`${localePath(`/collaboration`)}#form`"
           >
             <Button
               type="secondary"
@@ -45,7 +45,7 @@
             v-html="useContentStore().project.cta.right.description"
           />
           <nuxt-link
-            :to="localePath('/collaboration#form')"
+            :to="`${localePath(`/collaboration`)}#form`"
           >
             <Button
               type="secondary"
