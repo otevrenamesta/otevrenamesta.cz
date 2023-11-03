@@ -15,21 +15,21 @@ menuItems:
     text: Kontakt
 
 milestones:
-  - number:  20
+  - id: members
     title: členů
-    description: Otevřená města jsou nyní složena z 20 členů z různých úrovní samospráv v ČR.
+    description: Otevřená města jsou nyní složena z {number} členů z různých úrovní samospráv v ČR.
 
-  - number: 2 083 518
+  - id: citizens
     title: občanů
-    description: Činnost Otevřených měst má dopad na 2 083 518 občanů členů spolku.
+    description: Činnost Otevřených měst má dopad na {number} občanů členů spolku.
 
-  - number: 3
+  - id: projects
     title: produkty
-    description: Otevřená města nyní spravují v produkci 3 softwarové produkty jako nástroje digitalizace místních samospráv.
+    description: Otevřená města nyní spravují v produkci {number} softwarové produkty jako nástroje digitalizace místních samospráv.
 
-  - number: 1 000 000
+  - id: budget
     title: Kč
-    description: Otevřená města nyní hospodaří přibližně s 1 000 000 Kč ročně.
+    description: Otevřená města nyní hospodaří přibližně s {number} ročně.
 
 contact:
   name: Otevřená města, z. s.
