@@ -5,7 +5,7 @@
         <div class="sm:aspect-w-1 sm:aspect-h-1 sm:bg-additional sm:rounded-full flex items-center justify-center">
           <p
             v-preposition-space
-            class="px-0 py-14 sm:py-20 xs:py-10 flex items-center font-bold text-xl xs:text-lg sm:w-8/12 mx-auto text-secondary sm:text-black sm:text-opacity-70"
+            class="px-0 py-14 sm:py-20 xs:py-10 flex items-center font-bold text-3xl sm:w-8/12 mx-auto text-secondary sm:text-black sm:text-opacity-70"
             v-html="values.claim"
           />
         </div>
