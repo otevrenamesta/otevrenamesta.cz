@@ -83,7 +83,6 @@ onMounted(async() => {
 
     return { data: [] };
   });
-  console.log('projects:', projects);
 
   project.value = projects.data.find(({ id }) => id === Number(useRoute().params.id));
 });
