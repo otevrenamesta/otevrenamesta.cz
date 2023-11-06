@@ -78,11 +78,12 @@ const project = ref(null);
 
 // Lifecycle
 onMounted(async() => {
-  const projects = await useApi.get(`/items/projects?lang=${useI18n()?.locale?.value}`).catch((error) => {
+  const projects = await useApi.get(`/items/projects?filter={"id":{"_eq":${Number(useRoute().params.id)}}}&deep={"translations":{"_filter":{"languages_code":{"_eq":"${useI18n()?.locale?.value}"}}}}`).catch((error) => {
     console.error(error);
 
     return { data: [] };
   });
+  console.log('projects:', projects);
 
   project.value = projects.data.find(({ id }) => id === Number(useRoute().params.id));
 });
