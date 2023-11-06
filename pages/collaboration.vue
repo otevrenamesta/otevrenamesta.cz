@@ -29,6 +29,29 @@
           class="text-sm text-primary mb-block-0.5"
           v-html="sections.member?.membership?.description"
         />
+        <h3 class="text-lg uppercase text-primary font-bold mb-3">
+          {{ sections.member.join?.title }}
+        </h3>
+        <p
+          v-if="sections.member.join?.description"
+          v-preposition-space
+          class="text-sm text-primary mb-2"
+          v-html="sections.member.join?.description"
+        />
+        <div class="flex items-center mb-block-0.5">
+          <a
+            :href="sections.member.join?.url"
+            target="_blank"
+          >
+            <Button
+              type="transparent"
+              icon="icon-arrow-right"
+              class="text-secondary pl-0"
+            >
+              {{ sections.member.join?.button }}
+            </Button>
+          </a>
+        </div>
       </div>
       <h3 class="text-lg text-priamry uppercase text-primary font-bold mb-5">
         {{ sections.member?.benefits.title }}
@@ -86,30 +109,6 @@
               class="text-secondary pl-0"
             >
               {{ sections.services.pricing.title }}
-            </Button>
-          </a>
-        </div>
-
-        <h3 class="text-lg uppercase text-primary font-bold mb-3">
-          {{ sections.services.member?.title }}
-        </h3>
-        <p
-          v-if="sections.services.member?.description"
-          v-preposition-space
-          class="text-sm text-primary mb-2"
-          v-html="sections.services.member?.description"
-        />
-        <div class="flex items-center mb-block-0.5">
-          <a
-            :href="sections.services.member?.url"
-            target="_blank"
-          >
-            <Button
-              type="transparent"
-              icon="icon-arrow-right"
-              class="text-secondary pl-0"
-            >
-              {{ sections.services.member?.button }}
             </Button>
           </a>
         </div>
