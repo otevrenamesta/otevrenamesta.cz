@@ -8,20 +8,28 @@
         />
       </div>
 
-      <div class="mb-block-1 w-block-4 xs:w-block-3 max-w-full lg:mr-4 md:mb-0">
+      <div class="mb-block-1 w-block-6 xs:w-block-3 max-w-full lg:mr-4 md:mb-0">
         <strong class="block text-secondary uppercase text-base mb-10">
           {{ intro.partners.title }}
         </strong>
-        <div
-          v-for="(partner, index) in intro.partners.items"
-          :key="index"
-        >
-          <a
-            :href="partner.url"
-            target="_blank"
-            class="block mb-10"
-            v-html="partner.logo"
-          />
+        <div class="flex flex-wrap gap-x-[6%] gap-y-2">
+          <div
+            v-for="(partner, index) in intro.partners.items"
+            :key="index"
+            class="sm:w-[44%]"
+          >
+            <a
+              :href="partner.url"
+              target="_blank"
+              class="block mb-10"
+            >
+              <img
+                :src="partner.logo"
+                :alt="partner.url"
+                class="w-auto h-10"
+              >
+            </a>
+          </div>
         </div>
       </div>
     </div>
