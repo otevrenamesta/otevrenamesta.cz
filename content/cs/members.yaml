@@ -10,6 +10,7 @@ members:
     memberFee: 34 870 Kč / rok
     shareOfVotes: 999
     link: https://www.benesov-city.cz/
+    # image: /img/neco.png
   - fullname: Brno - Medlánky
     agent: Kateřina Žůrková
     population: 5 857 (1,9 % hlasů)

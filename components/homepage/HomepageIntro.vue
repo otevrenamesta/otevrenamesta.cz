@@ -1,5 +1,5 @@
 <template>
-  <section class="container bg-primary-light bg-opacity-60 px-14 md:px-28 xs:px-8 py-14 md:py-20 xs:py-10">
+  <section class="container bg-primary-light bg-opacity-60 px-14 md:px-20 xs:px-8 py-14 md:py-20 xs:py-10">
     <div class="flex justify-between flex-col md:flex-row">
       <div class="max-w-4xl md:mr-6 md:mb-20">
         <h3
@@ -8,7 +8,7 @@
         />
       </div>
 
-      <div class="mb-block-1 w-block-6 xs:w-block-3 max-w-full lg:mr-4 md:mb-0">
+      <div class="mb-block-1 w-full md:w-block-7 xs:w-block-4 max-w-full lg:mr-4 md:mb-0">
         <strong class="block text-secondary uppercase text-base mb-10">
           {{ intro.partners.title }}
         </strong>
@@ -26,7 +26,7 @@
               <img
                 :src="partner.logo"
                 :alt="partner.url"
-                class="w-auto h-10"
+                class="w-auto h-14"
               >
             </a>
           </div>

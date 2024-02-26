@@ -8,7 +8,7 @@
     />
     <img
       v-else
-      src="~/assets/img/member-default-img.svg?url"
+      :src="member.image ? member.image : '/img/member-default-img.svg'"
       :alt="member.fullname"
       class="w-1/2 xs:w-full"
     >
