@@ -1,0 +1,21 @@
+<svg data-name="Group 318" xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <path data-name="Rectangle 639" fill="#f0f5ff" d="M0 0h240v240H0z"/>
+  <g data-name="Group 302">
+    <g data-name="Group 57" fill="#6e88ff">
+      <path data-name="Rectangle 220" d="M151.134 127.798h-15.567V112.2h15.567z"/>
+      <path data-name="Rectangle 221" d="M151.134 112.202h-15.567V96.604h15.567z"/>
+      <path data-name="Rectangle 222" d="M135.568 112.202h-15.567V96.604h15.567z"/>
+    </g>
+    <g data-name="Group 58" fill="#b4c7ff">
+      <path data-name="Rectangle 223" d="M104.434 81.006v15.598H88.867V81.006z"/>
+      <path data-name="Rectangle 224" d="M120 96.604v15.598h-15.567V96.604z"/>
+      <path data-name="Rectangle 225" d="M120 81.006v15.598h-15.567V81.006z"/>
+    </g>
+    <g data-name="Group 59" fill="#1e1796">
+      <path data-name="Rectangle 226" d="M135.566 127.799h-15.567v-15.598h15.567z"/>
+      <path data-name="Rectangle 227" d="M104.434 112.201v15.598H88.867v-15.598z"/>
+      <path data-name="Rectangle 228" d="M120 127.799h31.134v.061A31.134 31.134 0 0 1 120 158.999v-31.2Z"/>
+      <path data-name="Rectangle 229" d="M88.866 127.799H120v31.2a31.134 31.134 0 0 1-31.134-31.139v-.061Z"/>
+    </g>
+  </g>
+</svg>
