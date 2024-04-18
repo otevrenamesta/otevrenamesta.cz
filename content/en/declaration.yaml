@@ -141,6 +141,8 @@ signatories:
       - title: Petr Kovács
       - title: Petr Kovar
         description: "Program Manager, Red Hat"
+   - letter: S
+     items:
       - title: SUSE
         description: "VP Linux Delivery, Petr Uzel"
         isOrganization: true
