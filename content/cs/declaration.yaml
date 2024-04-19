@@ -103,16 +103,18 @@ signatories:
         description: "Fedora Quality Engineer, Red Hat"
    - letter: M
      items:
-      - title: Michaela Capandová
-        description: "Open Science specialist, Masaryk University"
-      - title: Michal Konečný
-      - title: Michal Růžička
-        description: "FAIR data specialist, Masaryk University"
       - title: Markus Richter
         description: "State Secretary, BMI"
       - title: Medlánky, Brno Disctrict
         description: "Deputy mayor, Kateřina Žůrková"
         isOrganization: true
+      - title: Michaela Capandová
+        description: "Open Science specialist, Masaryk University"
+      - title: Michal Konečný
+      - title: Michal Růžička
+        description: "FAIR data specialist, Masaryk University"
+      - title: Michal Svěc
+        description: "Senior Product Manager, SUSE"
    - letter: O
      items:
       - title: Onřej Míchal
@@ -143,6 +145,11 @@ signatories:
      items:
       - title: Robert Pergl
         description: "Associate Professor, Czech Technical University in Prague"
+   - letter: S
+     items:
+      - title: SUSE
+        description: "VP Linux Delivery, Petr Uzel"
+        isOrganization: true   
    - letter: T
      items:
       - title: Technicinsider
