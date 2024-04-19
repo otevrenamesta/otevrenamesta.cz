@@ -41,7 +41,6 @@ body {
   opacity: 0;
 }
 
-
 .__nuxt-error-page {
   .error {
     svg {
@@ -52,4 +51,12 @@ body {
 
 .underline-links a {
   @apply underline;
+}
+
+.blogpost table tr {
+  vertical-align: top;
+}
+
+.blogpost table td {
+  padding: 0.5em;
 }
