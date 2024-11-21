@@ -57,11 +57,11 @@ members:
     population: 9 774 (2,2 % hlasů)
     memberFee: 29 322 Kč / rok
   - fullname: Mělník
-    agent: Jiří Zeman
+    agent: Jan Karlovec
     population: 19 321 (3,1 % hlasů)
     memberFee: 38 642 Kč / rok
   - fullname: Moravská Třebová
-    agent: Martin Sedlák
+    agent: Pavel Charvát
     population: 9 781 (2,3 % hlasů)
     memberFee: 29 343 Kč / rok
   - fullname: Nové Město na Moravě
@@ -81,15 +81,15 @@ members:
     population: 26 768 (3,7 % hlasů)
     memberFee: 26 768 Kč / rok
   - fullname: Praha 3 
-    agent: Jan Bartko
+    agent: Filip Málek
     population: 68 965 (6,0 % hlasů)
     memberFee: 68 965 Kč / rok
   - fullname: Praha 12
-    agent: Jan Adamec
+    agent: Václav Šístek
     population: 56 009 (5,4 % hlasů) 
     memberFee: 56 009 Kč / rok
   - fullname: Praha - Ďáblice
-    agent: Jan Hrdlička
+    agent: Martin Tumpach
     population: 3 658 (1,4 % hlasů)
     memberFee: 5 487 Kč / rok
   - fullname: Psáry
@@ -109,7 +109,7 @@ members:
     population: 9 1308 (2,2 % hlasů)
     memberFee: 27 390 Kč / rok
   - fullname: Úvaly
-    agent: Petr Borecký
+    agent: Markéta Rydvalová
     population: 7 279 (1,9 % hlasů)
     memberFee: 21 837 Kč / rok
   - fullname: Veltrusy
