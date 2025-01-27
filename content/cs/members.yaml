@@ -31,7 +31,11 @@ members:
   - fullname: Dobříš
     agent: Pavel Svoboda
     population: 9 090 (2,3 % hlasů)
-    memberFee: 26 160 Kč / rok  
+    memberFee: 26 160 Kč / rok
+ - fullname: Chýně
+    agent: 
+    population: 5 070 (1,7 % hlasů)
+    memberFee: 15 210 Kč / rok  
   - fullname: Jihomoravský kraj
     agent: Jiří Hlavenka
     population: 1 187 439 (4,4 % hlasů)
@@ -40,10 +44,6 @@ members:
     agent: Vojtěch Franta
     population: 295 077 (4,4 % hlasů)
     memberFee: 49 000 Kč / rok
-  - fullname: Chýně
-    agent: 
-    population: 5 070 (1,7 % hlasů)
-    memberFee: 15 210 Kč / rok  
   - fullname: Kroměříž
     agent: Vratislav Krejčíř
     population: 28 934 (4,2 % hlasů)
