@@ -78,6 +78,26 @@
         </label>
       </div>
 
+      <div class="flex items-center gap-5 mb-10">
+        <div class="FormGroup">
+          <div class="flex mt-5 flex-col sm:items-center sm:flex-row">
+            <label class="FormCheckboxGroup mb-4 sm:mb-0">
+              <div class="FormCheckbox">
+                <input
+                  v-model="form.onOrgBehalf"
+                  type="checkbox"
+                  value="onOrgBehalf"
+                  class="FormCheckboxInput"
+                >
+              </div>
+              <span class="text-lg text-white font-bold">
+                I am signing on behalf the organization
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
       <VueHcaptcha
         ref="invisibleHcaptcha"
         sitekey="ed5fa3e0-72f9-4dcd-b7ad-058202fb8223"
@@ -115,6 +135,7 @@ const form = ref({
   phone: '',
   organization: '',
   position: '',
+  onOrgBehalf: false,
 });
 
 // Methods
@@ -135,6 +156,7 @@ const verifiedSubmit = async(token) => {
         tel: form.value.phone,
         organizace: form.value.organization,
         pozice: form.value.position,
+        on_org_behalf: form.value.onOrgBehalf,
       },
       headers: {
         Authorization: `Bearer ${apiTokenRes}`,
@@ -170,7 +192,7 @@ const verifiedSubmit = async(token) => {
     }
   }
 
-  &RadioGroup {
+  &CheckboxGroup {
     @apply flex first:mr-block-1 cursor-pointer;
 
     span {
@@ -178,11 +200,11 @@ const verifiedSubmit = async(token) => {
     }
   }
 
-  &Radio {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5 rounded-full;
+  &Checkbox {
+    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5;
 
     &Input {
-      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0 rounded-full;
+      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0;
 
       &:checked {
         @apply bg-opacity-60;
