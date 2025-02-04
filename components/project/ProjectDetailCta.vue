@@ -5,7 +5,7 @@
   >
     <div class="relative bg-primary sm:bg-transparent">
       <div class="sm:absolute z-10 sm:left-block-2 sm:top-block-2 p-block-0.5 sm:p-0">
-        <div class="w-block-6 max-w-full">
+        <div class="w-block-8 max-w-full">
           <div
             class="mb-block-0.5 sm:mb-block-1 w-block-2 xs:w-block-2"
             v-html="illustration1"
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="sm:absolute z-10 sm:left-block-2 md:left-auto md:right-block-2 xl:right-block-2 sm:bottom-block-2 md:bottom-auto md:top-block-2 p-block-0.5 sm:p-0">
-        <div class="w-block-6 max-w-full">
+        <div class="w-block-8 max-w-full">
           <div
             class="mb-block-0.5 sm:mb-block-1 w-block-2 xs:w-block-2"
             v-html="illustration2"
