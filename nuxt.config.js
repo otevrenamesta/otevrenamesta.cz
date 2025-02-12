@@ -7,6 +7,20 @@ const description = 'Partner pro digitalizaci samospráv. Specializujeme se na t
 const baseURL = 'https://api.www.otevrenamesta.cz';
 
 export default defineNuxtConfig({
+  modules: [
+    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    '@vueuse/nuxt',
+    '@nuxt/content',
+    '@nuxtjs/i18n',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    'nuxt-lodash',
+  ],
+
+  imports: {
+    dirs: ['./stores'],
+  },
+
   app: {
     head: {
       title,
@@ -50,6 +64,11 @@ export default defineNuxtConfig({
     },
   },
 
+  css: [
+    '~/assets/css/tailwind.css',
+    '~/assets/css/global.css',
+  ],
+
   runtimeConfig: {
     public: {
       title,
@@ -58,20 +77,28 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [
-    '~/assets/css/tailwind.css',
-    '~/assets/css/global.css',
-  ],
+  compatibilityDate: '2025-02-12',
 
-  modules: [
-    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
-    '@vueuse/nuxt',
-    '@nuxt/content',
-    '@nuxtjs/i18n',
-    '@nuxt/eslint',
-    '@nuxt/image',
-    'nuxt-lodash',
-  ],
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //   },
+  // },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+      svgLoader({
+        svgo: false,
+      }),
+    ],
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
 
   i18n: {
     locales: [
@@ -92,8 +119,11 @@ export default defineNuxtConfig({
     },
   },
 
-  imports: {
-    dirs: ['./stores'],
+  image: {
+    provider: 'imagekit',
+    imagekit: {
+      baseURL: 'https://ik.imagekit.io/davidvesely',
+    },
   },
 
   // generate: {
@@ -127,38 +157,4 @@ export default defineNuxtConfig({
     upperAfterPrefix: false,
     exclude: ['isNaN', 'isMap'],
   },
-
-  image: {
-    provider: 'imagekit',
-    imagekit: {
-      baseURL: 'https://ik.imagekit.io/davidvesely',
-    },
-  },
-
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
-
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //   },
-  // },
-
-  // experimental: {
-  //   payloadExtraction: false,
-  // },
-
-  vite: {
-    plugins: [
-      tailwindcss(),
-      svgLoader({
-        svgo: false,
-      }),
-    ],
-  },
-
-  compatibilityDate: '2025-02-12',
 });
