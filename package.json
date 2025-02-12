@@ -19,7 +19,7 @@
     "@tailwindcss/typography": "0.5.10",
     "@vueuse/nuxt": "10.4.1",
     "animated-scroll-to": "2.3.0",
-    "dayjs": "1.11.10",
+    "dayjs": "1.11.13",
     "markdown-it": "14.1.0",
     "nuxt-lodash": "2.5.3",
     "pinia": "2.3.1",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@nuxt/content": "3.1.1",
     "@nuxtjs/eslint-config": "12.0.0",
-    "@nuxtjs/i18n": "8.0.0-rc.4",
+    "@nuxtjs/i18n": "9.2.0",
     "@typescript-eslint/eslint-plugin": "6.7.2",
     "@typescript-eslint/parser": "6.7.2",
     "autoprefixer": "10.4.16",
