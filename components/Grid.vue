@@ -50,9 +50,9 @@ const columnsComputed = computed(() => {
     return props.columns;
   }
 
-  const BLOCK_SIZE = process.client && BlockTemplate.value ? BlockTemplate.value?.offsetWidth : 60;
+  const BLOCK_SIZE = import.meta.client && BlockTemplate.value ? BlockTemplate.value?.offsetWidth : 60;
   const CONTAINER = 0.92;
-  const width = process.client ? screen.width : 1500;
+  const width = import.meta.client ? screen.width : 1500;
   const columns = _clamp(Math.floor((width * CONTAINER) / (BLOCK_SIZE * 2)), 0, width > 1867 ? 14 : 20);
   return columns;
 });

@@ -60,6 +60,8 @@ export default {
     },
   },
 
+  emits: ['click'],
+
   methods: {
     handleClick(event) {
       this.$emit('click', event);

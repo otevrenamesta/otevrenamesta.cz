@@ -1,4 +1,5 @@
 import svgLoader from 'vite-svg-loader';
+import { defineNuxtConfig } from 'nuxt/config';
 
 const title = 'Otevřená města';
 const description = 'Partner pro digitalizaci samospráv. Specializujeme se na technickou, právní a metodickou podporu v oblasti digitalizace samospráv.';
@@ -65,6 +66,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxtjs/i18n',
+    '@nuxt/eslint',
     '@nuxt/image',
     'nuxt-lodash',
   ],
@@ -137,6 +139,12 @@ export default defineNuxtConfig({
       'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
     },
   },
 
