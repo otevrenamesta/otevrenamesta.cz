@@ -54,6 +54,8 @@ export default {
 </script>
 
 <style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .HeroBox {
   position: absolute;
   left: 0;
@@ -67,7 +69,7 @@ export default {
     bottom: 0;
     width: var(--block-size);
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
       width: calc(var(--block-size) * 2);
     }
   }
@@ -75,7 +77,7 @@ export default {
     right: calc(var(--block-size) * -0.95);
     height: calc(100% - var(--block-size) * 0.95);
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
       right: calc(var(--block-size) * -1.95);
       height: calc(100% - var(--block-size) * 1.95);
     }
@@ -84,7 +86,7 @@ export default {
     right: calc(var(--block-size) * -1.9);
     height: calc(100% - var(--block-size) * 1.9);
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
       right: calc(var(--block-size) * -3.9);
       height: calc(100% - var(--block-size) * 3.9);
     }
@@ -99,7 +101,7 @@ export default {
   background-size: cover;
   margin-right: 5%;
 
-  @screen md {
+  @media (width >= theme(--breakpoint-md)) {
     width: 75%;
   }
 
@@ -123,7 +125,7 @@ export default {
     top: 5%;
     border-top-left-radius: 97%;
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
       width: calc(var(--block-size) * 4);
       height: calc(var(--block-size) * 4);
       right: calc(var(--block-size) * -2);

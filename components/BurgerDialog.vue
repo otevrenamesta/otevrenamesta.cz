@@ -3,7 +3,7 @@
     class="fixed z-50 top-0 left-0 w-full h-full bg-white lg:hidden"
     :hidden="!useUiStore().isBurgerDialogOpen"
   >
-    <div class="bg-primary-light bg-opacity-60 h-full">
+    <div class="bg-primary-light/60 h-full">
       <div class="container flex flex-col justify-between h-full py-block-0.5 overflow-auto">
         <div>
           <LogoOm
@@ -78,6 +78,8 @@ export default {
 </script>
 
 <style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .NavItem.router-link-active {
   @apply text-secondary;
 }

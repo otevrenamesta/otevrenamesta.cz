@@ -1,4 +1,5 @@
 import svgLoader from 'vite-svg-loader';
+import tailwindcss from '@tailwindcss/vite';
 import { defineNuxtConfig } from 'nuxt/config';
 
 const title = 'Otevřená města';
@@ -46,6 +47,7 @@ export default defineNuxtConfig({
   },
 
   css: [
+    '~/assets/css/tailwind.css',
     '~/assets/css/global.css',
   ],
 
@@ -121,15 +123,6 @@ export default defineNuxtConfig({
     },
   },
 
-  postcss: {
-    plugins: {
-      'postcss-import': {},
-      'tailwindcss/nesting': {},
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
   eslint: {
     config: {
       stylistic: true,
@@ -148,6 +141,7 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
+      tailwindcss(),
       svgLoader({
         svgo: false,
       }),

@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@reference './tailwind.css';
 
 body {
   margin: 0;
@@ -11,6 +9,7 @@ body {
   --block-per-page: 28;
   --container-width: 0.9;
   --block-size: calc(calc(100 / var(--block-per-page)) * 1vw * var(--container-width));
+
 
   @media (min-width: 1867px) {
     --block-size: 3.75rem;
@@ -52,7 +51,7 @@ body {
   max-width: 1680px;
   width: 90%;
 
-  &--md {
+  &.container--md {
     max-width: 1200px;
   }
 }

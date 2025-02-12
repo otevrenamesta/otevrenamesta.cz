@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/*
+  theme: {
+    fontFamily: {
+      sans: ['acumin-pro-wide', 'sans-serif'],
+    },
+    screens: {
+      s: '440px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+    extend: {
+      screens: {
+        'hover-none': { raw: '(hover: none)' },
+        xs: { max: '350px' },
+      },
+      colors: {
+        primary: '#1E1796',
+        'primary-light': '#D4E2FF',
+        'primary-dark': '#0F0787',
+        secondary: '#00D48F',
+        'secondary-dark': '#00563C',
+        additional: '#FFCC00',
+        light: '#6E88FF',
+        gray: '#525252',
+        dark: '#161616',
+      },
+      spacing: {
+        // 'block-0.5': '1.875rem',
+        // 'block-0.75': '2.8125rem',
+        // 'block-1': '3.75rem',
+        // 'block-1.5': '5.625rem',
+        // 'block-2': '7.5rem',
+        // 'block-3': '11.25rem',
+        // 'block-4': '15rem',
+        // 'block-4.5': '16.875rem',
+        // 'block-5': '18.75rem',
+        // 'block-6': '22.5rem',
+        // 'block-7': '26.25rem',
+        // 'block-8': '30rem',
+        // 'block-10': '37.5rem',
+        // 'block-12': '45rem',
+
+        'block-0.5': 'calc(var(--block-size) * 0.5)',
+        'block-0.75': 'calc(var(--block-size) * 0.75)',
+        'block-1': 'var(--block-size)',
+        'block-1.5': 'calc(var(--block-size) * 1.5)',
+        'block-2': 'calc(var(--block-size) * 2)',
+        'block-3': 'calc(var(--block-size) * 3)',
+        'block-4': 'calc(var(--block-size) * 4)',
+        'block-4.5': 'calc(var(--block-size) * 4.5)',
+        'block-5': 'calc(var(--block-size) * 5)',
+        'block-6': 'calc(var(--block-size) * 6)',
+        'block-7': 'calc(var(--block-size) * 7)',
+        'block-8': 'calc(var(--block-size) * 8)',
+        'block-10': 'calc(var(--block-size) * 10)',
+        'block-12': 'calc(var(--block-size) * 12)',
+      },
+
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-bullets': theme('colors.secondary'),
+          },
+        },
+      }),
+    },
+  },
+*/
+
+@theme {
+  --block-per-page: 28;
+  --container-width: 0.9;
+  --block-size: calc(calc(100 / var(--block-per-page)) * 1vw * var(--container-width));
+
+
+  --color-primary: #1E1796;
+  --color-primary-light: #D4E2FF;
+  --color-primary-dark: #0F0787;
+  --color-secondary: #00D48F;
+  --color-secondary-dark: #00563C;
+  --color-additional: #FFCC00;
+  --color-light: #6E88FF;
+  --color-gray: #525252;
+  --color-dark: #161616;
+
+  --spacing-block-0\.5: calc(var(--block-size) * 0.5);
+  --spacing-block-0\.75: calc(var(--block-size) * 0.75);
+  --spacing-block-1: var(--block-size);
+  --spacing-block-1\.5: calc(var(--block-size) * 1.5);
+  --spacing-block-2: calc(var(--block-size) * 2);
+  --spacing-block-3: calc(var(--block-size) * 3);
+  --spacing-block-4: calc(var(--block-size) * 4);
+  --spacing-block-4\.5: calc(var(--block-size) * 4.5);
+  --spacing-block-5: calc(var(--block-size) * 5);
+  --spacing-block-6: calc(var(--block-size) * 6);
+  --spacing-block-7: calc(var(--block-size) * 7);
+  --spacing-block-8: calc(var(--block-size) * 8);
+  --spacing-block-10: calc(var(--block-size) * 10);
+  --spacing-block-12: calc(var(--block-size) * 12);
+
+  --font-sans: 'acumin-pro-wide', sans-serif;
+
+  --breakpoint-s: 440px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+
+
+
+  /* Inspiration: but use values from js
+  --color-primary: #15FFC7;
+  --color-secondary: #1549FF;
+  --color-tertiary: #6A24A1;
+
+  --color-gray-200: #B1B1B1;
+  --color-gray-300: #9A9A9A;
+  --color-gray-400: #626262;
+  --color-gray-600: #595959;
+  --color-gray-700: #484848;
+  --color-gray-800: #424242;
+
+  --font-sans: 'Lab Grotesque', sans-serif;
+  --text-xl: 1.375rem;
+
+  --breakpoint-2xs: 350px;
+  --breakpoint-xs: 475px; */
+}
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";

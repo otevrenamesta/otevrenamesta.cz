@@ -205,26 +205,28 @@ const verifiedSubmit = async(token) => {
 </script>
 
 <style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .Form {
-  &Group {
+  .FormGroup {
     @apply w-full;
   }
-  &Label {
-    @apply block uppercase font-semibold text-sm text-black text-opacity-60 mb-2;
+  .FormLabel {
+    @apply block uppercase font-semibold text-sm text-black/60 mb-2;
   }
-  &Input {
-    @apply rounded-none border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
+  .FormInput {
+    @apply rounded-none border-b border-black/60 bg-transparent text-white font-bold outline-hidden py-3 mb-12 w-full;
 
     &::placeholder {
       color: #B4FAC8;
     }
 
     &:focus {
-      @apply border-opacity-90;
+      @apply border-black/90;
     }
   }
 
-  &RadioGroup {
+  .FormRadioGroup {
     @apply flex mr-block-0.5 cursor-pointer;
 
     span {
@@ -232,14 +234,14 @@ const verifiedSubmit = async(token) => {
     }
   }
 
-  &Radio {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-3 rounded-full;
+  .FormRadio {
+    @apply border border-black/60 w-[22px] h-[22px] flex items-center justify-center mr-3 rounded-full;
 
-    &Input {
-      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0 rounded-full;
+    .FormRadioInput {
+      @apply block appearance-none w-[16px] h-[16px] bg-black/0 rounded-full;
 
       &:checked {
-        @apply bg-opacity-60;
+        @apply bg-black/60;
       }
     }
   }

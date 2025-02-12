@@ -15,7 +15,7 @@
         class="w-block-2 h-block-2 border border-primary-light border-r-0 last:border-r transition"
         :class="[
           row === 1 ? 'border-t' : 'border-t-0',
-          props.inverse ? 'bg-primary border-opacity-20' : '',
+          props.inverse ? 'bg-primary border-primary-light/20' : '',
         ]"
       />
     </div>

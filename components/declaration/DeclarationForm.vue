@@ -173,26 +173,28 @@ const verifiedSubmit = async(token) => {
 </script>
 
 <style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .Form {
-  &Group {
+  .FormGroup {
     @apply w-full;
   }
-  &Label {
-    @apply block uppercase font-semibold text-sm text-black text-opacity-60 mb-2;
+  .FormLabel {
+    @apply block uppercase font-semibold text-sm text-black/60 mb-2;
   }
-  &Input {
-    @apply rounded-none border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
+  .FormInput {
+    @apply rounded-none border-b border-black/60 bg-transparent text-white font-bold outline-hidden py-3 mb-12 w-full;
 
     &::placeholder {
       color: #B4FAC8;
     }
 
     &:focus {
-      @apply border-opacity-90;
+      @apply border-black/90;
     }
   }
 
-  &CheckboxGroup {
+  .FormCheckboxGroup {
     @apply flex first:mr-block-1 cursor-pointer;
 
     span {
@@ -200,14 +202,14 @@ const verifiedSubmit = async(token) => {
     }
   }
 
-  &Checkbox {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5;
+  .FormCheckbox {
+    @apply border border-black/60 w-[22px] h-[22px] flex items-center justify-center mr-5;
 
-    &Input {
-      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0;
+    .FormCheckboxInput {
+      @apply block appearance-none w-[16px] h-[16px] bg-black/0;
 
       &:checked {
-        @apply bg-opacity-60;
+        @apply bg-black/60;
       }
     }
   }

@@ -30,7 +30,7 @@
           <h3 class="text-white text-xl font-bold mb-5">
             {{ article.title }}
           </h3>
-          <p class="text-white text-opacity-90 text-sm mb-2">
+          <p class="text-white/90 text-sm mb-2">
             {{ article.perex }}
           </p>
           <nuxt-link
