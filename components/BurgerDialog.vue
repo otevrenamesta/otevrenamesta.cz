@@ -41,7 +41,7 @@
           <nuxt-link
             v-for="(item, index) in menuItems"
             :key="index"
-            :to="localePath(item.link)"
+            :to="$localePath(item.link)"
             class="NavItem uppercase text-base text-primary font-semibold hover:underline"
             exact
           >
@@ -49,7 +49,7 @@
           </nuxt-link>
 
           <a
-            :href="switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
+            :href="$switchLocalePath($i18n.locale === 'cs' ? 'en' : 'cs')"
             class="uppercase text-sm font-semibold text-secondary"
           >
             {{ $i18n.locale === 'cs' ? 'en' : 'cz' }}

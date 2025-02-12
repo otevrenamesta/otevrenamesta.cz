@@ -29,7 +29,7 @@
           v-html="props.project.perex"
         />
         <nuxt-link
-          :to="localePath(`/projects/${props.project.id}`)"
+          :to="$localePath(`/projects/${props.project.id}`)"
         >
           <Button
             class="mb-block-1"

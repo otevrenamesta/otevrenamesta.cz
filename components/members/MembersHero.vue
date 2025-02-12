@@ -11,7 +11,7 @@
           v-html="hero.description"
         />
         <nuxt-link
-          :to="localePath('/collaboration#form')"
+          :to="$localePath('/collaboration#form')"
           class="block mt-block-1"
         >
           <Button icon="icon-arrow-open">

@@ -73,16 +73,13 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'cs',
-        file: 'cs.json',
       },
       {
         code: 'en',
-        file: 'en.json',
       },
     ],
     defaultLocale: 'cs',
     lazy: true,
-    langDir: 'locales/',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,

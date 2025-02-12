@@ -10,7 +10,7 @@
           {{ hero.description }}
         </p>
         <nuxt-link
-          :to="`${localePath(`/collaboration`)}#form`"
+          :to="`${$localePath(`/collaboration`)}#form`"
           class="block mt-block-0.5"
         >
           <Button

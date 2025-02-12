@@ -5,7 +5,7 @@
         <h2 class="text-white text-4xl font-bold tracking-tight">
           {{ news.title }}
         </h2>
-        <nuxt-link :to="localePath('/news')">
+        <nuxt-link :to="$localePath('/news')">
           <Button
             type="transparent"
             icon="icon-arrow-right"
@@ -34,7 +34,7 @@
             {{ article.perex }}
           </p>
           <nuxt-link
-            :to="localePath(`/news/${article.id}`)"
+            :to="$localePath(`/news/${article.id}`)"
           >
             <Button
               type="transparent"

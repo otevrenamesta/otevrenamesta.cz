@@ -16,7 +16,7 @@
             {{ values.title }}
           </h2>
           <nuxt-link
-            :to="localePath('/about')"
+            :to="$localePath('/about')"
             class="mt-2 -mr-4"
           >
             <Button

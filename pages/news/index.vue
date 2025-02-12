@@ -24,7 +24,7 @@
       <nuxt-link
         v-for="(article, index) in articlesFiltered"
         :key="index"
-        :to="localePath(`/news/${article.id}`)"
+        :to="$localePath(`/news/${article.id}`)"
         class="block w-full sm:w-1/2 md:w-1/3 max-w-md sm:max-w-full mb-block-2"
       >
         <div class="px-block-0.5">
