@@ -1,7 +1,7 @@
 <template>
   <main
     v-if="article"
-    class="mt-block-4 max-w-3xl w-10/12 mx-auto blogpost"
+    class="mt-block-4 max-w-3xl w-10/12 mx-auto [&_table_tr]:align-top [&_table_td]:p-2 blogpost"
   >
     <div class="flex items-center mb-block-0.5">
       <div
