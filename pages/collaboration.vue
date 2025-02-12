@@ -63,12 +63,12 @@
           class="w-full sm:w-1/2 max-w-sm"
         >
           <div class="px-block-0.5 mb-block-0.5">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
+            <strong class="block text-sm font-semibold text-primary/75 mb-2.5">
               {{ item.title }}
             </strong>
             <p
               v-preposition-space
-              class="text-black text-opacity-60 text-sm font-medium"
+              class="text-black/60 text-sm font-medium"
               v-html="item.description"
             />
           </div>
@@ -123,12 +123,12 @@
           class="w-full sm:w-1/2 max-w-sm"
         >
           <div class="px-block-0.5 mb-block-0.5">
-            <strong class="block text-sm font-semibold text-primary text-opacity-75 mb-2.5">
+            <strong class="block text-sm font-semibold text-primary/75 mb-2.5">
               {{ item.title }}
             </strong>
             <p
               v-preposition-space
-              class="text-black text-opacity-60 text-sm font-medium"
+              class="text-black/60 text-sm font-medium"
               v-html="item.description"
             />
           </div>

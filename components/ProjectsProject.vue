@@ -46,7 +46,7 @@
           />
           <div
             v-if="props.project.badge"
-            class="py-2 px-4 bg-additional rounded-3xl leading-none text-sm uppercase text-black text-opacity-75 font-bold mt-4"
+            class="py-2 px-4 bg-additional rounded-3xl leading-none text-sm uppercase text-black/75 font-bold mt-4"
           >
             {{ props.project.badge }}
           </div>
@@ -86,6 +86,8 @@ const props = defineProps({
 </script>
 
 <style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .BoxDecorations {
   width: 20px;
   height: 20px;
@@ -110,20 +112,20 @@ const props = defineProps({
     height: 100%;
   }
 
-  &--top-left {
+  &.BoxDecorations--top-left {
     top: -10px;
     left: -10px;
   }
-  &--top-right {
+  &.BoxDecorations--top-right {
     top: -10px;
     right: -11px;
   }
 
-  &--bottom-left {
+  &.BoxDecorations--bottom-left {
     bottom: -11px;
     left: -10px;
   }
-  &--bottom-right {
+  &.BoxDecorations--bottom-right {
     bottom: -11px;
     right: -11px;
   }

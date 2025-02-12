@@ -34,7 +34,7 @@
         v-html="intro.opensource?.description"
       />
 
-      <div class="prose before:prose-li:bg-primary mb-block-1.5">
+      <div class="prose prose-li:before:bg-primary mb-block-1.5">
         <ul class="max-w-md">
           <li
             v-for="(item, index) in intro.opensource?.list"

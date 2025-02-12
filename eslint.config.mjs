@@ -42,18 +42,18 @@ export default withNuxt(
       'no-useless-escape': 'off',
 
       // stylistic
-      // '@stylistic/indent': ['warn', 2, { SwitchCase: 1 }],
-      // '@stylistic/semi': ['warn', 'always', { omitLastInOneLineBlock: true }],
-      // '@stylistic/space-before-function-paren': ['error', {
-      //   anonymous: 'never',
-      //   named: 'never',
-      //   asyncArrow: 'never',
-      // }],
-      // '@stylistic/quote-props': ['warn', 'as-needed'],
-      // '@stylistic/arrow-parens': ['error', 'always'],
-      // '@stylistic/object-curly-spacing': ['error', 'always'], // require padding inside curly braces
-      // '@stylistic/no-multiple-empty-lines': ['error', { max: 2, maxEOF: 0 }],
-      // '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+      '@stylistic/indent': ['warn', 2, { SwitchCase: 1 }],
+      '@stylistic/semi': ['warn', 'always', { omitLastInOneLineBlock: true }],
+      '@stylistic/space-before-function-paren': ['error', {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'never',
+      }],
+      '@stylistic/quote-props': ['warn', 'as-needed'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/object-curly-spacing': ['error', 'always'], // require padding inside curly braces
+      '@stylistic/no-multiple-empty-lines': ['error', { max: 2, maxEOF: 0 }],
+      '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
       // enable later:
       'no-console': 'off',

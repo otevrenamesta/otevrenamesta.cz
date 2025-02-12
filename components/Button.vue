@@ -4,7 +4,7 @@
     :class="[
       type === 'primary' ? 'border border-primary bg-primary hover:bg-primary-dark text-white' : '',
       type === 'secondary' ? 'border border-secondary bg-secondary text-white' : '',
-      type === 'dark' ? 'bg-black bg-opacity-60 text-white' : '',
+      type === 'dark' ? 'bg-black/60 text-white' : '',
       type === 'transparent' ? 'bg-transparent' : 'px-5',
       type === 'outline' ? 'border border-primary text-primary' : '',
     ]"

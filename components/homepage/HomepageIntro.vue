@@ -1,5 +1,5 @@
 <template>
-  <section class="container bg-primary-light bg-opacity-60 px-14 md:px-20 xs:px-8 py-14 md:py-20 xs:py-10">
+  <section class="container bg-primary-light/60 px-14 md:px-20 xs:px-8 py-14 md:py-20 xs:py-10">
     <div class="flex justify-between flex-col md:flex-row">
       <div class="max-w-4xl md:mr-6 md:mb-20">
         <h3

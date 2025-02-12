@@ -7,7 +7,7 @@
       <div
         v-for="(tag, tagIndex) in article.tags.split(',')"
         :key="tagIndex"
-        class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black text-opacity-75 font-bold"
+        class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black/75 font-bold"
       >
         {{ tag }}
       </div>
