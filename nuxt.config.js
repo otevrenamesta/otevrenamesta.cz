@@ -109,13 +109,13 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: 'cs',
-    lazy: true,
-    strategy: 'prefix_except_default',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
+    strategy: 'prefix_and_default',
+    detectBrowserLanguage: false,
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: 'i18n_redirected',
+    //   redirectOn: 'root',
+    // },
   },
 
   image: {
