@@ -11,6 +11,8 @@ menuItems:
     text: Brno Declaration
   - link: /news
     text: Aktuality
+  - link: /events
+    text: Akce
   - link: /contact
     text: Kontakt
 
