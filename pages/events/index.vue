@@ -57,16 +57,22 @@
             {{ event.perex }}
           </p>
 
-          <div>
-            <time
-              :datetime="event.date"
-              class="block text-sm text-dark font-bold mb-2"
-            >
-              {{ useDayjs(event.date).format('D. M. YYYY') }}
-            </time>
+          <div class="grid grid-cols-2 gap-4 items-center mt-8">
+            <div class="flex items-center">
+              <IconCalendar class="w-4 h-4 mr-4" />
+              <time
+                :datetime="event.date"
+                class="block text-sm text-dark"
+              >
+                {{ event.date }}
+              </time>
+            </div>
 
-            <div>
-              {{ event.location }}
+            <div class="flex items-center">
+              <IconLocation class="w-4 h-4 mr-4" />
+              <span class="text-sm text-dark">
+                {{ event.location }}
+              </span>
             </div>
           </div>
         </div>
@@ -77,6 +83,8 @@
 
 <script setup>
 import IconClose from '~/assets/img/icon-close.svg';
+import IconCalendar from '~/assets/img/icon-calendar.svg';
+import IconLocation from '~/assets/img/icon-location.svg';
 
 await useContentStore().load({ page: 'events' });
 
@@ -88,6 +96,7 @@ useCustomHead({
 const selectedTag = ref(null);
 const events = ref([
   {
+    id: 1,
     title: 'Akce 01',
     tags: 'Tag 01, Tag 02',
     image: 'https://placehold.co/600x400',
@@ -95,7 +104,6 @@ const events = ref([
     location: 'Brno',
     perex: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
-
 ]);
 
 // Computed
