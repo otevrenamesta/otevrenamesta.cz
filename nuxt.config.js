@@ -15,7 +15,18 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     'nuxt-lodash',
+    '@nuxt/scripts',
   ],
+
+  $production: {
+    scripts: {
+      registry: {
+        googleTagManager: {
+          id: 'G-MQKKD0BK74',
+        },
+      },
+    },
+  },
 
   imports: {
     dirs: ['./stores'],
