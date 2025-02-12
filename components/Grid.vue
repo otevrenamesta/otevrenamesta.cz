@@ -23,7 +23,6 @@
 </template>
 
 <script setup>
-import _clamp from 'lodash/clamp';
 import { useScreen } from 'vue-screen';
 
 const props = defineProps({

@@ -65,7 +65,6 @@
 </template>
 
 <script setup>
-import _uniq from 'lodash/uniq';
 import IconClose from '~/assets/img/icon-close.svg';
 
 const articles = ref([]);

@@ -14,14 +14,16 @@ export const useContentStore = defineStore('content', {
 
   actions: {
     async loadGlobal() {
-      if (!process.client) {
-        this.global = await queryContent(`${useI18n().locale.value}/global`).findOne();
-        return this.global;
+      if (useNuxtApp().ssrContext) {
+        const { meta } = await queryCollection(useI18n().locale.value).where('stem', '=', `${useI18n().locale.value}/global`).first();
+        this.global = meta;
+        return this.global.meta;
       }
     },
     async load({ page }) {
-      if (!process.client) {
-        this[page] = await queryContent(`${useI18n().locale.value}/${page}`).findOne();
+      if (useNuxtApp().ssrContext) {
+        const { meta } = await queryCollection(useI18n().locale.value).where('stem', '=', `${useI18n().locale.value}/${page}`).first();
+        this[page] = meta;
         return this[page];
       }
     },
