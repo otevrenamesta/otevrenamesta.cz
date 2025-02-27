@@ -21,5 +21,7 @@ await Promise.all([
   useContentStore().load({ page: 'contact' }),
   useContentStore().load({ page: 'project' }),
   useContentStore().load({ page: 'declaration' }),
+  useContentStore().load({ page: 'events' }),
+  useContentStore().load({ page: 'czechOspo' }),
 ]);
 </script>
