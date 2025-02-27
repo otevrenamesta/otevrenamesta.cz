@@ -9,6 +9,8 @@ menuItems:
     text: Členové
   - link: /declaration
     text: Brno Declaration
+  - link: /czech-ospo
+    text: Czech OSPO
   - link: /news
     text: Aktuality
   - link: /events
