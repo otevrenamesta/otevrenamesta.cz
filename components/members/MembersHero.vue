@@ -38,7 +38,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0 hidden lg:block"
         />
         <Grid
-          :rows="$grid?.['2xl'] ? 7 : ($grid?.md ? 8 : 7)"
+          :rows="$grid?.['2xl'] ? 7 : ($grid?.md ? 8 : 10)"
         />
       </div>
     </div>

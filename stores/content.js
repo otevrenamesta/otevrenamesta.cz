@@ -10,6 +10,7 @@ export const useContentStore = defineStore('content', {
       project: null,
       declaration: null,
       events: null,
+      czechOspo: null,
     };
   },
 

@@ -4,7 +4,9 @@
 
     <BurgerDialog />
 
-    <slot />
+    <div class="pt-10">
+      <slot />
+    </div>
 
     <Footer />
   </div>
