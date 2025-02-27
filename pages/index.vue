@@ -12,11 +12,15 @@
       class="sm:mb-block-2"
     />
 
-    <HomepageValues
+    <HomepageNews />
+
+    <HomepageEvents
       class="mb-block-2"
     />
 
-    <HomepageNews />
+    <HomepageValues
+      class="mb-block-2"
+    />
   </main>
 </template>
 
