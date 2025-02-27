@@ -59,3 +59,7 @@ values:
 news:
   title: News
   showMore: Go to all articles
+
+events:
+  title: Current events
+  allEvents: All events

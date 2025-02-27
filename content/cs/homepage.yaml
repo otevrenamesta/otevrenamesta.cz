@@ -60,3 +60,7 @@ values:
 news:
   title: Aktuálně
   showMore: Přejít na všechny články
+
+events:
+  title: Aktuální akce
+  allEvents: Všechny akce
