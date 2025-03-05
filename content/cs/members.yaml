@@ -6,7 +6,7 @@ hero:
 members:
   - fullname: Benešov
     agent: Jaroslav Hlavnička
-    population: 17 435 (3,2 % hlasů)
+    population: 17 435 (3,3 % hlasů)
     memberFee: 34 870 Kč / rok
   - fullname: Brno - Medlánky
     agent: Kateřina Žůrková
@@ -14,7 +14,7 @@ members:
     memberFee: 17 571 Kč / rok
   - fullname: Boskovice
     agent: Radek Šamšula
-    population: 12 465 (2,7 % hlasů)
+    population: 12 465 (2,8 % hlasů)
     memberFee: 24 930 Kč / rok
   - fullname: Bystřice (u Benešova)
     agent: Michal Hodík
@@ -22,31 +22,31 @@ members:
     memberFee: 14 262 Kč / rok
   - fullname: Brušperk
     agent: Tomáš Kocourek
-    population: 4 237 (1,6 % hlasů)
+    population: 4 237 (1,7 % hlasů)
     memberFee: 14 262 Kč / rok
   - fullname: Černošice
     agent: Tomáš Kratochvíl
-    population: 7 902 (2,2 % hlasů)
+    population: 7 902 (2,3 % hlasů)
     memberFee: 23 706 Kč / rok
   - fullname: Dobříš
     agent: Pavel Svoboda
-    population: 9 090 (2,3 % hlasů)
+    population: 9 090 (2,4 % hlasů)
     memberFee: 26 160 Kč / rok
   - fullname: Chýně
-    agent: 
-    population: 5 070 (1,7 % hlasů)
+    agent: Anna Chvojková
+    population: 5 070 (1,8 % hlasů)
     memberFee: 15 210 Kč / rok  
   - fullname: Jihomoravský kraj
     agent: Jiří Hlavenka
-    population: 1 187 439 (4,4 % hlasů)
+    population: 1 187 439 (4,6 % hlasů)
     memberFee: 49 000 Kč / rok
   - fullname: Karlovarský kraj
     agent: Vojtěch Franta
-    population: 295 077 (4,4 % hlasů)
+    population: 295 077 (4,6 % hlasů)
     memberFee: 49 000 Kč / rok
   - fullname: Kroměříž
     agent: Vratislav Krejčíř
-    population: 28 934 (4,2 % hlasů)
+    population: 28 934 (4,3 % hlasů)
     memberFee: 57 868 Kč / rok
   - fullname: Loket
     agent: Petr Adamec
@@ -54,15 +54,15 @@ members:
     memberFee: 9 630 Kč / rok
   - fullname: Lysá nad Labem
     agent: Karel Marek
-    population: 10 251 (2,5 % hlasů)
+    population: 10 251 (2,6 % hlasů)
     memberFee: 20 502 Kč / rok
   - fullname: Mělník
     agent: Jan Karlovec
-    population: 20 815 (3,5 % hlasů)
+    population: 20 815 (3,7 % hlasů)
     memberFee: 41 630 Kč / rok
   - fullname: Moravská Třebová
     agent: Pavel Charvát
-    population: 9 930 (2,4 % hlasů)
+    population: 9 930 (2,5 % hlasů)
     memberFee: 29 790 Kč / rok
   - fullname: Nové Město na Moravě
     agent: Michal Šmarda
@@ -70,35 +70,35 @@ members:
     memberFee: 20 188 Kč / rok
   - fullname: Olomoucký kraj
     agent: Michael Skácel
-    population: 622 368 (4,4 % hlasů)
+    population: 622 368 (4,6 % hlasů)
     memberFee: 49 000 Kč / rok   
   - fullname: Praha
     agent: Jiří Károly
-    population: 1 246 623 (27,4 % hlasů)
+    population: 1 246 623 (28,3 % hlasů)
     memberFee: 1 246 623 Kč / rok
   - fullname: Praha 3 
     agent: Filip Málek
-    population: 88 063 (7,3 % hlasů)
+    population: 88 063 (7,5 % hlasů)
     memberFee: 88 063 Kč / rok
   - fullname: Praha - Ďáblice
     agent: Martin Tumpach
-    population: 4 276 (1,6 % hlasů)
+    population: 4 276 (1,7 % hlasů)
     memberFee: 6 414 Kč / rok
   - fullname: Psáry
     agent: Vít Olmr
-    population: 4 346 (1,6 % hlasů)
+    population: 4 346 (1,7 % hlasů)
     memberFee: 13 038 Kč / rok
   - fullname: Středočeský kraj
     agent: Tomáš Zmuda
-    population: 1 397 997  (4,4 % hlasů)
+    population: 1 397 997  (4,6 % hlasů)
     memberFee: 49 000 Kč / rok
-  - fullname: Tábor
-    agent: Václav Klecanda
-    population: 35 249 (4,6 % hlasů)
-    memberFee: 70 498 Kč / rok
+  - fullname: Štěpánov
+    agent: Luděk Růžička
+    population: 3 607 (1,5 % hlasů)
+    memberFee: 10 821 Kč / rok 
   - fullname: Tišnov
     agent: Martin Sebera
-    population: 9 458 (2,4 % hlasů)
+    population: 9 458 (2,5 % hlasů)
     memberFee: 28 374 Kč / rok
   - fullname: Úvaly
     agent: Markéta Rydvalová
