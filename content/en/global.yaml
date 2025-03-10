@@ -11,6 +11,8 @@ menuItems:
     text: Czech OSPO
   - link: /news
     text: News
+  - link: /events
+    text: Events
   - link: /contact
     text: Contact
 
