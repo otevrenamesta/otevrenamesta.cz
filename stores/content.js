@@ -24,8 +24,8 @@ export const useContentStore = defineStore('content', {
     },
     async load({ page }) {
       if (useNuxtApp().ssrContext) {
-        const { meta } = await queryCollection(useI18n().locale.value).where('stem', '=', `${useI18n().locale.value}/${page}`).first();
-        this[page] = meta;
+        const data = await queryCollection(useI18n().locale.value).where('stem', '=', `${useI18n().locale.value}/${page}`).first();
+        this[page] = data?.meta;
         return this[page];
       }
     },
