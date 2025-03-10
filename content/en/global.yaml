@@ -7,8 +7,6 @@ menuItems:
     text: Projects
   - link: /members
     text: Members
-  - link: /declaration
-    text: Brno Declaration
   - link: /czech-ospo
     text: Czech OSPO
   - link: /news
