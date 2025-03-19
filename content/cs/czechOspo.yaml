@@ -14,7 +14,7 @@ action:
   title: "KROKY SMĚŘUJÍCÍ K ČESKÉ NÁRODNÍ OSPO"
   steps:
    - number: "01"
-     description: "Podpis Brno Open Source deklarace mezi klíčovými místními a globálními zainteresovanými stranami z veřejného sektoru a akademického sektoru, které mají zájem spolupracovat na založení českého národního OSPO v Brně."
+     description: "Podpis <a href='/declaration'>Brno Open Source deklarace</a> mezi klíčovými místními a globálními zainteresovanými stranami z veřejného sektoru a akademického sektoru, které mají zájem spolupracovat na založení českého národního OSPO v Brně."
    - number: "02"
      description: "Podpis Manifestu sítě OSPO veřejných služeb EU vytvořené Paříží a sítě OSPO Evropské komise a aktivní účast na pravidelných setkáních OSPO v evropském měřítku."
    - number: "03"
@@ -34,7 +34,7 @@ action:
         logo: /logo-operator-ict.svg
 
 events:
-  title: "AKCE CZECH NATIONAL OSPOs."
+  title: "CZECH NATIONAL OSPO"
   allEvents: "Všechny akce"
 
 timeline:
