@@ -60,12 +60,16 @@ const event = computed(() => events.value.find(({ id }) => id === Number(useRout
 
 // Lifecycle
 onMounted(async() => {
-  events.value = await useApi.get(`/items/events/?&filter={"id":{"_eq":"3"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*&limit=1`)
+  events.value = await useApi.get(`/items/events/?&filter={"id":{"_eq":"${useRoute().params.id}"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*&limit=1`)
     .then((res) => res.data)
     .catch((error) => {
       console.error(error);
       return [];
     });
+
+  if (!event.value) {
+    return navigateTo('/events');
+  }
 });
 
 useCustomHead({
