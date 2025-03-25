@@ -5,7 +5,7 @@
   >
     <div class="flex items-center mb-block-0.5">
       <div
-        v-for="(tag, tagIndex) in event.tags.split(',')"
+        v-for="(tag, tagIndex) in event.tags?.split(',')"
         :key="tagIndex"
         class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black/75 font-bold"
       >
@@ -15,35 +15,35 @@
     <div class="mb-block-0.5">
       <nuxt-img
         :src="event.image"
-        :alt="event.title"
+        :alt="event?.translations?.[0]?.title"
         width="1200"
         class="mb-block-0.5"
       />
       <h2 class="text-primary font-bold text-4xl mb-4 tracking-tight">
-        {{ event.title }}
+        {{ event?.translations?.[0]?.title }}
       </h2>
       <div class="grid grid-cols-2 gap-4 items-center mt-8">
         <div class="flex items-center">
           <IconCalendar class="w-4 h-4 mr-4" />
           <time
-            :datetime="event.date"
+            :datetime="event.begin"
             class="block text-sm text-dark"
           >
-            {{ event.date }}
+            {{ useDayjs(event.begin).format('D. M. YYYY') }}
           </time>
         </div>
 
         <div class="flex items-center">
           <IconLocation class="w-4 h-4 mr-4" />
           <span class="text-sm text-dark">
-            {{ event.location }}
+            {{ event?.translations?.[0]?.location }}
           </span>
         </div>
       </div>
     </div>
     <div
       class="flex flex-wrap prose text-lg"
-      v-html="$md.render(event.content)"
+      v-html="$md.render(event?.translations?.[0]?.content)"
     />
   </main>
 </template>
@@ -60,26 +60,15 @@ const event = computed(() => events.value.find(({ id }) => id === Number(useRout
 
 // Lifecycle
 onMounted(async() => {
-  // events.value = await useApi.get(`/items/posts/?lang=${useI18n()?.locale?.value}`)
-  //   .then((res) => res.data)
-  //   .catch((error) => {
-  //     console.error(error);
-  //     return [];
-  //   });
-
-  events.value = [{
-    id: 1,
-    title: 'Akce 01',
-    tags: 'Tag 01, Tag 02',
-    image: 'https://placehold.co/600x400',
-    date: '2024-01-01',
-    location: 'Brno',
-    perex: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  }];
+  events.value = await useApi.get(`/items/events/?&filter={"id":{"_eq":"3"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*&limit=1`)
+    .then((res) => res.data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
 });
 
 useCustomHead({
-  title: event.value?.title,
+  title: event.value?.translations?.[0]?.title,
 });
 </script>

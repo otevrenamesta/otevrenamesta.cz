@@ -60,4 +60,11 @@ const events = ref([
 // Computed
 const tags = computed(() => ['Tag 01', 'Tag 02', 'Tag 03']);
 const eventsFiltered = computed(() => events.value.filter(({ tags }) => !selectedTag.value || tags.includes(selectedTag.value)));
+
+// Lifecycle
+onMounted(async() => {
+  events.value = await useApi.get(`/items/events/?sort=+begin&filter={"begin":{"_gte":"$NOW"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=id,begin,end,translations.title,translations.slug,translations.perex`)
+    .then((res) => res.data)
+    .catch(() => []);
+});
 </script>
