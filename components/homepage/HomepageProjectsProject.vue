@@ -6,8 +6,14 @@
     >
       <div
         class="w-block-6 h-block-6 max-w-full mb-block-0.5 [&_svg]:w-full [&_svg]:h-auto"
-        v-html="props.illustration"
-      />
+      >
+        <img
+          v-if="props.project?.illustration"
+          :src="`${useRuntimeConfig().public.assetsUrl}/${props.project.illustration}`"
+          :alt="props.project.title"
+          class="w-full"
+        >
+      </div>
       <h2 class="text-3xl sm:text-4xl text-primary font-bold mb-10 tracking-tight group-hover:underline">
         {{ props.project.title }}
       </h2>
@@ -49,10 +55,6 @@
 const props = defineProps({
   project: {
     type: Object,
-    required: true,
-  },
-  illustration: {
-    type: String,
     required: true,
   },
 });

@@ -85,6 +85,7 @@ export default defineNuxtConfig({
       title,
       description,
       baseApiUrl: baseURL,
+      assetsUrl: 'https://api.www.otevrenamesta.cz/assets',
     },
   },
 

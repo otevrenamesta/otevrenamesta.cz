@@ -16,8 +16,14 @@
         <div
           v-if="!$grid?.sm"
           class="w-block-4 max-w-full h-auto mb-block-0.5"
-          v-html="props.illustration"
-        />
+        >
+          <img
+            v-if="props.project.illustration"
+            :src="`${useRuntimeConfig().public.assetsUrl}/${props.project.illustration}`"
+            :alt="props.project.title"
+            class="w-full"
+          >
+        </div>
         <h2 class="text-5xl sm:text-6xl text-primary font-bold mb-10 tracking-tight">
           {{ props.project.title }}
         </h2>
@@ -63,8 +69,14 @@
       :class="[
         props.align === 'left' ? 'right-block-2' : 'left-block-2',
       ]"
-      v-html="props.illustration"
-    />
+    >
+      <img
+        v-if="props.project.illustration"
+        :src="`${useRuntimeConfig().public.assetsUrl}/${props.project.illustration}`"
+        :alt="props.project.title"
+        class="w-full"
+      >
+    </div>
   </article>
 </template>
 
@@ -72,10 +84,6 @@
 const props = defineProps({
   project: {
     type: Object,
-    required: true,
-  },
-  illustration: {
-    type: String,
     required: true,
   },
   align: {
