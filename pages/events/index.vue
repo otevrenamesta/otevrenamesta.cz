@@ -59,7 +59,7 @@ const events = ref([
 
 // Computed
 const tags = computed(() => ['Tag 01', 'Tag 02', 'Tag 03']);
-const eventsFiltered = computed(() => events.value.filter(({ tags }) => !selectedTag.value || tags.includes(selectedTag.value)));
+const eventsFiltered = computed(() => events.value.filter(({ tags }) => !selectedTag.value || tags.value?.includes(selectedTag.value)));
 
 // Lifecycle
 onMounted(async() => {

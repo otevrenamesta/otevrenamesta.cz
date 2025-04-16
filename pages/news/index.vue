@@ -71,7 +71,7 @@ const articles = ref([]);
 const selectedTag = ref(null);
 
 const tags = computed(() => _uniq(articles.value.map(({ tags }) => tags.split(',')).flat()));
-const articlesFiltered = computed(() => articles.value.filter(({ tags }) => !selectedTag.value || tags.includes(selectedTag.value)));
+const articlesFiltered = computed(() => articles.value.filter(({ tags }) => !selectedTag.value || tags.value?.includes(selectedTag.value)));
 
 onMounted(async() => {
   articles.value = await useApi.get(`/items/posts/?sort=-published&lang=${useI18n()?.locale?.value}`)
