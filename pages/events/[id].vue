@@ -5,7 +5,7 @@
   >
     <div class="flex items-center mb-block-0.5">
       <div
-        v-for="(tag, tagIndex) in event.tags?.split(',')"
+        v-for="(tag, tagIndex) in event.tags"
         :key="tagIndex"
         class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black/75 font-bold"
       >
@@ -14,7 +14,7 @@
     </div>
     <div class="mb-block-0.5">
       <nuxt-img
-        :src="event.image"
+        :src="`${useRuntimeConfig().public.assetsUrl}/${event.image}`"
         :alt="event?.translations?.[0]?.title"
         width="1200"
         class="mb-block-0.5"
@@ -36,7 +36,7 @@
         <div class="flex items-center">
           <IconLocation class="w-4 h-4 mr-4" />
           <span class="text-sm text-dark">
-            {{ event?.translations?.[0]?.location }}
+            {{ event?.location }}
           </span>
         </div>
       </div>

@@ -6,7 +6,7 @@
     <div class="px-block-0.5">
       <nuxt-img
         v-if="props.event.image"
-        :src="props.event.image.replace('?mode=crop&center=0.5,0.5&rnd=132199332150000000&width=575', '')"
+        :src="`${useRuntimeConfig().public.assetsUrl}/${props.event.image}`"
         :alt="props.event?.translations?.[0]?.title"
         width="600"
         height="400"
@@ -16,7 +16,7 @@
         class="mb-4 flex"
       >
         <div
-          v-for="(tag, tagIndex) in props.event.tags?.split(',')"
+          v-for="(tag, tagIndex) in props.event.tags"
           :key="tagIndex"
           class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black/75 font-bold"
         >

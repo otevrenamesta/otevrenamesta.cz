@@ -45,25 +45,15 @@ useCustomHead({
 
 // Refs
 const selectedTag = ref(null);
-const events = ref([
-  {
-    id: 1,
-    title: 'Akce 01',
-    tags: 'Tag 01, Tag 02',
-    image: 'https://placehold.co/600x400',
-    date: '2024-01-01',
-    location: 'Brno',
-    perex: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-]);
+const events = ref([]);
 
 // Computed
-const tags = computed(() => ['Tag 01', 'Tag 02', 'Tag 03']);
+const tags = computed(() => _uniq(events.value.map(({ tags }) => tags).flat()));
 const eventsFiltered = computed(() => events.value.filter(({ tags }) => !selectedTag.value || tags.value?.includes(selectedTag.value)));
 
 // Lifecycle
 onMounted(async() => {
-  events.value = await useApi.get(`/items/events/?sort=+begin&filter={"begin":{"_gte":"$NOW"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=id,begin,end,translations.title,translations.slug,translations.perex`)
+  events.value = await useApi.get(`/items/events/?sort=+begin&filter={"begin":{"_gte":"$NOW"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*`)
     .then((res) => res.data)
     .catch(() => []);
 });
