@@ -24,10 +24,7 @@
       </div>
     </div>
 
-    <div class="border-b border-primary-light mb-block-0.5 pb-block-1">
-      <CzechOspoEvents />
-    </div>
-
+    <CzechOspoEvents class="border-b border-primary-light mb-block-0.5 pb-block-1" />
 
     <div class="border-b border-primary-light mb-block-3 pb-block-1">
       <CzechOspoTimeline />
