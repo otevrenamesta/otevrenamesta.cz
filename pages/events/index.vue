@@ -49,7 +49,7 @@ const events = ref([]);
 
 // Computed
 const tags = computed(() => _uniq(events.value.map(({ tags }) => tags).flat()));
-const eventsFiltered = computed(() => events.value.filter(({ tags }) => !selectedTag.value || tags.value?.includes(selectedTag.value)));
+const eventsFiltered = computed(() => events.value.filter((event) => !selectedTag.value || event.tags?.includes(selectedTag.value)));
 
 // Lifecycle
 onMounted(async() => {
