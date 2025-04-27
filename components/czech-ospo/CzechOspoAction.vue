@@ -20,6 +20,26 @@
 
     <div class="mt-block-2">
       <strong class="block text-secondary uppercase font-bold text-base leading-snug mb-block-1 max-w-sm">
+        {{ action?.network?.title }}
+      </strong>
+
+      <div class="flex flex-col gap-8">
+        <a
+          v-for="partner in action?.network?.items"
+          :key="partner.url"
+          :href="partner.url"
+        >
+          <img
+            :src="partner.logo"
+            :alt="partner.title"
+            class="w-40 h-auto object-contain"
+          >
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-block-2">
+      <strong class="block text-secondary uppercase font-bold text-base leading-snug mb-block-1 max-w-sm">
         {{ action?.partners?.title }}
       </strong>
 

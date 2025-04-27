@@ -10,19 +10,19 @@ intro:
     title: Our partners
     items:
       - url: https://cesko.digital/
-        logo: /logo-cesko-digital.svg
+        logo: /img/logo-cesko-digital.svg
       - url: https://operatorict.cz/
-        logo: /logo-operator-ict.svg
+        logo: /img/logo-operator-ict.svg
       - url: https://www.mvcr.cz/
-        logo: /logo-mvcr.svg
+        logo: /img/logo-mvcr.svg
       - url: https://jinag.eu/
-        logo: /logo-jinag.svg
+        logo: /img/logo-jinag.svg
       - url: https://mmr.gov.cz/cs/uvod
-        logo: /logo-mmr.svg
+        logo: /img/logo-mmr.svg
       - url: https://openforumeurope.org/
-        logo: /logo-ofe.png
+        logo: /img/logo-ofe.png
       - url: https://www.smscr.cz/
-        logo: /logo-smscr.svg
+        logo: /img/logo-smscr.svg
 
   offers:
     title: We offer

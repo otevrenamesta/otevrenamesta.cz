@@ -25,13 +25,22 @@ action:
      description: "Monitorovat a propagovat činnosti a případové studie České republiky v oblasti open source ve směru k veřejnému sektoru a akademickým institucím."
    - number: "06"
      description: "Založení první virtuální a fyzické kanceláře českého národního OSPO v Brně v závislosti na projekt INTERREG AT-CZ s rakouskými partnery. Do té doby je „předsekretariát“ českého národního OSPO řízen nevládní organizací Otevřená města."
-  partners:
+  network:
     title: SOUČÁSTÍ SÍTĚ CZECH OSPO JSOU
     items:
       - url: https://cesko.digital/
-        logo: /logo-cesko-digital.svg
+        logo: /img/logo-cesko-digital.svg
       - url: https://operatorict.cz/
-        logo: /logo-operator-ict.svg
+        logo: /img/logo-operator-ict.svg
+  partners:
+    title: Partners
+    items:
+      - url: "#"
+        logo: /img/logo-waw.png
+      - url: "#"
+        logo: /img/logo-jic.png
+      - url: "#"
+        logo: /img/logo-fhtv.png
 
 events:
   title: "CZECH NATIONAL OSPO"
