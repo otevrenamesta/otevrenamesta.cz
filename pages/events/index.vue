@@ -8,7 +8,10 @@
         {{ useContentStore().events?.hero?.title }}
       </h2>
     </div>
-    <div class="flex items-center flex-wrap mb-block-1 sm:mb-block-2">
+    <div
+      v-if="eventsFiltered.length || isLoading"
+      class="flex items-center flex-wrap mb-block-1 sm:mb-block-2"
+    >
       <button
         v-for="(tag, index) in tags"
         :key="index"
@@ -24,12 +27,18 @@
       </button>
     </div>
 
-    <div class="flex flex-wrap -mx-block-0.5">
+    <div
+      v-if="eventsFiltered.length || isLoading"
+      class="flex flex-wrap -mx-block-0.5"
+    >
       <EventItem
         v-for="event in eventsFiltered"
         :key="event.id"
         :event="event"
       />
+    </div>
+    <div v-else>
+      {{ useContentStore().events?.emptyState }}
     </div>
   </main>
 </template>
@@ -46,15 +55,17 @@ useCustomHead({
 // Refs
 const selectedTag = ref(null);
 const events = ref([]);
-
+const isLoading = ref(false);
 // Computed
 const tags = computed(() => _uniq(events.value.map(({ tags }) => tags).flat()));
 const eventsFiltered = computed(() => events.value.filter((event) => !selectedTag.value || event.tags?.includes(selectedTag.value)));
 
 // Lifecycle
 onMounted(async() => {
+  isLoading.value = true;
   events.value = await useApi.get(`/items/events/?sort=+begin&filter={"begin":{"_gte":"$NOW"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*`)
     .then((res) => res.data)
     .catch(() => []);
+  isLoading.value = false;
 });
 </script>
