@@ -41,6 +41,8 @@ action:
         logo: /img/logo-jic.png
       - url: "#"
         logo: /img/logo-fhtv.png
+      - url: "#"
+        logo: /img/logo-interreg.png
 
 events:
   title: "CZECH NATIONAL OSPO"
