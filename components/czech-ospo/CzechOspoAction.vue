@@ -52,7 +52,7 @@
           <img
             :src="partner.logo"
             :alt="partner.title"
-            class="w-40 h-auto object-contain"
+            class="w-auto h-26 object-contain"
           >
         </a>
       </div>
