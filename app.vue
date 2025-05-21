@@ -23,5 +23,5 @@ await Promise.all([
   useContentStore().load({ page: 'declaration' }),
   useContentStore().load({ page: 'events' }),
   useContentStore().load({ page: 'czechOspo' }),
-]);
+]).catch(console.error);
 </script>

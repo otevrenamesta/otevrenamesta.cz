@@ -46,8 +46,16 @@ const getNumber = (id) => {
 
   if (id === 'citizens') {
     return members.reduce((acc, member) => {
-      const populationNumberSplitBeforeBracket = Number(member.population.split('(')[0].replaceAll(' ', ''));
-      return acc + populationNumberSplitBeforeBracket;
+      if (!member.population) return acc;
+
+      try {
+        const populationText = member.population.split('(')[0] || member.population;
+        const populationNumber = Number(populationText.replace(/ /g, ''));
+        return isNaN(populationNumber) ? acc : acc + populationNumber;
+      } catch {
+        console.error('Error parsing population for member:', member.id);
+        return acc;
+      }
     }, 0);
   }
 
@@ -57,8 +65,16 @@ const getNumber = (id) => {
 
   if (id === 'budget') {
     return members.reduce((acc, member) => {
-      const memberBudget = Number(member.memberFee.split(' Kč')[0].replaceAll(' ', ''));
-      return acc + memberBudget;
+      if (!member.memberFee) return acc;
+
+      try {
+        const budgetText = member.memberFee.split(' Kč')[0] || member.memberFee;
+        const memberBudget = Number(budgetText.replace(/ /g, ''));
+        return isNaN(memberBudget) ? acc : acc + memberBudget;
+      } catch {
+        console.error('Error parsing budget for member:', member.id);
+        return acc;
+      }
     }, 0);
   }
 

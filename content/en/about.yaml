@@ -4,7 +4,7 @@ hero:
 
 structure:
   title: Structure <br>of the organization
-  description: Open Cities consists of 3 central bodies: the Committee, the project board, and the membership meeting. All the parts communicate with each other and have divided responsibilities.
+  description: "Open Cities consists of 3 central bodies: the Committee, the project board, and the membership meeting. All the parts communicate with each other and have divided responsibilities."
   items:
     - color: text-additional
       bg: bg-additional
@@ -30,7 +30,7 @@ structure:
 employees:
   - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
     fullname: Vaclav Klecanda
-    subtitle: -	Head of the Project Board
+    subtitle: Head of the Project Board
     description: IT specialist
   - img: https://api.www.otevrenamesta.cz/assets/284ce628-88bd-4e36-9dce-a64077b93b9c
     fullname: Lukáš Jelínek
