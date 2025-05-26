@@ -21,6 +21,11 @@ sections:
   member:
     title: Stát se členem
     description: Pokud je téma digitalizace pro vaši samosprávu důležité, rádi vás přivítáme jako člena spolku. Díky tomu získáte řadu výhod a budete mít přímo možnost ovlivňovat směřování našich aktivit.
+    join:
+      title: Stát se členem
+      description: "Přihláška do spolku je dostupná zde:"
+      button: Přihláška
+      url: "https://docs.google.com/document/d/14gJSg_6jgEqxnQO6cvHFFF_KvxjiftWu/edit"
     membership:
       title: Členský poplatek
       description: "Členský poplatek se vypočítává dle počtu obyvatel a je určen vždy na kalendářní rok:<br>

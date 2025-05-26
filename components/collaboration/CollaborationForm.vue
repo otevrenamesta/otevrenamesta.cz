@@ -97,7 +97,7 @@
                 Členství
               </span>
             </label>
-            <label class="FormRadioGroup">
+            <label class="FormRadioGroup mb-4 sm:mb-0">
               <div class="FormRadio">
                 <input
                   v-model="form.interestedIn"
@@ -109,6 +109,20 @@
               </div>
               <span class="text-lg text-white font-bold">
                 Nákup služeb
+              </span>
+            </label>
+            <label class="FormRadioGroup">
+              <div class="FormRadio">
+                <input
+                  v-model="form.interestedIn"
+                  type="radio"
+                  value="informace"
+                  class="FormRadioInput"
+                  required
+                >
+              </div>
+              <span class="text-lg text-white font-bold">
+                Informace
               </span>
             </label>
           </div>
@@ -139,98 +153,95 @@
   </form>
 </template>
 
-<script>
-import VueHcaptcha from '@hcaptcha/vue-hcaptcha';
+<script setup>
+import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
 
-export default {
-  components: {
-    VueHcaptcha,
-  },
+// Refs
+const isSubmitting = ref(false);
+const isSubmitted = ref(false);
+const invisibleHcaptcha = ref(null);
 
-  data() {
-    return {
-      isSubmitting: false,
-      isSubmitted: false,
-      form: {
-        fullname: '',
-        city: '',
-        email: '',
-        phone: '',
-        message: '',
-        interestedIn: 'clenstvi',
+const form = ref({
+  fullname: '',
+  city: '',
+  email: '',
+  phone: '',
+  message: '',
+  interestedIn: 'clenstvi',
+});
+
+// Methods
+const presubmitForm = () => {
+  invisibleHcaptcha.value.execute();
+};
+
+const verifiedSubmit = async(token) => {
+  isSubmitting.value = true;
+
+  try {
+    const tokenURL = `/hcaptcha-validate/1/${token}`;
+    const apiTokenRes = await useApi.get(tokenURL);
+    await useApi.post('/items/messages/', {
+      body: {
+        jmeno: form.value.fullname,
+        mesto: form.value.city,
+        email: form.value.email,
+        tel: form.value.phone,
+        subject: form.value.interestedIn,
+        content: form.value.message,
       },
-    };
-  },
+      headers: {
+        Authorization: `Bearer ${apiTokenRes}`,
+      },
+    });
 
-  methods: {
-    presubmitForm() {
-      this.$refs.invisibleHcaptcha.execute();
-    },
-    async verifiedSubmit(token) {
-      this.isSubmitting = true;
-
-      try {
-        const tokenURL = `/hcaptcha-validate/1/${token}`
-        const apiTokenRes = await this.$axios.get(tokenURL)
-        await this.$axios.$post('/items/messages/', {
-          jmeno: this.form.fullname,
-          mesto: this.form.city,
-          email: this.form.email,
-          tel: this.form.phone,
-          subject: this.form.interestedIn,
-          content: this.form.message,
-        }, {
-          headers: {
-            Authorization: `Bearer ${apiTokenRes.data}`,
-          },
-        });
-
-        this.isSubmitted = true;
-      } catch (error) {
-        alert('Omlouváme se, došlo k chybě při odesílání formuláře');
-        this.isSubmitting = false;
-      }
-    },
-  },
+    isSubmitted.value = true;
+  } catch (error) {
+    console.error(error);
+    alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+    isSubmitting.value = false;
+  }
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .Form {
-  &Group {
+  .FormGroup {
     @apply w-full;
   }
-  &Label {
-    @apply block uppercase font-semibold text-sm text-black text-opacity-60 mb-2;
+  .FormLabel {
+    @apply block uppercase font-semibold text-sm text-black/60 mb-2;
   }
-  &Input {
-    @apply rounded-none border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
+  .FormInput {
+    @apply rounded-none border-b border-black/60 bg-transparent text-white font-bold outline-hidden py-3 mb-12 w-full;
 
     &::placeholder {
       color: #B4FAC8;
     }
 
     &:focus {
-      @apply border-opacity-90;
+      @apply border-black/90;
     }
   }
 
-  &RadioGroup {
-    @apply flex first:mr-block-1 cursor-pointer;
+  .FormRadioGroup {
+    @apply flex mr-block-0.5 cursor-pointer;
 
     span {
       @apply block leading-tight;
     }
   }
 
-  &Radio {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5 rounded-full;
+  .FormRadio {
+    @apply border border-black/60 w-[22px] h-[22px] flex items-center justify-center mr-3 rounded-full;
 
-    &Input {
-      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0 rounded-full;
+    .FormRadioInput {
+      @apply block appearance-none w-[16px] h-[16px] bg-black/0 rounded-full;
 
       &:checked {
-        @apply bg-opacity-60;
+        @apply bg-black/60;
       }
     }
   }

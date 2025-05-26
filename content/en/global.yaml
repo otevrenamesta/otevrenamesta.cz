@@ -7,10 +7,12 @@ menuItems:
     text: Projects
   - link: /members
     text: Members
-  - link: /declaration
-    text: Brno Declaration
+  - link: /czech-ospo
+    text: Czech OSPO
   - link: /news
     text: News
+  - link: /events
+    text: Events
   - link: /contact
     text: Contact
 

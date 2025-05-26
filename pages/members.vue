@@ -1,6 +1,6 @@
 <template>
   <main
-    v-if="$store.state.content.members"
+    v-if="useContentStore().members"
     class="overflow-x-hidden"
   >
     <MembersHero
@@ -13,7 +13,7 @@
       </h2>
       <div class="flex flex-wrap">
         <div
-          v-for="(member, index) in $store.state.content.members.members"
+          v-for="(member, index) in useContentStore().members.members"
           :key="index"
           class="w-full md:w-1/2 xl:w-1/3"
         >
@@ -27,15 +27,10 @@
   </main>
 </template>
 
-<script>
-export default {
-  async fetch() {
-    await this.$store.dispatch('content/load', { page: 'members' });
-  },
-  head() {
-    return {
-      title: `${this.$store.state.content.members?.hero?.title} ${this.$config.appendTitle}`,
-    };
-  },
-};
+<script setup>
+await useContentStore().load({ page: 'members' });
+
+useCustomHead({
+  title: useContentStore().members?.hero?.title,
+});
 </script>

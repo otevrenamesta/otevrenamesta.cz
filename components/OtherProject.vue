@@ -8,7 +8,7 @@
         Transparentní hospodaření pro každé město a obec
       </strong>
       <nuxt-link
-        :to="localePath('/')"
+        :to="$localePath('/')"
       >
         <Button icon="icon-arrow-open">
           Zjistit více

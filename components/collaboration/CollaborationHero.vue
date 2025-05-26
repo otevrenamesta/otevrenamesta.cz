@@ -13,7 +13,7 @@
       </div>
       <div class="flex flex-col justify-start items-start relative w-auto">
         <div
-          class="w-block-1.5 sm:w-block-2 h-block-1.5 sm:h-block-2  absolute top-0 left-0 flex flex-wrap"
+          class="w-block-2 sm:w-block-2 h-block-2 sm:h-block-2  absolute top-0 left-0 flex flex-wrap"
         >
           <div class="w-1/2 h-1/2 bg-primary" />
           <div class="w-1/2 h-1/2 bg-primary" />
@@ -21,16 +21,16 @@
           <div class="w-1/2 h-1/2 bg-primary" />
         </div>
         <div
-          class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-secondary absolute top-0 right-0 sm:-right-block-2 rounded-br-full"
+          class="w-block-2 sm:w-block-4 h-block-2 sm:h-block-4 bg-secondary absolute top-0 right-0 sm:-right-block-2 rounded-br-full"
         />
         <div
-          class="w-block-1.5 sm:w-block-4 h-block-1.5 sm:h-block-4 bg-additional absolute left-0 sm:-left-block-2 bottom-0 rounded-full"
+          class="w-block-2 sm:w-block-4 h-block-2 sm:h-block-4 bg-additional absolute left-0 sm:-left-block-2 bottom-0 rounded-full"
         />
         <div
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-2 right-0 hidden lg:block"
         />
         <Grid
-          :rows="($screen.height > 800 || !$screen.sm) ? 7 : 6"
+          :rows="($grid?.height > 800 || !$grid?.sm) ? 7 : 6"
         />
       </div>
     </div>
@@ -41,7 +41,7 @@
 export default {
   computed: {
     hero() {
-      return this.$store.state.content.collaboration.hero;
+      return useContentStore().collaboration.hero;
     },
   },
 };

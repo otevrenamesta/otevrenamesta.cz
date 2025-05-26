@@ -6,8 +6,10 @@ hero:
 members:
   - fullname: Benešov
     agent: Jaroslav Hlavnička
-    population: 15 903 (3,9 % votes)
-    memberFee: 24 528 Kč / year
+    population: 17 435 (3,3 % votes)
+    memberFee: 34 870 Kč / year
+    shareOfVotes: 999
+    link: https://www.benesov-city.cz/
   - fullname: Brno - Medlánky
     agent: Kateřina Žůrková
     population: 5 461 (2,2 % votes)
@@ -44,13 +46,13 @@ members:
     agent: Jiří Károly
     population: 1 245 202 (33,6 % votes)
     memberFee: 1 245 202 Kč / year
-  - fullname: Prague 3 
+  - fullname: Prague 3
     agent: Jan Bartko
     population: 68 999 (7,9 % votes)
     memberFee: 68 999 Kč / year
   - fullname: Prague 12
     agent: Jan Adamec
-    population: 55 894 (7,1 % votes) 
+    population: 55 894 (7,1 % votes)
     memberFee: 55 894 Kč / year
   - fullname: Prague - Ďáblice
     agent: Jan Hrdlička

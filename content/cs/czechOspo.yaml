@@ -1,0 +1,85 @@
+hero:
+  title: Declaration
+  description: Czech National OSPO
+  content: "Účelem České programové kanceláře Open Source (Czech OSPO) je vytvořit národní síť odborníků na Open Source, která umožní udržitelné využívání Open Source ve veřejném sektoru a na akademické půdě a pomůže vytvořit a aktivizovat komunitu kolem využívání Open Source v těchto sektorech. Sídlo české OSPO bude sídlet v Brně. Jeho oficiální zahájení proběhne 24. 4. 2024 a jeho sekretariátem budou Otevřená města."
+
+intro:
+  items:
+    - title: DŮVOD VZNIKU CZECH OSPO
+      content: Využívání open-source softwaru a technologií v České republice zaznamenalo výrazný nárůst, a to převážně v podnikovém a IT sektoru. Tento vzkvétající ekosystém je živen komunitou nadšenců, profesionálů a firem zabývajících se open-source spolu s globálními lídry v oboru, jako je například Red Hat. Iniciativy v oblasti open source se neomezují pouze na podnikovou sféru; pronikly také do veřejného sektoru, příkladem je národní portál code.gov.cz a inovativní úsilí organizací, jako jsou Otevřená města, Česko.Digital a další. Využití plného potenciálu open source v českém veřejném a akademickém sektoru však vyžaduje společné kroky. Nejdůležitější je zřízení České národní programové kanceláře pro open source, která by usnadnila výměnu znalostí mezi zúčastněnými stranami a podpořila spolupráci s mezinárodními partnery s cílem využít existující odborné znalosti a osvědčené postupy, které mohou být volně sdíleny. To vykazuje jasný benefit pro každou stranu. <br><br> OSPO je iniciativa zaměřená na podporu otevřených technologií a posílení digitální suverenity. Založíme dva Open Source huby v Brně a Vídni, které budou spolu neustále spolupracovat, aby podpořily sdílení znalostí a inovační aktivity v regionech Brno-Vídeň. Plánovaný projekt INTERREG AT-CZ, s realizací od 1. dubna 2024, má za cíl vytvoření první OSPO v ČR ve spolupráci s Jihomoravským inovačním centrem (JIC), Vienna Business Agency a Univerzitou aplikovaných věd ve Vídni. Cílem projektu je posílit inovace u malých a středních podniků, ve veřejném sektoru a ve výzkumných institucích. Budou vytvořeny dvě centra otevřeného zdrojového kódu v Brně a Vídni, které budou spolupracovat s regiony a podporovat sdílení znalostí a inovací. Otevřené technologie jsou klíčem k větší digitální suverenitě po celé Evropě. Vize českého OSPO bude dále posilovat spolupráci mezi univerzitami, výzkumnými institucemi a podniky pro zlepšení konkurenceschopnosti a přenosu výzkumných výstupů nejen na trh, ale také mezi veřejnou správu ČR.
+    - title: OBECNĚ O PROJEKTU
+      content: <img src="/img/logo-innovation-hub.png" style="max-width:150px"> Projekt Open Source Innovation Hubs, č. ATCZ00027, je spolufinancován z programu Interreg Rakousko-Česká republika. <br><br> Open Source Programme Office (OSPO) je plánovaná iniciativa v Brně, která má za cíl podpořit rozvoj otevřených zdrojů a digitální suverenity v regionu. Projekt bude zahájen dne 1. dubna 2024 a zaměří se na zlepšení inovační kapacity malých a středních podniků, veřejného sektoru a výzkumných institucí. Klíčovými prvky projektu jsou založení dvou Open Source hubů a posílení ekosystému malých a středních podniků v regionech Brno a Vídeň. <br><br> Open Source huby budou prostřednictvím neustálé výměny a spolupráce mezi regiony Brno-Vídeň podporovat sdílení znalostí a posilovat inovační aktivity a kapacity. Tyto centra se stávají klíčovými hráči v podpoře digitální suverenity, která je stále důležitější pro Evropu a programovou oblast obecně. Jedním z hlavních cílů je snaha vyřešit asymetrii moci v digitálním světě, kde firmy a veřejný sektor často závisí na softwarových produktech a službách poskytovaných velkými mezinárodními společnostmi.<br><br> Otevřené technologie, jako klíčový prvek projektu, umožňují větší digitální suverenitu, a proto jsou podporovány evropskými státy a členskými státy. Jedním z příkladů takové podpory je například Berlínská deklarace 2020. Otevřené technologie přinášejí možnost vytvářet nové obchodní modely a integrovat se do stávajících, což zvyšuje konkurenceschopnost evropských podniků. Dalším cílem je zlepšit konkurenceschopnost evropských podniků, zejména těch v programových regionech, kde spolupráce a sdílení znalostí jsou klíčové pro úspěch v konkurenci s globálními technologickými společnostmi. V rámci projektu se také plánuje zapojení do iniciativ jako je FIWARE nebo GAIA X, které představují důležité kroky směrem k větší digitální suverenitě Evropy. Nicméně k plnému využití těchto iniciativ je zapotřebí více regionálních multiplikátorů s vhodným regionálním propojením - a právě propojení s těmito iniciativami je také součástí budoucí brněnské OSPO. <br><br> Kromě toho se vytvoření OSPO zabývá strategiemi inteligentní specializace a podporou využívání otevřených zdrojů ve výuce na vysokých školách. Projekt má dlouhodobý cíl šíření znalostí o Open Source a datových prostorech v cílových regionech a podporu společné infrastruktury hubu s otevřeným zdrojovým kódem. Brněnský hub OS tak využije odborné znalosti v oblasti umělé inteligence v regionu a zaměří se na interakci aplikací umělé inteligence a open source technologií.
+
+action:
+  title: "KROKY SMĚŘUJÍCÍ K ČESKÉ NÁRODNÍ OSPO"
+  steps:
+   - number: "01"
+     description: "Podpis <a href='/declaration'>Brno Open Source deklarace</a> mezi klíčovými místními a globálními zainteresovanými stranami z veřejného sektoru a akademického sektoru, které mají zájem spolupracovat na založení českého národního OSPO v Brně."
+   - number: "02"
+     description: "Podpis Manifestu sítě OSPO veřejných služeb EU vytvořené Paříží a sítě OSPO Evropské komise a aktivní účast na pravidelných setkáních OSPO v evropském měřítku."
+   - number: "03"
+     description: "Byl zahájen proces spolupráce mezi českými a mezinárodními komunitami open source k založení funkční spolupráce na konkrétních projektech (např. s Paříží, Baltimorem nebo švédským OSPO), jako je zmíněný projekt INTERREG AT-CZ."
+   - number: "04"
+     description: "Rozvíjení národního Portálu otevřeného zdrojového kódu České republiky code.gov.cz jako klíčový prvek aktivit budoucí české OSPO a zřízení efektivní spolupráce mezi nově založenou Digitální informační agentury České republiky (DIA) v roce 2023."
+   - number: "05"
+     description: "Monitorovat a propagovat činnosti a případové studie České republiky v oblasti open source ve směru k veřejnému sektoru a akademickým institucím."
+   - number: "06"
+     description: "Založení první virtuální a fyzické kanceláře českého národního OSPO v Brně v závislosti na projekt INTERREG AT-CZ s rakouskými partnery. Do té doby je „předsekretariát“ českého národního OSPO řízen nevládní organizací Otevřená města."
+  network:
+    title: SOUČÁSTÍ SÍTĚ CZECH OSPO JSOU
+    items:
+      - url: https://cesko.digital/
+        logo: /img/logo-cesko-digital.svg
+      - url: https://operatorict.cz/
+        logo: /img/logo-operator-ict.svg
+  partners:
+    title: Partneři
+    items:
+      - url: "#"
+        logo: /img/logo-waw.png
+      - url: "#"
+        logo: /img/logo-jic.png
+      - url: "#"
+        logo: /img/logo-fhtv.png
+      - url: "#"
+        logo: /img/logo-interreg.png
+
+events:
+  title: "CZECH NATIONAL OSPO"
+  allEvents: "Všechny akce"
+
+timeline:
+  title: HISTORIE OPEN SOURCE KOMUNIT V ČR
+  items:
+    - date: 2004
+      title: "LinuxAlt: Distribuce Linuxu s českou lokalizací a nástroji. V roce 2014 došlo ke ke sloučení skupiny Linux v Brně a sdružení Openmobility do nově vzniklého OpenAlt z.s."
+    - date: 2004
+      title: "Společnost Red Hat v ČR působí již od roku 2004. Společnost se soustředí na testování i vývoj softwaru."
+    - date: 2010
+      title: "Česko.Digital: Iniciativa, která se snaží o digitalizaci státní správy a podporuje open source řešení."
+    - date: 2016
+      title: "Vznik Otevřených měst v roce 2016."
+    - date: 2017
+      title: "Vznik OpenContent v roce 2017. Působí jako osvětová a integrační instituce v oblasti „open“ aspektů."
+    - date: 2023
+      title: "Digitální informační agentura: Český ústřední správní úřad pro elektronickou identifikaci, služby vytvářející důvěru a pro informační systémy veřejné správy. Plnou působnost přebrala od Ministerstva vnitra od 1. dubna 2023."
+
+support:
+  title: JAK SE MŮŽETE ZAPOJIT VY?
+  description: "Pokud Vás oslovila vize české národní OSPO, kontaktuje nás na <a href='mailto:info@otevrenamesta.cz'>info@otevrenamesta.cz</a>. Ozveme se Vám se všemi potřebnými kroky k úspěšné otevřené spolupráci. <br><br> Pokud byste chtěli připojit svůj podpis pod tuto deklaraci a vyjádřit jí takto podporu, prosím učiňte tak skrz formulář."
+
+form:
+  thankYou: Děkujeme za Vaši podporu.
+  fullname: Jméno a příjmení*
+  fullnamePlaceholder: Zadejte Vaše jméno a příjmení
+  city: Město*
+  cityPlaceholder: Zadejte Vaše město
+  email: Email*
+  emailPlaceholder: Zadejte Vaši emailovou adresu
+  organization: Organizace
+  organizationPlaceholder: Zadejte Vaši organizaci
+  position: Pracovní pozice
+  positionPlaceholder: Zadejte Vaši funkci
+  onOrgBehalf: Podepisuji jménem organizace
+  consent: Vyplněním a odesláním formuláře souhlasíte se zpracováním Vašich osobních údajů.
+  submit: PODPOŘIT BRNO DECLARATION

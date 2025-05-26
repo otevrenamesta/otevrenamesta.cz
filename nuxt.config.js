@@ -1,133 +1,134 @@
-import axios from 'axios';
+import svgLoader from 'vite-svg-loader';
+import tailwindcss from '@tailwindcss/vite';
+import { defineNuxtConfig } from 'nuxt/config';
 
+const title = 'Otevřená města';
 const description = 'Partner pro digitalizaci samospráv. Specializujeme se na technickou, právní a metodickou podporu v oblasti digitalizace samospráv.';
 const baseURL = 'https://api.www.otevrenamesta.cz';
 
-export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
-
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  // ssr: false,
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'Otevřená města',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', name: 'og:description', content: description },
-      { name: 'format-detection', content: 'telephone=no' },
-    ],
-    link: [
-      { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ],
-  },
-
-  publicRuntimeConfig: {
-    appendTitle: '| Otevřená města',
-  },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~/assets/scss/global.scss',
-  ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/v-preposition-space',
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: [
-    { path: '~/components', pathPrefix: false },
-  ],
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/style-resources', // https://github.com/nuxt-community/style-resources-module
-    '@nuxtjs/eslint-module', // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
-    ['@nuxtjs/moment', { locales: ['cs'], defaultLocale: 'cs' }],
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
-    '@nuxtjs/pwa', // https://go.nuxtjs.dev/pwa
-    '@nuxt/content', // https://go.nuxtjs.dev/content
-    '@nuxtjs/svg',
-    'vue-screen/nuxt',
+    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    '@vueuse/nuxt',
+    '@nuxt/content',
     '@nuxtjs/i18n',
+    '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/markdownit',
+    'nuxt-lodash',
+    '@nuxt/scripts',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL,
-  },
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'cs',
+  $production: {
+    scripts: {
+      registry: {
+        googleTagManager: {
+          id: 'G-MQKKD0BK74',
+        },
+      },
     },
   },
 
-  styleResources: {
-    scss: [
-      './assets/scss/_variables.scss',
+  imports: {
+    dirs: ['./stores'],
+  },
+
+  app: {
+    head: {
+      title,
+      meta: [
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://use.typekit.net/sxc7jmb.css' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
+      script: [
+        {
+          body: true,
+          innerHTML: `var $buoop = { required:{e:-4,f:-6,o:-6,s:-3,c:-9},insecure:true,api:2020.11 };
+            function $buo_f(){
+            var e = document.createElement("script");
+            e.src = "//browser-update.org/update.min.js";
+            e.async = "true";
+            document.body.appendChild(e);
+            };
+            try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+            catch(e){window.attachEvent("onload", $buo_f)}`,
+        },
+        {
+          body: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-MQKKD0BK74',
+        },
+        {
+          body: true,
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MQKKD0BK74');`,
+        },
+      ],
+    },
+  },
+
+  css: [
+    '~/assets/css/tailwind.css',
+    '~/assets/css/global.css',
+  ],
+
+  runtimeConfig: {
+    public: {
+      title,
+      description,
+      baseApiUrl: baseURL,
+      assetsUrl: 'https://api.www.otevrenamesta.cz/assets',
+    },
+  },
+
+  compatibilityDate: '2025-02-12',
+
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //   },
+  // },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+      svgLoader({
+        svgo: false,
+      }),
     ],
   },
 
-  router: {
-    linkActiveClass: 'is-active',
-  },
-
-  generate: {
-    async routes() {
-      const projects = await axios.get(`${baseURL}/items/projects?limit=25&fields[]=id&page=1`);
-      const news = await axios.get(`${baseURL}/items/posts?fields[]=id&limit=25&page=1`);
-
-      return [
-        ...projects.data.data.map(project => `/projects/${project.id}`),
-        ...news.data.data.map(item => `/news/${item.id}`),
-      ];
+  eslint: {
+    config: {
+      stylistic: true,
     },
-  },
-
-  markdownit: {
-    runtime: true,
   },
 
   i18n: {
-    // lazy: true,
-    // langDir: 'langs/',
-    defaultLocale: 'cs',
-    vueI18nLoader: true,
-    noPrefixDefaultLocale: true,
     locales: [
       {
         code: 'cs',
-        iso: 'cs',
-        name: 'Česky',
-        // file: 'cs.js',
       },
-      // {
-      //   code: 'en',
-      //   iso: 'en',
-      //   name: 'English',
-      //   // file: 'en.js',
-      // },
+      {
+        code: 'en',
+      },
     ],
-  },
-
-  sitemap: {
-    hostname: 'https://otevrenamesta.cz/',
+    defaultLocale: 'cs',
+    strategy: 'prefix_and_default',
+    detectBrowserLanguage: false,
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: 'i18n_redirected',
+    //   redirectOn: 'root',
+    // },
   },
 
   image: {
@@ -137,10 +138,35 @@ export default {
     },
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  // generate: {
+  //   async routes() {
+  //     const projects = await $fetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
+  //     const news = await $fetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  //     return [
+  //       ...projects.data.data.map((project) => `/projects/${project.id}`),
+  //       ...news.data.data.map((item) => `/news/${item.id}`),
+  //     ];
+  //   },
+  // },
+
+  // hooks: {
+  //   async 'nitro:config'(nitroConfig) {
+  //     if (nitroConfig.dev) {
+  //       return;
+  //     }
+
+  //     const projects = await ofetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
+  //     nitroConfig.prerender.routes.push(...projects.data.map((project) => `/projects/${project.id}`));
+
+  //     const news = await ofetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+  //     nitroConfig.prerender.routes.push(...news.data.map((item) => `/news/${item.id}`));
+  //   },
+  // },
+
+  lodash: {
+    prefix: '_',
+    upperAfterPrefix: false,
+    exclude: ['isNaN', 'isMap'],
   },
-};
+});

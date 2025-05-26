@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@theme {
+  --block-per-page: 28;
+  --container-width: 0.9;
+  --block-size: calc(calc(100 / var(--block-per-page)) * 1vw * var(--container-width));
+
+
+  --color-primary: #1E1796;
+  --color-primary-light: #D4E2FF;
+  --color-primary-dark: #0F0787;
+  --color-secondary: #00D48F;
+  --color-secondary-dark: #00563C;
+  --color-additional: #FFCC00;
+  --color-light: #6E88FF;
+  --color-gray: #525252;
+  --color-dark: #161616;
+
+  --spacing-block-0\.5: calc(var(--block-size) * 0.5);
+  --spacing-block-0\.75: calc(var(--block-size) * 0.75);
+  --spacing-block-1: var(--block-size);
+  --spacing-block-1\.5: calc(var(--block-size) * 1.5);
+  --spacing-block-2: calc(var(--block-size) * 2);
+  --spacing-block-3: calc(var(--block-size) * 3);
+  --spacing-block-4: calc(var(--block-size) * 4);
+  --spacing-block-4\.5: calc(var(--block-size) * 4.5);
+  --spacing-block-5: calc(var(--block-size) * 5);
+  --spacing-block-6: calc(var(--block-size) * 6);
+  --spacing-block-7: calc(var(--block-size) * 7);
+  --spacing-block-8: calc(var(--block-size) * 8);
+  --spacing-block-10: calc(var(--block-size) * 10);
+  --spacing-block-12: calc(var(--block-size) * 12);
+
+  --font-sans: 'acumin-pro-wide', sans-serif;
+
+  --breakpoint-s: 440px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --tw-prose-bullets: var(--color-secondary);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";

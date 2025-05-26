@@ -78,6 +78,26 @@
         </label>
       </div>
 
+      <div class="flex items-center gap-5 mb-10">
+        <div class="FormGroup">
+          <div class="flex mt-5 flex-col sm:items-center sm:flex-row">
+            <label class="FormCheckboxGroup mb-4 sm:mb-0">
+              <div class="FormCheckbox">
+                <input
+                  v-model="form.onOrgBehalf"
+                  type="checkbox"
+                  value="onOrgBehalf"
+                  class="FormCheckboxInput"
+                >
+              </div>
+              <span class="text-lg text-white font-bold">
+                I am signing on behalf the organization
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
       <VueHcaptcha
         ref="invisibleHcaptcha"
         sitekey="ed5fa3e0-72f9-4dcd-b7ad-058202fb8223"
@@ -102,81 +122,79 @@
   </form>
 </template>
 
-<script>
-import VueHcaptcha from '@hcaptcha/vue-hcaptcha';
+<script setup>
+import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
 
-export default {
-  components: {
-    VueHcaptcha,
-  },
+// Refs
+const isSubmitting = ref(false);
+const isSubmitted = ref(false);
+const invisibleHcaptcha = ref(null);
+const form = ref({
+  fullname: '',
+  email: '',
+  phone: '',
+  organization: '',
+  position: '',
+  onOrgBehalf: false,
+});
 
-  data() {
-    return {
-      isSubmitting: false,
-      isSubmitted: false,
-      form: {
-        fullname: '',
-        email: '',
-        phone: '',
-        organization: '',
-        position: '',
+// Methods
+const presubmitForm = () => {
+  invisibleHcaptcha.value.execute();
+};
+
+const verifiedSubmit = async(token) => {
+  isSubmitting.value = true;
+
+  try {
+    const tokenURL = `/hcaptcha-validate/1/${token}`;
+    const apiTokenRes = await useApi.get(tokenURL);
+    await useApi.post('/items/ospo_support/', {
+      body: {
+        jmeno: form.value.fullname,
+        email: form.value.email,
+        tel: form.value.phone,
+        organizace: form.value.organization,
+        pozice: form.value.position,
+        on_org_behalf: form.value.onOrgBehalf,
       },
-    };
-  },
+      headers: {
+        Authorization: `Bearer ${apiTokenRes}`,
+      },
+    });
 
-  methods: {
-    presubmitForm() {
-      this.$refs.invisibleHcaptcha.execute();
-    },
-    async verifiedSubmit(token) {
-      this.isSubmitting = true;
-
-      try {
-        const tokenURL = `/hcaptcha-validate/1/${token}`
-        const apiTokenRes = await this.$axios.get(tokenURL)
-        await this.$axios.$post('/items/ospo_support/', {
-          jmeno: this.form.fullname,
-          email: this.form.email,
-          tel: this.form.phone,
-          organizace: this.form.organization,
-          pozice: this.form.position,
-        }, {
-          headers: {
-            Authorization: `Bearer ${apiTokenRes.data}`,
-          },
-        });
-
-        this.isSubmitted = true;
-      } catch (error) {
-        alert('Omlouváme se, došlo k chybě při odesílání formuláře');
-        this.isSubmitting = false;
-      }
-    },
-  },
+    isSubmitted.value = true;
+  } catch (error) {
+    console.error(error);
+    alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+    isSubmitting.value = false;
+  }
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+@reference '~/assets/css/tailwind.css';
+
 .Form {
-  &Group {
+  .FormGroup {
     @apply w-full;
   }
-  &Label {
-    @apply block uppercase font-semibold text-sm text-black text-opacity-60 mb-2;
+  .FormLabel {
+    @apply block uppercase font-semibold text-sm text-black/60 mb-2;
   }
-  &Input {
-    @apply rounded-none border-b border-black border-opacity-60 bg-transparent text-white font-bold outline-none py-3 mb-12 w-full;
+  .FormInput {
+    @apply rounded-none border-b border-black/60 bg-transparent text-white font-bold outline-hidden py-3 mb-12 w-full;
 
     &::placeholder {
       color: #B4FAC8;
     }
 
     &:focus {
-      @apply border-opacity-90;
+      @apply border-black/90;
     }
   }
 
-  &RadioGroup {
+  .FormCheckboxGroup {
     @apply flex first:mr-block-1 cursor-pointer;
 
     span {
@@ -184,14 +202,14 @@ export default {
     }
   }
 
-  &Radio {
-    @apply border border-black border-opacity-60 w-[22px] h-[22px] flex items-center justify-center mr-5 rounded-full;
+  .FormCheckbox {
+    @apply border border-black/60 w-[22px] h-[22px] flex items-center justify-center mr-5;
 
-    &Input {
-      @apply block appearance-none w-[16px] h-[16px] bg-black bg-opacity-0 rounded-full;
+    .FormCheckboxInput {
+      @apply block appearance-none w-[16px] h-[16px] bg-black/0;
 
       &:checked {
-        @apply bg-opacity-60;
+        @apply bg-black/60;
       }
     }
   }

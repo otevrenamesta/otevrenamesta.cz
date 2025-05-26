@@ -5,7 +5,7 @@
         <h2 class="text-white text-4xl font-bold tracking-tight">
           {{ news.title }}
         </h2>
-        <nuxt-link :to="localePath('/news')">
+        <nuxt-link :to="$localePath('/news')">
           <Button
             type="transparent"
             icon="icon-arrow-right"
@@ -25,16 +25,16 @@
             :datetime="article.published"
             class="block text-sm text-additional font-bold mb-2"
           >
-            {{ $moment(article.published).format('D. M. yyyy') }}
+            {{ useDayjs(article.published).format('D. M. YYYY') }}
           </time>
           <h3 class="text-white text-xl font-bold mb-5">
             {{ article.title }}
           </h3>
-          <p class="text-white text-opacity-90 text-sm mb-2">
+          <p class="text-white/90 text-sm mb-2">
             {{ article.perex }}
           </p>
           <nuxt-link
-            :to="localePath(`/news/${article.id}`)"
+            :to="$localePath(`/news/${article.id}`)"
           >
             <Button
               type="transparent"
@@ -50,24 +50,20 @@
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      articles: [],
-    };
-  },
+<script setup>
+// Refs
+const articles = ref([]);
 
-  computed: {
-    news() {
-      return this.$store.state.content.homepage.news;
-    },
-  },
+// Computed
+const news = useContentStore().homepage.news;
 
-  async mounted() {
-    this.articles = await this.$axios.$get('/items/posts/?sort=-published&limit=4')
-      .then(({ data }) => data)
-      .catch(() => []);
-  },
-};
+// Lifecycle
+onMounted(async() => {
+  articles.value = await useApi.get(`/items/posts/?sort=-published&limit=4&lang=${useI18n()?.locale?.value}`)
+    .then(({ data }) => data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+});
 </script>

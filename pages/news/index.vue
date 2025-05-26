@@ -10,7 +10,7 @@
         v-for="(tag, index) in tags"
         :key="index"
         class="py-1.5 px-2.5 mr-2.5 border border-secondary rounded-3xl leading-none text-[12px] uppercase font-bold flex items-center"
-        :class="selectedTag === tag ? 'bg-secondary text-black text-opacity-75' : 'text-secondary'"
+        :class="selectedTag === tag ? 'bg-secondary text-black/75' : 'text-secondary'"
         @click="selectedTag = selectedTag === tag ? null : tag"
       >
         {{ tag }}
@@ -24,7 +24,7 @@
       <nuxt-link
         v-for="(article, index) in articlesFiltered"
         :key="index"
-        :to="localePath(`/news/${article.id}`)"
+        :to="$localePath(`/news/${article.id}`)"
         class="block w-full sm:w-1/2 md:w-1/3 max-w-md sm:max-w-full mb-block-2"
       >
         <div class="px-block-0.5">
@@ -41,7 +41,7 @@
             <div
               v-for="(tag, tagIndex) in article.tags.split(',')"
               :key="tagIndex"
-              class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black text-opacity-75 font-bold"
+              class="py-1.5 px-2.5 mr-2.5 bg-secondary rounded-3xl leading-none text-[12px] uppercase text-black/75 font-bold"
             >
               {{ tag }}
             </div>
@@ -49,6 +49,12 @@
           <h3 class="text-primary font-bold text-2xl tracking-tight mb-2 hover:underline">
             {{ article.title }}
           </h3>
+          <time
+            :datetime="article.published"
+            class="block text-sm text-dark font-bold mb-2"
+          >
+            {{ useDayjs(article.published).format('D. M. YYYY') }}
+          </time>
           <p class="text-primary font-medium">
             {{ article.perex }}
           </p>
@@ -58,41 +64,22 @@
   </main>
 </template>
 
-<script>
-import _uniq from 'lodash/uniq';
-import IconClose from '~/assets/img/icon-close.svg?inline';
+<script setup>
+import IconClose from '~/assets/img/icon-close.svg';
 
-export default {
-  components: {
-    IconClose,
-  },
+const articles = ref([]);
+const selectedTag = ref(null);
 
-  data() {
-    return {
-      articles: [],
-      selectedTag: null,
-    };
-  },
+const tags = computed(() => _uniq(articles.value.map(({ tags }) => tags.split(',')).flat()));
+const articlesFiltered = computed(() => articles.value.filter((item) => !selectedTag.value || item.tags?.includes(selectedTag.value)));
 
-  head() {
-    return {
-      title: `Články ${this.$config.appendTitle}`,
-    };
-  },
+onMounted(async() => {
+  articles.value = await useApi.get(`/items/posts/?sort=-published&lang=${useI18n()?.locale?.value}`)
+    .then((res) => res.data)
+    .catch(() => []);
+});
 
-  computed: {
-    tags() {
-      return _uniq(this.articles.map(({ tags }) => tags.split(',')).flat());
-    },
-    articlesFiltered() {
-      return this.articles.filter(({ tags }) => !this.selectedTag || tags.includes(this.selectedTag));
-    },
-  },
-
-  async mounted() {
-    this.articles = await this.$axios.$get('/items/posts/?sort=-published')
-      .then(res => res.data)
-      .catch(() => []);
-  },
-};
+useCustomHead({
+  title: 'Články',
+});
 </script>

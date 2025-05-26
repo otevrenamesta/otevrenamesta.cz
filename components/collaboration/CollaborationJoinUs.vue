@@ -4,13 +4,13 @@
       <div class="w-full xl:w-1/2 max-w-4xl mx-auto">
         <div class="sm:aspect-w-1 sm:aspect-h-1 sm:bg-additional sm:rounded-full flex items-center justify-center">
           <div class="flex">
-            <p class="px-0 py-14 sm:py-20 xs:py-10 flex flex-col justify-center font-bold text-lg sm:w-8/12 mx-auto text-black sm:text-opacity-80">
+            <p class="px-0 py-14 sm:py-20 xs:py-10 flex flex-col justify-center font-bold text-lg sm:w-8/12 mx-auto text-black/80">
               <strong class="uppercase font-bold text-lg mb-7 text-secondary sm:text-white">
                 {{ joinUs.title }}
               </strong>
               <span
                 v-preposition-space
-                class="font-semibold text-3xl text-secondary sm:text-black sm:text-opacity-60"
+                class="font-semibold text-3xl text-secondary sm:text-black/60"
                 v-html="joinUs.description"
               />
             </p>
@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     joinUs() {
-      return this.$store.state.content.collaboration.joinUs;
+      return useContentStore().collaboration.joinUs;
     },
   },
 };

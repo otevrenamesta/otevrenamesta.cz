@@ -16,7 +16,7 @@
         />
       </div>
     </div>
-    <div class="w-1/2 flex flex-col items-end border-l border-primary-light border-opacity-50">
+    <div class="w-1/2 flex flex-col items-end border-l border-primary-light/50">
       <article
         v-for="(item, index) in structure.items"
         :key="index"
@@ -31,7 +31,7 @@
             class="inline-flex text-sm font-bold leading-none mb-2.5 w-6 h-6 items-center justify-center"
             :class="[
               item.bg,
-              item.bg === 'bg-primary-dark' ? 'text-white text-opacity-90' : 'text-black text-opacity-60',
+              item.bg === 'bg-primary-dark' ? 'text-white/90' : 'text-black/60',
             ]"
           >
             {{ item.number }}
@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import IconLogoOm from '~/assets/img/icon-logo-om.svg?inline';
+import IconLogoOm from '~/assets/img/icon-logo-om.svg';
 
 export default {
   components: {
@@ -60,7 +60,7 @@ export default {
   },
   computed: {
     structure() {
-      return this.$store.state.content.about.structure;
+      return useContentStore().about.structure;
     },
   },
 };
