@@ -1,6 +1,7 @@
 import svgLoader from 'vite-svg-loader';
 import tailwindcss from '@tailwindcss/vite';
 import { defineNuxtConfig } from 'nuxt/config';
+import { ofetch } from 'ofetch';
 
 const title = 'Otevřená města';
 const description = 'Partner pro digitalizaci samospráv. Specializujeme se na technickou, právní a metodickou podporu v oblasti digitalizace samospráv.';
@@ -91,11 +92,11 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-02-12',
 
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //   },
-  // },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
 
   vite: {
     plugins: [
@@ -104,6 +105,34 @@ export default defineNuxtConfig({
         svgo: false,
       }),
     ],
+  },
+
+  hooks: {
+    async 'nitro:config'(nitroConfig) {
+      if (nitroConfig.dev) {
+        return;
+      }
+
+      try {
+        const projects = await ofetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
+        if (projects?.data) {
+          nitroConfig.prerender.routes.push(...projects.data.map((project) => `/projects/${project.id}`));
+        }
+
+        const news = await ofetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+
+        if (news?.data) {
+          nitroConfig.prerender.routes.push(...news.data.map((item) => `/news/${item.id}`));
+        }
+
+        const events = await ofetch('/items/events?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+        if (events?.data) {
+          nitroConfig.prerender.routes.push(...events.data.map((item) => `/events/${item.id}`));
+        }
+      } catch (error) {
+        console.warn('Error fetching routes for prerendering:', error);
+      }
+    },
   },
 
   eslint: {
@@ -137,32 +166,6 @@ export default defineNuxtConfig({
       baseURL: 'https://ik.imagekit.io/davidvesely',
     },
   },
-
-  // generate: {
-  //   async routes() {
-  //     const projects = await $fetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
-  //     const news = await $fetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
-
-  //     return [
-  //       ...projects.data.data.map((project) => `/projects/${project.id}`),
-  //       ...news.data.data.map((item) => `/news/${item.id}`),
-  //     ];
-  //   },
-  // },
-
-  // hooks: {
-  //   async 'nitro:config'(nitroConfig) {
-  //     if (nitroConfig.dev) {
-  //       return;
-  //     }
-
-  //     const projects = await ofetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
-  //     nitroConfig.prerender.routes.push(...projects.data.map((project) => `/projects/${project.id}`));
-
-  //     const news = await ofetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
-  //     nitroConfig.prerender.routes.push(...news.data.map((item) => `/news/${item.id}`));
-  //   },
-  // },
 
   lodash: {
     prefix: '_',
