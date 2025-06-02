@@ -38,22 +38,22 @@
 
 <script setup>
 // Refs
-const articles = ref([]);
-
-// Computed
-const article = computed(() => articles.value.find(({ id }) => id === Number(useRoute().params.id)));
+const article = ref(null);
 
 // Lifecycle
 onMounted(async() => {
-  articles.value = await useApi.get(`/items/posts/?lang=${useI18n()?.locale?.value}`)
-    .then((res) => res.data)
+  const articles = await useApi.get(`/items/posts/?lang=${useI18n()?.locale?.value}&filter={"id":{"_eq":${Number(useRoute().params.id)}}}`)
     .catch((error) => {
       console.error(error);
-      return [];
-    });
-});
 
-useCustomHead({
-  title: article.value?.title,
+      return { data: [] };
+    });
+
+  article.value = articles.data?.[0];
+
+  useCustomHead({
+    title: article.value?.title,
+    description: article.value?.perex,
+  });
 });
 </script>
