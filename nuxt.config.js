@@ -29,6 +29,8 @@ export default defineNuxtConfig({
     },
   },
 
+  ssr: true,
+
   imports: {
     dirs: ['./stores'],
   },
@@ -90,13 +92,19 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    '/news/**': { prerender: false },
+    '/events/**': { prerender: false },
+    '/projects/**': { prerender: false },
+  },
+
   compatibilityDate: '2025-02-12',
 
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //   },
+  // },
 
   vite: {
     plugins: [
@@ -107,33 +115,33 @@ export default defineNuxtConfig({
     ],
   },
 
-  hooks: {
-    async 'nitro:config'(nitroConfig) {
-      if (nitroConfig.dev) {
-        return;
-      }
+  // hooks: {
+  //   async 'nitro:config'(nitroConfig) {
+  //     if (nitroConfig.dev) {
+  //       return;
+  //     }
 
-      try {
-        const projects = await ofetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
-        if (projects?.data) {
-          nitroConfig.prerender.routes.push(...projects.data.map((project) => `/projects/${project.id}`));
-        }
+  //     try {
+  //       const projects = await ofetch('/items/projects?limit=25&fields[]=id&page=1', { method: 'GET', baseURL });
+  //       if (projects?.data) {
+  //         nitroConfig.prerender.routes.push(...projects.data.map((project) => `/projects/${project.id}`));
+  //       }
 
-        const news = await ofetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+  //       const news = await ofetch('/items/posts?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
 
-        if (news?.data) {
-          nitroConfig.prerender.routes.push(...news.data.map((item) => `/news/${item.id}`));
-        }
+  //       if (news?.data) {
+  //         nitroConfig.prerender.routes.push(...news.data.map((item) => `/news/${item.id}`));
+  //       }
 
-        const events = await ofetch('/items/events?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
-        if (events?.data) {
-          nitroConfig.prerender.routes.push(...events.data.map((item) => `/events/${item.id}`));
-        }
-      } catch (error) {
-        console.warn('Error fetching routes for prerendering:', error);
-      }
-    },
-  },
+  //       const events = await ofetch('/items/events?fields[]=id&limit=25&page=1', { method: 'GET', baseURL });
+  //       if (events?.data) {
+  //         nitroConfig.prerender.routes.push(...events.data.map((item) => `/events/${item.id}`));
+  //       }
+  //     } catch (error) {
+  //       console.warn('Error fetching routes for prerendering:', error);
+  //     }
+  //   },
+  // },
 
   eslint: {
     config: {
