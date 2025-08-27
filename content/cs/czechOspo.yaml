@@ -1,7 +1,7 @@
 hero:
   title: Declaration
   description: Czech National OSPO
-  content: "Účelem České programové kanceláře Open Source (Czech OSPO) je vytvořit národní síť odborníků na Open Source, která umožní udržitelné využívání Open Source ve veřejném sektoru a na akademické půdě a pomůže vytvořit a aktivizovat komunitu kolem využívání Open Source v těchto sektorech. Sídlo české OSPO bude sídlet v Brně. Jeho oficiální zahájení proběhne 24. 4. 2024 a jeho sekretariátem budou Otevřená města."
+  content: "Účelem České programové kanceláře Open Source (Czech OSPO) je vytvořit národní síť odborníků na Open Source, která umožní udržitelné využívání Open Source ve veřejném sektoru a na akademické půdě a pomůže vytvořit a aktivizovat komunitu kolem využívání Open Source v těchto sektorech. Sídlo české OSPO bude sídlet v Brně. Jeho oficiální zahájení proběhne 24. 4. 2024 a jeho sekretariátem budou Otevřená města. <img src="/img/logo-interreg.png" style="max-width:150px">"
 
 intro:
   items:
