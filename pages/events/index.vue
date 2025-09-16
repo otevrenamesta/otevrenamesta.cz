@@ -63,7 +63,10 @@ const eventsFiltered = computed(() => events.value.filter((event) => !selectedTa
 // Lifecycle
 onMounted(async() => {
   isLoading.value = true;
-  events.value = await useApi.get(`/items/events/?sort=+begin&filter={"begin":{"_gte":"$NOW"}}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*`)
+  const filter = {
+    status: "published"
+  };
+  events.value = await useApi.get(`/items/events/?sort=+begin&filter=${JSON.stringify(filter)}&deep[translations][_filter][languages_code][_eq]=${useI18n()?.locale?.value}&fields=*,translations.*`)
     .then((res) => res.data)
     .catch(() => []);
   isLoading.value = false;
