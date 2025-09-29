@@ -1,11 +1,10 @@
 <template>
   <section class="container">
-    <div class="flex flex-col justify-start items-start">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 border-l border-t border-primary-light [&>*]:border-r [&>*]:border-b [&>*]:border-primary-light">
       <ProjectsProject
         v-for="(project, index) in projects"
         :key="index"
         :project="project"
-        :align="index % 2 === 0 ? 'left' : 'right'"
       />
     </div>
   </section>

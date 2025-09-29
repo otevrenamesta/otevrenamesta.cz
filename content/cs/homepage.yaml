@@ -40,6 +40,8 @@ intro:
 
 projects:
   title: Projekty
+  description: Pro samosprávné celky nabízíme open source aplikace, které jim digitalizaci procesů.
+  showDetail: Zobrazit detail
   all: Všechny projekty
 
 values:

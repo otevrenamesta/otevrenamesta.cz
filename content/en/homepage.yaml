@@ -39,6 +39,8 @@ intro:
 
 projects:
   title: Projects
+  description: We offer open-source applications and tools for local governments.
+  showDetail: Show detail
   all: All projects
 
 values:
