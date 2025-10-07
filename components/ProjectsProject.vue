@@ -24,9 +24,7 @@
         class="text-primary text-base font-medium mb-4"
         v-html="props.project.perex"
       /> -->
-      <nuxt-link
-        :to="$localePath(`/projects/${props.project.id}`)"
-      >
+      <div>
         <Button
           type="transparent"
           icon="icon-arrow-right-link"
@@ -34,7 +32,7 @@
         >
           {{ useContentStore().homepage.projects.showDetail }}
         </Button>
-      </nuxt-link>
+      </div>
 
       <div class="flex justify-between flex-wrap items-start">
         <div

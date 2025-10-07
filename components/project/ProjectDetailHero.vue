@@ -1,6 +1,6 @@
 <template>
   <section class="relative">
-    <div class="relative flex gap-12 p-8">
+    <div class="relative flex gap-12 p-8 flex-col sm:flex-row">
       <div
         class="size-78 bg-primary-100 rounded-lg max-w-full [&_svg]:w-full [&_svg]:h-auto p-4 flex items-center justify-center"
       >

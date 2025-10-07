@@ -1,5 +1,6 @@
 <template>
   <div
+    ref="dialogRef"
     class="fixed z-50 top-0 left-0 w-full h-full bg-white lg:hidden"
     :hidden="!useUiStore().isBurgerDialogOpen"
   >
@@ -7,11 +8,11 @@
       <div class="container flex flex-col justify-between h-full py-block-0.5 overflow-auto">
         <div>
           <LogoOm
-            class="w-44 h-auto"
+            class="w-40 h-auto"
           />
 
           <button
-            class="w-10 sm:w-14 h-10 sm:h-14 bg-primary text-white flex items-center justify-center absolute top-block-0.75 right-block-0.5"
+            class="w-10 sm:w-14 h-10 sm:h-14 bg-primary text-white flex items-center justify-center absolute top-block-0.75 right-block-1"
             @click="() => useUiStore().setBurgerDialogOpen(false)"
           >
             <svg
@@ -37,7 +38,7 @@
           </button>
         </div>
 
-        <nav class="flex flex-col gap-block-0.5 py-block-1">
+        <nav class="flex flex-col gap-block-0.5 py-block-5 flex-1">
           <nuxt-link
             v-for="(item, index) in menuItems"
             :key="index"
@@ -62,19 +63,88 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import LogoOm from '~/assets/img/logo-om.svg';
 
-export default {
-  components: {
-    LogoOm,
-  },
-  computed: {
-    menuItems() {
-      return useContentStore().global?.menuItems;
-    },
-  },
+const dialogRef = ref(null);
+const uiStore = useUiStore();
+
+// Get all focusable elements within the dialog
+const getFocusableElements = () => {
+  if (!dialogRef.value) return [];
+
+  const focusableSelectors = [
+    'a[href]',
+    'button:not([disabled])',
+    'input:not([disabled])',
+    'select:not([disabled])',
+    'textarea:not([disabled])',
+    '[tabindex]:not([tabindex="-1"])',
+  ];
+
+  return Array.from(
+    dialogRef.value.querySelectorAll(focusableSelectors.join(',')),
+  ).filter((el) => !el.hasAttribute('disabled') && !el.getAttribute('aria-hidden'));
 };
+
+// Handle Tab key to trap focus
+const handleKeyDown = (e) => {
+  if (!uiStore.isBurgerDialogOpen) return;
+
+  // Handle Escape key
+  if (e.key === 'Escape') {
+    uiStore.setBurgerDialogOpen(false);
+    return;
+  }
+
+  // Handle Tab key for focus trap
+  if (e.key === 'Tab') {
+    const focusableElements = getFocusableElements();
+    if (focusableElements.length === 0) return;
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    // If Shift + Tab on first element, go to last
+    if (e.shiftKey && document.activeElement === firstElement) {
+      e.preventDefault();
+      lastElement.focus();
+    } else if (!e.shiftKey && document.activeElement === lastElement) {
+      // If Tab on last element, go to first
+      e.preventDefault();
+      firstElement.focus();
+    }
+  }
+};
+
+// Watch for dialog open state changes
+watch(() => uiStore.isBurgerDialogOpen, (isOpen) => {
+  if (isOpen) {
+    // Disable page scroll
+    document.body.style.overflow = 'hidden';
+
+    nextTick(() => {
+      // Focus the first focusable element
+      const focusableElements = getFocusableElements();
+      if (focusableElements.length > 0) {
+        focusableElements[0].focus();
+      }
+    });
+  } else {
+    // Re-enable page scroll
+    document.body.style.overflow = '';
+  }
+});
+
+onMounted(() => {
+  document.addEventListener('keydown', handleKeyDown);
+});
+
+onUnmounted(() => {
+  document.removeEventListener('keydown', handleKeyDown);
+});
+
+const menuItems = computed(() => useContentStore().global?.menuItems);
 </script>
 
 <style scoped>
