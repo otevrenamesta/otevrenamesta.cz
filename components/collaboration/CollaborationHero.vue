@@ -7,7 +7,7 @@
         </strong>
         <h2
           v-preposition-space
-          class="text-primary text-2xl md:text-5xl md:leading-tight font-bold tracking-tighter w-9/12"
+          class="text-primary text-xl sm:text-2xl lg:text-3xl xl:text-5xl md:leading-tight font-bold tracking-tighter w-[95%] md:w-9/12"
           v-html="hero.description"
         />
       </div>
@@ -30,7 +30,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-2 right-0 hidden lg:block"
         />
         <Grid
-          :rows="($grid?.height > 800 || !$grid?.sm) ? 7 : 6"
+          :rows="($grid?.height > 800 || !$grid?.sm) ? 12 : 8"
         />
       </div>
     </div>

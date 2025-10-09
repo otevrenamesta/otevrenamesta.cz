@@ -7,7 +7,7 @@
         </strong>
         <h2
           v-preposition-space
-          class="text-primary text-2xl lg:text-5xl lg:leading-tight font-bold tracking-tighter w-10/12"
+          class="text-primary text-lg sm:text-2xl lg:text-5xl lg:leading-tight font-bold tracking-tighter w-[95%] md:w-10/12"
           v-html="hero.description"
         />
         <nuxt-link
@@ -38,7 +38,7 @@
           class="w-block-2 h-block-2 bg-primary absolute bottom-block-4 right-0 hidden lg:block"
         />
         <Grid
-          :rows="$grid?.['2xl'] ? 7 : ($grid?.md ? 8 : 10)"
+          :rows="$grid?.['2xl'] ? 7 : ($grid?.sm ? 10 : 16)"
         />
       </div>
     </div>

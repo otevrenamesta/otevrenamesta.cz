@@ -29,6 +29,7 @@
       >
         <div class="px-block-0.5">
           <nuxt-img
+            v-if="article.image"
             :src="article.image.replace('?mode=crop&center=0.5,0.5&rnd=132199332150000000&width=575', '')"
             :alt="article.title"
             width="600"
