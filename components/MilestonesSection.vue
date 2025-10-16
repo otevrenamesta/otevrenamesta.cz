@@ -69,7 +69,7 @@ const getNumber = (id) => {
 
       try {
         const budgetText = member.memberFee.split(' Kč')[0] || member.memberFee;
-        const memberBudget = Number(budgetText.replace(/ /g, ''));
+        const memberBudget = Number(budgetText.replace(/\D/g, ''));
         return isNaN(memberBudget) ? acc : acc + memberBudget;
       } catch {
         console.error('Error parsing budget for member:', member.id);

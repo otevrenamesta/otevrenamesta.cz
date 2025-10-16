@@ -1,7 +1,7 @@
 <template>
   <section
     v-show="images?.length"
-    class="pt-block-1 pb-block-1"
+    class="p-8"
   >
     <h3 class="uppercase text-primary text-lg font-bold mb-block-0.5">
       Galerie

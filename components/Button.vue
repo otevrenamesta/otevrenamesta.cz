@@ -22,6 +22,7 @@
       :class="[
         icon === 'icon-arrow-open' ? 'group-hover:translate-x-0.5 group-hover:-translate-y-0.5' : '',
         icon === 'icon-arrow-right' ? 'group-hover:translate-x-0.5' : '',
+        icon === 'icon-arrow-right-link' ? 'group-hover:translate-x-0.5' : '',
       ]"
     />
   </button>
@@ -30,11 +31,13 @@
 <script>
 import IconArrowOpen from '~/assets/img/icon-arrow-open.svg';
 import IconArrowRight from '~/assets/img/icon-arrow-right.svg';
+import IconArrowRightLink from '~/assets/img/icon-arrow-right-link.svg';
 
 export default {
   components: {
     IconArrowOpen,
     IconArrowRight,
+    IconArrowRightLink,
   },
 
   props: {

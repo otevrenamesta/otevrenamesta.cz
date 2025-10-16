@@ -1,9 +1,12 @@
 <template>
   <section>
     <div class="container">
-      <h2 class="text-primary font-bold text-4xl mb-1 tracking-tight">
+      <h2 class="text-primary font-bold text-4xl mb-4 tracking-tight">
         {{ useContentStore().homepage.projects.title }}
       </h2>
+      <div class="text-base text-gray mb-4 max-w-[30rem]">
+        {{ useContentStore().homepage.projects.description }}
+      </div>
       <nuxt-link
         :to="$localePath('/projects')"
         class="block mb-block-1 xs:mb-block-0.5"
@@ -19,13 +22,8 @@
     </div>
 
     <section class="container relative mb-block-6">
-      <Grid
-        :rows="gridRows"
-        class="absolute top-0 left-0 w-full h-full"
-      />
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-block-2">
-        <HomepageProjectsProject
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 border-l border-t border-primary-light [&>*]:border-r [&>*]:border-b [&>*]:border-primary-light">
+        <ProjectsProject
           v-for="(project, index) in projects"
           :key="index"
           :project="project"

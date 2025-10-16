@@ -3,7 +3,7 @@
     <img
       :src="person.img"
       :alt="person.fullname"
-      class="mb-6"
+      class="mb-6 w-full"
     >
     <h3 class="text-lg uppercase font-bold mb-1">
       {{ person.fullname }}

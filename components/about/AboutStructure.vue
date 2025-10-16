@@ -1,7 +1,7 @@
 <template>
   <section class="container container--md flex flex-col md:flex-row md:items-start">
     <div class="w-full md:w-1/2 border-none md:border-r border-primary-light">
-      <div class="w-block-6 mb-block-2 md:mb-0">
+      <div class="md:w-block-6 mb-block-2 md:mb-0">
         <IconLogoOm
           class="mb-block-1.5"
         />
@@ -16,7 +16,7 @@
         />
       </div>
     </div>
-    <div class="w-1/2 flex flex-col items-end border-l border-primary-light/50">
+    <div class="md:w-1/2 flex flex-col items-end border-l border-primary-light/50">
       <article
         v-for="(item, index) in structure.items"
         :key="index"

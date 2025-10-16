@@ -13,7 +13,10 @@
 
 
   --color-primary: #1E1796;
+  --color-primary-100: #EFF5FF;
+  --color-primary-200: #D1E3FF;
   --color-primary-light: #D4E2FF;
+  --color-primary-300: #AFC8FF;
   --color-primary-dark: #0F0787;
   --color-secondary: #00D48F;
   --color-secondary-dark: #00563C;

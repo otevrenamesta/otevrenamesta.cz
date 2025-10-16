@@ -1,5 +1,5 @@
 <template>
-  <section class="Hero flex items-end h-screen min-h-[700px]">
+  <section class="Hero flex items-end h-dvh min-h-[700px]">
     <div class="container flex items-end justify-end relative h-full">
       <div class="HeroBox bg-primary pt-10 s:pt-12 sm:pt-20 pb-10 sm:pb-14 pl-10 s:pl-12 sm:pl-16 w-10/12 sm:w-auto md:pr-14">
         <h2

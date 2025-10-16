@@ -1,15 +1,11 @@
 <template>
   <div>
     <div class="relative w-full mb-2">
-      <div class="bg-secondary rounded-xl text-sm px-1.5 py-px inline-block font-semibold text-white relative z-10">
+      <div class="rounded text-primary bg-primary-200 inline-block px-1 leading-relaxed pb-0.5">
         {{ item.date }}
       </div>
-      <div
-        class="bg-secondary h-px w-full absolute top-1/2 left-0 xs:hidden"
-        :class="isLast ? 'hidden' : ''"
-      />
     </div>
-    <p class="text-base font-semibold pr-3">
+    <p class="text-base pr-3 text-gray">
       {{ item.title }}
     </p>
   </div>
