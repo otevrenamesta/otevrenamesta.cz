@@ -17,21 +17,21 @@ menuItems:
     text: Contact
 
 milestones:
-  - number:  20
+  - id: members
     title: members
-    description: Open Cities is now composed of 20 members from different levels of government in the country.
+    description: Open Cities is now composed of {number} members from different levels of government in the country.
 
-  - number: 2 083 518
+  - id: citizens
     title: citizens
-    description: The activities of Open Cities impact 2 083 518 citizens who are association members.
+    description: The activities of Open Cities impact {number} citizens who are association members.
 
-  - number: 6
+  - id: projects
     title: products
     description: Open Cities now manages three software products in production as tools for digitalizing local governments.
 
-  - number: 1 000 000
+  - id: budget
     title: CZK
-    description: Open Cities now manages approximately 1,000,000 CZK per year.
+    description: Open Cities now manages approximately {number} CZK per year.
 
 contact:
   name: Otevřená města, z. s.

@@ -26,8 +26,8 @@ milestones:
     description: Činnost Otevřených měst má dopad na {number} občanů členů spolku.
 
   - id: projects
-    title: produkty
-    description: Otevřená města nyní spravují v produkci {number} softwarové produkty jako nástroje digitalizace místních samospráv.
+    title: produktů
+    description: Otevřená města nyní spravují {number} softwarových produktů jako nástroje digitalizace místních samospráv.
 
   - id: budget
     title: Kč
