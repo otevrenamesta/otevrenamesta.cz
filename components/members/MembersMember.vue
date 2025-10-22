@@ -22,7 +22,7 @@
       </h2>
       <p class="mb-3">
         <span class="text-secondary text-[12px] leading-tight uppercase font-medium block">
-          Zástupce
+          {{ content.labels.agent }}
         </span>
         <strong class="text-sm font-bold text-primary">
           {{ member.agent }}
@@ -30,7 +30,7 @@
       </p>
       <p class="mb-3">
         <span class="text-secondary text-[12px] leading-tight uppercase font-medium block">
-          Počet obyvatel
+          {{ content.labels.population }}
         </span>
         <strong class="text-sm font-bold text-primary">
           {{ member.population }}
@@ -38,7 +38,7 @@
       </p>
       <p class="mb-3">
         <span class="text-secondary text-[12px] leading-tight uppercase font-medium block">
-          Členský poplatek
+          {{ content.labels.memberFee }}
         </span>
         <strong class="text-sm font-bold text-primary">
           {{ member.memberFee }}
@@ -49,7 +49,7 @@
         class="mb-3"
       >
         <span class="text-secondary text-[12px] leading-tight uppercase font-medium block">
-          Podíl hlasů
+          {{ content.labels.shareOfVotes }}
         </span>
         <strong class="text-sm font-bold text-primary">
           {{ member.shareOfVotes }}
@@ -65,6 +65,11 @@ export default {
     member: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    content() {
+      return useContentStore().members;
     },
   },
 };

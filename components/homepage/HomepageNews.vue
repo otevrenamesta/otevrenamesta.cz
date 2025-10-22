@@ -41,7 +41,7 @@
               icon="icon-arrow-right"
               class="text-secondary px-0"
             >
-              Číst více
+              {{ news.readMore }}
             </Button>
           </nuxt-link>
         </article>

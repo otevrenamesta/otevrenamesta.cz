@@ -71,6 +71,26 @@ joinUs:
   title: Spolupracujte s námi
   description: Věříme, že vás některá z možností spolupráce zaujala. Ozvěte se nám prostřednictvím kontaktního formuláře a společně vymyslíme, jak nejlépe vyhovět vašim požadavkům.
 
+form:
+  thankYou: Děkujeme za Váš zájem.
+  fullname: Jméno a příjmení*
+  fullnamePlaceholder: Zadejte jméno...
+  city: Město/kraj*
+  cityPlaceholder: Zadejte město...
+  email: Email*
+  emailPlaceholder: Zadejte email...
+  phone: Telefon
+  phonePlaceholder: Zadejte telefon...
+  message: Zpráva
+  messagePlaceholder: Zadejte zprávu...
+  interestedInLabel: Mám zájem o
+  membership: Členství
+  services: Nákup služeb
+  information: Informace
+  consent: Vyplněním a odesláním formuláře souhlasíte se zpracováním Vašich osobních údajů.
+  submit: Odeslat
+  error: Omlouváme se, došlo k chybě při odesílání formuláře
+
 
 
 

@@ -3,6 +3,12 @@ hero:
   description: Open Cities brings together municipalities and regions interested in digitization and introducing open solutions into the running of their authorities. Members of the Association can be local governments actively promoting modern digital public administration, data-driven decision-making, and citizen support.
   cta: Become a member
 
+labels:
+  agent: Representative
+  population: Population
+  memberFee: Membership fee
+  shareOfVotes: Share of votes
+
 members:
   - fullname: Benešov
     agent: Jaroslav Hlavnička

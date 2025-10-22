@@ -62,6 +62,7 @@ values:
 news:
   title: Aktuálně
   showMore: Přejít na všechny články
+  readMore: Číst více
 
 events:
   title: Aktuální akce

@@ -5,7 +5,7 @@
   >
     <div v-if="isSubmitted">
       <h2 class="text-center text-white text-4xl font-semibold">
-        Thank you for your support.
+        {{ content.form.thankYou }}
       </h2>
     </div>
 
@@ -13,13 +13,13 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Name and Surname*
+            {{ content.form.fullname }}
           </span>
           <input
             v-model="form.fullname"
             type="text"
             class="FormInput"
-            placeholder="Insert your name…"
+            :placeholder="content.form.fullnamePlaceholder"
             required
           >
         </label>
@@ -28,26 +28,26 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Email*
+            {{ content.form.email }}
           </span>
           <input
             v-model="form.email"
             type="email"
             class="FormInput"
-            placeholder="Insert your email…"
+            :placeholder="content.form.emailPlaceholder"
             required
           >
         </label>
 
         <label class="FormGroup">
           <span class="FormLabel">
-            Phone
+            {{ content.form.phone }}
           </span>
           <input
             v-model="form.phone"
             type="tel"
             class="FormInput"
-            placeholder="Insert your phone number…"
+            :placeholder="content.form.phonePlaceholder"
           >
         </label>
       </div>
@@ -55,12 +55,12 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Organization
+            {{ content.form.organization }}
           </span>
           <input
             v-model="form.organization"
             class="FormInput"
-            placeholder="Insert your organization…"
+            :placeholder="content.form.organizationPlaceholder"
           >
         </label>
       </div>
@@ -68,12 +68,12 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Position at the organization
+            {{ content.form.position }}
           </span>
           <input
             v-model="form.position"
             class="FormInput"
-            placeholder="Insert your position…"
+            :placeholder="content.form.positionPlaceholder"
           >
         </label>
       </div>
@@ -91,7 +91,7 @@
                 >
               </div>
               <span class="text-lg text-white font-bold">
-                I am signing on behalf the organization
+                {{ content.form.onOrgBehalf }}
               </span>
             </label>
           </div>
@@ -107,7 +107,7 @@
 
       <div class="flex items-start justify-between flex-col sm:flex-row gap-x-4">
         <p class="text-sm max-w-xs mb-4 sm:mb-0">
-          By filling out and sending the form, you agree to the processing of your personal data.
+          {{ content.form.consent }}
         </p>
         <Button
           type="dark"
@@ -115,7 +115,7 @@
           native-type="submit"
           class="whitespace-nowrap"
         >
-          Support Brno Declaration
+          {{ content.form.submit }}
         </Button>
       </div>
     </template>
@@ -124,6 +124,9 @@
 
 <script setup>
 import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
+
+// Computed
+const content = computed(() => useContentStore().declaration);
 
 // Refs
 const isSubmitting = ref(false);
@@ -166,7 +169,7 @@ const verifiedSubmit = async(token) => {
     isSubmitted.value = true;
   } catch (error) {
     console.error(error);
-    alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+    alert(content.value.form.error);
     isSubmitting.value = false;
   }
 };

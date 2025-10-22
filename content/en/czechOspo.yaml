@@ -67,17 +67,18 @@ support:
   description: "Pokud Vás oslovila vize české národní OSPO, kontaktuje nás na <a href='mailto:info@otevrenamesta.cz'>info@otevrenamesta.cz</a>. Ozveme se Vám se všemi potřebnými kroky k úspěšné otevřené spolupráci. <br><br> Pokud byste chtěli připojit svůj podpis pod tuto deklaraci a vyjádřit jí takto podporu, prosím učiňte tak skrz formulář."
 
 form:
-  thankYou: Děkujeme za Vaši podporu.
-  fullname: Jméno a příjmení*
-  fullnamePlaceholder: Zadejte Vaše jméno a příjmení
-  city: Město*
-  cityPlaceholder: Zadejte Vaše město
+  thankYou: Thank you for your support.
+  fullname: Name and Surname*
+  fullnamePlaceholder: Enter your name and surname
+  city: City*
+  cityPlaceholder: Enter your city
   email: Email*
-  emailPlaceholder: Zadejte Vaši emailovou adresu
-  organization: Organizace
-  organizationPlaceholder: Zadejte Vaši organizaci
-  position: Pracovní pozice
-  positionPlaceholder: Zadejte Vaši funkci
-  onOrgBehalf: Podepisuji jménem organizace
-  consent: Vyplněním a odesláním formuláře souhlasíte se zpracováním Vašich osobních údajů.
-  submit: PODPOŘIT BRNO DECLARATION
+  emailPlaceholder: Enter your email address
+  organization: Organization
+  organizationPlaceholder: Enter your organization
+  position: Position
+  positionPlaceholder: Enter your position
+  onOrgBehalf: I am signing on behalf of the organization
+  consent: By filling out and sending the form, you agree to the processing of your personal data.
+  submit: SUPPORT BRNO DECLARATION
+  error: We apologize, an error occurred while submitting the form

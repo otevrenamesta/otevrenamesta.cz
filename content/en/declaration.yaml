@@ -39,8 +39,8 @@ signatories:
    - letter: A
      items:
       - title: ASWA - Asociace softwarových agentur z.s.
-        description: "CEO, Jakub Chalupa"   
-        isOrganization: true   
+        description: "CEO, Jakub Chalupa"
+        isOrganization: true
    - letter: B
      items:
       - title: Benedikt Kotmel
@@ -52,7 +52,7 @@ signatories:
         isOrganization: true
       - title: CSGOV
         description: "Founder, Petr Illek"
-        isOrganization: true       
+        isOrganization: true
    - letter: D
      items:
       - title: Dorota Volavková
@@ -61,7 +61,7 @@ signatories:
       - title: Elizabieta Godlewska
         description: "Partner development, Linux Professional Institute"
    - letter: F
-     items:        
+     items:
       - title: FlowerChecker
         description: "CEO, Ondřej Veselý"
         isOrganization: true
@@ -69,28 +69,28 @@ signatories:
      items:
       - title: Hlídač státu
         description: "CEO, Michal Bláha"
-        isOrganization: true   
+        isOrganization: true
    - letter: CH
      items:
       - title: Chamber of Commerce, South Moravia
         description: "CEO, Tomáš Psota"
-        isOrganization: true  
+        isOrganization: true
    - letter: J
      items:
       - title: Jakub Onderka
-        description: "Security analyst, National Cyber and Information Security Authority"   
+        description: "Security analyst, National Cyber and Information Security Authority"
       - title: Jakub Trojan
         description: "Univerzita Tomáše Bati ve Zlíně, akademický pracovník"
       - title: Jan Jílek
       - title: Jan Pacner
         description: "Program Management Officer"
       - title: Jiří Doubravský
-        description: "Developer, Magistrát města Olomouce"      
+        description: "Developer, Magistrát města Olomouce"
       - title: Jiří Marek
         description: "Open Science manager, Masaryk University"
       - title: Josef Bátrla
         description: "Advokát"
-      - title: Josef Šmída        
+      - title: Josef Šmída
    - letter: K
      items:
       - title: Karel Kočí
@@ -156,17 +156,17 @@ signatories:
         description: "CEO, Tomáš Svoboda"
         isOrganization: true
       - title: Tereza Zrnová
-        description: "Coordinator, Operátor ICT" 
+        description: "Coordinator, Operátor ICT"
       - title: Tolgee
         description: "CEO, Jan Cizmar"
         isOrganization: true
       - title: Tomáš Kapler
-        description: "Předseda IT komise, Praha 11" 
+        description: "Předseda IT komise, Praha 11"
    - letter: V
      items:
       - title: Valentýna Drtinová
    - letter: W
-     items:    
+     items:
       - title: Wikimedia Česká republika
         description: "Výkonná ředitelka, Klára Joklová"
         isOrganization: true
@@ -178,3 +178,20 @@ signatories:
 support:
   title: Support Brno Declaration
   description: If you would like to add your signature to this declaration and express your support in this way, please do so through the form.
+
+form:
+  thankYou: Thank you for your support.
+  fullname: Name and Surname*
+  fullnamePlaceholder: Insert your name…
+  email: Email*
+  emailPlaceholder: Insert your email…
+  phone: Phone
+  phonePlaceholder: Insert your phone number…
+  organization: Organization
+  organizationPlaceholder: Insert your organization…
+  position: Position at the organization
+  positionPlaceholder: Insert your position…
+  onOrgBehalf: I am signing on behalf the organization
+  consent: By filling out and sending the form, you agree to the processing of your personal data.
+  submit: SUPPORT BRNO DECLARATION
+  error: We apologize, an error occurred while submitting the form

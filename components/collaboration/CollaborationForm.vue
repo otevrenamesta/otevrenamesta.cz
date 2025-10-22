@@ -5,7 +5,7 @@
   >
     <div v-if="isSubmitted">
       <h2 class="text-center text-white text-4xl font-semibold">
-        Děkujeme za Váš zájem.
+        {{ content.form.thankYou }}
       </h2>
     </div>
 
@@ -13,26 +13,26 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Jméno a příjmení*
+            {{ content.form.fullname }}
           </span>
           <input
             v-model="form.fullname"
             type="text"
             class="FormInput"
-            placeholder="Zadejte jméno..."
+            :placeholder="content.form.fullnamePlaceholder"
             required
           >
         </label>
 
         <label class="FormGroup">
           <span class="FormLabel">
-            Město/kraj*
+            {{ content.form.city }}
           </span>
           <input
             v-model="form.city"
             type="text"
             class="FormInput"
-            placeholder="Zadejte město..."
+            :placeholder="content.form.cityPlaceholder"
             required
           >
         </label>
@@ -41,26 +41,26 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Email*
+            {{ content.form.email }}
           </span>
           <input
             v-model="form.email"
             type="email"
             class="FormInput"
-            placeholder="Zadejte email..."
+            :placeholder="content.form.emailPlaceholder"
             required
           >
         </label>
 
         <label class="FormGroup">
           <span class="FormLabel">
-            Telefon
+            {{ content.form.phone }}
           </span>
           <input
             v-model="form.phone"
             type="tel"
             class="FormInput"
-            placeholder="Zadejte telefon..."
+            :placeholder="content.form.phonePlaceholder"
           >
         </label>
       </div>
@@ -68,12 +68,12 @@
       <div class="flex items-center gap-5 flex-col sm:flex-row">
         <label class="FormGroup">
           <span class="FormLabel">
-            Zpráva
+            {{ content.form.message }}
           </span>
           <textarea
             v-model="form.message"
             class="FormInput"
-            placeholder="Zadejte zprávu..."
+            :placeholder="content.form.messagePlaceholder"
           />
         </label>
       </div>
@@ -81,7 +81,7 @@
       <div class="flex items-center gap-5 mb-10">
         <div class="FormGroup">
           <span class="FormLabel mb-5">
-            Mám zájem o
+            {{ content.form.interestedInLabel }}
           </span>
           <div class="flex mt-5 flex-col sm:items-center sm:flex-row">
             <label class="FormRadioGroup mb-4 sm:mb-0">
@@ -94,7 +94,7 @@
                 >
               </div>
               <span class="text-lg text-white font-bold">
-                Členství
+                {{ content.form.membership }}
               </span>
             </label>
             <label class="FormRadioGroup mb-4 sm:mb-0">
@@ -108,7 +108,7 @@
                 >
               </div>
               <span class="text-lg text-white font-bold">
-                Nákup služeb
+                {{ content.form.services }}
               </span>
             </label>
             <label class="FormRadioGroup">
@@ -122,7 +122,7 @@
                 >
               </div>
               <span class="text-lg text-white font-bold">
-                Informace
+                {{ content.form.information }}
               </span>
             </label>
           </div>
@@ -138,15 +138,14 @@
 
       <div class="flex items-start justify-between flex-col sm:flex-row">
         <p class="text-sm max-w-xs mb-4 sm:mb-0">
-          Vyplněním a odesláním formuláře souhlasíte
-          se zpracováním Vašich osobních údajů.
+          {{ content.form.consent }}
         </p>
         <Button
           type="dark"
           icon="icon-arrow-open"
           native-type="submit"
         >
-          Odeslat
+          {{ content.form.submit }}
         </Button>
       </div>
     </template>
@@ -155,6 +154,9 @@
 
 <script setup>
 import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
+
+// Computed
+const content = computed(() => useContentStore().collaboration);
 
 // Refs
 const isSubmitting = ref(false);
@@ -198,7 +200,7 @@ const verifiedSubmit = async(token) => {
     isSubmitted.value = true;
   } catch (error) {
     console.error(error);
-    alert('Omlouváme se, došlo k chybě při odesílání formuláře');
+    alert(content.value.form.error);
     isSubmitting.value = false;
   }
 };

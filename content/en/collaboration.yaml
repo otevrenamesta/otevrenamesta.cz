@@ -66,6 +66,26 @@ joinUs:
   title: Cooperate with us
   description: We hope that you are interested in some of the possibilities of cooperation. Please get in touch with us via the contact form, and together we will work out how best to meet your requirements.
 
+form:
+  thankYou: Thank you for your interest.
+  fullname: Name and Surname*
+  fullnamePlaceholder: Enter your name...
+  city: City/Region*
+  cityPlaceholder: Enter city...
+  email: Email*
+  emailPlaceholder: Enter email...
+  phone: Phone
+  phonePlaceholder: Enter phone...
+  message: Message
+  messagePlaceholder: Enter message...
+  interestedInLabel: I am interested in
+  membership: Membership
+  services: Purchase of services
+  information: Information
+  consent: By filling out and sending the form, you agree to the processing of your personal data.
+  submit: Submit
+  error: We apologize, an error occurred while submitting the form
+
 
 
 

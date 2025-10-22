@@ -7,3 +7,7 @@ cta:
     title: I want to become a member
     description: Do you like this product, and would you like to contribute to its direction?
     button: Find out more
+
+users:
+  title: Project users
+  visitWebsite: Visit website

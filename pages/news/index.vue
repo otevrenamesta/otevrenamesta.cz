@@ -2,7 +2,7 @@
   <main class="mt-block-3 md:mt-block-4 container">
     <div>
       <h2 class="text-primary font-bold text-4xl mb-block-0.5 md:mb-block-1 tracking-tight">
-        Články
+        {{ useContentStore().global.news.title }}
       </h2>
     </div>
     <div class="flex items-center flex-wrap mb-block-1 sm:mb-block-2">
@@ -81,6 +81,6 @@ onMounted(async() => {
 });
 
 useCustomHead({
-  title: 'Články',
+  title: useContentStore().global.news.title,
 });
 </script>

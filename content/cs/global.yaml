@@ -52,6 +52,14 @@ footer:
     - text: Obchodní podmínky
       url: https://drive.google.com/file/d/1uCYMZHxKMczAZQpOXpYZ9ecOnCthiXXG/view
 
+news:
+  title: Články
+
+otherProject:
+  title: Cityvizor
+  subtitle: Transparentní hospodaření pro každé město a obec
+  button: Zjistit více
+
 socials:
     - name: facebook
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="24.042" height="23.897" viewBox="0 0 24.042 23.897"><g id="Group_84" data-name="Group 84" transform="translate(-31 -44.169)"><path id="Path_88" data-name="Path 88" d="M55.042 44.421A12.021 12.021 0 1 0 41.14 56.3v-8.4h-3.056v-3.479h3.056v-2.65c0-3.013 1.8-4.675 4.541-4.675a18.521 18.521 0 0 1 2.693.235v2.954h-1.517a1.739 1.739 0 0 0-1.957 1.876v2.255h3.33l-.53 3.472h-2.8v8.4a12.012 12.012 0 0 0 10.142-11.867Z" transform="translate(0 11.769)" fill="currentColor"/></g></svg>

@@ -1,7 +1,7 @@
 <template>
   <section class="p-8">
     <h3 class="uppercase text-primary text-lg font-bold mb-block-0.5">
-      Uživatelé projektu
+      {{ useContentStore().project.users.title }}
     </h3>
     <div>
       <div
@@ -25,7 +25,7 @@
             icon="icon-arrow-right"
             class="text-secondary px-0"
           >
-            Přejít na web
+            {{ useContentStore().project.users.visitWebsite }}
           </Button>
         </a>
       </div>

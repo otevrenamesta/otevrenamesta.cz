@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2 class="text-primary-dark font-bold text-4xl mb-8">
-      Členové výboru
+      {{ useContentStore().about.team.leadership }}
     </h2>
     <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
       <div
@@ -17,7 +17,7 @@
     </div>
 
     <h2 class="text-secondary font-bold text-4xl mb-8 mt-block-1.5">
-      Projektová rada
+      {{ useContentStore().about.team.projectBoard }}
     </h2>
     <div class="flex flex-wrap -mx-6 md:-mx-block-0.5">
       <div

@@ -2,6 +2,10 @@ hero:
   title: O nás
   description: Jsme nezisková organizace se specializací na digitalizaci samospráv. Poskytujeme technickou, právní a metodickou podporu. Věnujeme se sdílení dobré praxe a podporujeme otevřená a modulární řešení pro obce, kraje a regiony.
 
+team:
+  leadership: Členové výboru
+  projectBoard: Projektová rada
+
 structure:
   title: Struktura <br>organizace
   description: Otevřená města tvoří 3 hlavní orgány, kterými je výbor, projektová rada a členská schůze. Všechny části spolu vzájemné komunikují a mají rozdělené komptence.

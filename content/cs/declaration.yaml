@@ -151,7 +151,7 @@ signatories:
      items:
       - title: SUSE
         description: "VP Linux Delivery, Petr Uzel"
-        isOrganization: true   
+        isOrganization: true
    - letter: T
      items:
       - title: Technicinsider
@@ -180,3 +180,20 @@ signatories:
 support:
   title: Support Brno Declaration
   description: If you would like to add your signature to this declaration and express your support in this way, please do so through the form.
+
+form:
+  thankYou: Děkujeme za Vaši podporu.
+  fullname: Jméno a příjmení*
+  fullnamePlaceholder: Zadejte Vaše jméno a příjmení
+  email: Email*
+  emailPlaceholder: Zadejte Vaši emailovou adresu
+  phone: Telefon
+  phonePlaceholder: Zadejte Vaše telefonní číslo
+  organization: Organizace
+  organizationPlaceholder: Zadejte Vaši organizaci
+  position: Pracovní pozice
+  positionPlaceholder: Zadejte Vaši funkci
+  onOrgBehalf: Podepisuji jménem organizace
+  consent: Vyplněním a odesláním formuláře souhlasíte se zpracováním Vašich osobních údajů.
+  submit: PODPOŘIT BRNO DECLARATION
+  error: Omlouváme se, došlo k chybě při odesílání formuláře

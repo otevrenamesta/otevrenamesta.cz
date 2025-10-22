@@ -2,6 +2,10 @@ hero:
   title: About us
   description: We are a non-profit organization specializing in the digitization of local governments. We provide technical, legal, and methodological support. We are dedicated to sharing good practices and promoting open and modular solutions for municipalities, regions, and counties.
 
+team:
+  leadership: Committee members
+  projectBoard: Project Board
+
 structure:
   title: Structure <br>of the organization
   description: "Open Cities consists of 3 central bodies: the Committee, the project board, and the membership meeting. All the parts communicate with each other and have divided responsibilities."
