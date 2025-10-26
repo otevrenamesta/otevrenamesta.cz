@@ -21,7 +21,7 @@ structure:
       bg: bg-secondary
       number: "02"
       title: Project board
-      description: a.	The Open Cities Project Board is an expert advisory body to the Open Cities Committee. It focuses on expert support in professional matters within the scope of the Association and in project management. It is a body of selected experts with experience in digitalizing local government, open data, legal, and cyber security issues. The Committee of the Association elects the Project Board for two years.
+      description: The Open Cities Project Board is an expert advisory body to the Open Cities Committee. It focuses on expert support in professional matters within the scope of the Association and in project management. It is a body of selected experts with experience in digitalizing local government, open data, legal, and cyber security issues. The Committee of the Association elects the Project Board for two years.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 331" stroke="#00d48f"><path data-name="Rectangle 223" d="M61 16v30H31V16z"/><path data-name="Rectangle 224" d="M90 46v29H61V46z"/><path data-name="Rectangle 225" d="M90 16v30H61V16z"/></g><path data-name="Rectangle 896" d="M0 0h121v91H0z"/></g></svg>
 
     - color: text-primary-dark
