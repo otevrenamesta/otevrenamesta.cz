@@ -21,6 +21,11 @@ sections:
   member:
     title: Become a member
     description: If digitalization is essential to your local government, we will welcome you as a member of the Association. This will give you many benefits and allow you to influence the direction of our activities directly.
+    join:
+      title: Become a member
+      description: "Application is available here (CZ):"
+      button: Apply now
+      url: "https://docs.google.com/document/d/14gJSg_6jgEqxnQO6cvHFFF_KvxjiftWu/edit"
     membership:
       title: Membership fee
       description: "The membership fee is calculated according to the number of inhabitants and is always determined per calendar year:<br>
@@ -48,8 +53,8 @@ sections:
     description: If you are interested in any of our products and want to try out the cooperation before becoming a member of the Association, feel free to inquire separately about any of our services.
     pricing:
       title: Price list
-      description: "The price list for our services is available here:"
-      url: "https://drive.google.com/file/d/1uz3QjGvVAGXHZ74_PaYTlt8QiLAXaDBv/view?usp=sharing"
+      description: "The price list for our services is available here (CZ):"
+      url: "https://api.www.otevrenamesta.cz/assets/6db95058-6ee7-44ba-b0c0-6c786b98dd03.pdf"
     benefits:
         title: Benefits
         items:
