@@ -61,7 +61,6 @@
         <a
           v-if="project.pricelist?.length"
           :href="project.pricelist"
-          target="_blank"
         >
           <Button
             type="outline"
