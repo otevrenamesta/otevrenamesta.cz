@@ -21,6 +21,7 @@
     "animated-scroll-to": "2.3.2",
     "dayjs": "1.11.13",
     "markdown-it": "14.1.0",
+    "markdown-it-anchor": "^9.2.0",
     "nuxt-lodash": "2.5.3",
     "pinia": "3.0.0",
     "vue-easy-lightbox": "1.19.0",
