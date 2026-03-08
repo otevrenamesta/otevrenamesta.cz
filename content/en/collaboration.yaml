@@ -28,26 +28,34 @@ sections:
       url: "https://docs.google.com/document/d/14gJSg_6jgEqxnQO6cvHFFF_KvxjiftWu/edit"
     membership:
       title: Membership fee
-      description: "The membership fee is calculated according to the number of inhabitants and is always determined per calendar year:<br>
+      description: "The membership fee for municipalities is derived from the number of residents with permanent residence
+                  in the municipality and it is always paid for the calendar year.
+                  If a municipality or region becomes a member of the association during the year,
+                  it pays a proportional fee according to the number of calendar months in which it is be a member.<br>
                   <br>
-                  Municipalities over 100 thousands inhabitants: 1 CZK per inhabitant <br>
-                  Cities between 10,000 - 100,000 inhabitants: 2 CZK per inhabitant <br>
-                  Cities under 10,000 inhabitants: 3 CZK per inhabitant <br>
+                  Municipalities with more than 100,000 resident: 1 CZK per resident;<br>
+                  Municipalities with 10,000 – 100,000 resident: 2 CZK per resident;<br>
+                  Municipalities with less than 10,000 resident: 3 CZK per resident.<br>
                   <br>
-                  Counties: 49,000 CZK<br>
+                  A flat membership fee for regions is set to 49,000 CZK per year.<br>
                   <br>
-                  Starter membership: 5 0000 CZK"
+                  If you would like to try the membership out, we offer a starter membership that lasts 1 year.
+                  As part of the starter membership, you can participate in membership meetings, internal association events,
+                  and use the Continuous Vulnerability Scanning product.<br>
+                  <br>
+                  Starter membership: 5,000 CZK per year.
+                  "
     benefits:
-      title: Benefits
+      title: Benefits of membership
       items:
-        - title: Decision-making on the activities of the Association
-          description: A member of the Association can directly decide on the direction of the Association and thus clearly express their preferences and opinions on the digitalization of local governments.
+        - title: Use of Products
+          description: As part of their membership, members may use all products developed and provided by the association free of charge, along with standard support to ensure a user-friendly experience. They may also benefit from discounted rates for custom development, enhanced support services, or additional training.
         - title: Sharing know-how
-          description: Members are invited to special events and training sessions and can share know-how about what works and what doesn't work in digitization and openness.
-        - title: Discount on products
-          description: The services you order as part of your membership are discounted compared to prices for non-members.
+          description: Members are invited to special events and training sessions where they can share know-how and practical experience about what does or doesn't work in the fields of digitalization and open software. They also have access to a discussion forum for exchanging experience and ideas regarding the operation and development of software and other products managed or prepared by Open Cities.
+        - title: Influencing the direction
+          description: Members of the association can directly influence its direction and activities, allowing them to clearly express their preferences and views on the digitalization of local government.
         - title: Continuous vulnerability scanning
-          description: As part of your membership, you get a free continuous vulnerability scanning service as a primary defense against the most common cyber threats to the local government.
+          description: As part of the membership, you will also receive access to the Continuous Vulnerability Scanning service free of charge. This service provides a basic layer of protection against the most common cybersecurity threats faced by local authorities. This service is not available to non-member municipalities or regions.
   services:
     title: Purchase of services
     description: If you are interested in any of our products and want to try out the cooperation before becoming a member of the Association, feel free to inquire separately about any of our services.
