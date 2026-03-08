@@ -28,26 +28,32 @@ sections:
       url: "https://docs.google.com/document/d/14gJSg_6jgEqxnQO6cvHFFF_KvxjiftWu/edit"
     membership:
       title: Členský poplatek
-      description: "Členský poplatek se vypočítává dle počtu obyvatel a je určen vždy na kalendářní rok:<br>
+      description: "Členský příspěvek pro obce je odvozen z počtu obyvatel s trvalým pobytem v obci
+                  a je hrazen vždy na kalendářní rok. V případě, že se obec nebo kraj stane členem spolku v průběhu roku,
+                  hradí poměrný příspěvek dle počtu kalendářních měsíců, ve kterých bude členem spolku.<br>
                   <br>
-                  Obce nad 100 tis. obyvatel: 1 Kč za obyvatele <br>
-                  Obce mezi 10 tis.-100 tis. obyvateli: 2 Kč za obyvatele <br>
-                  Obce do 10 tis. obyvatel: 3 Kč za obyvatele<br>
+                  Obce nad 100 000 obyvatel: 1 Kč za obyvatele;<br>
+                  Obce mezi 10 000 - 100 000 obyvateli: 2 Kč za obyvatele;<br>
+                  Obce do 10 000 obyvatel: 3 Kč za obyvatele.<br>
                   <br>
-                  Kraje: 49 tis. Kč<br>
+                  Pro kraje je stanoven plošný členský příspěvek 49 000 Kč/rok.<br>
                   <br>
-                  Startovací členství: 5 tis. Kč"
+                  V případě, že si chcete členství ve spolku na zkoušku “osahat”, nabízíme startovací členství, které trvá 1 rok.
+                  V rámci startovacího členství se můžete účastnit členských schůzí,
+                  interních akcí spolku a využívat produkt Průběžné skenování zranitelností.<br>
+                  <br>
+                  Startovací členství: 5 000 Kč/rok."
     benefits:
-      title: Benefity
+      title: Benefity členství
       items:
+        - title: Využívání produktů
+          description: Členové spolku mohou v rámci členství bezplatně využívat všechny produkty, které spolek vyvíjí a poskytuje, k čemuž dostanou i standardní podporu pro uživatelsky příjemnou zkušenost. Zároveň mohou využívat zvýhodněných cen zakázkového vývoje, nadstandardní podpory nebo extra školení.
+        - title: Sdílení know-how
+          description: Členové jsou zváni na speciální akce a školení a mohou sdílet mezi sebou know-how, co funguje a co naopak nefunguje v oblasti digitalizace a otevřenosti. Zároveň mají přístup do diskuzního fóra pro výměnu zkušeností a nápadů na fungování softwarových i jiných produktů, které Otevřená města spravují nebo připravují.
         - title: Rozhodování o činnosti spolku
           description: Člen spolku může přímo rozhodovat o směřování spolku a jasně tak vyjádřit svoje preference a názory na digitalizaci místních samospráv.
-        - title: Sdílení know-how
-          description: Členové jsou zváni na speciální akce a školení a mohou sdílet mezi sebou know-how, co funguje a co naopak nefunguje v oblasti digitalizace a otevřenosti.
-        - title: Slevy na produktech
-          description:  Služby, které si v rámci členství objednáte, jsou zvýhodněny oproti cenám pro nečleny.
         - title: Průběžné skenování zranitelnosti
-          description: V rámci členství získáte zdarma službu průběžné skenování zranitelností jako základní obranu proti nejčastějším kybernetickým hrozbám samospráv.
+          description: V rámci členství bezplatně získáte také službu Průběžné skenování zranitelností jako základní obranu proti nejčastějším kybernetickým hrozbám samospráv. Tato služba není dostupná nečlenským obcím a krajům.
   services:
     title: Nákup služeb
     description: Pokud máte zájem o některý z našich produktů a zatím si chcete spolupráci jen vyzkoušet, než se stanete členem spolku, neváhejte poptat samostatně některou ze služeb, které nabízíme.
