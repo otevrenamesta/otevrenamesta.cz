@@ -37,7 +37,7 @@
             {{ offer.title }}
           </strong>
           <p class="text-sm text-primary-dark">
-            {{ offer.descirption }}
+            {{ offer.description }}
           </p>
         </div>
       </div>
