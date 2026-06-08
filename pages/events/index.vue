@@ -32,7 +32,7 @@
       class="flex flex-wrap -mx-block-0.5"
     >
       <EventItem
-        v-for="event in eventsFiltered"
+        v-for="event in eventsFiltered.reverse()"
         :key="event.id"
         :event="event"
       />
