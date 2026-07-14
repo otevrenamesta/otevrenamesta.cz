@@ -4,7 +4,6 @@ hero:
 
 team:
   leadership: Committee members
-  projectBoard: Project Board
 
 structure:
   title: Structure <br>of the organization
@@ -30,41 +29,3 @@ structure:
       title: Member meeting
       description: The Members' Meeting is the supreme body of the Association, which represents the interests of the member governments. It elects and dismisses the Committee. The Membership Meeting shall comprise representatives of all members who meet the requirements to join the Society.
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="121" height="91" viewBox="0 0 121 91"><g fill="none"><g data-name="Group 332" stroke="#1e1796"><path data-name="Rectangle 226" d="M90 31H60V1h30z"/><path data-name="Rectangle 227" d="M31 1v30H1V1z"/><path data-name="Rectangle 228" d="M60 31h60a59 59 0 0 1-59 59h-1V31Z"/><path data-name="Rectangle 229" d="M1 31h59v59A59 59 0 0 1 1 31Z"/></g><path data-name="Rectangle 895" d="M0 0h121v91H0z"/></g></svg>
-
-employees:
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Vaclav Klecanda
-    subtitle: Head of the Project Board
-    description: IT specialist
-  - img: https://api.www.otevrenamesta.cz/assets/284ce628-88bd-4e36-9dce-a64077b93b9c
-    fullname: Lukáš Jelínek
-    subtitle: Project Board member
-    description: IT specialist
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Jan Mareš
-    subtitle: Project Board member
-    description: IT specialist
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Ivor Kollár
-    subtitle: Project Board member
-    descpription: Cybersecurity expert
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Ladislav Nešněra
-    subtitle: Project Board member
-    description: IT specialist
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Martin Dvořák
-    subtitle: Project Board member
-    description: Data specialist
-  - img: https://api.www.otevrenamesta.cz/assets/73eae340-32c0-424c-b1b8-5ac5990d08d3
-    fullname: Benedikt Kotmel
-    subtitle: Project Board member
-    description: Data specialist
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Ondřej Caletka
-    subtitle: Project Board member
-    description: IT specialist
-  - img: https://api.www.otevrenamesta.cz/assets/00f8fcba-3fa8-4c62-a82f-f3cd7fe511de
-    fullname: Jáchym Čepický
-    subtitle: Project Board member
-    description: GIS specialist
