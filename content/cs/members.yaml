@@ -6,7 +6,7 @@ hero:
 labels:
   agent: Zástupce
   population: Počet obyvatel
-  memberFee: Členský poplatek
+  memberFee: Členský příspěvek
   shareOfVotes: Podíl hlasů
 
 members:
@@ -14,7 +14,6 @@ members:
     agent: Jaroslav Hlavnička
     population: 16 020 (3,2 % hlasů)
     memberFee: 32 040 Kč / rok
-    shareOfVotes: 999
     link: https://www.benesov-city.cz/
     # image: /img/neco.png
   - fullname: Brno - Medlánky
@@ -50,11 +49,11 @@ members:
     population: 4 841 (1,7 % hlasů)
     memberFee: 14 523 Kč / rok
   - fullname: Jihomoravský kraj
-    agent: 
+    agent:
     population: 1  187 439 (4,5 % hlasů)
     memberFee: 49 000 Kč / rok
   - fullname: Karlovarský kraj
-    agent: 
+    agent:
     population: 295 077 (4,5 % hlasů)
     memberFee: 49 000 Kč / rok
   - fullname: Kroměříž
