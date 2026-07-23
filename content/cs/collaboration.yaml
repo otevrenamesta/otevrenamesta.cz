@@ -25,7 +25,7 @@ sections:
       button: Přihláška
       url: "https://docs.google.com/document/d/14gJSg_6jgEqxnQO6cvHFFF_KvxjiftWu/edit"
     membership:
-      title: Členský poplatek
+      title: Členský příspěvek
       description: "Členský příspěvek pro obce je odvozen z počtu obyvatel s trvalým pobytem v obci
                   a je hrazen vždy na kalendářní rok. V případě, že se obec nebo kraj stane členem spolku v průběhu roku,
                   hradí poměrný příspěvek dle počtu kalendářních měsíců, ve kterých bude členem spolku.<br>
