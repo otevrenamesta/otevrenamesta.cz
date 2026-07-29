@@ -41,6 +41,7 @@
           <a
             v-for="(link, index) in footer.links"
             :key="index"
+            target="_blank"
             :href="link.url"
             class="block text-sm text-primary uppercase font-semibold hover:underline whitespace-nowrap"
           >

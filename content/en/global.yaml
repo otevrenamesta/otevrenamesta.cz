@@ -46,9 +46,11 @@ footer:
     - text: Documents
       url: https://drive.google.com/drive/folders/1MZyhHoJdtETc4I8bDKtFR7Z-lCAFSShI?usp=sharing
     - text: Articles of associations
-      url: https://drive.google.com/file/d/1kAgJ7N0sGAacilXl9inPi7EZ_SZz1d81/view?usp=sharing
+      url: https://api.www.otevrenamesta.cz/assets/639c1ce2-8649-4fd6-a684-98bf56b2bd51.pdf
     - text: Terms and conditions
-      url: https://drive.google.com/file/d/1uCYMZHxKMczAZQpOXpYZ9ecOnCthiXXG/view
+      url: https://api.www.otevrenamesta.cz/assets/3ae22a8b-6ca0-4605-a80d-f3650532e1e7.pdf
+    - text: GDPR
+      url: https://api.www.otevrenamesta.cz/assets/e1a9f9d7-ef79-403a-b066-a5d0d9354066.pdf
 
 news:
   title: Articles
