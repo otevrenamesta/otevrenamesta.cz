@@ -28,5 +28,7 @@ await useContentStore().load({ page: 'gdpr' });
 useCustomHead({
   title: "GDPR"
 });
-const pdfUrl = 'https://api.www.otevrenamesta.cz/assets/06c7219e-2859-4e7e-9368-3175446bd002.pdf?download';
+
+const pdfUrl = 'https://api.www.otevrenamesta.cz/assets/e1a9f9d7-ef79-403a-b066-a5d0d9354066.pdf?download';
+
 </script>
